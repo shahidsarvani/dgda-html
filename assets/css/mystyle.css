@@ -7,13 +7,25 @@
   font-family: "GraphikArabic-SemiBold";
   font-style: normal;
   font-weight: normal;
-  src: local("GraphikArabic-SemiBold"), url("../fonts/GraphikArabic-SemiBold.ttf") format("ttf");
+  src: local("GraphikArabic-SemiBold"), url("../fonts/GraphikArabic/GraphikArabic-SemiBold.ttf") format("ttf");
 }
 @font-face {
   font-family: "GraphikArabic-SemiBold";
   font-style: normal;
   font-weight: normal;
-  src: local("GraphikArabic-SemiBold"), url("../fonts/GraphikArabic-SemiBold.woff") format("woff");
+  src: local("GraphikArabic-SemiBold"), url("../fonts/GraphikArabic/woff/GraphikArabic-Semibold.woff") format("woff");
+}
+@font-face {
+  font-family: "Kermes3-SemiBold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Kermes3-SemiBold"), url("../fonts/kermes3/Kermes3-SemiBold.ttf") format("ttf");
+}
+@font-face {
+  font-family: "Kermes3-SemiBold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Kermes3-SemiBold"), url("../fonts/kermes3/woff/Kermes3-SemiBold.woff") format("woff");
 }
 html {
   scroll-behavior: smooth;
