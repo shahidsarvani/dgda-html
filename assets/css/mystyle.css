@@ -44,8 +44,8 @@ img {
 }
 .container, .container-lg, .container-md, .container-sm, .container-xl {
   max-width: 100% !important;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 90px;
+  padding-right: 90px;
 }
 .head_separator_col{
   display: flex;
@@ -65,7 +65,7 @@ img {
   margin: 0 5px;
 }
 .header_inner{
-  padding: 30px 0;
+  padding: 120px 0 30px;
 }
 .dg_ft_nav_list{
   display: flex;
@@ -74,7 +74,7 @@ img {
   list-style: none !important;
   padding: 0 !important;
   margin: 0 auto !important;
-  max-width: 800px;
+  max-width: 1700px;
 }
 .dg_ft_cont{
   position: fixed;
@@ -92,16 +92,19 @@ img {
 }
 .dg_ft_nav_item .dg_ft_nav_link h3{
   color: #003741;
-  font-size: 16px;
+  font-size: 38.6px;
   background-color: rgb(204 102 102 / 20%);
   padding: 4px 3px !important;
   margin: 0 5px;
 }
 .dg_ft_nav_img{
-  margin-bottom: 15px;
+  margin-bottom: 40px;
 }
 .dg_ft_nav_img img{
-  max-width: 40px;
+  max-width: 53px;
+}
+.dg_ft_nav_img_ar.dg_ft_nav_img img{
+  max-width: 26px;
 }
 .dg_vw_screen{
   display: none;
@@ -123,6 +126,12 @@ img {
 .dg_vw_screen{
   overflow: hidden;
 }
+.navbar-expand-sm .navbar-collapse.nav_cp_dp {
+  display: block !important;
+}
+.navbar-expand-sm .navbar-collapse.nav_cp_dp .navbar-nav{
+  justify-content: space-between;
+}
 
 /*/////////////////*/
 .row.diri_header_row{
@@ -134,7 +143,126 @@ img {
 }
 .head_separator_col{
   width: 44%;
+  padding: 0 70px;
 }
 .nav_col_1{
   width: 31%;
+}
+
+/*///////////////////////VIDEO SCREEN/////////////////////*/
+.dg_wvideo_screen header, .dg_wvideo_screen .dg_ft_cont{
+  display: none;
+}
+
+
+
+/*//////////////////////ROOM SELECTION SCREEN///////////////////////*/
+.dg_room_selection_screen .dg_ft_cont{
+  display: none;
+}
+.dg_rs_screen a{
+  text-decoration: none;
+}
+.dg_rs_wrap{
+  text-align: center;
+}
+.dg_rs_wrap img{
+  max-width: 695px;
+  height: 1120px;
+  object-fit: cover;
+  margin-bottom: 65px;
+}
+.dg_rs_wrap h3{
+  font-size: 70px;
+  color: #C87E59;
+}
+.dg_rs_col{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dg_rs_row{
+  max-width: 1670px;
+    margin: 100px auto;
+}
+
+
+
+/*/////////////////////////////AFTER ROOM SELECTION SCREEN///////////////////////////////*/
+.dg_afrs_screen{
+  height: calc(100vh - 250px);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dg_afrs_screen h3{
+  font-size: 70px;
+  color: #C87E59;
+}
+
+
+
+
+
+
+
+/*////////////////////////////////MODEL SHOW SCREEN///////////////////////////////////*/
+.dg_sm_screen{
+  padding-bottom: 143px;
+}
+.breadcrumbs{
+  color: #003741;
+  font-size: 70px;
+  margin-top: 78px;
+  margin-bottom: 50px;
+}
+.sm_video_track_wrap{
+  margin-top: 50px;
+  position: relative;
+}
+.sm_video_unplayed_track{
+  width: 100%;
+  display: block;
+  height: 4.3628px;
+  background-color: #C87E59;
+  border-radius: 50px;
+}
+.sm_video_played_track{
+  width: 75%;
+  display: block;
+  height: 4.3628px;
+  background-color: #003741;
+  border-radius: 50px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.sm_video_timers{
+  position: relative;
+  margin-top: 50px;
+  font-size: 54px;
+}
+span.sm_video_end_timer{
+  color: #C87E59;
+  float: right;
+}
+span.sm_video_start_timer{
+  color: #003741;
+}
+.sm_vc_list img{
+  width: 36.5px;
+  height: 36.5px;
+}
+.sm_video_controls{
+  margin-top: 163px;
+  margin-bottom: 143px;
+}
+.sm_vc_list{
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  max-width: 1160px;
+  margin: 0 auto;
 }
