@@ -266,3 +266,18 @@ span.sm_video_start_timer{
   max-width: 1160px;
   margin: 0 auto;
 }
+
+
+
+
+
+
+
+
+
+
+
+/*////////////////////////////////MODEL LIGHTS SCREEN/////////////////////////////////*/
+.ml_lights_screen{
+  min-height: 90vh;
+}
