@@ -82,6 +82,7 @@ img {
   width: 100%;
   padding: 30px;
   background-color: #fff;
+  z-index: 999;
 }
 .dg_ft_nav_item{
   text-align: center;
@@ -279,5 +280,48 @@ span.sm_video_start_timer{
 
 /*////////////////////////////////MODEL LIGHTS SCREEN/////////////////////////////////*/
 .ml_lights_screen{
-  min-height: 90vh;
+  /* min-height: 90vh; */
+  margin-bottom: 210px;
+}
+.ml_lights_screen .breadcrumbs{
+  margin-top: 50px;
+}
+.ml_content_col{
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+}
+.ml_content_container{
+  display: flex;
+  justify-content: space-between;
+}
+.ml_image_wrap{
+  text-align: center;
+  z-index: 2;
+}
+.ml_list_wrap{
+  z-index: 1;
+  width: 350px;
+  margin-left: -350px;
+  transition: all 0.5s;
+}
+.ml_list_wrap.active{
+  margin-left: 0px;
+  transition: all 0.5s;
+}
+.ml_image_wrap h3{
+  font-size: 70px;
+  color: #C87E59;
+}
+.ml_image_wrap img{
+  margin-bottom: 50px;
+}
+.ml_dg_list{
+  list-style: none;
+  padding-left: 40px !important;
+}
+.ml_dg_list a{
+  font-size: 45.5px;
+  color: #003741;
+  text-decoration: none;
 }
