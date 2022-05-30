@@ -4,6 +4,7 @@ $(document).ready(function () {
     e.preventDefault();
     $(".dg_vw_screen").fadeOut();
     $("#main_video").fadeOut();
+    $('.load_log_col .logo_diriyah').addClass('startanim');
     // $(".dg_vw_screen").fadeOut("slow");
     // $(".dg_vw_screen").fadeOut(3000);
     // $("#main_video").fadeOut("slow");

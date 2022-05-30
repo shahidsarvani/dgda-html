@@ -50,10 +50,16 @@ img {
   height: 100vh;
 }
 .load_log_col .logo_diriyah{
+  left:40%; 
+  top:39%;
+}
+.load_log_col .logo_diriyah.startanim{
   position: relative;
   animation-name: logotransition;
   animation-duration: 4s;
-  animation-delay: 3s;
+  /* animation-delay: 0.2s; */
+  left:0%; 
+  top:0%;
 }
 
 @keyframes logotransition {
