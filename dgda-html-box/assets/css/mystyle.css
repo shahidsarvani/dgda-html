@@ -42,11 +42,17 @@ body{
 img {
   max-width: 100%;
 }
-#dg_first_load_screen, #dg_bf_screen, #ml_lights_screen, #dg_sm_screen, #dg_afrs_screen, #dg_rs_screen{
+#dg_first_load_screen, #dg_bf_screen, #ml_lights_screen, #dg_sm_screen, #dg_afrs_screen, #dg_rs_screen, #header, #footer{
   display: none;
 }
 #main_video{
   z-index: 9999;
+}
+.dg_rs_row{
+  display: none;
+}
+#dg_rs_screen .logo_diriyah img{
+  max-width: 475px;
 }
 #main_video_btn{
   z-index: 99999;

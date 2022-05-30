@@ -8,9 +8,9 @@ $(document).ready(function () {
     // $(".dg_vw_screen").fadeOut(3000);
     // $("#main_video").fadeOut("slow");
     // $("#main_video").fadeOut(3000);
-    $("#header").fadeIn();
-    $("#header").fadeIn("slow");
-    $("#header").fadeIn(10000);
+    $("#dg_rs_screen").fadeIn();
+    $("#dg_rs_screen").fadeIn("slow");
+    $("#dg_rs_screen").fadeIn(5000);
     // $(".dg_vw_screen").hide();
     // $("#main_video").hide();
     // $(".dg_rs_screen").fadeIn();
