@@ -1,5 +1,23 @@
 $(document).ready(function () {
 
+  $("#main_video_btn").click(function(e){
+    e.preventDefault();
+    $(".dg_vw_screen").fadeOut();
+    $("#main_video").fadeOut();
+    // $(".dg_vw_screen").fadeOut("slow");
+    // $(".dg_vw_screen").fadeOut(3000);
+    // $("#main_video").fadeOut("slow");
+    // $("#main_video").fadeOut(3000);
+    $("#header").fadeIn();
+    $("#header").fadeIn("slow");
+    $("#header").fadeIn(10000);
+    // $(".dg_vw_screen").hide();
+    // $("#main_video").hide();
+    // $(".dg_rs_screen").fadeIn();
+    // $(".dg_rs_screen").fadeIn("slow");
+    // $(".dg_rs_screen").fadeIn(3000);
+  });
+
   // Added features section for desktop
   $(".ml_dg_anchor1_wrap").click(function () {
     if ($(".ml_dg_anchor1_wrap").hasClass("active")) {

@@ -15,7 +15,7 @@
 <body class="homepage">
     
     <!--Start Header Nav-->
-    <header>
+    <header id="header">
         <div class="container diri_header_cont">
             <div class="header_inner">
                 <div class="row diri_header_row">
@@ -58,19 +58,37 @@
         <div class="container-fluid dg_vw_cont">
             <div class="row dg_vw_row">
                 <div class="col-12 dg_vw_col">
-                   <video width="100%" height="100%" controls="false" autoplay="autoplay">
+                   <video id="main_video" width="100%" height="100%" controls="false" autoplay="autoplay">
                         <source src="./assets/videos/dg_room_ui_v21.mp4" type="video/mp4">
                         <source src="movie.ogg" type="video/ogg">
                         Your browser does not support the video tag.
                     </video>
+                    <div id="main_video_btn" class="main_video_btn"></div>
+                    <!-- <a id="main_video_btn" href="#">TAP TO START</a> -->
                 </div>
             </div>
         </div>
     </section>
     <!--End Video Screen-->
 
+    <!--Start first load Screen-->
+    <!-- <section id="dg_first_load_screen" class="dg_first_load_screen">
+        <div class="container-fluid dg_first_load_cont">
+            <div class="row dg_first_row">
+                <div class="col-3 dg_logo_col">
+                    <div class="logo_diriyah">
+                        <a href="#">
+                            <img src="./assets/images/dgda_logo.svg" alt="logo" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <!--Start first load Screen-->
+
     <!--Start Room Selection Screen-->
-    <section class="dg_rs_screen">
+    <section id="dg_rs_screen" class="dg_rs_screen">
         <div class="container dg_rs_container">
             <div class="row dg_rs_row">
                 <div class="col-6 dg_rs_col">
@@ -91,7 +109,7 @@
     <!--End Room Selection Screen-->
 
     <!--Start After Room Selection Screen-->
-    <section class="dg_afrs_screen">
+    <section id="dg_afrs_screen" class="dg_afrs_screen">
         <div class="container dg_afrs_container">
             <div class="row dg_afrs_row">
                 <div class="col-4 dg_afrs_col">
@@ -109,7 +127,7 @@
     <!--End After Room Selection Screen-->
 
     <!--Start Show Model Screen-->
-    <section class="dg_sm_screen">
+    <section id="dg_sm_screen" class="dg_sm_screen">
         <div class="container dg_sm_screen">
             <div class="row dg_sm_row">
                 <div class="col-12 dg_sm_col">
@@ -177,7 +195,7 @@
     <!--End Show Model Screen-->
 
     <!--Start Model Lights Screen-->
-    <section class="ml_lights_screen">
+    <section id="ml_lights_screen" class="ml_lights_screen">
         <div class="container ml_lights_container">
             <div class="row ml_lights_row">
                 <div class="col-12 breadcrumbs_col">
@@ -328,7 +346,7 @@
     <!--End Model Lights Screen-->
 
     <!--Start Basement Floors Screen-->
-    <section class="dg_bf_screen">
+    <section id="dg_bf_screen" class="dg_bf_screen">
         <div class="container dg_bf_container">
             <div class="row dg_bfb_row">
                 <div class="col-12 breadcrumbs_col">
@@ -413,8 +431,8 @@
     </div>
 
     <!--End Footer Nav-->
-
-    <script src="./assets/js/jquery.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- <script src="./assets/js/jquery.js"></script> -->
     <script src="./assets/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="./assets/js/aos.js"></script>
     <script src="./assets/js/custom.js"></script>
