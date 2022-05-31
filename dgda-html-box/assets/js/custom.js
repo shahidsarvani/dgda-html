@@ -1,20 +1,98 @@
 function move_left() {
   gsap.to(".dg_rs_screen", {
     opacity: 0,
-    x: -1000,
+    x: -3000,
     duration: 2
   });
-  gsap.from(".dg_afrs_screen", {
+  gsap.fromTo(".dg_afrs_screen", {
     opacity: 0,
-    x: 1000,
+    x: 3000,
     duration: 2,
-    display: 'flex',
-    // onComplete: a1
+    visibility: 'hidden',
+  }, {
+    opacity: 1,
+    x: 0,
+    duration: 2,
+    visibility: 'visible',
   });
+
+  gsap.fromTo(".header-menu-elements", {
+    opacity: 0,
+    x: 3000,
+    duration: 2,
+    visibility: 'hidden',
+  }, {
+    opacity: 1,
+    x: 0,
+    duration: 2,
+    visibility: 'visible',
+  });
+  gsap.to(".dg_ft_cont", {
+    bottom: 0,
+  });
+
+  
+  // gsap.from(".dg_afrs_screen", {
+  //   opacity: 0,
+  //   x: 3000,
+  //   duration: 2,
+  //   display: 'flex',
+  //   visibility: 'visible',
+  //   onComplete: a1
+  // });
   // function a1 {
   //   $('#dg_afrs_screen')
   // }
 }
+
+function move_startshow_left() {
+  gsap.to(".dg_rs_screen", {
+    opacity: 0,
+    x: -6000,
+    duration: 2
+  });
+  gsap.to(".dg_afrs_screen", {
+    opacity: 0,
+    x: -3000,
+    duration: 2
+  });
+  gsap.fromTo(".dg_sm_screen", {
+    opacity: 0,
+    x: 3000,
+    duration: 2,
+    visibility: 'hidden',
+  }, {
+    opacity: 1,
+    x: 0,
+    duration: 2,
+    visibility: 'visible',
+  });
+}
+function move_startshow_right() {
+  gsap.to(".dg_rs_screen", {
+    opacity: 0,
+    x: -3000,
+    duration: 2
+  });
+  gsap.to(".dg_afrs_screen", {
+    opacity: 1,
+    x: 0,
+    duration: 2,
+    visibility: 'visible',
+  });
+  gsap.fromTo(".dg_sm_screen", {
+    opacity: 0,
+    x: 0,
+    duration: 2,
+    visibility: 'hidden',
+  }, {
+    opacity: 1,
+    x: 3000,
+    duration: 2,
+    visibility: 'visible',
+  });
+}
+
 $(document).ready(function () {
 
 

@@ -21,31 +21,35 @@
                 <div class="header_inner">
                     <div class="row diri_header_row">
                         <div class="col-31 logo_col_1">
-                            <div class="logo_diriyah">
-                                <a href="#">
-                                    <img src="./assets/images/dgda_logo.svg" alt="logo" />
-                                </a>
+                            <div class="load_log_col">
+                                <div class="logo_diriyah">
+                                    <a href="javascript:void(0)">
+                                        <img src="./assets/images/dgda_logo.svg" alt="logo" />
+                                    </a>
+                                </div>
                             </div>
                         </div>
-                        <div class="col-61 head_separator_col">
-                            <div class="head_separator"></div>
-                        </div>
-                        <div class="col-31 nav_col_1">
-                            <nav class="navbar navbar-expand-sm navbar_dir bg-transparent">
-                                <div class="nav_cp_dp collapse navbar-collapse btn-10" id="collapsibleNavbar">
-                                    <ul class="navbar-nav">
-                                        <li class="nav-item">
-                                            <a class="nav-link active" href="#">DIRIYAH</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="#">WADI SAFAR</a>
-                                        </li>
-                                        <!-- <li class="nav-item">
-                                            <a class="nav-link" href="#">COMBINED</a>
-                                        </li> -->
-                                    </ul>
-                                </div>
-                            </nav>
+                        <div class="header-menu-elements" onclick="move_left()">
+                            <div class="col-61 head_separator_col">
+                                <div class="head_separator"></div>
+                            </div>
+                            <div class="col-31 nav_col_1">
+                                <nav class="navbar navbar-expand-sm navbar_dir bg-transparent">
+                                    <div class="nav_cp_dp collapse navbar-collapse btn-10" id="collapsibleNavbar">
+                                        <ul class="navbar-nav">
+                                            <li class="nav-item">
+                                                <a class="nav-link active" href="#">DIRIYAH</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#">WADI SAFAR</a>
+                                            </li>
+                                            <!-- <li class="nav-item">
+                                                <a class="nav-link" href="#">COMBINED</a>
+                                            </li> -->
+                                        </ul>
+                                    </div>
+                                </nav>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -59,7 +63,7 @@
             <div class="container-fluid dg_vw_cont">
                 <div class="row dg_vw_row">
                     <div class="col-12 dg_vw_col">
-                    <video id="main_video" width="100%" height="100%" loop="true" controls="false" autoplay="autoplay">
+                    <video id="main_video" width="100%" height="100%" loop="true" controls="false" autoplay="autoplay" muted>
                             <source src="./assets/videos/dgda_intro.mp4" type="video/mp4">
                             <source src="movie.ogg" type="video/ogg">
                             Your browser does not support the video tag.
@@ -91,16 +95,9 @@
         <!--Start Room Selection Screen-->
         <section id="dg_rs_screen" class="dg_rs_screen">
             <div class="container dg_rs_container">
-                <div class="load_log_col">
-                    <div class="logo_diriyah">
-                        <a href="javascript:void(0)" onclick="move_left()">
-                            <img src="./assets/images/dgda_logo.svg" alt="logo" />
-                        </a>
-                    </div>
-                </div>
                 <div class="row dg_rs_row">
                     <div class="col-6 dg_rs_col">
-                        <a href="./after-room-selection-screen.html">
+                        <a href="javascript:void(0)" onclick="move_left()">
                             <div id="diriyah-room" class="dg_rs_wrap">
                                 <img src="./assets/images/room-diriyah.png" alt="diriyah">
                                 <h3>DIRIYAH</h3>
@@ -108,10 +105,12 @@
                         </a>
                     </div>
                     <div class="col-6 dg_rs_col">
-                        <div id="wadisafar-room" class="dg_rs_wrap">
-                            <img src="./assets/images/room-wadi-safar.png" alt="diriyah">
-                            <h3>WADI SAFAR</h3>
-                        </div>
+                        <a href="javascript:void(0)" onclick="move_left()">
+                            <div id="wadisafar-room" class="dg_rs_wrap">
+                                <img src="./assets/images/room-wadi-safar.png" alt="diriyah">
+                                <h3>WADI SAFAR</h3>
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -123,7 +122,9 @@
             <div class="container dg_afrs_container">
                 <div class="row dg_afrs_row">
                     <div class="col-4 dg_afrs_col">
-                        <h3>START<br/>SHOW</h3>
+                        <a href="javascript:void(0)" onclick="move_startshow_left()">
+                            <h3>START<br/>SHOW</h3>
+                        </a>
                     </div>
                     <div class="col-4 dg_afrs_col">
                         <h3>MODEL<br/>LIGHTS</h3>
@@ -141,9 +142,11 @@
             <div class="container dg_sm_screen">
                 <div class="row dg_sm_row">
                     <div class="col-12 dg_sm_col">
-                        <h3 class="breadcrumbs">
-                            < MODEL SHOW
-                        </h3>
+                        <a href="javascript:void(0)" onclick="move_startshow_right()">
+                            <h3 class="breadcrumbs">
+                                < MODEL SHOW
+                            </h3>
+                        </a>
                     </div>
                     <div class="dg_sm_video_wrap">
                         <div class="sm_video">
@@ -442,16 +445,17 @@
     </main>
 
     <!--End Footer Nav-->
-    <script src="./node_modules/swup/dist/swup.min.js"></script>
+    <!-- <script src="./node_modules/swup/dist/swup.min.js"></script> -->
+    <script src="./assets/js/gsap.min.js"></script>
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
     <script src="./assets/js/jquery.js"></script>
     
     <script src="./assets/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="./assets/js/aos.js"></script>
     <script src="./assets/js/custom.js"></script>
-    <script>
+    <!-- <script>
         const swup = new Swup();
-    </script>
+    </script> -->
     
 </body>
 

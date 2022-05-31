@@ -38,11 +38,40 @@ html {
 body{
   background-color: rgba(235, 206, 166, 0.5);
 }
-
+a{
+  text-decoration: none !important;
+}
 img {
   max-width: 100%;
 }
-/* #dg_first_load_screen, #dg_bf_screen, #ml_lights_screen, #dg_sm_screen, #dg_afrs_screen, #header, #footer{
+section{
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-top: 225px;
+  width: 100%;
+  height: 100%;
+}
+#dg_afrs_screen, .header-menu-elements, .dg_sm_screen{
+  visibility: hidden;
+  opacity: 0;
+}
+#dg_first_load_screen, #dg_bf_screen, #ml_lights_screen{
+  display: none;
+}
+.header-menu-elements{
+  display: flex;
+}
+#header{
+  z-index: 999999;
+  position: absolute;
+  width: 100%;
+  top: 0;
+}
+.dg_vw_screen{
+  z-index: 9999999;
+}
+/* #dg_first_load_screen, #dg_bf_screen, #ml_lights_screen, #dg_sm_screen, #dg_afrs_screen, #footer{
   display: none;
 } */
 
@@ -58,14 +87,14 @@ img {
 html.is-animating .transition-fade{
   transform: translateX(1);
 } */
-.transition-fade {
+/* .transition-fade {
   transition: 0.4s;
   opacity: 1;
 }
 
 html.is-animating .transition-fade {
   opacity: 0;
-}
+} */
 
 
 /*//////////////////////////////////////////////////
@@ -90,10 +119,10 @@ html.is-animating .transition-fade {
   left:0%; 
   top:0%;
 }
-.dg_rs_row.firstsecanimOut{
+/* .dg_rs_row.firstsecanimOut{
   left: -100%; 
   top: 72px;
-}
+} */
 .dg_rs_row.firstsecanim{
   position: relative;
   animation-name: firstsec;
@@ -102,14 +131,14 @@ html.is-animating .transition-fade {
 
 @keyframes logotransition {
   0%   {
-    left: 43%; 
+    left: 140%; 
     top:39%;
     transform: scale(1.2);
     height: 100vh;
     max-width: 700px;
   }
   50%  {
-    left:40%; 
+    left:140%; 
     top:0%;
     transform: scale(1);
     height: 0vh;
@@ -136,16 +165,16 @@ html.is-animating .transition-fade {
 }
 @keyframes firstsec {
   0%   {
-    left: 100%; 
-    top: 100px;
+    left: 200%; 
+    top: 0px;
   }
-  50%  {
-    left: 100%; 
-    top: 100px;
-  }
+  /* 50%  {
+    left: 150%; 
+    top: 0px;
+  } */
   100% {
     left: 0%; 
-    top: 100px;
+    top: 0px;
   }
 }
 
@@ -158,7 +187,7 @@ html.is-animating .transition-fade {
   /* display: none; */
 }
 .dg_rs_screen{
-  padding-top: 120px;
+  /* padding-top: 120px; */
 }
 #dg_rs_screen .logo_diriyah img{
   max-width: 640px;
@@ -223,7 +252,7 @@ html.is-animating .transition-fade {
 }
 .dg_ft_cont{
   position: fixed;
-  bottom: 0;
+  bottom: -220px;
   width: 100%;
   padding: 30px;
   background-color: #fff;
@@ -259,7 +288,7 @@ html.is-animating .transition-fade {
   left: 0;
   margin: 0;
   padding: 0;
-  z-index: 999;
+  z-index: 99999999;
   width: 100vw;
   height: 100vh;
 }
@@ -401,7 +430,7 @@ span.sm_video_start_timer{
   height: 36.5px;
 }
 .sm_video_controls{
-  margin-top: 163px;
+  margin-top: 100px;
   margin-bottom: 143px;
 }
 .sm_vc_list{
@@ -510,6 +539,3 @@ span.sm_video_start_timer{
 }
 
 
-#dg_first_load_screen, #dg_bf_screen, #ml_lights_screen, #dg_sm_screen, .dg_afrs_screen, #header, #footer{
-  display: none;
-}
