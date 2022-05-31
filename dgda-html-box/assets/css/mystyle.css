@@ -199,9 +199,15 @@ html.is-animating .transition-fade {
   height: 100%;
   left: 0;
   top: 0;
-  /* font-size: 37px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#main_video_btn a{
+  margin-top: 590px;
+  font-size: 37px;
   color: #ffffff;
-  text-decoration: none; */
+  text-decoration: none;
 }
 .dg_ft_nav_item{
   position: relative;
