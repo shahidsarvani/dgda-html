@@ -63,10 +63,10 @@ img {
   left:0%; 
   top:0%;
 }
-/* .dg_rs_row{
-  left: 100%; 
-  top: 0%;
-} */
+.dg_rs_row.firstsecanimOut{
+  left: -100%; 
+  top: 72px;
+}
 .dg_rs_row.firstsecanim{
   position: relative;
   animation-name: firstsec;
@@ -79,21 +79,21 @@ img {
     top:39%;
     transform: scale(1.2);
     height: 100vh;
-    max-width: 550px;
+    max-width: 700px;
   }
   50%  {
     left:40%; 
     top:0%;
     transform: scale(1);
     height: 0vh;
-    max-width: 475px;
+    max-width: 640px;
   }
   100% {
     left:0%; 
     top:0%;
     transform: scale(1);
     height: 0vh;
-    max-width: 475px;
+    max-width: 640px;
   }
 }
 @keyframes logowraptransition {
@@ -110,15 +110,15 @@ img {
 @keyframes firstsec {
   0%   {
     left: 100%; 
-    top: 72px;
+    top: 100px;
   }
   50%  {
     left: 100%; 
-    top: 72px;
+    top: 100px;
   }
   100% {
     left: 0%; 
-    top: 72px;
+    top: 100px;
   }
 }
 
@@ -134,7 +134,7 @@ img {
   padding-top: 120px;
 }
 #dg_rs_screen .logo_diriyah img{
-  max-width: 475px;
+  max-width: 640px;
 }
 #main_video_btn{
   z-index: 99999;

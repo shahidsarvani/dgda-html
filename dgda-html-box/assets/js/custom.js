@@ -14,12 +14,15 @@ $(document).ready(function () {
     $("#dg_rs_screen").fadeIn();
     $("#dg_rs_screen").fadeIn("slow");
     $("#dg_rs_screen").fadeIn(5000);
-    // $(".dg_vw_screen").hide();
-    // $("#main_video").hide();
-    // $(".dg_rs_screen").fadeIn();
-    // $(".dg_rs_screen").fadeIn("slow");
-    // $(".dg_rs_screen").fadeIn(3000);
   });
+
+  // $("#diriyah-room").click(function(e){
+  //   e.preventDefault();
+  //   $('#dg_rs_screen').addClass('firstsecanimOut');
+  //   $('#dg_afrs_screen').addClass('firstsec');
+  //   $("#header").fadeIn();
+  //   $("#header").fadeIn("slow");
+  // });
 
   // Added features section for desktop
   $(".ml_dg_anchor1_wrap").click(function () {
