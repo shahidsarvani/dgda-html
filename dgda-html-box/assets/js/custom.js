@@ -1,10 +1,12 @@
+function move_left() {
+  gsap.to(".dg_rs_screen", {
+    opacity: 0, 
+    y: -1000, 
+    duration: 2
+  });
+}
 $(document).ready(function () {
 
-  gsap.from("#diriyah-room", {
-    opacity: 0, 
-    y: 100, 
-    duration: 1
-  });
 
   $("#main_video_btn").click(function(e){
     e.preventDefault();
