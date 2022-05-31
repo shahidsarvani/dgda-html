@@ -1,20 +1,24 @@
 function move_left() {
   gsap.to(".dg_rs_screen", {
-    opacity: 0, 
-    y: -1000, 
+    opacity: 0,
+    x: -1000,
     duration: 2
   });
   gsap.from(".dg_afrs_screen", {
-    display: "block",
-    opacity: 1, 
-    x: 1000, 
-    duration: 2
+    opacity: 0,
+    x: 1000,
+    duration: 2,
+    display: 'flex',
+    // onComplete: a1
   });
+  // function a1 {
+  //   $('#dg_afrs_screen')
+  // }
 }
 $(document).ready(function () {
 
 
-  $("#main_video_btn").click(function(e){
+  $("#main_video_btn").click(function (e) {
     e.preventDefault();
     $(".dg_vw_screen").fadeOut();
     $("#main_video").fadeOut();
@@ -83,7 +87,7 @@ $(document).ready(function () {
       $(".ml_dg_antag2_wrap").removeClass("active");
     }
   });
-    
+
 })
 
 
