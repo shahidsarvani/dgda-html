@@ -45,6 +45,33 @@ img {
 #dg_first_load_screen, #dg_bf_screen, #ml_lights_screen, #dg_sm_screen, #dg_afrs_screen, #header, #footer{
   display: none;
 }
+
+/*//////////////////////////////////////////////////
+                Start Animations SWUP 
+/////////////////////////////////////////////////*/
+
+/* .transition-fade{
+  transition: .7s cubic-bezier(0, 0, .58, 1);
+  transform: translateX(0);
+}
+
+html.is-animating .transition-fade{
+  transform: translateX(1);
+} */
+.transition-fade {
+  transition: 0.4s;
+  opacity: 1;
+}
+
+html.is-animating .transition-fade {
+  opacity: 0;
+}
+
+
+/*//////////////////////////////////////////////////
+                Start Animations SWUP 
+/////////////////////////////////////////////////*/
+
 /*********************************************************************************************/
 .load_log_col.logowrapanim{
   position: relative;

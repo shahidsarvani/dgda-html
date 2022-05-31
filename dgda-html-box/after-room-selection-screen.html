@@ -14,7 +14,8 @@
 
 <body class="homepage">
     
-    <!--Start Header Nav-->
+    <main id="swup" class="transition-fade">
+        <!--Start Header Nav-->
     <header>
         <div class="container diri_header_cont">
             <div class="header_inner">
@@ -70,13 +71,18 @@
         </div>
     </section>
     <!--End After Room Selection Screen-->
+    </main>
 
     
 
     <script src="./assets/js/jquery.js"></script>
+    <script src="./node_modules/swup/dist/swup.min.js"></script>
     <script src="./assets/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="./assets/js/aos.js"></script>
     <script src="./assets/js/custom.js"></script>
+    <script>
+        const swup = new Swup();
+    </script>
     <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
     
 
