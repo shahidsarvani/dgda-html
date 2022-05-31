@@ -4,6 +4,12 @@ function move_left() {
     y: -1000, 
     duration: 2
   });
+  gsap.from(".dg_afrs_screen", {
+    display: "block",
+    opacity: 1, 
+    x: 1000, 
+    duration: 2
+  });
 }
 $(document).ready(function () {
 
