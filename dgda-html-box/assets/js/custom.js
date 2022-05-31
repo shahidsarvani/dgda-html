@@ -5,6 +5,8 @@ $(document).ready(function () {
     $(".dg_vw_screen").fadeOut();
     $("#main_video").fadeOut();
     $('.load_log_col .logo_diriyah').addClass('startanim');
+    $('.dg_rs_row').addClass('firstsecanim');
+    $('.load_log_col').addClass('logowrapanim');
     // $(".dg_vw_screen").fadeOut("slow");
     // $(".dg_vw_screen").fadeOut(3000);
     // $("#main_video").fadeOut("slow");
