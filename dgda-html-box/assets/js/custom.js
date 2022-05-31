@@ -1,5 +1,11 @@
 $(document).ready(function () {
 
+  gsap.from("#diriyah-room", {
+    opacity: 0, 
+    y: 100, 
+    duration: 1
+  });
+
   $("#main_video_btn").click(function(e){
     e.preventDefault();
     $(".dg_vw_screen").fadeOut();
