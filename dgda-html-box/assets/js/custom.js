@@ -30,19 +30,6 @@ function move_left() {
   gsap.to(".dg_ft_cont", {
     bottom: 0,
   });
-
-  
-  // gsap.from(".dg_afrs_screen", {
-  //   opacity: 0,
-  //   x: 3000,
-  //   duration: 2,
-  //   display: 'flex',
-  //   visibility: 'visible',
-  //   onComplete: a1
-  // });
-  // function a1 {
-  //   $('#dg_afrs_screen')
-  // }
 }
 
 function move_startshow_left() {
@@ -189,10 +176,41 @@ function move_start_basementfloors_right() {
   });
 }
 
-function move_videowalls_left() {
+function move_showmodelactive_left() {
   gsap.to(".dg_rs_screen", {
     opacity: 0,
     x: -6000,
+    duration: 2
+  });
+  gsap.to(".dg_afrs_screen", {
+    opacity: 1,
+    x: 0,
+    duration: 2
+  });
+  gsap.to(".dg_lights_screen", {
+    opacity: 1,
+    x: 3000,
+    duration: 2
+  });
+  gsap.fromTo(".dg_vwalls_screen", {
+    opacity: 1,
+    x: 0,
+    duration: 2,
+  }, {
+    opacity: 0,
+    x: 3000,
+    duration: 2,
+  });
+}
+function move_videowallsactive_left() {
+  gsap.to(".dg_rs_screen", {
+    opacity: 0,
+    x: -6000,
+    duration: 2
+  });
+  gsap.to(".dg_lights_screen", {
+    opacity: 1,
+    x: -3000,
     duration: 2
   });
   gsap.to(".dg_afrs_screen", {
@@ -227,27 +245,6 @@ function move_videowalls_left() {
     visibility: 'visible',
   });
 }
-function move_showmodel_left() {
-  gsap.to(".dg_rs_screen", {
-    opacity: 0,
-    x: -6000,
-    duration: 2
-  });
-  gsap.to(".dg_afrs_screen", {
-    opacity: 1,
-    x: 0,
-    duration: 2
-  });
-  gsap.fromTo(".dg_vwalls_screen", {
-    opacity: 1,
-    x: 0,
-    duration: 2,
-  }, {
-    opacity: 0,
-    x: 3000,
-    duration: 2,
-  });
-}
 function move_vwalls_right() {
   gsap.to(".dg_rs_screen", {
     opacity: 0,
@@ -269,6 +266,41 @@ function move_vwalls_right() {
     duration: 2,
   });
 }
+
+function move_lightsactive_left() {
+  gsap.to(".dg_rs_screen", {
+    opacity: 0,
+    x: -6000,
+    duration: 2
+  });
+  gsap.to(".dg_afrs_screen", {
+    opacity: 0,
+    x: -3000,
+    duration: 2
+  });
+  gsap.to(".dg_vwalls_screen", {
+    opacity: 0,
+    x: -3000,
+    duration: 2
+  });
+  gsap.fromTo(".dg_lights_screen", {
+    opacity: 0,
+    x: 3000,
+    duration: 2,
+    visibility: 'hidden',
+  }, {
+    opacity: 1,
+    x: 0,
+    duration: 2,
+    visibility: 'visible',
+  });
+}
+
+
+
+
+
+
 
 $(document).ready(function () {
 

@@ -513,15 +513,53 @@
         </section>
         <!--Start Video Walls Screen-->
 
-        <!--Start Footer Nav-->
+        <!--Start lights Screen-->
+        <section id="dg_lights_screen" class="dg_lights_screen">
+            <div class="container dg_lights_container">
+                <div class="row dg_lights_row">
+                    <div class="col-4 dg_col_content">
+                        <div class="dg_lights_content_wrap">
+                            <h3>MORNING</h3>
+                            <h3>80%</h3>
+                        </div>
+                    </div>
+                    <div class="col-4 dg_col_content">
+                        <div class="dg_lights_content_wrap">
+                            <h3>AFTERNOON</h3>
+                            <h3>100%</h3>
+                        </div>
+                    </div>
+                    <div class="col-4 dg_col_content">
+                        <div class="dg_lights_content_wrap">
+                            <h3>EVENING</h3>
+                            <h3>40%</h3>
+                        </div>
+                    </div>
+                    <div class="col-4 dg_col_content">
+                        <div class="dg_lights_content_wrap">
+                            <h3>ENTERY SCENE</h3>
+                            <h3>0%</h3>
+                        </div>
+                    </div>
+                    <div class="col-4 dg_col_content">
+                        <div class="dg_lights_content_wrap">
+                            <h3>EXIT SCENE</h3>
+                            <h3>20%</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--End lights Screen-->
 
+        <!--Start Footer Nav-->
         <div id="footer" class="container dg_ft_cont">
             <div class="row dg_ft_row">
                 <div class="col-12 dg_ft_col">
                     <div class="dg_ft_nav">
                         <ul class="dg_ft_nav_list">
                             <li class="dg_ft_nav_item dg_ft_nav_item1 active">
-                                <a href="#" onclick="move_showmodel_left()">
+                                <a href="#" onclick="move_showmodelactive_left()">
                                     <div class="dg_ft_nav_img">
                                         <img src="./assets/images/model.svg" alt="Model">
                                     </div>
@@ -531,7 +569,7 @@
                                 </a>
                             </li>
                             <li class="dg_ft_nav_item dg_ft_nav_item2">
-                                <a href="#" onclick="move_videowalls_left()">
+                                <a href="#" onclick="move_videowallsactive_left()">
                                     <div class="dg_ft_nav_img">
                                         <img src="./assets/images/play.svg" alt="VIDEO WALLS">
                                     </div>
@@ -541,7 +579,7 @@
                                 </a>
                             </li>
                             <li class="dg_ft_nav_item dg_ft_nav_item3">
-                                <a href="#">
+                                <a href="#" onclick="move_lightsactive_left()">
                                     <div class="dg_ft_nav_img">
                                         <img src="./assets/images/lighting.svg" alt="LIGHTS">
                                     </div>
@@ -565,9 +603,11 @@
                 </div>
             </div>
         </div>
-    </main>
+        <!--End Footer Nav-->
 
-    <!--End Footer Nav-->
+    </main>
+    <!--End Main Nav-->
+
     <!-- <script src="./node_modules/swup/dist/swup.min.js"></script> -->
     <script src="./assets/js/gsap.min.js"></script>
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
