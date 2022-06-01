@@ -78,22 +78,6 @@
         </section>
         <!--End Video Screen-->
 
-        <!--Start first load Screen-->
-        <!-- <section id="dg_first_load_screen" class="dg_first_load_screen">
-            <div class="container-fluid dg_first_load_cont">
-                <div class="row dg_first_row">
-                    <div class="col-3 dg_logo_col">
-                        <div class="logo_diriyah">
-                            <a href="#">
-                                <img src="./assets/images/dgda_logo.svg" alt="logo" />
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section> -->
-        <!--Start first load Screen-->
-
         <!--Start Room Selection Screen-->
         <section id="dg_rs_screen" class="dg_rs_screen">
             <div class="container dg_rs_container">
@@ -129,10 +113,14 @@
                         </a>
                     </div>
                     <div class="col-4 dg_afrs_col">
-                        <h3>MODEL<br/>LIGHTS</h3>
+                        <a href="javascript:void(0)" onclick="move_start_modellights_left()">
+                            <h3>MODEL<br/>LIGHTS</h3>
+                        </a>
                     </div>
                     <div class="col-4 dg_afrs_col">
-                        <h3>BASEMENT<br/>FLOORS</h3>
+                        <a href="javascript:void(0)" onclick="move_start_basementfloors_left()">
+                            <h3>BASEMENT<br/>FLOORS</h3>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -214,17 +202,17 @@
             <div class="container ml_lights_container">
                 <div class="row ml_lights_row">
                     <div class="col-12 breadcrumbs_col">
-                        <h3 class="breadcrumbs">
-                            < MODEL LIGHTS
-                        </h3>
+                        <a href="javascript:void(0)" onclick="move_start_modellights_right()">
+                            <h3 class="breadcrumbs"> < MODEL LIGHTS </h3>
+                        </a>
                     </div>
                     <div class="col_12 ml_content_col">
-                        <div class="ml_content_container">
-                            <div class="ml_image_wrap ml_dg_anchor1_wrap">
+                        <div class="ml_content_container ml_content_container1 active">
+                            <div class="ml_image_wrap ml_dg_anchor1_wrap active">
                                 <img src="./assets/images/model-lights/dg1.png" alt="DG1">
                                 <h3>DG1</h3>
                             </div>
-                            <div class="ml_list_wrap ml_dg_antag1_wrap">
+                            <div class="ml_list_wrap ml_dg_antag1_wrap active">
                                 <ul class="ml_dg_list ml_dg1_list">
                                     <li class="ml_dg_list_item">
                                         <a href="#">
@@ -264,7 +252,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="ml_content_container">
+                        <div class="ml_content_container ml_content_container2">
                             <div class="ml_image_wrap ml_dg_anchor2_wrap">
                                 <img src="./assets/images/model-lights/dg1.png" alt="DG1">
                                 <h3>DG2</h3>
@@ -309,7 +297,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="ml_content_container">
+                        <div class="ml_content_container ml_content_container3">
                             <div class="ml_image_wrap ml_dg_anchor3_wrap">
                                 <img src="./assets/images/model-lights/dg1.png" alt="DG1">
                                 <h3>DG3</h3>
@@ -365,9 +353,9 @@
             <div class="container dg_bf_container">
                 <div class="row dg_bfb_row">
                     <div class="col-12 breadcrumbs_col">
-                        <h3 class="breadcrumbs">
-                            < BASEMENT FLOORS
-                        </h3>
+                        <a href="javascript:void(0)" onclick="move_start_basementfloors_right()">
+                            <h3 class="breadcrumbs"> < BASEMENT FLOORS </h3>
+                        </a>
                     </div>
                 </div>
                 <div class="row dg_bfc_row">

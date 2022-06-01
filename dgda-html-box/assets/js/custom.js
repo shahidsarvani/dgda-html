@@ -81,12 +81,108 @@ function move_startshow_right() {
     visibility: 'visible',
   });
   gsap.fromTo(".dg_sm_screen", {
-    opacity: 0,
+    opacity: 1,
     x: 0,
     duration: 2,
     visibility: 'hidden',
   }, {
+    opacity: 0,
+    x: 3000,
+    duration: 2,
+    visibility: 'visible',
+  });
+}
+
+function move_start_modellights_left() {
+  gsap.to(".dg_rs_screen", {
+    opacity: 0,
+    x: -6000,
+    duration: 2
+  });
+  gsap.to(".dg_afrs_screen", {
+    opacity: 0,
+    x: -3000,
+    duration: 2
+  });
+  gsap.fromTo(".ml_lights_screen", {
+    opacity: 0,
+    x: 3000,
+    duration: 2,
+    visibility: 'hidden',
+  }, {
     opacity: 1,
+    x: 0,
+    duration: 2,
+    visibility: 'visible',
+  });
+}
+function move_start_modellights_right() {
+  gsap.to(".dg_rs_screen", {
+    opacity: 0,
+    x: -3000,
+    duration: 2
+  });
+  gsap.to(".dg_afrs_screen", {
+    opacity: 1,
+    x: 0,
+    duration: 2,
+    visibility: 'visible',
+  });
+  gsap.fromTo(".ml_lights_screen", {
+    opacity: 1,
+    x: 0,
+    duration: 2,
+    visibility: 'hidden',
+  }, {
+    opacity: 0,
+    x: 3000,
+    duration: 2,
+    visibility: 'visible',
+  });
+}
+
+function move_start_basementfloors_left() {
+  gsap.to(".dg_rs_screen", {
+    opacity: 0,
+    x: -6000,
+    duration: 2
+  });
+  gsap.to(".dg_afrs_screen", {
+    opacity: 0,
+    x: -3000,
+    duration: 2
+  });
+  gsap.fromTo(".dg_bf_screen", {
+    opacity: 0,
+    x: 3000,
+    duration: 2,
+    visibility: 'hidden',
+  }, {
+    opacity: 1,
+    x: 0,
+    duration: 2,
+    visibility: 'visible',
+  });
+}
+function move_start_basementfloors_right() {
+  gsap.to(".dg_rs_screen", {
+    opacity: 0,
+    x: -3000,
+    duration: 2
+  });
+  gsap.to(".dg_afrs_screen", {
+    opacity: 1,
+    x: 0,
+    duration: 2,
+    visibility: 'visible',
+  });
+  gsap.fromTo(".dg_bf_screen", {
+    opacity: 1,
+    x: 0,
+    duration: 2,
+    visibility: 'hidden',
+  }, {
+    opacity: 0,
     x: 3000,
     duration: 2,
     visibility: 'visible',
@@ -126,13 +222,17 @@ $(document).ready(function () {
       console.log("same tab");
       $(".ml_dg_anchor1_wrap").removeClass("active");
       $(".ml_dg_antag1_wrap").removeClass("active");
+      $(".ml_content_container1").removeClass("active");
     } else {
       $(".ml_dg_anchor1_wrap").addClass("active");
       $(".ml_dg_antag1_wrap").addClass("active");
+      $(".ml_content_container1").addClass("active");
       $(".ml_dg_anchor2_wrap").removeClass("active");
       $(".ml_dg_antag2_wrap").removeClass("active");
+      $(".ml_content_container2").removeClass("active");
       $(".ml_dg_anchor3_wrap").removeClass("active");
       $(".ml_dg_antag3_wrap").removeClass("active");
+      $(".ml_content_container3").removeClass("active");
     }
   });
 
@@ -141,13 +241,17 @@ $(document).ready(function () {
       console.log("same tab");
       $(".ml_dg_anchor2_wrap").removeClass("active");
       $(".ml_dg_antag2_wrap").removeClass("active");
+      $(".ml_content_container2").removeClass("active");
     } else {
       $(".ml_dg_anchor2_wrap").addClass("active");
       $(".ml_dg_antag2_wrap").addClass("active");
+      $(".ml_content_container2").addClass("active");
       $(".ml_dg_anchor1_wrap").removeClass("active");
       $(".ml_dg_antag1_wrap").removeClass("active");
+      $(".ml_content_container1").removeClass("active");
       $(".ml_dg_anchor3_wrap").removeClass("active");
       $(".ml_dg_antag3_wrap").removeClass("active");
+      $(".ml_content_container3").removeClass("active");
     }
   });
 
@@ -156,13 +260,17 @@ $(document).ready(function () {
       console.log("same tab");
       $(".ml_dg_anchor3_wrap").removeClass("active");
       $(".ml_dg_antag3_wrap").removeClass("active");
+      $(".ml_content_container3").removeClass("active");
     } else {
       $(".ml_dg_anchor3_wrap").addClass("active");
       $(".ml_dg_antag3_wrap").addClass("active");
+      $(".ml_content_container3").addClass("active");
       $(".ml_dg_anchor1_wrap").removeClass("active");
       $(".ml_dg_antag1_wrap").removeClass("active");
+      $(".ml_content_container1").removeClass("active");
       $(".ml_dg_anchor2_wrap").removeClass("active");
       $(".ml_dg_antag2_wrap").removeClass("active");
+      $(".ml_content_container2").removeClass("active");
     }
   });
 
