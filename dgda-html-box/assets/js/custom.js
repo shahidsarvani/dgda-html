@@ -189,6 +189,87 @@ function move_start_basementfloors_right() {
   });
 }
 
+function move_videowalls_left() {
+  gsap.to(".dg_rs_screen", {
+    opacity: 0,
+    x: -6000,
+    duration: 2
+  });
+  gsap.to(".dg_afrs_screen", {
+    opacity: 0,
+    x: -3000,
+    duration: 2
+  });
+  gsap.to(".ml_lights_screen", {
+    opacity: 0,
+    x: 3000,
+    duration: 2
+  });
+  gsap.to(".dg_sm_screen", {
+    opacity: 0,
+    x: 3000,
+    duration: 2
+  });
+  gsap.to(".dg_bf_screen", {
+    opacity: 0,
+    x: 3000,
+    duration: 2
+  });
+  gsap.fromTo(".dg_vwalls_screen", {
+    opacity: 0,
+    x: 3000,
+    duration: 2,
+    visibility: 'hidden',
+  }, {
+    opacity: 1,
+    x: 0,
+    duration: 2,
+    visibility: 'visible',
+  });
+}
+function move_showmodel_left() {
+  gsap.to(".dg_rs_screen", {
+    opacity: 0,
+    x: -6000,
+    duration: 2
+  });
+  gsap.to(".dg_afrs_screen", {
+    opacity: 1,
+    x: 0,
+    duration: 2
+  });
+  gsap.fromTo(".dg_vwalls_screen", {
+    opacity: 1,
+    x: 0,
+    duration: 2,
+  }, {
+    opacity: 0,
+    x: 3000,
+    duration: 2,
+  });
+}
+function move_vwalls_right() {
+  gsap.to(".dg_rs_screen", {
+    opacity: 0,
+    x: -6000,
+    duration: 2
+  });
+  gsap.to(".dg_afrs_screen", {
+    opacity: 1,
+    x: 0,
+    duration: 2
+  });
+  gsap.fromTo(".dg_vwalls_screen", {
+    opacity: 1,
+    x: 0,
+    duration: 2,
+  }, {
+    opacity: 0,
+    x: 3000,
+    duration: 2,
+  });
+}
+
 $(document).ready(function () {
 
 
@@ -271,6 +352,47 @@ $(document).ready(function () {
       $(".ml_dg_anchor2_wrap").removeClass("active");
       $(".ml_dg_antag2_wrap").removeClass("active");
       $(".ml_content_container2").removeClass("active");
+    }
+  });
+
+  $(".dg_ft_nav_item1 a").click(function () {
+    if ($(".dg_ft_nav_item1").hasClass("active")) {
+      $(".dg_ft_nav_item1").removeClass("active");
+    } else {
+      $(".dg_ft_nav_item1").addClass("active");
+      $(".dg_ft_nav_item2").removeClass("active");
+      $(".dg_ft_nav_item3").removeClass("active");
+      $(".dg_ft_nav_item4").removeClass("active");
+    }
+  });
+  $(".dg_ft_nav_item2 a").click(function () {
+    if ($(".dg_ft_nav_item2").hasClass("active")) {
+      $(".dg_ft_nav_item2").removeClass("active");
+    } else {
+      $(".dg_ft_nav_item2").addClass("active");
+      $(".dg_ft_nav_item1").removeClass("active");
+      $(".dg_ft_nav_item3").removeClass("active");
+      $(".dg_ft_nav_item4").removeClass("active");
+    }
+  });
+  $(".dg_ft_nav_item3 a").click(function () {
+    if ($(".dg_ft_nav_item3").hasClass("active")) {
+      $(".dg_ft_nav_item3").removeClass("active");
+    } else {
+      $(".dg_ft_nav_item3").addClass("active");
+      $(".dg_ft_nav_item1").removeClass("active");
+      $(".dg_ft_nav_item2").removeClass("active");
+      $(".dg_ft_nav_item4").removeClass("active");
+    }
+  });
+  $(".dg_ft_nav_item4 a").click(function () {
+    if ($(".dg_ft_nav_item4").hasClass("active")) {
+      $(".dg_ft_nav_item4").removeClass("active");
+    } else {
+      $(".dg_ft_nav_item4").addClass("active");
+      $(".dg_ft_nav_item1").removeClass("active");
+      $(".dg_ft_nav_item2").removeClass("active");
+      $(".dg_ft_nav_item3").removeClass("active");
     }
   });
 
