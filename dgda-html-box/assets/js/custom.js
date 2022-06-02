@@ -17,6 +17,10 @@ function splash_video_fade() {
     delay: 4,
     transform: 'translate(0%, 0%)'
   });
+  gsap.to("#header", {
+    position: 'relative',
+    delay: 5,
+  });
   gsap.from(".dg_rs_screen", {
     opacity: 1,
     x: 3000,
