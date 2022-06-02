@@ -203,34 +203,14 @@ function move_showmodelactive_left() {
   });
 }
 function move_videowallsactive_left() {
-  gsap.to(".dg_rs_screen", {
-    opacity: 0,
-    x: -6000,
-    duration: 2
-  });
   gsap.to(".dg_lights_screen", {
-    opacity: 1,
+    opacity: 0,
     x: -3000,
     duration: 2
   });
   gsap.to(".dg_afrs_screen", {
     opacity: 0,
     x: -3000,
-    duration: 2
-  });
-  gsap.to(".ml_lights_screen", {
-    opacity: 0,
-    x: 3000,
-    duration: 2
-  });
-  gsap.to(".dg_sm_screen", {
-    opacity: 0,
-    x: 3000,
-    duration: 2
-  });
-  gsap.to(".dg_bf_screen", {
-    opacity: 0,
-    x: 3000,
     duration: 2
   });
   gsap.fromTo(".dg_vwalls_screen", {
@@ -246,39 +226,16 @@ function move_videowallsactive_left() {
   });
 }
 function move_vwalls_right() {
-  gsap.to(".dg_rs_screen", {
-    opacity: 0,
-    x: -6000,
-    duration: 2
-  });
-  gsap.to(".dg_afrs_screen", {
-    opacity: 1,
-    x: 0,
-    duration: 2
-  });
-  gsap.fromTo(".dg_vwalls_screen", {
-    opacity: 1,
-    x: 0,
-    duration: 2,
-  }, {
-    opacity: 0,
-    x: 3000,
-    duration: 2,
-  });
+  
 }
 
 function move_lightsactive_left() {
-  gsap.to(".dg_rs_screen", {
-    opacity: 0,
-    x: -6000,
-    duration: 2
-  });
-  gsap.to(".dg_afrs_screen", {
+  gsap.to(".dg_vwalls_screen", {
     opacity: 0,
     x: -3000,
     duration: 2
   });
-  gsap.to(".dg_vwalls_screen", {
+  gsap.to(".dg_afrs_screen", {
     opacity: 0,
     x: -3000,
     duration: 2
