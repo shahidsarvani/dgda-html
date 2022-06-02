@@ -4,23 +4,24 @@ function splash_video_fade() {
     duration: 1
   });
   gsap.to(".logo_diriyah", {
-    padding: '120px',
+    padding: '105px 0 0px 90px',
     top: '0',
-    left: '50%',
-    width: '50%',
+    width: '100%',
     duration: 2,
-    delay: 1
+    delay: 2,
+    transform: 'translate(-50%, 0%)'
   })
   gsap.to(".logo_diriyah", {
     left: '0',
     duration: 2,
-    delay: 3
+    delay: 4,
+    transform: 'translate(0%, 0%)'
   });
   gsap.from(".dg_rs_screen", {
     opacity: 1,
     x: 3000,
     duration: 2,
-    delay: 2
+    delay: 4
   });
 
 }
@@ -204,31 +205,58 @@ function move_start_basementfloors_right() {
 
 function move_showmodelactive(elem) {
   var nextSibling = $(elem).parent().next();
-  nextSibling.attr('data-fromdir', 'right')
-  gsap.to(".dg_rs_screen", {
-    opacity: 0,
-    x: -6000,
-    duration: 2
-  });
-  gsap.to(".dg_afrs_screen", {
-    opacity: 1,
-    x: 0,
-    duration: 2
-  });
-  gsap.to(".dg_lights_screen", {
-    opacity: 1,
-    x: 3000,
-    duration: 2
-  });
-  gsap.fromTo(".dg_vwalls_screen", {
-    opacity: 1,
-    x: 0,
-    duration: 2,
-  }, {
-    opacity: 0,
-    x: 3000,
-    duration: 2,
-  });
+  nextSibling.attr('data-fromdir', 'right');
+  var fromDir = elem.getAttribute('data-fromDir');
+  if(fromDir == 'right') {
+    gsap.to(".dg_rs_screen", {
+      opacity: 0,
+      x: -6000,
+      duration: 2
+    });
+    gsap.to(".dg_afrs_screen", {
+      opacity: 1,
+      x: 0,
+      duration: 2
+    });
+    gsap.to(".dg_lights_screen", {
+      opacity: 1,
+      x: 3000,
+      duration: 2
+    });
+    gsap.fromTo(".dg_vwalls_screen", {
+      opacity: 1,
+      x: 0,
+      duration: 2,
+    }, {
+      opacity: 0,
+      x: 3000,
+      duration: 2,
+    });
+  } else {
+    gsap.fromTo(".dg_afrs_screen", {
+      opacity: 0,
+      x: 3000,
+      duration: 2,
+    }, {
+      opacity: 1,
+      x: 0,
+      duration: 2,
+    });
+    gsap.to(".dg_lights_screen", {
+      opacity: 0,
+      x: -3000,
+      duration: 2
+    });
+    gsap.fromTo(".dg_vwalls_screen", {
+      opacity: 1,
+      x: 0,
+      duration: 2,
+    }, {
+      opacity: 0,
+      x: -3000,
+      duration: 2,
+    });
+  }
 }
 function move_videowallsactive(elem) {
   var fromDir = elem.getAttribute('data-fromDir');
@@ -254,6 +282,21 @@ function move_videowallsactive(elem) {
       x: 0,
       duration: 2,
       visibility: 'visible',
+    });
+    gsap.to(".dg_sm_screen", {
+      opacity: 0,
+      x: -3000,
+      duration: 2
+    });
+    gsap.to(".ml_lights_screen", {
+      opacity: 0,
+      x: -3000,
+      duration: 2
+    });
+    gsap.to(".dg_bf_screen", {
+      opacity: 0,
+      x: -3000,
+      duration: 2
     });
   } else {
     gsap.to(".dg_lights_screen", {
@@ -284,8 +327,9 @@ function move_vwalls_right() {
 }
 
 function move_lightsactive(elem) {
-  var prevSibling = $(elem).parent().prev();
-  prevSibling.attr('data-fromdir', 'left')
+  var prevSibling = $(elem).parent().siblings();
+  console.log(prevSibling);
+  //prevSibling.attr('data-fromdir', 'left')
   gsap.to(".dg_vwalls_screen", {
     opacity: 0,
     x: -3000,
@@ -306,6 +350,21 @@ function move_lightsactive(elem) {
     x: 0,
     duration: 2,
     visibility: 'visible',
+  });
+  gsap.to(".dg_sm_screen", {
+    opacity: 0,
+    x: -3000,
+    duration: 2
+  });
+  gsap.to(".ml_lights_screen", {
+    opacity: 0,
+    x: -3000,
+    duration: 2
+  });
+  gsap.to(".dg_bf_screen", {
+    opacity: 0,
+    x: -3000,
+    duration: 2
   });
 }
 

@@ -133,7 +133,10 @@ section {
 .load_log_col .logo_diriyah {
   top: 50%;
   left: 50%;
+  width: 100%;
   position: absolute;
+  max-width: 754px;
+  transform: translate(-50%, -50%);
 }
 
 /* .load_log_col .logo_diriyah {
