@@ -102,10 +102,15 @@ section{
   position: relative;
   animation-name: logowraptransition;
   animation-duration: 2s;
+  animation-delay: 2s;
 }
 .load_log_col .logo_diriyah{
   left:40%; 
   top:39%;
+}
+.load_log_col .logo_diriyah{
+  opacity: 0;
+  visibility: hidden;
 }
 .load_log_col .logo_diriyah.startanim{
   position: relative;
@@ -114,6 +119,9 @@ section{
   /* animation-delay: 0.2s; */
   left:0%; 
   top:0%;
+  animation-delay: 2s;
+  opacity: 1;
+    visibility: visible;
 }
 /* .dg_rs_row.firstsecanimOut{
   left: -100%; 
