@@ -68,7 +68,7 @@
                             <source src="movie.ogg" type="video/ogg">
                             Your browser does not support the video tag.
                         </video>
-                        <div id="main_video_btn" class="main_video_btn">
+                        <div id="main_video_btn" class="main_video_btn" onclick="splash_video_fade();">
                             <a id="video_start_btn" href="#">TAP TO START</a>
                         </div>
                         <!-- <a id="main_video_btn" href="#">TAP TO START</a> -->
@@ -559,7 +559,7 @@
                     <div class="dg_ft_nav">
                         <ul class="dg_ft_nav_list">
                             <li class="dg_ft_nav_item dg_ft_nav_item1 active">
-                                <a href="#" onclick="move_showmodelactive_left()">
+                                <a href="#" onclick="move_showmodelactive(this)" data-fromDir="left">
                                     <div class="dg_ft_nav_img">
                                         <img src="./assets/images/model.svg" alt="Model">
                                     </div>
@@ -569,7 +569,7 @@
                                 </a>
                             </li>
                             <li class="dg_ft_nav_item dg_ft_nav_item2">
-                                <a href="#" onclick="move_videowallsactive_left()">
+                                <a href="#" onclick="move_videowallsactive(this)" data-fromDir="right">
                                     <div class="dg_ft_nav_img">
                                         <img src="./assets/images/play.svg" alt="VIDEO WALLS">
                                     </div>
@@ -579,7 +579,7 @@
                                 </a>
                             </li>
                             <li class="dg_ft_nav_item dg_ft_nav_item3">
-                                <a href="#" onclick="move_lightsactive_left()">
+                                <a href="#" onclick="move_lightsactive(this)" data-fromDir="right">
                                     <div class="dg_ft_nav_img">
                                         <img src="./assets/images/lighting.svg" alt="LIGHTS">
                                     </div>
