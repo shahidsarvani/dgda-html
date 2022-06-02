@@ -205,58 +205,59 @@ function move_start_basementfloors_right() {
 
 function move_showmodelactive(elem) {
   var nextSibling = $(elem).parent().next();
-  nextSibling.attr('data-fromdir', 'right');
-  var fromDir = elem.getAttribute('data-fromDir');
-  if(fromDir == 'right') {
+  $(nextSibling).find('a').attr('data-fromdir', 'right');
+  // var fromDir = elem.getAttribute('data-fromDir');
+  // console.log(fromDir)
+  // if(fromDir == 'right') {
     gsap.to(".dg_rs_screen", {
       opacity: 0,
-      x: -6000,
+      x: 3000,
       duration: 2
     });
-    gsap.to(".dg_afrs_screen", {
-      opacity: 1,
-      x: 0,
+    gsap.to(".dg_vwalls_screen", {
+      opacity: 0,
+      x: 3000,
       duration: 2
     });
     gsap.to(".dg_lights_screen", {
-      opacity: 1,
+      opacity: 0,
       x: 3000,
       duration: 2
     });
-    gsap.fromTo(".dg_vwalls_screen", {
-      opacity: 1,
-      x: 0,
-      duration: 2,
-    }, {
-      opacity: 0,
-      x: 3000,
-      duration: 2,
-    });
-  } else {
     gsap.fromTo(".dg_afrs_screen", {
       opacity: 0,
-      x: 3000,
+      x: -3000,
       duration: 2,
     }, {
       opacity: 1,
       x: 0,
       duration: 2,
     });
-    gsap.to(".dg_lights_screen", {
-      opacity: 0,
-      x: -3000,
-      duration: 2
-    });
-    gsap.fromTo(".dg_vwalls_screen", {
-      opacity: 1,
-      x: 0,
-      duration: 2,
-    }, {
-      opacity: 0,
-      x: -3000,
-      duration: 2,
-    });
-  }
+  // } else {
+  //   gsap.fromTo(".dg_afrs_screen", {
+  //     opacity: 0,
+  //     x: 3000,
+  //     duration: 2,
+  //   }, {
+  //     opacity: 1,
+  //     x: 0,
+  //     duration: 2,
+  //   });
+  //   gsap.to(".dg_lights_screen", {
+  //     opacity: 0,
+  //     x: -3000,
+  //     duration: 2
+  //   });
+  //   gsap.fromTo(".dg_vwalls_screen", {
+  //     opacity: 1,
+  //     x: 0,
+  //     duration: 2,
+  //   }, {
+  //     opacity: 0,
+  //     x: -3000,
+  //     duration: 2,
+  //   });
+  // }
 }
 function move_videowallsactive(elem) {
   var fromDir = elem.getAttribute('data-fromDir');
@@ -301,7 +302,7 @@ function move_videowallsactive(elem) {
   } else {
     gsap.to(".dg_lights_screen", {
       opacity: 0,
-      x: -3000,
+      x: 3000,
       duration: 2
     });
     gsap.to(".dg_afrs_screen", {
@@ -311,7 +312,7 @@ function move_videowallsactive(elem) {
     });
     gsap.fromTo(".dg_vwalls_screen", {
       opacity: 0,
-      x: 3000,
+      x: -3000,
       duration: 2,
       visibility: 'hidden',
     }, {
@@ -327,9 +328,9 @@ function move_vwalls_right() {
 }
 
 function move_lightsactive(elem) {
-  var prevSibling = $(elem).parent().siblings();
-  console.log(prevSibling);
-  //prevSibling.attr('data-fromdir', 'left')
+  var prevSibling = $(elem).parent().prev();
+  // console.log(prevSibling);
+  $(prevSibling).find('a').attr('data-fromdir', 'left')
   gsap.to(".dg_vwalls_screen", {
     opacity: 0,
     x: -3000,
