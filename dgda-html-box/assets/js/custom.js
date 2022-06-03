@@ -4,7 +4,7 @@ function splash_video_fade() {
     duration: 1
   });
   gsap.to(".logo_diriyah", {
-    padding: '105px 0 0px 90px',
+    padding: '118px 0 0px 120px',
     top: '0',
     width: '100%',
     duration: 2,

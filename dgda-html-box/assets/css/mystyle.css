@@ -43,6 +43,7 @@ html {
 
 body {
   background-color: rgba(235, 206, 166, 0.5);
+  overflow: hidden;
 }
 
 a {
@@ -61,6 +62,16 @@ section {
   width: 100%;
   height: 100%;
 }
+
+/*/////////////////////////Screens Comperisons//////////////////////////////*/
+.compare_img{
+  opacity: 0.3;
+  position: absolute;
+  margin-top: 0px;
+  left: 0;
+}
+
+
 
 #dg_afrs_screen,
 .header-menu-elements,
@@ -104,7 +115,7 @@ section {
 }
 
 .dg_lights_content_wrap h3 {
-  font-size: 70px;
+  font-size: 55px;
   color: #c87e59;
 }
 
@@ -135,7 +146,7 @@ section {
   left: 50%;
   width: 100%;
   position: absolute;
-  max-width: 754px;
+  max-width: 720px;
   transform: translate(-50%, -50%);
 }
 
@@ -234,7 +245,9 @@ section {
 .dg_rs_screen {
   /* padding-top: 120px; */
 }
-
+.dg_afrs_row{
+  margin-top: 150px;
+}
 #dg_rs_screen .logo_diriyah img {
   max-width: 640px;
 }
@@ -269,7 +282,7 @@ section {
   width: 20px;
   height: 20px;
   bottom: -20px;
-  left: 46%;
+  left: 42%;
   border-radius: 100%;
 }
 
@@ -279,8 +292,8 @@ section {
 .container-sm,
 .container-xl {
   max-width: 100% !important;
-  padding-left: 90px;
-  padding-right: 90px;
+  padding-left: 117px;
+  padding-right: 117px;
 }
 
 .head_separator_col {
@@ -291,20 +304,22 @@ section {
 
 .head_separator {
   background-color: #003741;
-  height: 4.3628px;
+  height: 6.3628px;
   width: 100%;
 }
 
 .nav-link {
-  font-size: 48px;
+  font-size: 36px;
   color: #C87E59;
-  background-color: rgb(204 102 102 / 20%);
   padding: 4px 3px !important;
   margin: 0 5px;
 }
+.nav-link.active1{
+  background-color: rgb(204 102 102 / 20%);
+}
 
 .header_inner {
-  padding: 120px 0 30px;
+  padding: 140px 0 30px;
 }
 
 .dg_ft_nav_list {
@@ -338,7 +353,7 @@ section {
 .dg_ft_nav_item .dg_ft_nav_link h3 {
   color: #003741;
   font-size: 38.6px;
-  background-color: rgb(204 102 102 / 20%);
+  /* background-color: rgb(204 102 102 / 20%); */
   padding: 4px 3px !important;
   margin: 0 5px;
 }
@@ -386,7 +401,10 @@ section {
 }
 
 .navbar-expand-sm .navbar-collapse.nav_cp_dp .navbar-nav {
-  justify-content: space-between;
+  justify-content: flex-start;
+}
+.navbar-expand-sm .navbar-collapse.nav_cp_dp .navbar-nav .nav-item:first-child{
+  margin-right: 166px;
 }
 
 /*/////////////////*/
@@ -400,12 +418,12 @@ section {
 }
 
 .head_separator_col {
-  width: 44%;
-  padding: 0 70px;
+  width: 48%;
+  padding: 0 35px;
 }
 
 .nav_col_1 {
-  width: 31%;
+  width: 25%;
 }
 
 /*///////////////////////VIDEO SCREEN/////////////////////*/
@@ -413,8 +431,12 @@ section {
 .dg_wvideo_screen .dg_ft_cont {
   display: none;
 }
-
-
+.dg_vwalls_row .sm_video_track_wrap{
+  margin-top: 128px !important;
+}
+.dg_vwalls_row .sm_video_controls{
+  margin-top: 53px !important;
+}
 
 /*//////////////////////ROOM SELECTION SCREEN///////////////////////*/
 .dg_room_selection_screen .dg_ft_cont {
@@ -433,11 +455,11 @@ section {
   max-width: 695px;
   height: 1120px;
   object-fit: cover;
-  margin-bottom: 65px;
+  margin-bottom: 60px;
 }
 
 .dg_rs_wrap h3 {
-  font-size: 70px;
+  font-size: 55px;
   color: #C87E59;
 }
 
@@ -448,13 +470,22 @@ section {
 }
 
 .dg_rs_row {
-  max-width: 1670px;
-  margin: 100px auto;
+  max-width: 1920px;
+  margin: 90px auto;
 }
 
 
 
 /*/////////////////////////////AFTER ROOM SELECTION SCREEN///////////////////////////////*/
+.dg_afrs_col1_h{
+  margin-left: -165px;
+}
+.dg_afrs_col2_h{
+  margin-left: -70px;
+}
+.dg_afrs_col3_h{
+  margin-left: 50px;
+}
 .dg_afrs_screen {
   /* height: calc(100vh - 250px); */
   text-align: center;
@@ -464,7 +495,7 @@ section {
 }
 
 .dg_afrs_screen h3 {
-  font-size: 70px;
+  font-size: 55px;
   color: #C87E59;
 }
 
@@ -475,15 +506,20 @@ section {
 
 
 /*////////////////////////////////MODEL SHOW SCREEN///////////////////////////////////*/
+
+.dg_sm_screen_cont{
+  padding-left: 117px;
+  padding-right: 117px;
+}
 .dg_sm_screen {
   padding-bottom: 143px;
 }
 
 .breadcrumbs {
   color: #003741;
-  font-size: 70px;
-  margin-top: 78px;
-  margin-bottom: 50px;
+  font-size: 55px;
+  margin-top: 50px;
+  margin-bottom: 36px;
 }
 
 .sm_video_track_wrap {
@@ -512,8 +548,8 @@ section {
 
 .sm_video_timers {
   position: relative;
-  margin-top: 50px;
-  font-size: 54px;
+  margin-top: 45px;
+  font-size: 36px;
 }
 
 span.sm_video_end_timer {
@@ -530,8 +566,21 @@ span.sm_video_start_timer {
   height: 36.5px;
 }
 
+.sm_vc_lowvol_item img{
+  width: 60px !important;
+  height: 60px !important;
+}
+.sm_vc_heighvol_item img{
+  width: 70px !important;
+  height: 70px !important;
+}
+.sm_vc_mute_item img{
+  width: 65px !important;
+  height: 65px !important;
+}
+
 .sm_video_controls {
-  margin-top: 100px;
+  margin-top: 127px;
   margin-bottom: 143px;
 }
 
@@ -540,7 +589,7 @@ span.sm_video_start_timer {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  max-width: 1160px;
+  max-width: 1545px;
   margin: 0 auto;
 }
 
@@ -574,7 +623,7 @@ span.sm_video_start_timer {
   display: flex;
   justify-content: space-between;
   max-width: 350px;
-  margin-right: 80px;
+  margin-right: 45px;
   transition: all 0.3s;
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
@@ -607,12 +656,12 @@ span.sm_video_start_timer {
 }
 
 .ml_image_wrap h3 {
-  font-size: 70px;
+  font-size: 55px;
   color: #C87E59;
 }
 
 .ml_image_wrap img {
-  margin-bottom: 50px;
+  margin-bottom: 37px;
   max-width: 350px;
   height: 1014px;
   object-fit: cover;
@@ -636,11 +685,13 @@ span.sm_video_start_timer {
 }
 
 .ml_dg_list a {
-  font-size: 45.5px;
+  font-size: 36px;
   color: #003741;
   text-decoration: none;
 }
-
+.ml_dg_list_item{
+  margin-bottom: 35px;
+}
 
 
 
@@ -664,10 +715,11 @@ span.sm_video_start_timer {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  margin-top: 20px;
 }
 
 .dg_bf_list a {
-  font-size: 70px;
+  font-size: 55px;
   color: #C87E59;
   text-decoration: none;
 }
@@ -681,7 +733,7 @@ span.sm_video_start_timer {
 }
 
 .dg_media_list_wrap h2 {
-  font-size: 70px;
+  font-size: 55px;
   color: #003741;
   margin-bottom: 70px;
 }
@@ -689,7 +741,7 @@ span.sm_video_start_timer {
 .dg_media_list {
   list-style: none;
   padding: 0 !important;
-  max-height: 540px;
+  max-height: 430px;
   overflow-y: scroll;
   overflow-x: hidden;
 }
@@ -708,5 +760,11 @@ span.sm_video_start_timer {
 }
 
 .dg_vwalls_screen .sm_video_controls {
-  margin-bottom: 100px;
+  margin-bottom: 50px;
+}
+.dg_vwalls_screen .dg_media_list li h3{
+  font-size: 36px !important;
+}
+.dg_vwalls_screen .dg_media_list li{
+  margin-bottom: 50px !important;
 }
