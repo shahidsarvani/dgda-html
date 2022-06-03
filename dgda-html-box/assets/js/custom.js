@@ -380,7 +380,10 @@ function move_lightsactive(elem) {
 
 
 $(document).ready(function () {
-
+  $("#diriyah-room").click(function (e) {
+      e.preventDefault();
+      $(".navbar-nav .nav-item:first-child").addClass('active');
+    });
 
   // $("#main_video_btn").click(function (e) {
   //   e.preventDefault();
