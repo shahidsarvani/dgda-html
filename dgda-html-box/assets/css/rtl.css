@@ -17,3 +17,26 @@ body,
 html, div, h1, h2, h3, h4, h5, h6, p, span {
   font-family: "Kermes3-SemiBold" !important;
 }
+[lang="ar"] body {
+    direction:rtl;
+}
+[lang="ar"] .load_log_col .logo_diriyah{
+    left: unset !important;
+    right: 50%;
+    transform: translate(50%, 50%);
+}
+[lang="ar"] .navbar-expand-sm .navbar-collapse.nav_cp_dp .navbar-nav .nav-item:first-child {
+    margin-right: 0px;
+    margin-left: 166px;
+}
+[lang="ar"] span.sm_video_end_timer{
+    float: left !important;
+}
+[lang="ar"] .ml_list_wrap.active{
+    margin-left: unset !important;
+    margin-right: 0 !important;
+}
+[lang="ar"] .ml_list_wrap{
+    margin-left: unset !important;
+    margin-right: -350px;
+}
