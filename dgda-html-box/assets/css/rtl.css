@@ -1,0 +1,19 @@
+@font-face {
+    font-family: "Kermes3-SemiBold";
+    font-style: normal;
+    font-weight: normal;
+    src: local("Kermes3-SemiBold"), url("../fonts/kermes3/Kermes3-SemiBold.ttf") format("ttf");
+  }
+  
+  @font-face {
+    font-family: "Kermes3-SemiBold";
+    font-style: normal;
+    font-weight: normal;
+    src: local("Kermes3-SemiBold"), url("../fonts/kermes3/woff/Kermes3-SemiBold.woff") format("woff");
+  }
+
+
+body,
+html, div, h1, h2, h3, h4, h5, h6, p, span {
+  font-family: "Kermes3-SemiBold" !important;
+}
