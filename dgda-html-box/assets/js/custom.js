@@ -68,7 +68,6 @@ function move_left() {
     duration: 1,
     visibility: 'visible',
   });
-
   gsap.fromTo(".header-menu-elements", {
     opacity: 0,
     x: 3000,
@@ -79,6 +78,40 @@ function move_left() {
     x: 0,
     duration: 1,
     visibility: 'visible',
+  });
+
+  ///////////////////arabic animations///////////////////////
+  gsap.to(".home_ar .dg_rs_screen", {
+    opacity: 0,
+    x: 3000,
+    duration: 1
+  });
+  gsap.fromTo(".home_ar .dg_afrs_screen", {
+    opacity: 0,
+    x: -3000,
+    duration: 1,
+    visibility: 'hidden',
+  }, {
+    opacity: 1,
+    x: 0,
+    duration: 1,
+    visibility: 'visible',
+  });
+  gsap.fromTo(".home_ar .header-menu-elements", {
+    opacity: 0,
+    x: -3000,
+    duration: 1,
+    visibility: 'hidden',
+  }, {
+    opacity: 1,
+    x: 0,
+    duration: 1,
+    visibility: 'visible',
+  });
+  gsap.to(".home_ar .dg_rs_screen", {
+    opacity: 0,
+    x: 3000,
+    duration: 1
   });
   gsap.to(".dg_ft_cont", {
     bottom: 0,
@@ -107,6 +140,30 @@ function move_startshow_left() {
     duration: 1,
     visibility: 'visible',
   });
+
+  ///////////////////arabic animations///////////////////////
+  gsap.to(".home_ar .dg_rs_screen", {
+    opacity: 0,
+    x: 6000,
+    duration: 1
+  });
+  gsap.to(".home_ar .dg_afrs_screen", {
+    opacity: 0,
+    x: 3000,
+    duration: 1
+  });
+  gsap.fromTo(".home_ar .dg_sm_screen", {
+    opacity: 0,
+    x: -3000,
+    duration: 1,
+    visibility: 'hidden',
+  }, {
+    opacity: 1,
+    x: 0,
+    duration: 1,
+    visibility: 'visible',
+  });
+
 }
 function move_startshow_right() {
   gsap.to(".dg_rs_screen", {
@@ -131,6 +188,31 @@ function move_startshow_right() {
     duration: 1,
     visibility: 'visible',
   });
+
+  ///////////////////arabic animations///////////////////////
+  gsap.to(".home_ar .dg_rs_screen", {
+    opacity: 0,
+    x: 3000,
+    duration: 1
+  });
+  gsap.to(".home_ar .dg_afrs_screen", {
+    opacity: 1,
+    x: 0,
+    duration: 1,
+    visibility: 'visible',
+  });
+  gsap.fromTo(".home_ar .dg_sm_screen", {
+    opacity: 1,
+    x: 0,
+    duration: 1,
+    visibility: 'hidden',
+  }, {
+    opacity: 0,
+    x: -3000,
+    duration: 1,
+    visibility: 'visible',
+  });
+
 }
 
 function move_start_modellights_left() {
@@ -155,6 +237,30 @@ function move_start_modellights_left() {
     duration: 1,
     visibility: 'visible',
   });
+
+  ///////////////////arabic animations///////////////////////
+  gsap.to(".home_ar .dg_rs_screen", {
+    opacity: 0,
+    x: 6000,
+    duration: 1
+  });
+  gsap.to(".home_ar .dg_afrs_screen", {
+    opacity: 0,
+    x: 3000,
+    duration: 1
+  });
+  gsap.fromTo(".home_ar .ml_lights_screen", {
+    opacity: 0,
+    x: -3000,
+    duration: 1,
+    visibility: 'hidden',
+  }, {
+    opacity: 1,
+    x: 0,
+    duration: 1,
+    visibility: 'visible',
+  });
+
 }
 function move_start_modellights_right() {
   gsap.to(".dg_rs_screen", {
@@ -179,6 +285,31 @@ function move_start_modellights_right() {
     duration: 1,
     visibility: 'visible',
   });
+
+  ///////////////////arabic animations///////////////////////
+  gsap.to(".home_ar .dg_rs_screen", {
+    opacity: 0,
+    x: 3000,
+    duration: 1
+  });
+  gsap.to(".home_ar .dg_afrs_screen", {
+    opacity: 1,
+    x: 0,
+    duration: 1,
+    visibility: 'visible',
+  });
+  gsap.fromTo(".home_ar .ml_lights_screen", {
+    opacity: 1,
+    x: 0,
+    duration: 1,
+    visibility: 'hidden',
+  }, {
+    opacity: 0,
+    x: -3000,
+    duration: 1,
+    visibility: 'visible',
+  });
+
 }
 
 function move_start_basementfloors_left() {
@@ -203,6 +334,30 @@ function move_start_basementfloors_left() {
     duration: 1,
     visibility: 'visible',
   });
+
+  ///////////////////arabic animations///////////////////////
+  gsap.to(".home_ar .dg_rs_screen", {
+    opacity: 0,
+    x: 6000,
+    duration: 1
+  });
+  gsap.to(".home_ar .dg_afrs_screen", {
+    opacity: 0,
+    x: 3000,
+    duration: 1
+  });
+  gsap.fromTo(".home_ar .dg_bf_screen", {
+    opacity: 0,
+    x: -3000,
+    duration: 1,
+    visibility: 'hidden',
+  }, {
+    opacity: 1,
+    x: 0,
+    duration: 1,
+    visibility: 'visible',
+  });
+
 }
 function move_start_basementfloors_right() {
   gsap.to(".dg_rs_screen", {
@@ -227,6 +382,31 @@ function move_start_basementfloors_right() {
     duration: 1,
     visibility: 'visible',
   });
+
+  ///////////////////arabic animations///////////////////////
+  gsap.to(".home_ar .dg_rs_screen", {
+    opacity: 0,
+    x: 3000,
+    duration: 1
+  });
+  gsap.to(".home_ar .dg_afrs_screen", {
+    opacity: 1,
+    x: 0,
+    duration: 1,
+    visibility: 'visible',
+  });
+  gsap.fromTo(".home_ar .dg_bf_screen", {
+    opacity: 1,
+    x: 0,
+    duration: 1,
+    visibility: 'hidden',
+  }, {
+    opacity: 0,
+    x: -3000,
+    duration: 1,
+    visibility: 'visible',
+  });
+
 }
 
 function move_showmodelactive(elem) {
