@@ -22,7 +22,7 @@ html, div, h1, h2, h3, h4, h5, h6, p, span {
 }
 [lang="ar"] .load_log_col .logo_diriyah{
     left: unset !important;
-    right: 50%;
+    right: 45%;
     transform: translate(50%, 50%);
 }
 [lang="ar"] .navbar-expand-sm .navbar-collapse.nav_cp_dp .navbar-nav .nav-item:first-child {
@@ -39,4 +39,7 @@ html, div, h1, h2, h3, h4, h5, h6, p, span {
 [lang="ar"] .ml_list_wrap{
     margin-left: unset !important;
     margin-right: -350px;
+}
+[lang="ar"]  .load_log_col .logo_diriyah{
+    margin-top: -45px;
 }

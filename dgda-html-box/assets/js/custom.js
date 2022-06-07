@@ -1,11 +1,11 @@
 function splash_video_fade() {
-  setTimeout(function() {
-    document.addEventListener("click", handler, true);
-  }, 4000)
-  function handler(e) {
-    e.stopPropagation();
-    e.preventDefault();
-  }
+  // setTimeout(function() {
+  //   document.addEventListener("click", handler, true);
+  // }, 4000)
+  // function handler(e) {
+  //   e.stopPropagation();
+  //   e.preventDefault();
+  // }
   gsap.to(".dg_vw_screen", {
     display: 'none',
     duration: 1
@@ -17,9 +17,24 @@ function splash_video_fade() {
     duration: 1,
     delay: 1,
     transform: 'translate(-50%, 0%)'
-  })
+  });
   gsap.to(".logo_diriyah", {
     left: '0',
+    duration: 1,
+    delay: 2,
+    transform: 'translate(0%, 0%)'
+  });
+  gsap.to(".home_ar .logo_diriyah", {
+    padding: '118px 120px 0px 0px',
+    top: '0',
+    width: '100%',
+    duration: 1,
+    delay: 1,
+    transform: 'translate(50%, 0%)'
+  });
+  gsap.to(".home_ar .logo_diriyah", {
+    left: 'unset',
+    right: '0',
     duration: 1,
     delay: 2,
     transform: 'translate(0%, 0%)'
