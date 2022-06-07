@@ -7,25 +7,25 @@ function splash_video_fade() {
     padding: '118px 0 0px 120px',
     top: '0',
     width: '100%',
-    duration: 2,
-    delay: 2,
+    duration: 1,
+    delay: 1,
     transform: 'translate(-50%, 0%)'
   })
   gsap.to(".logo_diriyah", {
     left: '0',
-    duration: 2,
-    delay: 4,
+    duration: 1,
+    delay: 2,
     transform: 'translate(0%, 0%)'
   });
   gsap.to("#header", {
     position: 'relative',
-    delay: 5,
+    delay: 3,
   });
   gsap.from(".dg_rs_screen", {
     opacity: 1,
     x: 3000,
-    duration: 2,
-    delay: 4
+    duration: 1,
+    delay: 2
   });
 
 }
@@ -33,29 +33,29 @@ function move_left() {
   gsap.to(".dg_rs_screen", {
     opacity: 0,
     x: -3000,
-    duration: 2
+    duration: 1
   });
   gsap.fromTo(".dg_afrs_screen", {
     opacity: 0,
     x: 3000,
-    duration: 2,
+    duration: 1,
     visibility: 'hidden',
   }, {
     opacity: 1,
     x: 0,
-    duration: 2,
+    duration: 1,
     visibility: 'visible',
   });
 
   gsap.fromTo(".header-menu-elements", {
     opacity: 0,
     x: 3000,
-    duration: 2,
+    duration: 1,
     visibility: 'hidden',
   }, {
     opacity: 1,
     x: 0,
-    duration: 2,
+    duration: 1,
     visibility: 'visible',
   });
   gsap.to(".dg_ft_cont", {
@@ -67,22 +67,22 @@ function move_startshow_left() {
   gsap.to(".dg_rs_screen", {
     opacity: 0,
     x: -6000,
-    duration: 2
+    duration: 1
   });
   gsap.to(".dg_afrs_screen", {
     opacity: 0,
     x: -3000,
-    duration: 2
+    duration: 1
   });
   gsap.fromTo(".dg_sm_screen", {
     opacity: 0,
     x: 3000,
-    duration: 2,
+    duration: 1,
     visibility: 'hidden',
   }, {
     opacity: 1,
     x: 0,
-    duration: 2,
+    duration: 1,
     visibility: 'visible',
   });
 }
@@ -90,23 +90,23 @@ function move_startshow_right() {
   gsap.to(".dg_rs_screen", {
     opacity: 0,
     x: -3000,
-    duration: 2
+    duration: 1
   });
   gsap.to(".dg_afrs_screen", {
     opacity: 1,
     x: 0,
-    duration: 2,
+    duration: 1,
     visibility: 'visible',
   });
   gsap.fromTo(".dg_sm_screen", {
     opacity: 1,
     x: 0,
-    duration: 2,
+    duration: 1,
     visibility: 'hidden',
   }, {
     opacity: 0,
     x: 3000,
-    duration: 2,
+    duration: 1,
     visibility: 'visible',
   });
 }
@@ -115,22 +115,22 @@ function move_start_modellights_left() {
   gsap.to(".dg_rs_screen", {
     opacity: 0,
     x: -6000,
-    duration: 2
+    duration: 1
   });
   gsap.to(".dg_afrs_screen", {
     opacity: 0,
     x: -3000,
-    duration: 2
+    duration: 1
   });
   gsap.fromTo(".ml_lights_screen", {
     opacity: 0,
     x: 3000,
-    duration: 2,
+    duration: 1,
     visibility: 'hidden',
   }, {
     opacity: 1,
     x: 0,
-    duration: 2,
+    duration: 1,
     visibility: 'visible',
   });
 }
@@ -138,23 +138,23 @@ function move_start_modellights_right() {
   gsap.to(".dg_rs_screen", {
     opacity: 0,
     x: -3000,
-    duration: 2
+    duration: 1
   });
   gsap.to(".dg_afrs_screen", {
     opacity: 1,
     x: 0,
-    duration: 2,
+    duration: 1,
     visibility: 'visible',
   });
   gsap.fromTo(".ml_lights_screen", {
     opacity: 1,
     x: 0,
-    duration: 2,
+    duration: 1,
     visibility: 'hidden',
   }, {
     opacity: 0,
     x: 3000,
-    duration: 2,
+    duration: 1,
     visibility: 'visible',
   });
 }
@@ -163,22 +163,22 @@ function move_start_basementfloors_left() {
   gsap.to(".dg_rs_screen", {
     opacity: 0,
     x: -6000,
-    duration: 2
+    duration: 1
   });
   gsap.to(".dg_afrs_screen", {
     opacity: 0,
     x: -3000,
-    duration: 2
+    duration: 1
   });
   gsap.fromTo(".dg_bf_screen", {
     opacity: 0,
     x: 3000,
-    duration: 2,
+    duration: 1,
     visibility: 'hidden',
   }, {
     opacity: 1,
     x: 0,
-    duration: 2,
+    duration: 1,
     visibility: 'visible',
   });
 }
@@ -186,23 +186,23 @@ function move_start_basementfloors_right() {
   gsap.to(".dg_rs_screen", {
     opacity: 0,
     x: -3000,
-    duration: 2
+    duration: 1
   });
   gsap.to(".dg_afrs_screen", {
     opacity: 1,
     x: 0,
-    duration: 2,
+    duration: 1,
     visibility: 'visible',
   });
   gsap.fromTo(".dg_bf_screen", {
     opacity: 1,
     x: 0,
-    duration: 2,
+    duration: 1,
     visibility: 'hidden',
   }, {
     opacity: 0,
     x: 3000,
-    duration: 2,
+    duration: 1,
     visibility: 'visible',
   });
 }
@@ -216,50 +216,50 @@ function move_showmodelactive(elem) {
     gsap.to(".dg_rs_screen", {
       opacity: 0,
       x: 3000,
-      duration: 2
+      duration: 1
     });
     gsap.to(".dg_vwalls_screen", {
       opacity: 0,
       x: 3000,
-      duration: 2
+      duration: 1
     });
     gsap.to(".dg_lights_screen", {
       opacity: 0,
       x: 3000,
-      duration: 2
+      duration: 1
     });
     gsap.fromTo(".dg_afrs_screen", {
       opacity: 0,
       x: -3000,
-      duration: 2,
+      duration: 1,
     }, {
       opacity: 1,
       x: 0,
-      duration: 2,
+      duration: 1,
     });
   // } else {
   //   gsap.fromTo(".dg_afrs_screen", {
   //     opacity: 0,
   //     x: 3000,
-  //     duration: 2,
+  //     duration: 1,
   //   }, {
   //     opacity: 1,
   //     x: 0,
-  //     duration: 2,
+  //     duration: 1,
   //   });
   //   gsap.to(".dg_lights_screen", {
   //     opacity: 0,
   //     x: -3000,
-  //     duration: 2
+  //     duration: 1
   //   });
   //   gsap.fromTo(".dg_vwalls_screen", {
   //     opacity: 1,
   //     x: 0,
-  //     duration: 2,
+  //     duration: 1,
   //   }, {
   //     opacity: 0,
   //     x: -3000,
-  //     duration: 2,
+  //     duration: 1,
   //   });
   // }
 }
@@ -270,59 +270,59 @@ function move_videowallsactive(elem) {
     gsap.to(".dg_lights_screen", {
       opacity: 0,
       x: -3000,
-      duration: 2
+      duration: 1
     });
     gsap.to(".dg_afrs_screen", {
       opacity: 0,
       x: -3000,
-      duration: 2
+      duration: 1
     });
     gsap.fromTo(".dg_vwalls_screen", {
       opacity: 0,
       x: 3000,
-      duration: 2,
+      duration: 1,
       visibility: 'hidden',
     }, {
       opacity: 1,
       x: 0,
-      duration: 2,
+      duration: 1,
       visibility: 'visible',
     });
     gsap.to(".dg_sm_screen", {
       opacity: 0,
       x: -3000,
-      duration: 2
+      duration: 1
     });
     gsap.to(".ml_lights_screen", {
       opacity: 0,
       x: -3000,
-      duration: 2
+      duration: 1
     });
     gsap.to(".dg_bf_screen", {
       opacity: 0,
       x: -3000,
-      duration: 2
+      duration: 1
     });
   } else {
     gsap.to(".dg_lights_screen", {
       opacity: 0,
       x: 3000,
-      duration: 2
+      duration: 1
     });
     gsap.to(".dg_afrs_screen", {
       opacity: 0,
       x: -3000,
-      duration: 2
+      duration: 1
     });
     gsap.fromTo(".dg_vwalls_screen", {
       opacity: 0,
       x: -3000,
-      duration: 2,
+      duration: 1,
       visibility: 'hidden',
     }, {
       opacity: 1,
       x: 0,
-      duration: 2,
+      duration: 1,
       visibility: 'visible',
     });
   }
@@ -338,38 +338,38 @@ function move_lightsactive(elem) {
   gsap.to(".dg_vwalls_screen", {
     opacity: 0,
     x: -3000,
-    duration: 2
+    duration: 1
   });
   gsap.to(".dg_afrs_screen", {
     opacity: 0,
     x: -3000,
-    duration: 2
+    duration: 1
   });
   gsap.fromTo(".dg_lights_screen", {
     opacity: 0,
     x: 3000,
-    duration: 2,
+    duration: 1,
     visibility: 'hidden',
   }, {
     opacity: 1,
     x: 0,
-    duration: 2,
+    duration: 1,
     visibility: 'visible',
   });
   gsap.to(".dg_sm_screen", {
     opacity: 0,
     x: -3000,
-    duration: 2
+    duration: 1
   });
   gsap.to(".ml_lights_screen", {
     opacity: 0,
     x: -3000,
-    duration: 2
+    duration: 1
   });
   gsap.to(".dg_bf_screen", {
     opacity: 0,
     x: -3000,
-    duration: 2
+    duration: 1
   });
 }
 
