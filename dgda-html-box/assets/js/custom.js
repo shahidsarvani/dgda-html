@@ -1,4 +1,11 @@
 function splash_video_fade() {
+  setTimeout(function() {
+    document.addEventListener("click", handler, true);
+  }, 4000)
+  function handler(e) {
+    e.stopPropagation();
+    e.preventDefault();
+  }
   gsap.to(".dg_vw_screen", {
     display: 'none',
     duration: 1
@@ -213,30 +220,30 @@ function move_showmodelactive(elem) {
   // var fromDir = elem.getAttribute('data-fromDir');
   // console.log(fromDir)
   // if(fromDir == 'right') {
-    gsap.to(".dg_rs_screen", {
-      opacity: 0,
-      x: 3000,
-      duration: 1
-    });
-    gsap.to(".dg_vwalls_screen", {
-      opacity: 0,
-      x: 3000,
-      duration: 1
-    });
-    gsap.to(".dg_lights_screen", {
-      opacity: 0,
-      x: 3000,
-      duration: 1
-    });
-    gsap.fromTo(".dg_afrs_screen", {
-      opacity: 0,
-      x: -3000,
-      duration: 1,
-    }, {
-      opacity: 1,
-      x: 0,
-      duration: 1,
-    });
+  gsap.to(".dg_rs_screen", {
+    opacity: 0,
+    x: 3000,
+    duration: 1
+  });
+  gsap.to(".dg_vwalls_screen", {
+    opacity: 0,
+    x: 3000,
+    duration: 1
+  });
+  gsap.to(".dg_lights_screen", {
+    opacity: 0,
+    x: 3000,
+    duration: 1
+  });
+  gsap.fromTo(".dg_afrs_screen", {
+    opacity: 0,
+    x: -3000,
+    duration: 1,
+  }, {
+    opacity: 1,
+    x: 0,
+    duration: 1,
+  });
   // } else {
   //   gsap.fromTo(".dg_afrs_screen", {
   //     opacity: 0,
@@ -266,7 +273,7 @@ function move_showmodelactive(elem) {
 function move_videowallsactive(elem) {
   var fromDir = elem.getAttribute('data-fromDir');
   console.log(fromDir)
-  if(fromDir == 'right') {
+  if (fromDir == 'right') {
     gsap.to(".dg_lights_screen", {
       opacity: 0,
       x: -3000,
@@ -381,9 +388,9 @@ function move_lightsactive(elem) {
 
 $(document).ready(function () {
   $("#diriyah-room").click(function (e) {
-      e.preventDefault();
-      $(".navbar-nav .nav-item:first-child").addClass('active');
-    });
+    e.preventDefault();
+    $(".navbar-nav .nav-item:first-child").addClass('active');
+  });
 
   // $("#main_video_btn").click(function (e) {
   //   e.preventDefault();
@@ -401,7 +408,7 @@ $(document).ready(function () {
   //   $("#dg_rs_screen").fadeIn(5000);
   // });
 
-  $("#diriyah-room").click(function(e){
+  $("#diriyah-room").click(function (e) {
     e.preventDefault();
     $('#dg_rs_screen').addClass('firstsecanimOut');
     $('#dg_afrs_screen').addClass('firstsec');
