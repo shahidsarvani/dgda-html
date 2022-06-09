@@ -1,3 +1,109 @@
+//////////// Main section movement/////////////////////
+
+function move_main_left() {
+  ///////////////////english animations///////////////////////
+  gsap.fromTo("#en_version", {
+    opacity: 1,
+    x: 0,
+    duration: 1,
+    visibility: 'visible',
+  }, {
+    opacity: 0,
+    x: -3000,
+    duration: 1,
+    visibility: 'hidden',
+  });
+  gsap.fromTo(".home_en .dg_afrs_screen", {
+    opacity: 1,
+    x: 0,
+    duration: 1,
+    visibility: 'visible',
+  }, {
+    opacity: 0,
+    x: -3000,
+    duration: 1,
+    visibility: 'hidden',
+  });
+  gsap.fromTo(".home_ar .dg_afrs_screen", {
+    opacity: 0,
+    x: 3000,
+    duration: 1,
+    visibility: 'hidden',
+  }, {
+    opacity: 1,
+    x: 0,
+    duration: 1,
+    visibility: 'visible',
+  });
+  gsap.fromTo("#ar_version", {
+    opacity: 0,
+    x: 3000,
+    duration: 1,
+    visibility: 'hidden',
+  }, {
+    opacity: 1,
+    x: 0,
+    duration: 1,
+    visibility: 'visible',
+  });
+}
+
+function move_main_right() {
+  ///////////////////arabic animations///////////////////////
+  gsap.fromTo("#en_version", {
+    opacity: 0,
+    x: -3000,
+    duration: 1,
+    visibility: 'hidden',
+  }, {
+    opacity: 1,
+    x: 0,
+    duration: 1,
+    visibility: 'visible',
+  });
+  gsap.fromTo(".home_en .dg_afrs_screen", {
+    opacity: 0,
+    x: -3000,
+    duration: 1,
+    visibility: 'hidden',
+  }, {
+    opacity: 1,
+    x: 0,
+    duration: 1,
+    visibility: 'visible',
+  });
+  gsap.fromTo("#ar_version", {
+    opacity: 1,
+    x: 0,
+    duration: 1,
+    visibility: 'visible',
+  }, {
+    opacity: 0,
+    x: 3000,
+    duration: 1,
+    visibility: 'hidden',
+  });
+  gsap.fromTo(".home_ar .dg_afrs_screen", {
+    opacity: 1,
+    x: 0,
+    duration: 1,
+    visibility: 'visible',
+  }, {
+    opacity: 0,
+    x: 3000,
+    duration: 1,
+    visibility: 'hidden',
+  });
+  gsap.to(".dg_ft_cont", {
+    bottom: -1824,
+  });
+}
+
+
+
+
+////////// End Main section movement //////////////////
+
 function splash_video_fade() {
   // setTimeout(function() {
   //   document.addEventListener("click", handler, true);
@@ -40,7 +146,8 @@ function splash_video_fade() {
     transform: 'translate(0%, 0%)'
   });
   gsap.to("#header", {
-    position: 'relative',
+    // position: 'relative',
+    position: 'absolute',
     delay: 3,
   });
   gsap.from(".dg_rs_screen", {
@@ -115,6 +222,9 @@ function move_left() {
   });
   gsap.to(".dg_ft_cont", {
     bottom: 0,
+  });
+  gsap.to(".home_ar .dg_ft_cont", {
+    bottom: -1824,
   });
 }
 
@@ -585,6 +695,19 @@ $(document).ready(function () {
   $("#diriyah-room").click(function (e) {
     e.preventDefault();
     $(".navbar-nav .nav-item:first-child").addClass('active');
+  });
+
+  $(".dg_ft_nav_link_en a").click(function (e) {
+    e.preventDefault();
+    // $("#ar_version").show();
+    // $("#en_version").hide();
+    $("html").attr("lang", "ar");
+  });
+  $(".dg_ft_nav_link_ar a").click(function (e) {
+    e.preventDefault();
+    // $("#en_version").show();
+    // $("#ar_version").hide();
+    $("html").attr("lang", "en");
   });
 
   // $("#main_video_btn").click(function (e) {

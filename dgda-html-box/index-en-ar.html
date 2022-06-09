@@ -1,0 +1,1212 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Diriyah">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/mystyle.css">
+    <link rel="stylesheet" href="./assets/css/rtl.css">
+    <title>Diriyah</title>
+</head>
+
+<body class="homepage">
+    <!-- <img class="compare_img" src="./assets/images/screens/lights-screen.png" alt="room-selection-screen"/> -->
+    <main id="en_version" class="home_en">
+        <!--Start Header Nav-->
+        <header id="header">
+            <div class="container diri_header_cont">
+                <div class="header_inner">
+                    <div class="row diri_header_row">
+                        <div class="col-31 logo_col_1">
+                            <div class="load_log_col">
+                                <div class="logo_diriyah">
+                                    <a href="javascript:void(0)">
+                                        <img src="./assets/images/dgda_logo.svg" alt="logo" />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="header-menu-elements" onclick="move_left()">
+                            <div class="col-61 head_separator_col">
+                                <div class="head_separator"></div>
+                            </div>
+                            <div class="col-31 nav_col_1">
+                                <nav class="navbar navbar-expand-sm navbar_dir bg-transparent">
+                                    <div class="nav_cp_dp collapse navbar-collapse btn-10" id="collapsibleNavbar">
+                                        <ul class="navbar-nav">
+                                            <li class="nav-item">
+                                                <a class="nav-link active" href="#">DIRIYAH</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#">WADI SAFAR</a>
+                                            </li>
+                                            <!-- <li class="nav-item">
+                                                <a class="nav-link" href="#">COMBINED</a>
+                                            </li> -->
+                                        </ul>
+                                    </div>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!--End Header Nav-->
+
+        <!--Start Video Screen-->
+        <section class="dg_vw_screen">
+            <div class="container-fluid dg_vw_cont">
+                <div class="row dg_vw_row">
+                    <div class="col-12 dg_vw_col">
+                    <video id="main_video" width="100%" height="100%" loop="true" controls="false" autoplay="autoplay" muted>
+                            <source src="./assets/videos/dgda_intro.mp4" type="video/mp4">
+                            <source src="movie.ogg" type="video/ogg">
+                            Your browser does not support the video tag.
+                        </video>
+                        <div id="main_video_btn" class="main_video_btn" onclick="splash_video_fade();">
+                            <a id="video_start_btn" href="#">TAP TO START</a>
+                        </div>
+                        <!-- <a id="main_video_btn" href="#">TAP TO START</a> -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--End Video Screen-->
+
+        <!--Start Room Selection Screen-->
+        <section id="dg_rs_screen" class="dg_rs_screen">
+            <div class="container dg_rs_container">
+                <div class="row dg_rs_row">
+                    <div class="col-6 dg_rs_col">
+                        <a href="javascript:void(0)" onclick="move_left()">
+                            <div id="diriyah-room" class="dg_rs_wrap">
+                                <img src="./assets/images/room-diriyah.png" alt="diriyah">
+                                <h3>DIRIYAH</h3>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-6 dg_rs_col">
+                        <a href="javascript:void(0)" onclick="move_left()">
+                            <div id="wadisafar-room" class="dg_rs_wrap">
+                                <img src="./assets/images/room-wadi-safar.png" alt="diriyah">
+                                <h3>WADI SAFAR</h3>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--End Room Selection Screen-->
+
+        <!--Start After Room Selection Screen-->
+        <section id="dg_afrs_screen" class="dg_afrs_screen">
+            <div class="container dg_afrs_container">
+                <div class="row dg_afrs_row">
+                    <div class="col-4 dg_afrs_col">
+                        <a href="javascript:void(0)" onclick="move_startshow_left()">
+                            <h3 class="dg_afrs_col1_h">START<br/>SHOW</h3>
+                        </a>
+                    </div>
+                    <div class="col-4 dg_afrs_col">
+                        <a href="javascript:void(0)" onclick="move_start_modellights_left()">
+                            <h3 class="dg_afrs_col2_h">MODEL<br/>LIGHTS</h3>
+                        </a>
+                    </div>
+                    <div class="col-4 dg_afrs_col">
+                        <a href="javascript:void(0)" onclick="move_start_basementfloors_left()">
+                            <h3 class="dg_afrs_col3_h">BASEMENT<br/>FLOORS</h3>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--End After Room Selection Screen-->
+
+        <!--Start Show Model Screen-->
+        <section id="dg_sm_screen" class="dg_sm_screen">
+            <div class="container dg_sm_screen_cont">
+                <div class="row dg_sm_row">
+                    <div class="col-12 dg_sm_col">
+                        <a href="javascript:void(0)" onclick="move_startshow_right()">
+                            <h3 class="breadcrumbs">
+                                < MODEL SHOW
+                            </h3>
+                        </a>
+                    </div>
+                    <div class="dg_sm_video_wrap">
+                        <div class="sm_video">
+                            <img src="./assets/images/play-video-thumb.png" alt="video thumb">
+                            <!-- <video width="100%" height="754" controls="false" autoplay="autoplay">
+                                <source src="./assets/videos/dg_room_ui_v21.mp4" type="video/mp4">
+                                <source src="movie.ogg" type="video/ogg">
+                                Your browser does not support the video tag.
+                            </video> -->
+                        </div>
+                        <div class="sm_video_track_wrap">
+                            <div class="sm_video_track">
+                                <div class="sm_video_unplayed_track"></div>
+                                <div class="sm_video_played_track"></div>
+                            </div>
+                            <div class="sm_video_timers">
+                                <span class="sm_video_start_timer">1:45</span>
+                                <span class="sm_video_end_timer">-0.30</span>
+                            </div>
+                        </div>
+                        <div class="sm_video_controls">
+                            <ul class="sm_vc_list">
+                                <li class="sm_vc_item sm_vc_play_item">
+                                    <a href="#">
+                                        <img src="./assets/images/video-controls/video-play-control-icon.svg" alt="sm-video-play">
+                                    </a>
+                                </li>
+                                <li class="sm_vc_item sm_vc_pause_item">
+                                    <a href="#">
+                                        <img src="./assets/images/video-controls/video-pause-control-icon.svg" alt="sm-video-play">
+                                    </a>
+                                </li>
+                                <li class="sm_vc_item sm_vc_stop_item">
+                                    <a href="#">
+                                        <img src="./assets/images/video-controls/video-stop-control-icon.svg" alt="sm-video-play">
+                                    </a>
+                                </li>
+                                <li class="sm_vc_item sm_vc_lowvol_item">
+                                    <a href="#">
+                                        <img src="./assets/images/video-controls/video-low-volum-icon.svg" alt="sm-video-play">
+                                    </a>
+                                </li>
+                                <li class="sm_vc_item sm_vc_heighvol_item">
+                                    <a href="#">
+                                        <img src="./assets/images/video-controls/video-full-volum-icon.svg" alt="sm-video-play">
+                                    </a>
+                                </li>
+                                <li class="sm_vc_item sm_vc_mute_item">
+                                    <a href="#">
+                                        <img src="./assets/images/video-controls/video-mute-icon.svg" alt="sm-video-play">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--End Show Model Screen-->
+
+        <!--Start Model Lights Screen-->
+        <section id="ml_lights_screen" class="ml_lights_screen">
+            <div class="container ml_lights_container">
+                <div class="row ml_lights_row">
+                    <div class="col-12 breadcrumbs_col">
+                        <a href="javascript:void(0)" onclick="move_start_modellights_right()">
+                            <h3 class="breadcrumbs"> < MODEL LIGHTS </h3>
+                        </a>
+                    </div>
+                    <div class="col_12 ml_content_col">
+                        <div class="ml_content_container ml_content_container1 active">
+                            <div class="ml_image_wrap ml_dg_anchor1_wrap active">
+                                <img src="./assets/images/model-lights/dg1.png" alt="DG1">
+                                <h3>DG1</h3>
+                            </div>
+                            <div class="ml_list_wrap ml_dg_antag1_wrap active">
+                                <ul class="ml_dg_list ml_dg1_list">
+                                    <li class="ml_dg_list_item">
+                                        <a href="#">
+                                            1. ZONE 1
+                                        </a>
+                                    </li>
+                                    <li class="ml_dg_list_item">
+                                        <a href="#">
+                                            2. ZONE 2
+                                        </a>
+                                    </li>
+                                    <li class="ml_dg_list_item">
+                                        <a href="#">
+                                            3. ZONE 3
+                                        </a>
+                                    </li>
+                                    <li class="ml_dg_list_item">
+                                        <a href="#">
+                                            4. ZONE 4
+                                        </a>
+                                    </li>
+                                    <li class="ml_dg_list_item">
+                                        <a href="#">
+                                            5. ZONE 5
+                                        </a>
+                                    </li>
+                                    <li class="ml_dg_list_item">
+                                        <a href="#">
+                                            6. ZONE 6
+                                        </a>
+                                    </li>
+                                    <li class="ml_dg_list_item">
+                                        <a href="#">
+                                            7. ZONE 7
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="ml_content_container ml_content_container2">
+                            <div class="ml_image_wrap ml_dg_anchor2_wrap">
+                                <img src="./assets/images/model-lights/dg1.png" alt="DG1">
+                                <h3>DG2</h3>
+                            </div>
+                            <div class="ml_list_wrap ml_dg_antag2_wrap">
+                                <ul class="ml_dg_list ml_dg2_list">
+                                    <li class="ml_dg_list_item">
+                                        <a href="#">
+                                            1. ZONE 1
+                                        </a>
+                                    </li>
+                                    <li class="ml_dg_list_item">
+                                        <a href="#">
+                                            2. ZONE 2
+                                        </a>
+                                    </li>
+                                    <li class="ml_dg_list_item">
+                                        <a href="#">
+                                            3. ZONE 3
+                                        </a>
+                                    </li>
+                                    <li class="ml_dg_list_item">
+                                        <a href="#">
+                                            4. ZONE 4
+                                        </a>
+                                    </li>
+                                    <li class="ml_dg_list_item">
+                                        <a href="#">
+                                            5. ZONE 5
+                                        </a>
+                                    </li>
+                                    <li class="ml_dg_list_item">
+                                        <a href="#">
+                                            6. ZONE 6
+                                        </a>
+                                    </li>
+                                    <li class="ml_dg_list_item">
+                                        <a href="#">
+                                            7. ZONE 7
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="ml_content_container ml_content_container3">
+                            <div class="ml_image_wrap ml_dg_anchor3_wrap">
+                                <img src="./assets/images/model-lights/dg1.png" alt="DG1">
+                                <h3>DG3</h3>
+                            </div>
+                            <div class="ml_list_wrap ml_dg_antag3_wrap">
+                                <ul class="ml_dg_list ml_dg3_list">
+                                    <li class="ml_dg_list_item">
+                                        <a href="#">
+                                            1. ZONE 1
+                                        </a>
+                                    </li>
+                                    <li class="ml_dg_list_item">
+                                        <a href="#">
+                                            2. ZONE 2
+                                        </a>
+                                    </li>
+                                    <li class="ml_dg_list_item">
+                                        <a href="#">
+                                            3. ZONE 3
+                                        </a>
+                                    </li>
+                                    <li class="ml_dg_list_item">
+                                        <a href="#">
+                                            4. ZONE 4
+                                        </a>
+                                    </li>
+                                    <li class="ml_dg_list_item">
+                                        <a href="#">
+                                            5. ZONE 5
+                                        </a>
+                                    </li>
+                                    <li class="ml_dg_list_item">
+                                        <a href="#">
+                                            6. ZONE 6
+                                        </a>
+                                    </li>
+                                    <li class="ml_dg_list_item">
+                                        <a href="#">
+                                            7. ZONE 7
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--End Model Lights Screen-->
+
+        <!--Start Basement Floors Screen-->
+        <section id="dg_bf_screen" class="dg_bf_screen">
+            <div class="container dg_bf_container">
+                <div class="row dg_bfb_row">
+                    <div class="col-12 breadcrumbs_col">
+                        <a href="javascript:void(0)" onclick="move_start_basementfloors_right()">
+                            <h3 class="breadcrumbs"> < BASEMENT FLOORS </h3>
+                        </a>
+                    </div>
+                </div>
+                <div class="row dg_bfc_row">
+                    <div class="col-12 dg_bf_col">
+                        <div class="dg_bf_list_wrap">
+                            <ul class="dg_bf_list">
+                                <li class="dg_bf_list_item">
+                                    <a href="#">
+                                        UP
+                                    </a>
+                                </li>
+                                <li class="dg_bf_list_item">
+                                    <a href="#">
+                                        DOWN
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--End Basement Floors Screen-->
+
+        <!--Start Video Walls Screen-->
+        <section id="dg_vwalls_screen" class="dg_vwalls_screen">
+            <div class="container dg_vwalls_container">
+                <div class="row dg_vwalls_row">
+                    <div class="col-12 dg_vwalls_col">
+                        <a href="javascript:void(0)" onclick="move_vwalls_right()">
+                            <h3 class="breadcrumbs"> < VIDEO WALLS </h3>
+                        </a>
+                    </div>
+                    <div class="dg_sm_video_wrap">
+                        <div class="sm_video">
+                            <!-- <img src="./assets/images/play-video-thumb.png" alt="video thumb"> -->
+                            <!-- <video width="100%" height="754" controls="false" autoplay="autoplay">
+                                <source src="./assets/videos/dg_room_ui_v21.mp4" type="video/mp4">
+                                <source src="movie.ogg" type="video/ogg">
+                                Your browser does not support the video tag.
+                            </video> -->
+                        </div>
+                        <div class="sm_video_track_wrap">
+                            <div class="sm_video_track">
+                                <div class="sm_video_unplayed_track"></div>
+                                <div class="sm_video_played_track"></div>
+                            </div>
+                            <div class="sm_video_timers">
+                                <span class="sm_video_start_timer">1:45</span>
+                                <span class="sm_video_end_timer">-0.30</span>
+                            </div>
+                        </div>
+                        <div class="sm_video_controls">
+                            <ul class="sm_vc_list">
+                                <li class="sm_vc_item sm_vc_play_item">
+                                    <a href="#">
+                                        <img src="./assets/images/video-controls/video-play-control-icon.svg" alt="sm-video-play">
+                                    </a>
+                                </li>
+                                <li class="sm_vc_item sm_vc_pause_item">
+                                    <a href="#">
+                                        <img src="./assets/images/video-controls/video-pause-control-icon.svg" alt="sm-video-play">
+                                    </a>
+                                </li>
+                                <li class="sm_vc_item sm_vc_stop_item">
+                                    <a href="#">
+                                        <img src="./assets/images/video-controls/video-stop-control-icon.svg" alt="sm-video-play">
+                                    </a>
+                                </li>
+                                <li class="sm_vc_item sm_vc_lowvol_item">
+                                    <a href="#">
+                                        <img src="./assets/images/video-controls/video-low-volum-icon.svg" alt="sm-video-play">
+                                    </a>
+                                </li>
+                                <li class="sm_vc_item sm_vc_heighvol_item">
+                                    <a href="#">
+                                        <img src="./assets/images/video-controls/video-full-volum-icon.svg" alt="sm-video-play">
+                                    </a>
+                                </li>
+                                <li class="sm_vc_item sm_vc_mute_item">
+                                    <a href="#">
+                                        <img src="./assets/images/video-controls/video-mute-icon.svg" alt="sm-video-play">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="dg_media_list_wrap">
+                            <h2>MEDIA</h2>
+                            <ul class="dg_media_list">
+                                <li class="dg_media_item">
+                                    <a href="#">
+                                        <h3>1. ZONE 1</h3>
+                                    </a>
+                                </li>
+                                <li class="dg_media_item">
+                                    <a href="#">
+                                        <h3>2. ZONE 2</h3>
+                                    </a>
+                                </li>
+                                <li class="dg_media_item">
+                                    <a href="#">
+                                        <h3>3. ZONE 3</h3>
+                                    </a>
+                                </li>
+                                <li class="dg_media_item">
+                                    <a href="#">
+                                        <h3>4. ZONE 4</h3>
+                                    </a>
+                                </li>
+                                <li class="dg_media_item">
+                                    <a href="#">
+                                        <h3>5. ZONE 5</h3>
+                                    </a>
+                                </li>
+                                <li class="dg_media_item">
+                                    <a href="#">
+                                        <h3>6. ZONE 6</h3>
+                                    </a>
+                                </li>
+                                <li class="dg_media_item">
+                                    <a href="#">
+                                        <h3>7. ZONE 7</h3>
+                                    </a>
+                                </li>
+                                <li class="dg_media_item">
+                                    <a href="#">
+                                        <h3>8. ZONE 8</h3>
+                                    </a>
+                                </li>
+                                <li class="dg_media_item">
+                                    <a href="#">
+                                        <h3>9. ZONE 9</h3>
+                                    </a>
+                                </li>
+                                <li class="dg_media_item">
+                                    <a href="#">
+                                        <h3>10. ZONE 10</h3>
+                                    </a>
+                                </li>
+                                <li class="dg_media_item">
+                                    <a href="#">
+                                        <h3>11. ZONE 11</h3>
+                                    </a>
+                                </li>
+                                <li class="dg_media_item">
+                                    <a href="#">
+                                        <h3>12. ZONE 12</h3>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Start Video Walls Screen-->
+
+        <!--Start lights Screen-->
+        <section id="dg_lights_screen" class="dg_lights_screen">
+            <div class="container dg_lights_container">
+                <div class="row dg_lights_row">
+                    <div class="col-4 dg_col_content">
+                        <div class="dg_lights_content_wrap dg_lights_morning">
+                            <h3>MORNING</h3>
+                            <h3>80%</h3>
+                        </div>
+                    </div>
+                    <div class="col-4 dg_col_content">
+                        <div class="dg_lights_content_wrap dg_lights_afternoon">
+                            <h3>AFTERNOON</h3>
+                            <h3>100%</h3>
+                        </div>
+                    </div>
+                    <div class="col-4 dg_col_content">
+                        <div class="dg_lights_content_wrap dg_lights_evening">
+                            <h3>EVENING</h3>
+                            <h3>40%</h3>
+                        </div>
+                    </div>
+                    <div class="col-4 dg_col_content">
+                        <div class="dg_lights_content_wrap dg_lights_entery">
+                            <h3>ENTERY SCENE</h3>
+                            <h3>0%</h3>
+                        </div>
+                    </div>
+                    <div class="col-4 dg_col_content">
+                        <div class="dg_lights_content_wrap dg_lights_exit">
+                            <h3>EXIT SCENE</h3>
+                            <h3>20%</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--End lights Screen-->
+
+        <!--Start Footer Nav-->
+        <div id="footer" class="container dg_ft_cont">
+            <div class="row dg_ft_row">
+                <div class="col-12 dg_ft_col">
+                    <div class="dg_ft_nav">
+                        <ul class="dg_ft_nav_list">
+                            <li class="dg_ft_nav_item dg_ft_nav_item1 active">
+                                <a href="#" onclick="move_showmodelactive(this)" data-fromDir="left">
+                                    <div class="dg_ft_nav_img">
+                                        <img src="./assets/images/model.svg" alt="Model">
+                                    </div>
+                                    <div class="dg_ft_nav_link">
+                                        <h3>MODEL</h3>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="dg_ft_nav_item dg_ft_nav_item2">
+                                <a href="#" onclick="move_videowallsactive(this)" data-fromDir="right">
+                                    <div class="dg_ft_nav_img">
+                                        <img src="./assets/images/play.svg" alt="VIDEO WALLS">
+                                    </div>
+                                    <div class="dg_ft_nav_link">
+                                        <h3>VIDEO WALLS</h3>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="dg_ft_nav_item dg_ft_nav_item3">
+                                <a href="#" onclick="move_lightsactive(this)" data-fromDir="right">
+                                    <div class="dg_ft_nav_img">
+                                        <img src="./assets/images/lighting.svg" alt="LIGHTS">
+                                    </div>
+                                    <div class="dg_ft_nav_link">
+                                        <h3>LIGHTS</h3>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="dg_ft_nav_item dg_ft_nav_item4 dg_ft_nav_link_en">
+                                <a href="javascript:void(0)" onclick="move_main_left()">
+                                    <div class="dg_ft_nav_img dg_ft_nav_img_ar">
+                                        <img src="./assets/images/ftr-arabic-icon.svg" alt="ARABIC">
+                                    </div>
+                                    <div class="dg_ft_nav_link">
+                                        <h3>العربية</h3>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--End Footer Nav-->
+
+    </main>
+    <!--End Main Nav-->
+
+    <main id="ar_version" class="home_ar">
+        <!--Start Header Nav-->
+        <header id="header">
+            <div class="container diri_header_cont">
+                <div class="header_inner">
+                    <div class="row diri_header_row">
+                        <div class="col-31 logo_col_1">
+                            <div class="load_log_col">
+                                <div class="logo_diriyah">
+                                    <a href="javascript:void(0)">
+                                        <img src="./assets/images/diriyah-ar-logo.svg" alt="logo" />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="header-menu-elements" onclick="move_left()">
+                            <div class="col-61 head_separator_col">
+                                <div class="head_separator"></div>
+                            </div>
+                            <div class="col-31 nav_col_1">
+                                <nav class="navbar navbar-expand-sm navbar_dir bg-transparent">
+                                    <div class="nav_cp_dp collapse navbar-collapse btn-10" id="collapsibleNavbar">
+                                        <ul class="navbar-nav">
+                                            <li class="nav-item">
+                                                <a class="nav-link active" href="#">الدرعية</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#">وادي صفر</a>
+                                            </li>
+                                            <!-- <li class="nav-item">
+                                                <a class="nav-link" href="#">COMBINED</a>
+                                            </li> -->
+                                        </ul>
+                                    </div>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!--End Header Nav-->
+
+        <!--Start Video Screen-->
+        <section class="dg_vw_screen">
+            <div class="container-fluid dg_vw_cont">
+                <div class="row dg_vw_row">
+                    <div class="col-12 dg_vw_col">
+                    <video id="main_video" width="100%" height="100%" loop="true" controls="false" autoplay="autoplay" muted>
+                            <source src="./assets/videos/dgda_intro.mp4" type="video/mp4">
+                            <source src="movie.ogg" type="video/ogg">
+                            Your browser does not support the video tag.
+                        </video>
+                        <div id="main_video_btn" class="main_video_btn" onclick="splash_video_fade();">
+                            <a id="video_start_btn" href="#">اضغط للبدء</a>
+                        </div>
+                        <!-- <a id="main_video_btn" href="#">TAP TO START</a> -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--End Video Screen-->
+
+        <!--Start Room Selection Screen-->
+        <section id="dg_rs_screen" class="dg_rs_screen">
+            <div class="container dg_rs_container">
+                <div class="row dg_rs_row">
+                    <div class="col-6 dg_rs_col">
+                        <a href="javascript:void(0)" onclick="move_left()">
+                            <div id="diriyah-room" class="dg_rs_wrap">
+                                <img src="./assets/images/room-diriyah.png" alt="diriyah">
+                                <h3>الدرعية</h3>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-6 dg_rs_col">
+                        <a href="javascript:void(0)" onclick="move_left()">
+                            <div id="wadisafar-room" class="dg_rs_wrap">
+                                <img src="./assets/images/room-wadi-safar.png" alt="diriyah">
+                                <h3>وادي صفر</h3>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--End Room Selection Screen-->
+
+        <!--Start After Room Selection Screen-->
+        <section id="dg_afrs_screen" class="dg_afrs_screen">
+            <div class="container dg_afrs_container">
+                <div class="row dg_afrs_row">
+                    <div class="col-4 dg_afrs_col">
+                        <a href="javascript:void(0)" onclick="move_startshow_left()">
+                            <h3 class="dg_afrs_col1_h">بدء<br/>العرض</h3>
+                        </a>
+                    </div>
+                    <div class="col-4 dg_afrs_col">
+                        <a href="javascript:void(0)" onclick="move_start_modellights_left()">
+                            <h3 class="dg_afrs_col2_h">إضاءات<br/>المجسم</h3>
+                        </a>
+                    </div>
+                    <div class="col-4 dg_afrs_col">
+                        <a href="javascript:void(0)" onclick="move_start_basementfloors_left()">
+                            <h3 class="dg_afrs_col3_h">المواقف<br/>السفلية</h3>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--End After Room Selection Screen-->
+
+        <!--Start Show Model Screen-->
+        <section id="dg_sm_screen" class="dg_sm_screen">
+            <div class="container dg_sm_screen_cont">
+                <div class="row dg_sm_row">
+                    <div class="col-12 dg_sm_col">
+                        <a href="javascript:void(0)" onclick="move_startshow_right()">
+                            <h3 class="breadcrumbs">
+                              < عرض المجسم
+                            </h3>
+                        </a>
+                    </div>
+                    <div class="dg_sm_video_wrap">
+                        <div class="sm_video">
+                            <img src="./assets/images/play-video-thumb.png" alt="video thumb">
+                            <!-- <video width="100%" height="754" controls="false" autoplay="autoplay">
+                                <source src="./assets/videos/dg_room_ui_v21.mp4" type="video/mp4">
+                                <source src="movie.ogg" type="video/ogg">
+                                Your browser does not support the video tag.
+                            </video> -->
+                        </div>
+                        <div class="sm_video_track_wrap">
+                            <div class="sm_video_track">
+                                <div class="sm_video_unplayed_track"></div>
+                                <div class="sm_video_played_track"></div>
+                            </div>
+                            <div class="sm_video_timers">
+                                <span class="sm_video_start_timer">١:٤٥</span>
+                                <span class="sm_video_end_timer">-٠:٣١</span>
+                            </div>
+                        </div>
+                        <div class="sm_video_controls">
+                            <ul class="sm_vc_list">
+                                <li class="sm_vc_item sm_vc_play_item">
+                                    <a href="#">
+                                        <img src="./assets/images/video-controls/video-play-control-icon.svg" alt="sm-video-play">
+                                    </a>
+                                </li>
+                                <li class="sm_vc_item sm_vc_pause_item">
+                                    <a href="#">
+                                        <img src="./assets/images/video-controls/video-pause-control-icon.svg" alt="sm-video-play">
+                                    </a>
+                                </li>
+                                <li class="sm_vc_item sm_vc_stop_item">
+                                    <a href="#">
+                                        <img src="./assets/images/video-controls/video-stop-control-icon.svg" alt="sm-video-play">
+                                    </a>
+                                </li>
+                                <li class="sm_vc_item sm_vc_lowvol_item">
+                                    <a href="#">
+                                        <img src="./assets/images/video-controls/video-low-volum-icon.svg" alt="sm-video-play">
+                                    </a>
+                                </li>
+                                <li class="sm_vc_item sm_vc_heighvol_item">
+                                    <a href="#">
+                                        <img src="./assets/images/video-controls/video-full-volum-icon.svg" alt="sm-video-play">
+                                    </a>
+                                </li>
+                                <li class="sm_vc_item sm_vc_mute_item">
+                                    <a href="#">
+                                        <img src="./assets/images/video-controls/video-mute-icon.svg" alt="sm-video-play">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--End Show Model Screen-->
+
+        <!--Start Model Lights Screen-->
+        <section id="ml_lights_screen" class="ml_lights_screen">
+            <div class="container ml_lights_container">
+                <div class="row ml_lights_row">
+                    <div class="col-12 breadcrumbs_col">
+                        <a href="javascript:void(0)" onclick="move_start_modellights_right()">
+                            <h3 class="breadcrumbs">< إضاءات المجسم </h3>
+                        </a>
+                    </div>
+                    <div class="col_12 ml_content_col">
+                        <div class="ml_content_container ml_content_container1 active">
+                            <div class="ml_image_wrap ml_dg_anchor1_wrap active">
+                                <img src="./assets/images/model-lights/dg1.png" alt="DG1">
+                                <h3>DG1</h3>
+                            </div>
+                            <div class="ml_list_wrap ml_dg_antag1_wrap active">
+                                <ul class="ml_dg_list ml_dg1_list">
+                                    <li class="ml_dg_list_item">
+                                        <a href="#">
+                                            ١. المنطقة ١
+                                        </a>
+                                    </li>
+                                    <li class="ml_dg_list_item">
+                                        <a href="#">
+                                            ١. المنطقة ١
+                                        </a>
+                                    </li>
+                                    <li class="ml_dg_list_item">
+                                        <a href="#">
+                                            ١. المنطقة ١
+                                        </a>
+                                    </li>
+                                    <li class="ml_dg_list_item">
+                                        <a href="#">
+                                            ١. المنطقة ١
+                                        </a>
+                                    </li>
+                                    <li class="ml_dg_list_item">
+                                        <a href="#">
+                                            ١. المنطقة ١
+                                        </a>
+                                    </li>
+                                    <li class="ml_dg_list_item">
+                                        <a href="#">
+                                            ١. المنطقة ١
+                                        </a>
+                                    </li>
+                                    <li class="ml_dg_list_item">
+                                        <a href="#">
+                                            ١. المنطقة ١
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="ml_content_container ml_content_container2">
+                            <div class="ml_image_wrap ml_dg_anchor2_wrap">
+                                <img src="./assets/images/model-lights/dg1.png" alt="DG1">
+                                <h3>DG2</h3>
+                            </div>
+                            <div class="ml_list_wrap ml_dg_antag2_wrap">
+                                <ul class="ml_dg_list ml_dg1_list">
+                                    <li class="ml_dg_list_item">
+                                        <a href="#">
+                                            ١. المنطقة ١
+                                        </a>
+                                    </li>
+                                    <li class="ml_dg_list_item">
+                                        <a href="#">
+                                            ١. المنطقة ١
+                                        </a>
+                                    </li>
+                                    <li class="ml_dg_list_item">
+                                        <a href="#">
+                                            ١. المنطقة ١
+                                        </a>
+                                    </li>
+                                    <li class="ml_dg_list_item">
+                                        <a href="#">
+                                            ١. المنطقة ١
+                                        </a>
+                                    </li>
+                                    <li class="ml_dg_list_item">
+                                        <a href="#">
+                                            ١. المنطقة ١
+                                        </a>
+                                    </li>
+                                    <li class="ml_dg_list_item">
+                                        <a href="#">
+                                            ١. المنطقة ١
+                                        </a>
+                                    </li>
+                                    <li class="ml_dg_list_item">
+                                        <a href="#">
+                                            ١. المنطقة ١
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="ml_content_container ml_content_container3">
+                            <div class="ml_image_wrap ml_dg_anchor3_wrap">
+                                <img src="./assets/images/model-lights/dg1.png" alt="DG1">
+                                <h3>DG3</h3>
+                            </div>
+                            <div class="ml_list_wrap ml_dg_antag3_wrap">
+                                <ul class="ml_dg_list ml_dg1_list">
+                                    <li class="ml_dg_list_item">
+                                        <a href="#">
+                                            ١. المنطقة ١
+                                        </a>
+                                    </li>
+                                    <li class="ml_dg_list_item">
+                                        <a href="#">
+                                            ١. المنطقة ١
+                                        </a>
+                                    </li>
+                                    <li class="ml_dg_list_item">
+                                        <a href="#">
+                                            ١. المنطقة ١
+                                        </a>
+                                    </li>
+                                    <li class="ml_dg_list_item">
+                                        <a href="#">
+                                            ١. المنطقة ١
+                                        </a>
+                                    </li>
+                                    <li class="ml_dg_list_item">
+                                        <a href="#">
+                                            ١. المنطقة ١
+                                        </a>
+                                    </li>
+                                    <li class="ml_dg_list_item">
+                                        <a href="#">
+                                            ١. المنطقة ١
+                                        </a>
+                                    </li>
+                                    <li class="ml_dg_list_item">
+                                        <a href="#">
+                                            ١. المنطقة ١
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--End Model Lights Screen-->
+
+        <!--Start Basement Floors Screen-->
+        <section id="dg_bf_screen" class="dg_bf_screen">
+            <div class="container dg_bf_container">
+                <div class="row dg_bfb_row">
+                    <div class="col-12 breadcrumbs_col">
+                        <a href="javascript:void(0)" onclick="move_start_basementfloors_right()">
+                            <h3 class="breadcrumbs">< المواقف السفلية </h3>
+                        </a>
+                    </div>
+                </div>
+                <div class="row dg_bfc_row">
+                    <div class="col-12 dg_bf_col">
+                        <div class="dg_bf_list_wrap">
+                            <ul class="dg_bf_list">
+                                <li class="dg_bf_list_item">
+                                    <a href="#">
+                                        للأعلى
+                                    </a>
+                                </li>
+                                <li class="dg_bf_list_item">
+                                    <a href="#">
+                                        للأسفل
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--End Basement Floors Screen-->
+
+        <!--Start Video Walls Screen-->
+        <section id="dg_vwalls_screen" class="dg_vwalls_screen">
+            <div class="container dg_vwalls_container">
+                <div class="row dg_vwalls_row">
+                    <div class="col-12 dg_vwalls_col">
+                        <a href="javascript:void(0)" onclick="move_vwalls_right()">
+                            <h3 class="breadcrumbs">< الشاشات الجدارية</h3>
+                        </a>
+                    </div>
+                    <div class="dg_sm_video_wrap">
+                        <div class="sm_video">
+                            <!-- <img src="./assets/images/play-video-thumb.png" alt="video thumb"> -->
+                            <!-- <video width="100%" height="754" controls="false" autoplay="autoplay">
+                                <source src="./assets/videos/dg_room_ui_v21.mp4" type="video/mp4">
+                                <source src="movie.ogg" type="video/ogg">
+                                Your browser does not support the video tag.
+                            </video> -->
+                        </div>
+                        <div class="sm_video_track_wrap">
+                            <div class="sm_video_track">
+                                <div class="sm_video_unplayed_track"></div>
+                                <div class="sm_video_played_track"></div>
+                            </div>
+                            <div class="sm_video_timers">
+                                <span class="sm_video_start_timer">١:٤٥</span>
+                                <span class="sm_video_end_timer">-٠:٣١</span>
+                            </div>
+                        </div>
+                        <div class="sm_video_controls">
+                            <ul class="sm_vc_list">
+                                <li class="sm_vc_item sm_vc_play_item">
+                                    <a href="#">
+                                        <img src="./assets/images/video-controls/video-play-control-icon.svg" alt="sm-video-play">
+                                    </a>
+                                </li>
+                                <li class="sm_vc_item sm_vc_pause_item">
+                                    <a href="#">
+                                        <img src="./assets/images/video-controls/video-pause-control-icon.svg" alt="sm-video-play">
+                                    </a>
+                                </li>
+                                <li class="sm_vc_item sm_vc_stop_item">
+                                    <a href="#">
+                                        <img src="./assets/images/video-controls/video-stop-control-icon.svg" alt="sm-video-play">
+                                    </a>
+                                </li>
+                                <li class="sm_vc_item sm_vc_lowvol_item">
+                                    <a href="#">
+                                        <img src="./assets/images/video-controls/video-low-volum-icon.svg" alt="sm-video-play">
+                                    </a>
+                                </li>
+                                <li class="sm_vc_item sm_vc_heighvol_item">
+                                    <a href="#">
+                                        <img src="./assets/images/video-controls/video-full-volum-icon.svg" alt="sm-video-play">
+                                    </a>
+                                </li>
+                                <li class="sm_vc_item sm_vc_mute_item">
+                                    <a href="#">
+                                        <img src="./assets/images/video-controls/video-mute-icon.svg" alt="sm-video-play">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="dg_media_list_wrap">
+                            <h2>الفيديوهات</h2>
+                            <ul class="dg_media_list">
+                                <li class="dg_media_item">
+                                    <a href="#">
+                                        <h3>١. المنطقة ١</h3>
+                                    </a>
+                                </li>
+                                <li class="dg_media_item">
+                                    <a href="#">
+                                        <h3>١. المنطقة ١</h3>
+                                    </a>
+                                </li>
+                                <li class="dg_media_item">
+                                    <a href="#">
+                                        <h3>١. المنطقة ١</h3>
+                                    </a>
+                                </li>
+                                <li class="dg_media_item">
+                                    <a href="#">
+                                        <h3>١. المنطقة ١</h3>
+                                    </a>
+                                </li>
+                                <li class="dg_media_item">
+                                    <a href="#">
+                                        <h3>١. المنطقة ١</h3>
+                                    </a>
+                                </li>
+                                <li class="dg_media_item">
+                                    <a href="#">
+                                        <h3>١. المنطقة ١</h3>
+                                    </a>
+                                </li>
+                                <li class="dg_media_item">
+                                    <a href="#">
+                                        <h3>١. المنطقة ١</h3>
+                                    </a>
+                                </li>
+                                <li class="dg_media_item">
+                                    <a href="#">
+                                        <h3>١. المنطقة ١</h3>
+                                    </a>
+                                </li>
+                                <li class="dg_media_item">
+                                    <a href="#">
+                                        <h3>١. المنطقة ١</h3>
+                                    </a>
+                                </li>
+                                <li class="dg_media_item">
+                                    <a href="#">
+                                        <h3>١. المنطقة ١</h3>
+                                    </a>
+                                </li>
+                                <li class="dg_media_item">
+                                    <a href="#">
+                                        <h3>١. المنطقة ١</h3>
+                                    </a>
+                                </li>
+                                <li class="dg_media_item">
+                                    <a href="#">
+                                        <h3>١. المنطقة ١</h3>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Start Video Walls Screen-->
+
+        <!--Start lights Screen-->
+        <section id="dg_lights_screen" class="dg_lights_screen">
+            <div class="container dg_lights_container">
+                <div class="row dg_lights_row">
+                    <div class="col-4 dg_col_content">
+                        <div class="dg_lights_content_wrap dg_lights_morning">
+                            <h3>الصباح</h3>
+                            <h3>٨٠%</h3>
+                        </div>
+                    </div>
+                    <div class="col-4 dg_col_content">
+                        <div class="dg_lights_content_wrap dg_lights_afternoon">
+                            <h3>الظهيرة</h3>
+                            <h3>١٠٠%</h3>
+                        </div>
+                    </div>
+                    <div class="col-4 dg_col_content">
+                        <div class="dg_lights_content_wrap dg_lights_evening">
+                            <h3>المساء</h3>
+                            <h3>٤٠%</h3>
+                        </div>
+                    </div>
+                    <div class="col-4 dg_col_content">
+                        <div class="dg_lights_content_wrap dg_lights_entery">
+                            <h3>مشهد الدخول</h3>
+                            <h3>٠%</h3>
+                        </div>
+                    </div>
+                    <div class="col-4 dg_col_content">
+                        <div class="dg_lights_content_wrap dg_lights_exit">
+                            <h3>مشهد الخروج</h3>
+                            <h3>٢٠%</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--End lights Screen-->
+
+        <!--Start Footer Nav-->
+        <div id="footer" class="container dg_ft_cont">
+            <div class="row dg_ft_row">
+                <div class="col-12 dg_ft_col">
+                    <div class="dg_ft_nav">
+                        <ul class="dg_ft_nav_list">
+                            <li class="dg_ft_nav_item dg_ft_nav_item1 active">
+                                <a href="#" onclick="move_showmodelactive(this)" data-fromDir="left">
+                                    <div class="dg_ft_nav_img">
+                                        <img src="./assets/images/model.svg" alt="Model">
+                                    </div>
+                                    <div class="dg_ft_nav_link">
+                                        <h3>المجسم</h3>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="dg_ft_nav_item dg_ft_nav_item2">
+                                <a href="#" onclick="move_videowallsactive(this)" data-fromDir="right">
+                                    <div class="dg_ft_nav_img">
+                                        <img src="./assets/images/play.svg" alt="VIDEO WALLS">
+                                    </div>
+                                    <div class="dg_ft_nav_link">
+                                        <h3>الشاشات الجدارية</h3>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="dg_ft_nav_item dg_ft_nav_item3">
+                                <a href="#" onclick="move_lightsactive(this)" data-fromDir="right">
+                                    <div class="dg_ft_nav_img">
+                                        <img src="./assets/images/lighting.svg" alt="LIGHTS">
+                                    </div>
+                                    <div class="dg_ft_nav_link">
+                                        <h3>الإضاءات</h3>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="dg_ft_nav_item dg_ft_nav_item4 dg_ft_nav_link_ar">
+                                <a href="javascript:void(0)" onclick="move_main_right()">
+                                    <div class="dg_ft_nav_img dg_ft_nav_img_ar">
+                                        <img src="./assets/images/english-letter.svg" alt="ARABIC">
+                                    </div>
+                                    <div class="dg_ft_nav_link">
+                                        <h3>ENGLISH</h3>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--End Footer Nav-->
+
+    </main>
+    <!--End Main Nav-->
+
+
+    <script src="./assets/js/gsap.min.js"></script>
+    <script src="./assets/js/jquery.js"></script>
+    <script src="./assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/custom.js"></script>
+    
+</body>
+
+</html>

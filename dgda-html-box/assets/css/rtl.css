@@ -13,8 +13,8 @@
   }
 
 
-body,
-html, div, h1, h2, h3, h4, h5, h6, p, span {
+[lang="ar"] body,
+html[lang="ar"], [lang="ar"] div, [lang="ar"] h1, [lang="ar"] h2, [lang="ar"] h3, [lang="ar"] h4, [lang="ar"] h5, [lang="ar"] h6, [lang="ar"] p, [lang="ar"] span {
   font-family: "Kermes3-SemiBold" !important;
 }
 [lang="ar"] body {
@@ -40,6 +40,10 @@ html, div, h1, h2, h3, h4, h5, h6, p, span {
     margin-left: unset !important;
     margin-right: -350px;
 }
-[lang="ar"]  .load_log_col .logo_diriyah{
+[lang="ar"] .load_log_col .logo_diriyah{
     margin-top: -45px;
+}
+[lang="ar"] .ml_dg_list{
+    padding-left: 0;
+    padding-right: 40px;
 }
