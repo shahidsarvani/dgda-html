@@ -349,7 +349,7 @@ section {
   max-width: 1700px;
 }
 
-.dg_ft_cont {
+.dg_ft_cont_en, .dg_ft_cont_ar{
   position: fixed;
   bottom: -220px;
   width: 100%;

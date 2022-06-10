@@ -162,6 +162,18 @@ function move_main_left() {
     duration: 1,
     visibility: 'visible',
   });
+
+  //////// footer movement////////////
+  gsap.fromTo(".dg_ft_cont_ar", {
+    bottom: -220,
+  }, {
+    bottom: 0,
+  });
+  gsap.fromTo(".dg_ft_cont_en", {
+    bottom: 0,
+  }, {
+    bottom: -220,
+  });
 }
 
 function move_main_right() {
@@ -324,8 +336,15 @@ function move_main_right() {
     duration: 1,
     visibility: 'hidden',
   });
-  gsap.to(".dg_ft_cont", {
-    bottom: -1824,
+  gsap.fromTo(".dg_ft_cont_ar", {
+    bottom: 0,
+  }, {
+    bottom: -220,
+  });
+  gsap.fromTo(".dg_ft_cont_en", {
+    bottom: -220,
+  }, {
+    bottom: 0,
   });
 }
 
@@ -388,7 +407,7 @@ function splash_video_fade() {
   });
 
 }
-function move_left() {
+function move_left_en() {
   gsap.to(".dg_rs_screen", {
     opacity: 0,
     x: -3000,
@@ -450,11 +469,90 @@ function move_left() {
     x: 3000,
     duration: 1
   });
-  gsap.to(".dg_ft_cont", {
+  gsap.fromTo(".dg_ft_cont_ar", {
+    bottom: -220,
+  }, {
+    bottom: -220,
+  });
+  gsap.fromTo(".dg_ft_cont_en", {
+    bottom: -220,
+  }, {
     bottom: 0,
   });
-  gsap.to(".home_ar .dg_ft_cont", {
-    bottom: -1824,
+}
+
+
+function move_left_ar() {
+  // gsap.to(".dg_rs_screen", {
+  //   opacity: 0,
+  //   x: -3000,
+  //   duration: 1
+  // });
+  // gsap.fromTo(".dg_afrs_screen", {
+  //   opacity: 0,
+  //   x: 3000,
+  //   duration: 1,
+  //   visibility: 'hidden',
+  // }, {
+  //   opacity: 1,
+  //   x: 0,
+  //   duration: 1,
+  //   visibility: 'visible',
+  // });
+  // gsap.fromTo(".header-menu-elements", {
+  //   opacity: 0,
+  //   x: 3000,
+  //   duration: 1,
+  //   visibility: 'hidden',
+  // }, {
+  //   opacity: 1,
+  //   x: 0,
+  //   duration: 1,
+  //   visibility: 'visible',
+  // });
+
+  ///////////////////arabic animations///////////////////////
+  gsap.to(".home_ar .dg_rs_screen", {
+    opacity: 0,
+    x: 3000,
+    duration: 1
+  });
+  gsap.fromTo(".home_ar .dg_afrs_screen", {
+    opacity: 0,
+    x: -3000,
+    duration: 1,
+    visibility: 'hidden',
+  }, {
+    opacity: 1,
+    x: 0,
+    duration: 1,
+    visibility: 'visible',
+  });
+  gsap.fromTo(".home_ar .header-menu-elements", {
+    opacity: 0,
+    x: -3000,
+    duration: 1,
+    visibility: 'hidden',
+  }, {
+    opacity: 1,
+    x: 0,
+    duration: 1,
+    visibility: 'visible',
+  });
+  gsap.to(".home_ar .dg_rs_screen", {
+    opacity: 0,
+    x: 3000,
+    duration: 1
+  });
+  gsap.fromTo(".dg_ft_cont_ar", {
+    bottom: -220,
+  }, {
+    bottom: -220,
+  });
+  gsap.fromTo(".dg_ft_cont_en", {
+    bottom: -220,
+  }, {
+    bottom: 0,
   });
 }
 
