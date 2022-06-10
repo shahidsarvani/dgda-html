@@ -868,6 +868,11 @@ function move_showmodelactive(elem) {
     x: 3000,
     duration: 1
   });
+  gsap.to(".dg_bf_screen", {
+    opacity: 0,
+    x: 3000,
+    duration: 1
+  });
   gsap.fromTo(".dg_afrs_screen", {
     opacity: 0,
     x: -3000,
@@ -1020,6 +1025,44 @@ function move_lightsactive(elem) {
 
 
 $(document).ready(function () {
+
+  // Added features section for desktop
+  $(".navbar-nav a.nav-link-en1").click(function () {
+    if ($(".navbar-nav a.nav-link-en1").hasClass("active")) {
+      $(".navbar-nav a.nav-link-en1").removeClass("active");
+    } else {
+      $(".navbar-nav a.nav-link-en1").addClass("active");
+      $(".navbar-nav a.nav-link-en2").removeClass("active");
+    }
+  });
+  $(".navbar-nav a.nav-link-en2").click(function () {
+    if ($(".navbar-nav a.nav-link-en2").hasClass("active")) {
+      $(".navbar-nav a.nav-link-en2").removeClass("active");
+    } else {
+      $(".navbar-nav a.nav-link-en2").addClass("active");
+      $(".navbar-nav a.nav-link-en1").removeClass("active");
+    }
+  });
+
+
+  $(".navbar-nav a.nav-link-ar1").click(function () {
+    if ($(".navbar-nav a.nav-link-ar1").hasClass("active")) {
+      $(".navbar-nav a.nav-link-ar1").removeClass("active");
+    } else {
+      $(".navbar-nav a.nav-link-ar1").addClass("active");
+      $(".navbar-nav a.nav-link-ar2").removeClass("active");
+    }
+  });
+  $(".navbar-nav a.nav-link-ar2").click(function () {
+    if ($(".navbar-nav a.nav-link-ar2").hasClass("active")) {
+      $(".navbar-nav a.nav-link-ar2").removeClass("active");
+    } else {
+      $(".navbar-nav a.nav-link-ar2").addClass("active");
+      $(".navbar-nav a.nav-link-ar1").removeClass("active");
+    }
+  });
+
+
   $("#diriyah-room").click(function (e) {
     e.preventDefault();
     $(".navbar-nav .nav-item:first-child").addClass('active');
