@@ -365,6 +365,10 @@ function splash_video_fade() {
     display: 'none',
     duration: 1
   });
+  // gsap.to(".main_video_btn", {
+  //   pointer-event: 'none',
+  //   duration: 1
+  // });
   gsap.to(".logo_diriyah", {
     padding: '118px 0 0px 120px',
     top: '0',
@@ -405,6 +409,29 @@ function splash_video_fade() {
     duration: 1,
     delay: 2
   });
+  gsap.fromTo(".overlay_sc", {
+    opacity: 1,
+    x: 3000,
+    duration: 1,
+    delay: 2
+  }, {
+    opacity: 1,
+    x: 0,
+    duration: 1,
+    delay: 2
+  });
+  gsap.fromTo(".overlay_sc", {
+    opacity: 1,
+    x: 0,
+    duration: 1,
+    delay: 2
+  }, {
+    opacity: 1,
+    x: -3000,
+    duration: 1,
+    delay: 3
+  });
+  
 
 }
 function move_left_en() {
@@ -1062,10 +1089,20 @@ $(document).ready(function () {
     }
   });
 
+  
+  $(".main_video_btn").click(function (e) {
+    e.preventDefault();
+    $(this).css('pointer-events', 'none');
+  });
 
   $("#diriyah-room").click(function (e) {
     e.preventDefault();
     $(".navbar-nav .nav-item:first-child").addClass('active');
+  });
+
+  $("#main_video_btn").click(function (e) {
+    e.preventDefault();
+    $("#main_video_btn").prop( "disabled", true );
   });
 
   $(".dg_ft_nav_link_en a").click(function (e) {
