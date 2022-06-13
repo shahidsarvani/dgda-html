@@ -936,7 +936,7 @@ function move_showmodelactive(elem) {
   } else {
     gsap.fromTo(".dg_afrs_screen", {
       opacity: 0,
-      x: 3000,
+      x: -3000,
       duration: 1,
       visibility: 'hidden',
     }, {
@@ -947,7 +947,7 @@ function move_showmodelactive(elem) {
     });
     gsap.to(".dg_lights_screen", {
       opacity: 0,
-      x: -3000,
+      x: 3000,
       duration: 1
     });
     gsap.to(".dg_sm_screen", {
@@ -972,7 +972,7 @@ function move_showmodelactive(elem) {
       duration: 1,
     }, {
       opacity: 0,
-      x: -3000,
+      x: 3000,
       duration: 1,
     });
   }
