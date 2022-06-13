@@ -37,7 +37,7 @@ function move_main_left() {
   });
   gsap.fromTo(".home_en .ml_lights_screen", {
     opacity: 1,
-    x: 0,
+    x: -3000,
     duration: 1,
     visibility: 'visible',
   }, {
@@ -892,16 +892,18 @@ function move_showmodelactive(elem) {
     duration: 1,
     visibility: 'hidden',
   });
-  // gsap.to(".ml_lights_screen", {
-  //   opacity: 0,
-  //   x: 3000,
-  //   duration: 1
-  // });
-  // gsap.to(".ml_lights_screen", {
-  //   opacity: 0,
-  //   x: 3000,
-  //   duration: 1
-  // });
+  gsap.to("home_ar .ml_lights_screen", {
+    opacity: 0,
+    x: 3000,
+    duration: 1,
+    visibility: 'hidden',
+  });
+  gsap.to("home_en .ml_lights_screen", {
+    opacity: 0,
+    x: 3000,
+    duration: 1,
+    visibility: 'hidden',
+  });
   // gsap.to(".dg_bf_screen", {
   //   opacity: 0,
   //   x: 3000,
@@ -989,11 +991,17 @@ function move_videowallsactive(elem) {
       visibility: 'hidden',
       duration: 1, 
     });
-    gsap.to(".ml_lights_screen", {
+    gsap.to("home_ar .ml_lights_screen", {
       opacity: 0,
-      x: -3000,
-      visibility: 'hidden',
+      x: 3000,
       duration: 1,
+      visibility: 'hidden',
+    });
+    gsap.to("home_en .ml_lights_screen", {
+      opacity: 0,
+      x: 3000,
+      duration: 1,
+      visibility: 'hidden',
     });
     gsap.to(".dg_bf_screen", {
       opacity: 0,
@@ -1070,7 +1078,13 @@ function move_lightsactive(elem) {
     duration: 1,
     visibility: 'hidden',
   });
-  gsap.to(".ml_lights_screen", {
+  gsap.to("home_ar .ml_lights_screen", {
+    opacity: 0,
+    x: 3000,
+    duration: 1,
+    visibility: 'hidden',
+  });
+  gsap.to("home_en .ml_lights_screen", {
     opacity: 0,
     x: -3000,
     duration: 1,
