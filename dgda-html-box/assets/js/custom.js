@@ -81,10 +81,7 @@ function move_main_left() {
   });
 
 
-
-
-
-
+  ////////////// Arabic Movement /////////////
   gsap.fromTo(".home_ar .dg_afrs_screen", {
     opacity: 0,
     x: 3000,
@@ -105,7 +102,7 @@ function move_main_left() {
     opacity: 1,
     x: 3000,
     duration: 1,
-    visibility: 'visible',
+    visibility: 'hidden',
   });
   gsap.fromTo(".home_ar .ml_lights_screen", {
     opacity: 0,
@@ -116,7 +113,7 @@ function move_main_left() {
     opacity: 1,
     x: 3000,
     duration: 1,
-    visibility: 'visible',
+    visibility: 'hidden',
   });
   gsap.fromTo(".home_ar .dg_bf_screen", {
     opacity: 0,
@@ -127,7 +124,7 @@ function move_main_left() {
     opacity: 1,
     x: 3000,
     duration: 1,
-    visibility: 'visible',
+    visibility: 'hidden',
   });
   gsap.fromTo(".home_ar .dg_vwalls_screen", {
     opacity: 0,
@@ -138,7 +135,7 @@ function move_main_left() {
     opacity: 1,
     x: 3000,
     duration: 1,
-    visibility: 'visible',
+    visibility: 'hidden',
   });
   gsap.fromTo(".home_ar .dg_lights_screen", {
     opacity: 0,
@@ -149,7 +146,7 @@ function move_main_left() {
     opacity: 1,
     x: 3000,
     duration: 1,
-    visibility: 'visible',
+    visibility: 'hidden',
   });
   gsap.fromTo("#ar_version", {
     opacity: 0,
@@ -206,10 +203,10 @@ function move_main_right() {
     duration: 1,
     visibility: 'hidden',
   }, {
-    opacity: 1,
+    opacity: 0,
     x: -3000,
     duration: 1,
-    visibility: 'visible',
+    visibility: 'hidden',
   });
   gsap.fromTo(".home_en .ml_lights_screen", {
     opacity: 0,
@@ -217,10 +214,10 @@ function move_main_right() {
     duration: 1,
     visibility: 'hidden',
   }, {
-    opacity: 1,
+    opacity: 0,
     x: -3000,
     duration: 1,
-    visibility: 'visible',
+    visibility: 'hidden',
   });
   gsap.fromTo(".home_en .dg_bf_screen", {
     opacity: 0,
@@ -228,10 +225,10 @@ function move_main_right() {
     duration: 1,
     visibility: 'hidden',
   }, {
-    opacity: 1,
+    opacity: 0,
     x: -3000,
     duration: 1,
-    visibility: 'visible',
+    visibility: 'hidden',
   });
   gsap.fromTo(".home_en .dg_vwalls_screen", {
     opacity: 0,
@@ -239,10 +236,10 @@ function move_main_right() {
     duration: 1,
     visibility: 'hidden',
   }, {
-    opacity: 1,
+    opacity: 0,
     x: -3000,
     duration: 1,
-    visibility: 'visible',
+    visibility: 'hidden',
   });
   gsap.fromTo(".home_en .dg_lights_screen", {
     opacity: 0,
@@ -250,10 +247,10 @@ function move_main_right() {
     duration: 1,
     visibility: 'hidden',
   }, {
-    opacity: 1,
+    opacity: 0,
     x: -3000,
     duration: 1,
-    visibility: 'visible',
+    visibility: 'hidden',
   });
 
 
@@ -952,17 +949,17 @@ function move_showmodelactive(elem) {
     });
     gsap.to(".dg_sm_screen", {
       opacity: 0,
-      x: -3000,
+      x: 3000,
       duration: 1
     });
     gsap.to(".ml_lights_screen", {
       opacity: 0,
-      x: -3000,
+      x: 3000,
       duration: 1
     });
     gsap.to(".dg_bf_screen", {
       opacity: 0,
-      x: -3000,
+      x: 3000,
       duration: 1
     });
     
