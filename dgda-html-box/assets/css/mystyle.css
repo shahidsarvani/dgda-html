@@ -327,7 +327,18 @@ section {
   height: 6.3628px;
   width: 100%;
 }
-
+.ml_list_wrap {
+  max-height: 1010px;
+  overflow: hidden;
+}
+.ml_list_wrap ul{
+  max-height: 1010px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
 .dg_vw_col{
   position: relative;
 }
