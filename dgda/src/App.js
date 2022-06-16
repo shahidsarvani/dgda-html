@@ -6,6 +6,7 @@ import Footer from './footer';
 import Roomselection from './screens/room-selection';
 import Afterroomselection from './screens/after-room-selection';
 import Modelshow from './screens/model-show';
+//import Welcomesection from './screens/welcome-video-screen';
 
 
 function App() {

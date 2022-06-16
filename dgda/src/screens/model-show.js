@@ -13,13 +13,15 @@ function Modelshow() {
   return (
     <div className="room_selection_screen">
 
-        <section className="dg_sm_screen">
-            <div className="container dg_sm_screen">
+        <section id="dg_sm_screen" className="dg_sm_screen">
+            <div className="container dg_sm_screen_cont">
                 <div className="row dg_sm_row">
                     <div className="col-12 dg_sm_col">
-                        <h3 className="breadcrumbs">
-                            MODEL SHOW
-                        </h3>
+                        <a href="javascript:void(0)" onclick="move_startshow_right()">
+                            <h3 className="breadcrumbs">
+                                MODEL SHOW
+                            </h3>
+                        </a>
                     </div>
                     <div className="dg_sm_video_wrap">
                         <div className="sm_video">

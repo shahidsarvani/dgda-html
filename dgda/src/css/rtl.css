@@ -1,0 +1,49 @@
+@font-face {
+    font-family: "Kermes3-SemiBold";
+    font-style: normal;
+    font-weight: normal;
+    src: local("Kermes3-SemiBold"), url("../fonts/kermes3/Kermes3-SemiBold.ttf") format("ttf");
+  }
+  
+  @font-face {
+    font-family: "Kermes3-SemiBold";
+    font-style: normal;
+    font-weight: normal;
+    src: local("Kermes3-SemiBold"), url("../fonts/kermes3/woff/Kermes3-SemiBold.woff") format("woff");
+  }
+
+
+[lang="ar"] body,
+html[lang="ar"], [lang="ar"] div, [lang="ar"] h1, [lang="ar"] h2, [lang="ar"] h3, [lang="ar"] h4, [lang="ar"] h5, [lang="ar"] h6, [lang="ar"] p, [lang="ar"] span {
+  font-family: "Kermes3-SemiBold" !important;
+}
+[lang="ar"] body {
+    direction:rtl;
+}
+[lang="ar"] .load_log_col .logo_diriyah{
+    left: unset !important;
+    right: 45%;
+    transform: translate(50%, 50%);
+}
+[lang="ar"] .navbar-expand-sm .navbar-collapse.nav_cp_dp .navbar-nav .nav-item:first-child {
+    margin-right: 0px;
+    margin-left: 166px;
+}
+[lang="ar"] span.sm_video_end_timer{
+    float: left !important;
+}
+[lang="ar"] .ml_list_wrap.active{
+    margin-left: unset !important;
+    margin-right: 0 !important;
+}
+[lang="ar"] .ml_list_wrap{
+    margin-left: unset !important;
+    margin-right: -350px;
+}
+[lang="ar"] .load_log_col .logo_diriyah{
+    margin-top: -45px;
+}
+[lang="ar"] .ml_dg_list{
+    padding-left: 0;
+    padding-right: 40px;
+}
