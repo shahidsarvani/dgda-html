@@ -1,22 +1,19 @@
 import './App.css';
 import './bootstrap.min.css';
 import './mystyle.css';
-import Header from './header';
-import Footer from './footer';
-import Roomselection from './screens/room-selection';
-import Afterroomselection from './screens/after-room-selection';
-import Modelshow from './screens/model-show';
+import Headeren from './header';
+import Footeren from './footer';
+import Mainenglish from './main-en';
+//import Mainarabic from './main-ar';
 //import Welcomesection from './screens/welcome-video-screen';
 
 
 function App() {
   return (
     <div className="App">
-      <Header />
-      <Roomselection />
-      <Afterroomselection />
-      <Modelshow />
-      <Footer />
+      <Headeren />
+      <Mainenglish />
+      <Footeren />
     </div>
   );
 }

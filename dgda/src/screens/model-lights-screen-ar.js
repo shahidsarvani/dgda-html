@@ -1,19 +1,21 @@
 import '../bootstrap.min.css';
+import '../bootstrap.rtl.min.css';
 import '../mystyle.css';
+import '../css/rtl.css';
 import DG1 from '../images/model-lights/dg1.png';
 import DG2 from '../images/model-lights/dg1.png';
 import DG3 from '../images/model-lights/dg1.png';
 
-function Modellights() {
+function Modellightsar() {
   return (
-    <div className="after_room_selection_screen">
+    <div className="model_lights_screen_ar">
 
         <section id="ml_lights_screen" className="ml_lights_screen">
             <div className="container ml_lights_container">
                 <div className="row ml_lights_row">
                     <div className="col-12 breadcrumbs_col">
                         <a href="javascript:void(0)" onclick="move_start_modellights_right()">
-                            <h3 className="breadcrumbs"> MODEL LIGHTS </h3>
+                            <h3 className="breadcrumbs"> إضاءات المجسم </h3>
                         </a>
                     </div>
                     <div className="col_12 ml_content_col">
@@ -26,97 +28,97 @@ function Modellights() {
                                 <ul className="ml_dg_list ml_dg1_list">
                                     <li className="ml_dg_list_item">
                                         <a href="#">
-                                            1. ZONE 1
+                                            ١. المنطقة ١
                                         </a>
                                     </li>
                                     <li className="ml_dg_list_item">
                                         <a href="#">
-                                            2. ZONE 2
+                                            ١. المنطقة ١
                                         </a>
                                     </li>
                                     <li className="ml_dg_list_item">
                                         <a href="#">
-                                            3. ZONE 3
+                                            ١. المنطقة ١
                                         </a>
                                     </li>
                                     <li className="ml_dg_list_item">
                                         <a href="#">
-                                            4. ZONE 4
+                                            ١. المنطقة ١
                                         </a>
                                     </li>
                                     <li className="ml_dg_list_item">
                                         <a href="#">
-                                            5. ZONE 5
+                                            ١. المنطقة ١
                                         </a>
                                     </li>
                                     <li className="ml_dg_list_item">
                                         <a href="#">
-                                            6. ZONE 6
+                                            ١. المنطقة ١
                                         </a>
                                     </li>
                                     <li className="ml_dg_list_item">
                                         <a href="#">
-                                            7. ZONE 7
+                                            ١. المنطقة ١
                                         </a>
                                     </li>
                                     <li className="ml_dg_list_item">
                                         <a href="#">
-                                            7. ZONE 7
+                                            ١. المنطقة ١
                                         </a>
                                     </li>
                                     <li className="ml_dg_list_item">
                                         <a href="#">
-                                            7. ZONE 7
+                                            ١. المنطقة ١
                                         </a>
                                     </li>
                                     <li className="ml_dg_list_item">
                                         <a href="#">
-                                            7. ZONE 7
+                                            ١. المنطقة ١
                                         </a>
                                     </li>
                                     <li className="ml_dg_list_item">
                                         <a href="#">
-                                            7. ZONE 7
+                                            ١. المنطقة ١
                                         </a>
                                     </li>
                                     <li className="ml_dg_list_item">
                                         <a href="#">
-                                            7. ZONE 7
+                                            ١. المنطقة ١
                                         </a>
                                     </li>
                                     <li className="ml_dg_list_item">
                                         <a href="#">
-                                            7. ZONE 7
+                                            ١. المنطقة ١
                                         </a>
                                     </li>
                                     <li className="ml_dg_list_item">
                                         <a href="#">
-                                            7. ZONE 7
+                                            ١. المنطقة ١
                                         </a>
                                     </li>
                                     <li className="ml_dg_list_item">
                                         <a href="#">
-                                            7. ZONE 7
+                                            ١. المنطقة ١
                                         </a>
                                     </li>
                                     <li className="ml_dg_list_item">
                                         <a href="#">
-                                            7. ZONE 7
+                                            ١. المنطقة ١
                                         </a>
                                     </li>
                                     <li className="ml_dg_list_item">
                                         <a href="#">
-                                            7. ZONE 7
+                                            ١. المنطقة ١
                                         </a>
                                     </li>
                                     <li className="ml_dg_list_item">
                                         <a href="#">
-                                            7. ZONE 7
+                                            ١. المنطقة ١
                                         </a>
                                     </li>
                                     <li className="ml_dg_list_item">
                                         <a href="#">
-                                            7. ZONE 7
+                                            ١. المنطقة ١
                                         </a>
                                     </li>
                                 </ul>
@@ -124,44 +126,44 @@ function Modellights() {
                         </div>
                         <div className="ml_content_container ml_content_container2">
                             <div className="ml_image_wrap ml_dg_anchor2_wrap">
-                                <img src={DG2} alt="DG1"/>
+                                <img src={DG2} alt="DG2"/>
                                 <h3>DG2</h3>
                             </div>
                             <div className="ml_list_wrap ml_dg_antag2_wrap">
-                                <ul className="ml_dg_list ml_dg2_list">
+                                <ul className="ml_dg_list ml_dg1_list">
                                     <li className="ml_dg_list_item">
                                         <a href="#">
-                                            1. ZONE 1
+                                            ١. المنطقة ١
                                         </a>
                                     </li>
                                     <li className="ml_dg_list_item">
                                         <a href="#">
-                                            2. ZONE 2
+                                            ١. المنطقة ١
                                         </a>
                                     </li>
                                     <li className="ml_dg_list_item">
                                         <a href="#">
-                                            3. ZONE 3
+                                            ١. المنطقة ١
                                         </a>
                                     </li>
                                     <li className="ml_dg_list_item">
                                         <a href="#">
-                                            4. ZONE 4
+                                            ١. المنطقة ١
                                         </a>
                                     </li>
                                     <li className="ml_dg_list_item">
                                         <a href="#">
-                                            5. ZONE 5
+                                            ١. المنطقة ١
                                         </a>
                                     </li>
                                     <li className="ml_dg_list_item">
                                         <a href="#">
-                                            6. ZONE 6
+                                            ١. المنطقة ١
                                         </a>
                                     </li>
                                     <li className="ml_dg_list_item">
                                         <a href="#">
-                                            7. ZONE 7
+                                            ١. المنطقة ١
                                         </a>
                                     </li>
                                 </ul>
@@ -169,44 +171,44 @@ function Modellights() {
                         </div>
                         <div className="ml_content_container ml_content_container3">
                             <div className="ml_image_wrap ml_dg_anchor3_wrap">
-                                <img src={DG3} alt="DG1"/>
+                                <img src={DG3} alt="DG3"/>
                                 <h3>DG3</h3>
                             </div>
                             <div className="ml_list_wrap ml_dg_antag3_wrap">
-                                <ul className="ml_dg_list ml_dg3_list">
+                                <ul className="ml_dg_list ml_dg1_list">
                                     <li className="ml_dg_list_item">
                                         <a href="#">
-                                            1. ZONE 1
+                                            ١. المنطقة ١
                                         </a>
                                     </li>
                                     <li className="ml_dg_list_item">
                                         <a href="#">
-                                            2. ZONE 2
+                                            ١. المنطقة ١
                                         </a>
                                     </li>
                                     <li className="ml_dg_list_item">
                                         <a href="#">
-                                            3. ZONE 3
+                                            ١. المنطقة ١
                                         </a>
                                     </li>
                                     <li className="ml_dg_list_item">
                                         <a href="#">
-                                            4. ZONE 4
+                                            ١. المنطقة ١
                                         </a>
                                     </li>
                                     <li className="ml_dg_list_item">
                                         <a href="#">
-                                            5. ZONE 5
+                                            ١. المنطقة ١
                                         </a>
                                     </li>
                                     <li className="ml_dg_list_item">
                                         <a href="#">
-                                            6. ZONE 6
+                                            ١. المنطقة ١
                                         </a>
                                     </li>
                                     <li className="ml_dg_list_item">
                                         <a href="#">
-                                            7. ZONE 7
+                                            ١. المنطقة ١
                                         </a>
                                     </li>
                                 </ul>
@@ -221,4 +223,4 @@ function Modellights() {
   );
 }
 
-export default Modellights;
+export default Modellightsar;

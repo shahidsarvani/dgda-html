@@ -10,6 +10,17 @@
   src: local("GraphikArabic-SemiBold"), url("./fonts/GraphikArabic/GraphikArabic-SemiBold.ttf") format("ttf");
 } */
 
+.dgda-footer{
+  background-color: #fff;
+  position: fixed;
+  width: 100%;
+  padding: 15px 0 10px;
+  bottom: 0;
+}
+.overlay_sc{
+  display: none;
+}
+
 @font-face {
   font-family: "GraphikArabic-SemiBold";
   font-style: normal;
@@ -53,7 +64,6 @@ a {
 img {
   max-width: 100%;
 }
-
 section {
   position: absolute;
   top: 0;
