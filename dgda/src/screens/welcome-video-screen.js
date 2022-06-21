@@ -1,6 +1,7 @@
 import '../bootstrap.min.css';
 import '../mystyle.css';
 import video from '../videos/dgda_intro.mp4';
+import splash_video_fade from '../splash-video-fade';
 
 
 function Welcomesection() {
@@ -16,7 +17,7 @@ function Welcomesection() {
                                 <source src="movie.ogg" type="video/ogg"/>
                                 Your browser does not support the video tag.
                         </video>
-                        <div id="main_video_btn" className="main_video_btn" onclick="splash_video_fade();">
+                        <div id="main_video_btn" className="main_video_btn" onClick={splash_video_fade}>
                             <a id="video_start_btn" href="#">TAP TO START</a>
                         </div>
                     </div>

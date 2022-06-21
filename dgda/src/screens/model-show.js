@@ -7,7 +7,7 @@ import Lowvolicon from '../images/video-controls/video-low-volum-icon.svg';
 import Fullvolicon from '../images/video-controls/video-full-volum-icon.svg';
 import Muteicon from '../images/video-controls/video-mute-icon.svg';
 import Videothumb from '../images/play-video-thumb.png';
-
+import move_startshow_right from '../move-startshow-right';
 
 function Modelshow() {
   return (
@@ -17,7 +17,7 @@ function Modelshow() {
             <div className="container dg_sm_screen_cont">
                 <div className="row dg_sm_row">
                     <div className="col-12 dg_sm_col">
-                        <a href="javascript:void(0)" onclick="move_startshow_right()">
+                        <a href="javascript:void(0)" onClick={move_startshow_right}>
                             <h3 className="breadcrumbs">
                                 MODEL SHOW
                             </h3>

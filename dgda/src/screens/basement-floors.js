@@ -1,5 +1,6 @@
 import '../bootstrap.min.css';
 import '../mystyle.css';
+import move_start_basementfloors_right from '../move-start-basementfloors-right';
 
 function Basementfloors() {
   return (
@@ -9,7 +10,7 @@ function Basementfloors() {
             <div className="container dg_bf_container">
                 <div className="row dg_bfb_row">
                     <div className="col-12 breadcrumbs_col">
-                        <a href="javascript:void(0)" onclick="move_start_basementfloors_right()">
+                        <a href="javascript:void(0)" onClick={move_start_basementfloors_right}>
                             <h3 className="breadcrumbs"> BASEMENT FLOORS </h3>
                         </a>
                     </div>

@@ -3,6 +3,7 @@ import '../mystyle.css';
 import DG1 from '../images/model-lights/dg1.png';
 import DG2 from '../images/model-lights/dg1.png';
 import DG3 from '../images/model-lights/dg1.png';
+import move_start_modellights_right from '../move-start-modellights-right';
 
 function Modellights() {
   return (
@@ -12,7 +13,7 @@ function Modellights() {
             <div className="container ml_lights_container">
                 <div className="row ml_lights_row">
                     <div className="col-12 breadcrumbs_col">
-                        <a href="javascript:void(0)" onclick="move_start_modellights_right()">
+                        <a href="javascript:void(0)" onClick={move_start_modellights_right}>
                             <h3 className="breadcrumbs"> MODEL LIGHTS </h3>
                         </a>
                     </div>

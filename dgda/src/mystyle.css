@@ -3,22 +3,18 @@
   padding: 0;
 }
 
-/* @font-face {
-  font-family: "GraphikArabic-SemiBold";
-  font-style: normal;
-  font-weight: normal;
-  src: local("GraphikArabic-SemiBold"), url("./fonts/GraphikArabic/GraphikArabic-SemiBold.ttf") format("ttf");
-} */
-
 .dgda-footer{
   background-color: #fff;
   position: fixed;
   width: 100%;
   padding: 15px 0 10px;
-  bottom: 0;
+  bottom: -220px;
+  z-index: 99;
 }
-.overlay_sc{
-  display: none;
+.header-wrap{
+  position: absolute;
+  width: 100%;
+  z-index: 99;
 }
 
 @font-face {
@@ -28,12 +24,6 @@
   src: local("GraphikArabic-SemiBold"), url("./fonts/GraphikArabic/woff/GraphikArabic-Semibold.woff") format("woff");
 }
 
-/* @font-face {
-  font-family: "Kermes3-SemiBold";
-  font-style: normal;
-  font-weight: normal;
-  src: local("Kermes3-SemiBold"), url("./fonts/kermes3/Kermes3-SemiBold.ttf") format("ttf");
-} */
 
 @font-face {
   font-family: "Kermes3-SemiBold";
@@ -70,23 +60,22 @@ section {
   left: 0;
   padding-top: 225px;
   width: 100%;
-  /* height: 100%; */
   height: 100vh;
 }
 #ar_version{
-  /* display: none; */
   visibility: hidden;
   opacity: 0;
 }
 
-/*/////////////////////////Screens Comperisons//////////////////////////////*/
 .compare_img{
   opacity: 0.3;
   position: absolute;
   margin-top: 0px;
   left: 0;
 }
-
+.main_en{
+  text-align: left !important;
+}
 
 
 #dg_afrs_screen,
@@ -110,7 +99,6 @@ section {
 
 #header {
   z-index: 999999;
-  /* position: absolute; */
   width: 100%;
   top: 0;
 }
@@ -154,12 +142,6 @@ section {
   margin-left: 195px;
 }
 
-/* #dg_first_load_screen, #dg_bf_screen, #ml_lights_screen, #dg_sm_screen, #dg_afrs_screen, #footer{
-  display: none;
-} */
-
-
-/*********************************************************************************************/
 .load_log_col.logowrapanim {
   position: relative;
   animation-name: logowraptransition;
@@ -167,34 +149,25 @@ section {
   animation-delay: 2s;
 }
 
-.load_log_col .logo_diriyah {
-  top: 50%;
-  left: 50%;
+.logo_diriyah {
+  top: 300%;
+  left: 34%;
   width: 100%;
   position: absolute;
   max-width: 720px;
-  transform: translate(-50%, -50%);
+  transform: translate(0%, 85%);
 }
-
-/* .load_log_col .logo_diriyah {
-  display: none;
-} */
 
 .load_log_col .logo_diriyah.startanim {
   position: relative;
   animation-name: logotransition;
   animation-duration: 2s;
-  /* animation-delay: 0.2s; */
   left: 0%;
   top: 0%;
   animation-delay: 2s;
   display: block;
 }
 
-/* .dg_rs_row.firstsecanimOut{
-  left: -100%; 
-  top: 72px;
-} */
 .dg_rs_row.firstsecanim {
   position: relative;
   animation-name: firstsec;
@@ -248,18 +221,12 @@ section {
     top: 0px;
   }
 
-  /* 50%  {
-    left: 150%; 
-    top: 0px;
-  } */
   100% {
     left: 0%;
     top: 0px;
   }
 }
 
-
-/********************************************************************************************/
 #main_video {
   z-index: 2;
   position: absolute;
@@ -267,13 +234,6 @@ section {
   left: 0;
 }
 
-.dg_rs_row {
-  /* display: none; */
-}
-
-.dg_rs_screen {
-  /* padding-top: 120px; */
-}
 .dg_afrs_row{
   margin-top: 150px;
 }
@@ -350,42 +310,23 @@ section {
   height: 100%;
 }
 
-
-/* width */
 ::-webkit-scrollbar {
   width: 10px;
 }
 
-/* Track */
 ::-webkit-scrollbar-track {
   box-shadow: inset 0 0 4px #ffffff;
-  /* background: #ffffff;  */
   border-radius: 10px;
 }
  
-/* Handle */
 ::-webkit-scrollbar-thumb {
   background: #c87e59; 
   border-radius: 10px;
 }
 
-/* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #c87e59; 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -400,7 +341,6 @@ section {
   width: 100%;
   height: 100%;
   background-color: #F4E6D2;
-  /* background-color: rgba(235, 206, 166, 1); */
   z-index: 1;
 }
 .overlay_sc{
@@ -462,7 +402,6 @@ section {
 .dg_ft_nav_item .dg_ft_nav_link h3 {
   color: #003741;
   font-size: 38.6px;
-  /* background-color: rgb(204 102 102 / 20%); */
   padding: 4px 3px !important;
   margin: 0 5px;
 }
@@ -480,7 +419,6 @@ section {
 }
 
 .dg_vw_screen {
-  /*display: none;*/
   position: absolute;
   top: 0;
   left: 0;
@@ -516,7 +454,6 @@ section {
   margin-right: 166px;
 }
 
-/*/////////////////*/
 .row.diri_header_row {
   flex-wrap: nowrap !important;
   max-width: 100% !important;
@@ -535,7 +472,6 @@ section {
   width: 25%;
 }
 
-/*///////////////////////VIDEO SCREEN/////////////////////*/
 .dg_wvideo_screen header,
 .dg_wvideo_screen .dg_ft_cont {
   display: none;
@@ -547,7 +483,6 @@ section {
   margin-top: 53px !important;
 }
 
-/*//////////////////////ROOM SELECTION SCREEN///////////////////////*/
 .dg_room_selection_screen .dg_ft_cont {
   display: none;
 }
@@ -583,9 +518,6 @@ section {
   margin: 90px auto;
 }
 
-
-
-/*/////////////////////////////AFTER ROOM SELECTION SCREEN///////////////////////////////*/
 .dg_afrs_col1_h{
   margin-left: -165px;
 }
@@ -596,7 +528,6 @@ section {
   margin-left: 50px;
 }
 .dg_afrs_screen {
-  /* height: calc(100vh - 250px); */
   text-align: center;
   display: flex;
   justify-content: center;
@@ -607,14 +538,6 @@ section {
   font-size: 55px;
   color: #C87E59;
 }
-
-
-
-
-
-
-
-/*////////////////////////////////MODEL SHOW SCREEN///////////////////////////////////*/
 
 .dg_sm_screen_cont{
   padding-left: 117px;
@@ -702,19 +625,7 @@ span.sm_video_start_timer {
   margin: 0 auto;
 }
 
-
-
-
-
-
-
-
-
-
-
-/*////////////////////////////////MODEL LIGHTS SCREEN/////////////////////////////////*/
 .ml_lights_screen {
-  /* min-height: 90vh; */
   margin-bottom: 210px;
 }
 
@@ -802,14 +713,8 @@ span.sm_video_start_timer {
   margin-bottom: 35px;
 }
 
-
-
-/*////////////////////////////////BASEMENT FLOORS SCREEN/////////////////////////////////*/
 .dg_bf_screen {
   height: calc(100vh - 300px);
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
 }
 
 .dg_bfc_row {
@@ -833,10 +738,6 @@ span.sm_video_start_timer {
   text-decoration: none;
 }
 
-
-
-
-/*////////////////////VIDEO SCREEN CSS////////////////////*/
 .dg_vw_screen .sm_video_track_wrap {
   margin-top: 180px;
 }

@@ -6,6 +6,7 @@ import Videostopicon from '../images/video-controls/video-stop-control-icon.svg'
 import Videolowvolicon from '../images/video-controls/video-low-volum-icon.svg';
 import Videohighvolicon from '../images/video-controls/video-full-volum-icon.svg';
 import Videomutevolicon from '../images/video-controls/video-mute-icon.svg';
+import move_vwalls_right from '../move-vwalls-right';
 
 function Videowalls() {
   return (
@@ -15,7 +16,7 @@ function Videowalls() {
             <div className="container dg_vwalls_container">
                 <div className="row dg_vwalls_row">
                     <div className="col-12 dg_vwalls_col">
-                        <a href="javascript:void(0)" onclick="move_vwalls_right()">
+                        <a href="javascript:void(0)" onClick={move_vwalls_right}>
                             <h3 className="breadcrumbs"> VIDEO WALLS </h3>
                         </a>
                     </div>
