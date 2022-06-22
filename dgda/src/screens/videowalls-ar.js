@@ -8,6 +8,7 @@ import Videostop from '../images/video-controls/video-stop-control-icon.svg';
 import Videolowvol from '../images/video-controls/video-low-volum-icon.svg';
 import Videohighvol from '../images/video-controls/video-full-volum-icon.svg';
 import Videomute from '../images/video-controls/video-mute-icon.svg';
+import move_vwalls_right from '../move-vwalls-right';
 
 function Videowallsar() {
   return (
@@ -17,7 +18,7 @@ function Videowallsar() {
             <div className="container dg_vwalls_container">
                 <div className="row dg_vwalls_row">
                     <div className="col-12 dg_vwalls_col">
-                        <a href="javascript:void(0)" onclick="move_vwalls_right()">
+                        <a href="javascript:void(0)" onClick={move_vwalls_right}>
                             <h3 className="breadcrumbs"> الشاشات الجدارية</h3>
                         </a>
                     </div>

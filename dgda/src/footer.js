@@ -4,6 +4,8 @@ import Model from './images/model.svg';
 import Videowall from './images/play.svg';
 import Lights from './images/lighting.svg';
 import Arabic from './images/ftr-arabic-icon.svg';
+import move_showmodelactive from './move-showmodelactive';
+import move_main_left from './move-main-left';
 
 function Footer() {
   return (
@@ -15,7 +17,7 @@ function Footer() {
                         <div className="dg_ft_nav">
                             <ul className="dg_ft_nav_list">
                                 <li className="dg_ft_nav_item">
-                                    <a href="#" onclick="move_showmodelactive(this)" data-fromDir="left">
+                                    <a href="#" onClick={move_showmodelactive.this} data-fromDir="left">
                                         <div className="dg_ft_nav_img">
                                             <img src={Model} alt="Model"/>
                                         </div>
@@ -45,9 +47,9 @@ function Footer() {
                                     </a>
                                 </li>
                                 <li className="dg_ft_nav_item">
-                                    <a href="#" onclick="move_main_left()">
+                                    <a href="#" onClick={move_main_left}>
                                         <div className="dg_ft_nav_img">
-                                            <img src={Arabic} alt="ARABIC"/>
+                                            <img className="arabic_img" src={Arabic} alt="ARABIC"/>
                                         </div>
                                         <div className="dg_ft_nav_link">
                                             <h3>العربية</h3>

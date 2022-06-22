@@ -7,7 +7,7 @@ function move_showmodelactive(elem) {
     
     var fromDir = elem.getAttribute('data-fromDir');
     console.log(fromDir)
-    if(fromDir == 'right') {
+    if(fromDir === 'right') {
       gsap.to(".dg_rs_screen", {
         opacity: 0,
         x: 3000,
@@ -20,23 +20,12 @@ function move_showmodelactive(elem) {
         duration: 1,
         visibility: 'hidden',
       });
-      // gsap.to("home_ar .ml_lights_screen", {
-      //   opacity: 0,
-      //   x: 3000,
-      //   duration: 1,
-      //   visibility: 'hidden',
-      // });
       gsap.to(".ml_lights_screen", {
         opacity: 0,
         x: 3000,
         duration: 1,
         visibility: 'hidden',
       });
-      // gsap.to(".dg_bf_screen", {
-      //   opacity: 0,
-      //   x: 3000,
-      //   duration: 1
-      // });
       gsap.to(".dg_lights_screen", {
         opacity: 0,
         x: 3000,

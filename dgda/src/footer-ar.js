@@ -4,6 +4,7 @@ import Model from './images/model.svg';
 import Videowall from './images/play.svg';
 import Lights from './images/lighting.svg';
 import English from './images/english-letter.svg';
+import move_main_right from './move-main-right';
 
 function Footerar() {
   return (
@@ -45,7 +46,7 @@ function Footerar() {
                                 </a>
                             </li>
                             <li class="dg_ft_nav_item dg_ft_nav_item4 dg_ft_nav_link_ar">
-                                <a href="javascript:void(0)" onclick="move_main_right()">
+                                <a href="javascript:void(0)" onClick={move_main_right}>
                                     <div class="dg_ft_nav_img dg_ft_nav_img_ar">
                                         <img src={English} alt="English"/>
                                     </div>

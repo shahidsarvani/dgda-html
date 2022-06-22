@@ -67,6 +67,10 @@ section {
   opacity: 0;
 }
 
+.arabic_img{
+  max-width: 40px !important;
+}
+
 .compare_img{
   opacity: 0.3;
   position: absolute;

@@ -648,7 +648,7 @@ function move_startshow_right() {
     opacity: 0,
     x: 3000,
     duration: 1,
-    visibility: 'hidden',
+    visibility: 'visible',
   });
 
   ///////////////////arabic animations///////////////////////
@@ -672,7 +672,7 @@ function move_startshow_right() {
     opacity: 0,
     x: -3000,
     duration: 1,
-    visibility: 'hidden',
+    visibility: 'visible',
   });
 
 }
@@ -842,7 +842,7 @@ function move_start_basementfloors_right() {
     opacity: 0,
     x: 3000,
     duration: 1,
-    visibility: 'hidden',
+    visibility: 'visible',
   });
 
   ///////////////////arabic animations///////////////////////
@@ -866,7 +866,7 @@ function move_start_basementfloors_right() {
     opacity: 0,
     x: -3000,
     duration: 1,
-    visibility: 'hidden',
+    visibility: 'visible',
   });
 
 }

@@ -9,7 +9,7 @@ import Videostop from '../images/video-controls/video-stop-control-icon.svg';
 import Videolowvol from '../images/video-controls/video-low-volum-icon.svg';
 import Videohighvol from '../images/video-controls/video-full-volum-icon.svg';
 import Videomute from '../images/video-controls/video-mute-icon.svg';
-
+import move_startshow_right from '../move-startshow-right';
 
 function Modelshowar() {
   return (
@@ -19,7 +19,7 @@ function Modelshowar() {
             <div className="container dg_sm_screen_cont">
                 <div className="row dg_sm_row">
                     <div className="col-12 dg_sm_col">
-                        <a href="javascript:void(0)" onclick="move_startshow_right()">
+                        <a href="javascript:void(0)" onClick={move_startshow_right}>
                             <h3 className="breadcrumbs">
                                عرض المجسم
                             </h3>
