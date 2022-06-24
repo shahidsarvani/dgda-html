@@ -6,6 +6,8 @@ import Lights from './images/lighting.svg';
 import Arabic from './images/ftr-arabic-icon.svg';
 import move_showmodelactive from './move-showmodelactive';
 import move_main_left from './move-main-left';
+import videowallsactive from './move-videowallsactive';
+import move_lightsactive from './move-lightsactive';
 
 function Footer() {
   return (
@@ -17,7 +19,7 @@ function Footer() {
                         <div className="dg_ft_nav">
                             <ul className="dg_ft_nav_list">
                                 <li className="dg_ft_nav_item">
-                                    <a href="#" onClick={move_showmodelactive.this} data-fromdir="left">
+                                    <a href="#" onClick={move_showmodelactive} data-fromdir="left">
                                         <div className="dg_ft_nav_img">
                                             <img src={Model} alt="Model"/>
                                         </div>
@@ -27,7 +29,7 @@ function Footer() {
                                     </a>
                                 </li>
                                 <li className="dg_ft_nav_item">
-                                    <a href="#" onclick="move_videowallsactive(this)" data-fromdir="right">
+                                    <a href="#" onClick={videowallsactive} data-fromdir="right">
                                         <div className="dg_ft_nav_img">
                                             <img src={Videowall} alt="VIDEOWALLS"/>
                                         </div>
@@ -37,7 +39,7 @@ function Footer() {
                                     </a>
                                 </li>
                                 <li className="dg_ft_nav_item">
-                                    <a href="#" onclick="move_lightsactive(this)" data-fromdir="right">
+                                    <a href="#" onClick={move_lightsactive} data-fromdir="right">
                                         <div className="dg_ft_nav_img">
                                             <img src={Lights} alt="LIGHTS"/>
                                         </div>

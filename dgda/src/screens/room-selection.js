@@ -13,7 +13,7 @@ function Roomselection() {
             <div className="container dg_rs_container">
                 <div className="row dg_rs_row">
                     <div className="col-6 dg_rs_col">
-                        <a href="javascript:void(0)" onClick={move_left_en}>
+                        <a href="#" onClick={move_left_en}>
                             <div id="diriyah-room" className="dg_rs_wrap">
                                 <img src={diriyahRoom} alt="diriyah"/>
                                 <h3>DIRIYAH</h3>
@@ -21,7 +21,7 @@ function Roomselection() {
                         </a>
                     </div>
                     <div className="col-6 dg_rs_col">
-                        <a href="javascript:void(0)" onClick={move_left_en}>
+                        <a href="#" onClick={move_left_en}>
                             <div id="wadisafar-room" className="dg_rs_wrap">
                                 <img src={wadiSafRoom} alt="diriyah"/>
                                 <h3>WADI SAFAR</h3>

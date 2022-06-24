@@ -15,7 +15,7 @@ function Modellightsar() {
             <div className="container ml_lights_container">
                 <div className="row ml_lights_row">
                     <div className="col-12 breadcrumbs_col">
-                        <a href="javascript:void(0)" onClick={move_start_modellights_right}>
+                        <a href="#" onClick={move_start_modellights_right}>
                             <h3 className="breadcrumbs"> إضاءات المجسم </h3>
                         </a>
                     </div>

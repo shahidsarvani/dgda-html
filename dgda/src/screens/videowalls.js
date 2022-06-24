@@ -16,7 +16,7 @@ function Videowalls() {
             <div className="container dg_vwalls_container">
                 <div className="row dg_vwalls_row">
                     <div className="col-12 dg_vwalls_col">
-                        <a href="javascript:void(0)" onClick={move_vwalls_right}>
+                        <a href="#" onClick={move_vwalls_right}>
                             <h3 className="breadcrumbs"> VIDEO WALLS </h3>
                         </a>
                     </div>

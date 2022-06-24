@@ -19,7 +19,7 @@ function Modelshowar() {
             <div className="container dg_sm_screen_cont">
                 <div className="row dg_sm_row">
                     <div className="col-12 dg_sm_col">
-                        <a href="javascript:void(0)" onClick={move_startshow_right}>
+                        <a href="#" onClick={move_startshow_right}>
                             <h3 className="breadcrumbs">
                                عرض المجسم
                             </h3>

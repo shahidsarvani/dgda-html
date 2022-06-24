@@ -12,7 +12,7 @@ function Welcomesection() {
             <div className="container-fluid dg_vw_cont">
                 <div className="row dg_vw_row">
                     <div className="col-12 dg_vw_col">
-                        <video id="main_video" width="100%" height="100%" loop="true" controls="false" autoplay="autoplay" muted>
+                        <video id="main_video" width="100%" height="100%" loop={true} controls={false} autoPlay="autoplay" muted>
                                 <source src={video} type="video/mp4"/>
                                 <source src="movie.ogg" type="video/ogg"/>
                                 Your browser does not support the video tag.

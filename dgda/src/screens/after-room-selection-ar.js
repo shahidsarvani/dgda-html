@@ -14,17 +14,17 @@ function Afterroomselectionar() {
             <div className="container dg_afrs_container">
                 <div className="row dg_afrs_row">
                     <div className="col-4 dg_afrs_col">
-                        <a href="javascript:void(0)" onClick={move_startshow_left}>
+                        <a href="#" onClick={move_startshow_left}>
                             <h3 className="dg_afrs_col1_h">بدء<br/>العرض</h3>
                         </a>
                     </div>
                     <div className="col-4 dg_afrs_col">
-                        <a href="javascript:void(0)" onClick={move_start_modellights_left}>
+                        <a href="#" onClick={move_start_modellights_left}>
                             <h3 className="dg_afrs_col2_h">إضاءات<br/>المجسم</h3>
                         </a>
                     </div>
                     <div className="col-4 dg_afrs_col">
-                        <a href="javascript:void(0)" onClick={move_start_basementfloors_left}>
+                        <a href="#" onClick={move_start_basementfloors_left}>
                             <h3 className="dg_afrs_col3_h">المواقف<br/>السفلية</h3>
                         </a>
                     </div>
