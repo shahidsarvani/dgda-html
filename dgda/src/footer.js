@@ -17,7 +17,7 @@ function Footer() {
                         <div className="dg_ft_nav">
                             <ul className="dg_ft_nav_list">
                                 <li className="dg_ft_nav_item">
-                                    <a href="#" onClick={move_showmodelactive.this} data-fromDir="left">
+                                    <a href="#" onClick={move_showmodelactive.this} data-fromdir="left">
                                         <div className="dg_ft_nav_img">
                                             <img src={Model} alt="Model"/>
                                         </div>
@@ -27,7 +27,7 @@ function Footer() {
                                     </a>
                                 </li>
                                 <li className="dg_ft_nav_item">
-                                    <a href="#" onclick="move_videowallsactive(this)" data-fromDir="right">
+                                    <a href="#" onclick="move_videowallsactive(this)" data-fromdir="right">
                                         <div className="dg_ft_nav_img">
                                             <img src={Videowall} alt="VIDEOWALLS"/>
                                         </div>
@@ -37,7 +37,7 @@ function Footer() {
                                     </a>
                                 </li>
                                 <li className="dg_ft_nav_item">
-                                    <a href="#" onclick="move_lightsactive(this)" data-fromDir="right">
+                                    <a href="#" onclick="move_lightsactive(this)" data-fromdir="right">
                                         <div className="dg_ft_nav_img">
                                             <img src={Lights} alt="LIGHTS"/>
                                         </div>

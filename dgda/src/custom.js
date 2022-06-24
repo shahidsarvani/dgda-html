@@ -881,7 +881,7 @@ function move_showmodelactive(elem) {
   
   var fromDir = elem.getAttribute('data-fromDir');
   console.log(fromDir)
-  if(fromDir == 'right') {
+  if(fromDir === 'right') {
     gsap.to(".dg_rs_screen", {
       opacity: 0,
       x: 3000,
@@ -981,7 +981,7 @@ function move_showmodelactive(elem) {
 function move_videowallsactive(elem) {
   var fromDir = elem.getAttribute('data-fromDir');
   console.log(fromDir)
-  if (fromDir == 'right') {
+  if (fromDir === 'right') {
     gsap.to(".dg_lights_screen", {
       opacity: 0,
       x: -3000,

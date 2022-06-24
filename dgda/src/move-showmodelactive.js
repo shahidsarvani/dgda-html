@@ -5,7 +5,7 @@ function move_showmodelactive(elem) {
     var nextSibling = $(elem).parent().next();
     $(nextSibling).find('a').attr('data-fromdir', 'right');
     
-    var fromDir = elem.getAttribute('data-fromDir');
+    var fromDir = elem.getAttribute('data-fromdir');
     console.log(fromDir)
     if(fromDir === 'right') {
       gsap.to(".dg_rs_screen", {
