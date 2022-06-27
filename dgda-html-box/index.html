@@ -26,6 +26,14 @@
                                         <img src="./assets/images/dgda_logo.svg" alt="logo" />
                                     </a>
                                 </div>
+                                <div class="lang-switcher">
+                                    <form action="switcher">
+                                        <select name="lang-switcher" id="language">
+                                            <option value="arabic">Arabic</option>
+                                            <option value="english">English</option>
+                                        </select>
+                                    </form>
+                                </div>
                             </div>
                         </div>
                         <div class="header-menu-elements" onclick="move_left()">
@@ -37,10 +45,16 @@
                                     <div class="nav_cp_dp collapse navbar-collapse btn-10" id="collapsibleNavbar">
                                         <ul class="navbar-nav">
                                             <li class="nav-item nav-item-en1">
-                                                <a class="nav-link nav-link-en1 active" href="#">DIRIYAH</a>
+                                                <a class="nav-link nav-link-en1 active" href="#">
+                                                    <img src="./assets/images/icons/diriyah-icon.svg" alt="diriyah">
+                                                    <span>DIRIYAH</span>
+                                                </a>
                                             </li>
                                             <li class="nav-item nav-item-en2">
-                                                <a class="nav-link nav-link-en2" href="#">WADI SAFAR</a>
+                                                <a class="nav-link nav-link-en2" href="#">
+                                                    <img src="./assets/images/icons/wadi-safar-icon.svg" alt="wadi-safar">
+                                                    <span>WADI SAFAR</span>
+                                                </a>
                                             </li>
                                             <!-- <li class="nav-item">
                                                 <a class="nav-link" href="#">COMBINED</a>
@@ -68,7 +82,7 @@
                             Your browser does not support the video tag.
                         </video>
                         <div id="main_video_btn" class="main_video_btn" onclick="splash_video_fade();">
-                            <a id="video_start_btn" href="#">TAP TO START</a>
+                            <a id="video_start_btn" href="#">TAP TO START THE SHOW <br/> <span> أنقر لبدء العرض</span> </a>
                         </div>
                         <!-- <a id="main_video_btn" href="#">TAP TO START</a> -->
                     </div>
@@ -85,7 +99,8 @@
                     <div class="col-6 dg_rs_col">
                         <a href="javascript:void(0)" onclick="move_left_en()">
                             <div id="diriyah-room" class="dg_rs_wrap">
-                                <img src="./assets/images/room-diriyah.png" alt="diriyah">
+                                <img src="./assets/images/icons/diriyah-icon.svg" alt="diriyah">
+                                <h3 class="rs_ar_heading">الدرعية</h3>
                                 <h3>DIRIYAH</h3>
                             </div>
                         </a>
@@ -93,7 +108,8 @@
                     <div class="col-6 dg_rs_col">
                         <a href="javascript:void(0)" onclick="move_left_en()">
                             <div id="wadisafar-room" class="dg_rs_wrap">
-                                <img src="./assets/images/room-wadi-safar.png" alt="diriyah">
+                                <img src="./assets/images/icons/wadi-safar-icon.svg" alt="wadi-safar">
+                                <h3 class="rs_ar_heading">وادي صفار</h3>
                                 <h3>WADI SAFAR</h3>
                             </div>
                         </a>
@@ -107,25 +123,49 @@
         <section id="dg_afrs_screen" class="dg_afrs_screen">
             <div class="container dg_afrs_container">
                 <div class="row dg_afrs_row">
+                    <div class="col-2"></div>
                     <div class="col-4 dg_afrs_col">
                         <a href="javascript:void(0)" onclick="move_startshow_left()">
-                            <h3 class="dg_afrs_col1_h">START<br/>SHOW</h3>
+                            <h3 class="dg_afrs_col1_h">START SHOW</h3>
                         </a>
                     </div>
                     <div class="col-4 dg_afrs_col">
                         <a href="javascript:void(0)" onclick="move_start_modellights_left()">
-                            <h3 class="dg_afrs_col2_h">MODEL<br/>LIGHTS</h3>
+                            <h3 class="dg_afrs_col2_h">NIGHT SCENE</h3>
                         </a>
                     </div>
-                    <div class="col-4 dg_afrs_col">
-                        <a href="javascript:void(0)" onclick="move_start_basementfloors_left()">
-                            <h3 class="dg_afrs_col3_h">BASEMENT<br/>FLOORS</h3>
-                        </a>
-                    </div>
+                    <div class="col-2"></div>
                 </div>
             </div>
         </section>
         <!--End After Room Selection Screen-->
+
+        <!--Start Basement Floors Screen-->
+        <section id="dg_bf_screen" class="dg_bf_screen">
+            <div class="container dg_bf_container">
+                <div class="row dg_bfc_row">
+                    <div class="col-12 dg_bf_col">
+                        <div class="dg_bf_list_wrap">
+                            <ul class="dg_bf_list">
+                                <li class="dg_bf_list_item">
+                                    <a href="#">
+                                        <img src="./assets/images/icons/bf-up-icon.svg" alt="basementfloors-up"/>
+                                        <span>UP</span>
+                                    </a>
+                                </li>
+                                <li class="dg_bf_list_item">
+                                    <a href="#">
+                                        <img src="./assets/images/icons/bf-down-icon.svg" alt="basementfloors-doen"/>
+                                        <span>DOWN</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--End Basement Floors Screen-->
 
         <!--Start Show Model Screen-->
         <section id="dg_sm_screen" class="dg_sm_screen">
@@ -134,7 +174,7 @@
                     <div class="col-12 dg_sm_col">
                         <a href="javascript:void(0)" onclick="move_startshow_right()">
                             <h3 class="breadcrumbs">
-                                < MODEL SHOW
+                                <!-- < MODEL SHOW -->
                             </h3>
                         </a>
                     </div>
@@ -203,7 +243,7 @@
                 <div class="row ml_lights_row">
                     <div class="col-12 breadcrumbs_col">
                         <a href="javascript:void(0)" onclick="move_start_modellights_right()">
-                            <h3 class="breadcrumbs"> < MODEL LIGHTS </h3>
+                            <!-- <h3 class="breadcrumbs"> < SCREENSAVER </h3> -->
                         </a>
                     </div>
                     <div class="col_12 ml_content_col">
@@ -414,7 +454,7 @@
                 <div class="row dg_bfb_row">
                     <div class="col-12 breadcrumbs_col">
                         <a href="javascript:void(0)" onclick="move_start_basementfloors_right()">
-                            <h3 class="breadcrumbs"> < BASEMENT FLOORS </h3>
+                            <!-- <h3 class="breadcrumbs"> < BASEMENT FLOORS </h3> -->
                         </a>
                     </div>
                 </div>
@@ -424,12 +464,14 @@
                             <ul class="dg_bf_list">
                                 <li class="dg_bf_list_item">
                                     <a href="#">
-                                        UP
+                                        <img src="./assets/images/icons/bf-up-icon.svg" alt="basementfloors-up"/>
+                                        <span>UP</span>
                                     </a>
                                 </li>
                                 <li class="dg_bf_list_item">
                                     <a href="#">
-                                        DOWN
+                                        <img src="./assets/images/icons/bf-down-icon.svg" alt="basementfloors-doen"/>
+                                        <span>DOWN</span>
                                     </a>
                                 </li>
                             </ul>
@@ -446,7 +488,7 @@
                 <div class="row dg_vwalls_row">
                     <div class="col-12 dg_vwalls_col">
                         <a href="javascript:void(0)" onclick="move_vwalls_right()">
-                            <h3 class="breadcrumbs"> < VIDEO WALLS </h3>
+                            <!-- <h3 class="breadcrumbs"> < VIDEO WALLS </h3> -->
                         </a>
                     </div>
                     <div class="dg_sm_video_wrap">
@@ -650,10 +692,16 @@
                                     <div class="nav_cp_dp collapse navbar-collapse btn-10" id="collapsibleNavbar">
                                         <ul class="navbar-nav">
                                             <li class="nav-item nav-item-ar1">
-                                                <a class="nav-link nav-link-ar1 active" href="#">الدرعية</a>
+                                                <a class="nav-link nav-link-ar1 active" href="#">
+                                                    <img src="./assets/images/icons/diriyah-icon.svg" alt="diriyah"/>
+                                                    <span>الدرعية</span>
+                                                </a>
                                             </li>
                                             <li class="nav-item nav-item-ar2">
-                                                <a class="nav-link nav-link-ar2" href="#">وادي صفر</a>
+                                                <a class="nav-link nav-link-ar2" href="#">
+                                                    <img src="./assets/images/icons/wadi-safar-icon.svg" alt="wadi-safar"/>
+                                                    <span>وادي صفر</span>
+                                                </a>
                                             </li>
                                             <!-- <li class="nav-item">
                                                 <a class="nav-link" href="#">COMBINED</a>
@@ -721,16 +769,19 @@
                 <div class="row dg_afrs_row">
                     <div class="col-4 dg_afrs_col">
                         <a href="javascript:void(0)" onclick="move_startshow_left()">
+                            <img class="start_show_icon" src="./assets/images/icons/play-icon.svg" alt="start-show"/>
                             <h3 class="dg_afrs_col1_h">بدء<br/>العرض</h3>
                         </a>
                     </div>
                     <div class="col-4 dg_afrs_col">
                         <a href="javascript:void(0)" onclick="move_start_modellights_left()">
+                            <img class="screensaver_icon" src="./assets/images/icons/screensaver-icon.svg" alt="screensaver"/>
                             <h3 class="dg_afrs_col2_h">إضاءات<br/>المجسم</h3>
                         </a>
                     </div>
                     <div class="col-4 dg_afrs_col">
                         <a href="javascript:void(0)" onclick="move_start_basementfloors_left()">
+                            <img class="basementfloors_icon" src="./assets/images/icons/basementfloors-icon.svg" alt="basementfloors"/>
                             <h3 class="dg_afrs_col3_h">المواقف<br/>السفلية</h3>
                         </a>
                     </div>
@@ -1036,12 +1087,14 @@
                             <ul class="dg_bf_list">
                                 <li class="dg_bf_list_item">
                                     <a href="#">
-                                        للأعلى
+                                        <img src="./assets/images/icons/bf-up-icon.svg" alt="bf-up">
+                                        <span>للأعلى</span>
                                     </a>
                                 </li>
                                 <li class="dg_bf_list_item">
                                     <a href="#">
-                                        للأسفل
+                                        <img src="./assets/images/icons/bf-down-icon.svg" alt="bf-down">
+                                        <span>للأسفل</span>
                                     </a>
                                 </li>
                             </ul>
@@ -1244,9 +1297,29 @@
                 <div class="dg_ft_nav">
                     <ul class="dg_ft_nav_list">
                         <li class="dg_ft_nav_item dg_ft_nav_item1 active">
+                            <a href="#" onclick="move_showmodelactive1(this)" data-fromDir="left">
+                                <div class="dg_ft_nav_img">
+                                    <img src="./assets/images/icons/ftr-backward-icon.svg" alt="back">
+                                </div>
+                                <div class="dg_ft_nav_link">
+                                    <h3>BACK</h3>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="dg_ft_nav_item dg_ft_nav_item1 active">
+                            <a href="#" onclick="move_showmodelactive1(this)" data-fromDir="left">
+                                <div class="dg_ft_nav_img">
+                                    <img src="./assets/images/icons/ftr-home-icon.svg" alt="main-page">
+                                </div>
+                                <div class="dg_ft_nav_link">
+                                    <h3>MAIN PAGE</h3>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="dg_ft_nav_item dg_ft_nav_item1 active">
                             <a href="#" onclick="move_showmodelactive(this)" data-fromDir="left">
                                 <div class="dg_ft_nav_img">
-                                    <img src="./assets/images/model.svg" alt="Model">
+                                    <img src="./assets/images/icons/ftr-model-icon.svg" alt="Model">
                                 </div>
                                 <div class="dg_ft_nav_link">
                                     <h3>MODEL</h3>
@@ -1256,7 +1329,7 @@
                         <li class="dg_ft_nav_item dg_ft_nav_item2">
                             <a href="#" onclick="move_videowallsactive(this)" data-fromDir="right">
                                 <div class="dg_ft_nav_img">
-                                    <img src="./assets/images/play.svg" alt="VIDEO WALLS">
+                                    <img src="./assets/images/icons/ftr-vwalls-icon.svg" alt="VIDEO WALLS">
                                 </div>
                                 <div class="dg_ft_nav_link">
                                     <h3>VIDEO WALLS</h3>
@@ -1266,20 +1339,30 @@
                         <li class="dg_ft_nav_item dg_ft_nav_item3">
                             <a href="#" onclick="move_lightsactive(this)" data-fromDir="right">
                                 <div class="dg_ft_nav_img">
-                                    <img src="./assets/images/lighting.svg" alt="LIGHTS">
+                                    <img src="./assets/images/icons/ftr-lights-icon.svg" alt="LIGHTS">
                                 </div>
                                 <div class="dg_ft_nav_link">
                                     <h3>LIGHTS</h3>
                                 </div>
                             </a>
                         </li>
-                        <li class="dg_ft_nav_item dg_ft_nav_item4 dg_ft_nav_link_en">
+                        <!-- <li class="dg_ft_nav_item dg_ft_nav_item4 dg_ft_nav_link_en">
                             <a href="javascript:void(0)" onclick="move_main_left()">
                                 <div class="dg_ft_nav_img dg_ft_nav_img_ar">
                                     <img src="./assets/images/ftr-arabic-icon.svg" alt="ARABIC">
                                 </div>
                                 <div class="dg_ft_nav_link">
                                     <h3>العربية</h3>
+                                </div>
+                            </a>
+                        </li> -->
+                        <li class="dg_ft_nav_item dg_ft_nav_item5">
+                            <a href="javascript:void(0)" onclick="move_main_left1()">
+                                <div class="dg_ft_nav_img">
+                                    <img src="./assets/images/icons/ftr-forwards-icon.svg" alt="forward">
+                                </div>
+                                <div class="dg_ft_nav_link">
+                                    <h3>FORWARD</h3>
                                 </div>
                             </a>
                         </li>
@@ -1325,7 +1408,7 @@
                                 </div>
                             </a>
                         </li>
-                        <li class="dg_ft_nav_item dg_ft_nav_item4 dg_ft_nav_link_ar">
+                        <!-- <li class="dg_ft_nav_item dg_ft_nav_item4 dg_ft_nav_link_ar">
                             <a href="javascript:void(0)" onclick="move_main_right()">
                                 <div class="dg_ft_nav_img dg_ft_nav_img_ar">
                                     <img src="./assets/images/english-letter.svg" alt="ARABIC">
@@ -1334,7 +1417,7 @@
                                     <h3>ENGLISH</h3>
                                 </div>
                             </a>
-                        </li>
+                        </li> -->
                     </ul>
                 </div>
             </div>
