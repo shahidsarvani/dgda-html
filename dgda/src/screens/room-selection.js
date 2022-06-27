@@ -4,20 +4,16 @@ import diriyahRoom from '../images/room-diriyah.png';
 import wadiSafRoom from '../images/room-wadi-safar.png';
 import move_left_en from '../move-left-en';
 import { useState, useEffect } from 'react'
+import axios from 'axios';
+import '../axios';
 
 function Roomselection() {
     const [rooms, setRoom] = useState([]);
     const tempFunc = async () => {
         try {
-            const res = await fetch(`http://localhost:3000/api/rooms`, {
-                method: 'get',
-                headers: {
-                    'Content-Type': 'application/json',
-                }
-            });
-            const data = await res.json();
-            console.log(data);
-            setRoom(data.response)
+            let res = await axios.get('rooms');
+            console.log(res);
+            setRoom(res.data.response)
         } catch (err) {
             console.log(err);
         }
@@ -39,7 +35,7 @@ function Roomselection() {
                                 return (
                                     <div className="col-6 dg_rs_col">
                                         <a href="#" onClick={move_left_en}>
-                                            <div id="{room.name}-room" className="dg_rs_wrap">
+                                            <div id={`${room.name}-room`} className="dg_rs_wrap">
                                                 <img src={room.image} alt={room.name} />
                                                 <h3>{room.name}</h3>
                                             </div>
