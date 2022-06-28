@@ -198,6 +198,10 @@ section {
   top: 0;
 }
 
+.ar_logo{
+  margin-bottom: 20px;
+}
+
 .dg_vw_screen {
   z-index: 9999999;
 }
@@ -684,7 +688,7 @@ section {
 
 .dg_rs_wrap img {
   max-width: 85%;
-  height: 1020px;
+  height: 750px;
   object-fit: contain;
   margin-bottom: 60px;
 }
@@ -720,10 +724,13 @@ section {
 
 .dg_rs_row {
   max-width: 1920px;
-  margin: 90px auto;
+  margin: 350px auto 0;
 }
 
-
+.lang-switcher{
+  opacity: 0;
+  visibility: hidden;
+}
 
 /*/////////////////////////////AFTER ROOM SELECTION SCREEN///////////////////////////////*/
 .dg_afrs_col1_h{

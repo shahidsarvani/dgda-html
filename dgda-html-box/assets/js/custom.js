@@ -375,7 +375,7 @@ function splash_video_fade() {
     transform: 'translate(-50%, 0%)'
   });
   gsap.to(".logo_diriyah", {
-    left: '0',
+    left: '36%',
     duration: 1,
     delay: 2,
     transform: 'translate(0%, 0%)'
@@ -432,6 +432,26 @@ function splash_video_fade() {
 
 }
 function move_left_en() {
+  gsap.to(".logo_diriyah .ar_logo", {
+    opacity: 0,
+    display: 'none',
+    left: '0',
+    duration: 1,
+    delay: 0,
+    transform: 'translate(0%, 0%)'
+  });
+  gsap.to(".logo_diriyah", {
+    left: '0',
+    duration: 1,
+    delay: 0,
+    transform: 'translate(0%, 0%)'
+  });
+  gsap.to(".lang-switcher", {
+    opacity: 1,
+    visibility: 'visible',
+    duration: 1,
+    delay: 1,
+  })
   gsap.to(".dg_rs_screen", {
     opacity: 0,
     x: -3000,
