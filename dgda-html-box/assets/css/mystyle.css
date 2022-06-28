@@ -80,6 +80,18 @@ section {
   height: 70px;
   margin-bottom: 15px;
 }
+.nav-link .non_active_img{
+  display: block;
+}
+.nav-link .active_img{
+  display: none;
+}
+.nav-link.active .non_active_img{
+  display: none;
+}
+.nav-link.active .active_img{
+  display: block;
+}
 
 /*/////////////////////////Screens Comperisons//////////////////////////////*/
 .compare_img{
@@ -97,9 +109,78 @@ section {
 #ml_lights_screen,
 #dg_bf_screen,
 .dg_vwalls_screen,
-.dg_lights_screen {
+.dg_lights_screen,
+.dg_sc_screen,
+.dg_ss_screen{
   visibility: hidden;
   opacity: 0;
+}
+
+.dg_lights_content_wrap img{
+  max-width: 150px;
+}
+
+.dg_lights_content_wrap a{
+  display: block;
+}
+
+.dg_lights_content_wrap a h3, .dg_lights_content_wrap a img{
+  display: inline-block;
+}
+
+.dg_lights_content_wrap a h3{
+  min-width: 600px;
+}
+
+.dg_scen_options_wrap, .dg_scar_options_wrap, .dg_ss_options_wrap{
+  font-size: 50px
+}
+.dg_scen_optn, .dg_scar_optn, .dg_ss_optn{
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dg_ss_optn{
+  justify-content: space-between;
+}
+
+.dg_sc_optn_item a, .dg_ss_optn_item a{
+  color: #c87e59;
+}
+
+.optn_language h3{
+  color: #c87e59;
+  font-size: 50px;
+}
+
+.dg_sc_optn_item .optn_btn, .dg_ss_optn_item .optn_btn{
+  width: 100px;
+  height: 100px;
+  background-color: transparent;
+  display: block;
+  border: 2px solid #c87e59;
+  border-radius: 100%;
+  margin-bottom: 30px;
+}
+
+.dg_sc_optn_item.active .optn_btn, .dg_ss_optn_item.active .optn_btn{
+  background-color: #c87e59;
+}
+
+.dg_sc_options_wrap ul li{
+  margin: 0 40px 30px;
+}
+
+.dg_sc_screen, .dg_ss_screen{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dg_sc_screen img{
+  max-width: 200px;
 }
 
 #dg_first_load_screen {
@@ -128,7 +209,6 @@ section {
 }
 
 .dg_lights_row {
-  text-align: center;
   justify-content: center !important;
 }
 
@@ -138,7 +218,7 @@ section {
 }
 
 .dg_lights_content_wrap {
-  margin-bottom: 150px;
+  margin-bottom: 60px;
 }
 
 .dg_lights_row .dg_col_content:last-child .dg_lights_content_wrap,
@@ -425,7 +505,7 @@ section {
 }
 
 .lang-switcher{
-  margin-top: 175px;
+  margin-top: 150px;
 }
 .lang-switcher form select, .lang-switcher form select option{
   font-size: 36px;
@@ -497,11 +577,15 @@ section {
 }
 
 .dg_ft_nav_item .dg_ft_nav_link h3 {
-  color: #003741;
+  /* color: #003741; */
   font-size: 38.6px;
+  color: #c87e59;
   /* background-color: rgb(204 102 102 / 20%); */
   padding: 4px 3px !important;
   margin: 0 5px;
+}
+.dg_ft_nav_list li:first-child h3, .dg_ft_nav_list li:last-child h3{
+  color: #D69E6B;
 }
 
 .dg_ft_nav_img {
@@ -600,7 +684,7 @@ section {
 
 .dg_rs_wrap img {
   max-width: 85%;
-  height: 1120px;
+  height: 1020px;
   object-fit: contain;
   margin-bottom: 60px;
 }
@@ -620,7 +704,7 @@ section {
   margin: 0 auto 50px -50px !important;
 }
 .basementfloors_icon{
-  margin: 0 -40px 50px auto !important;
+  margin: 0 60px 50px auto !important;
 }
 
 .dg_rs_wrap h3 {

@@ -29,8 +29,8 @@
                                 <div class="lang-switcher">
                                     <form action="switcher">
                                         <select name="lang-switcher" id="language">
-                                            <option value="arabic">Arabic</option>
-                                            <option value="english">English</option>
+                                            <option value="arabic">عربي</option>
+                                            <option value="english">ENGLISH</option>
                                         </select>
                                     </form>
                                 </div>
@@ -46,7 +46,8 @@
                                         <ul class="navbar-nav">
                                             <li class="nav-item nav-item-en1">
                                                 <a class="nav-link nav-link-en1 active" href="#">
-                                                    <img src="./assets/images/icons/diriyah-icon.svg" alt="diriyah">
+                                                    <img class="non_active_img" src="./assets/images/icons/diriyah-icon.svg" alt="diriyah">
+                                                    <img class="active_img" src="./assets/images/icons/head-diriyah-active.svg" alt="diriyah">
                                                     <span>DIRIYAH</span>
                                                 </a>
                                             </li>
@@ -123,49 +124,83 @@
         <section id="dg_afrs_screen" class="dg_afrs_screen">
             <div class="container dg_afrs_container">
                 <div class="row dg_afrs_row">
-                    <div class="col-2"></div>
+                    <!-- <div class="col-2"></div> -->
                     <div class="col-4 dg_afrs_col">
                         <a href="javascript:void(0)" onclick="move_startshow_left()">
+                            <img class="start_show_icon" src="./assets/images/icons/play-icon.svg" alt="start-show">
                             <h3 class="dg_afrs_col1_h">START SHOW</h3>
                         </a>
                     </div>
                     <div class="col-4 dg_afrs_col">
                         <a href="javascript:void(0)" onclick="move_start_modellights_left()">
+                            <img class="screensaver_icon" src="./assets/images/icons/night-scene-icon.svg" alt="night-scene">
                             <h3 class="dg_afrs_col2_h">NIGHT SCENE</h3>
                         </a>
                     </div>
-                    <div class="col-2"></div>
+                    <div class="col-4 dg_afrs_col">
+                        <a href="javascript:void(0)" onclick="move_start_basementfloors_left()">
+                            <img class="basementfloors_icon" src="./assets/images/icons/basementfloors-icon.svg" alt="basementfloors">
+                            <h3 class="dg_afrs_col2_h">BASEMENTFLOORS</h3>
+                        </a>
+                    </div>
+                    <!-- <div class="col-2"></div> -->
                 </div>
             </div>
         </section>
         <!--End After Room Selection Screen-->
 
-        <!--Start Basement Floors Screen-->
-        <section id="dg_bf_screen" class="dg_bf_screen">
-            <div class="container dg_bf_container">
-                <div class="row dg_bfc_row">
-                    <div class="col-12 dg_bf_col">
-                        <div class="dg_bf_list_wrap">
-                            <ul class="dg_bf_list">
-                                <li class="dg_bf_list_item">
+        <!--Start Show Controls Screen-->
+        <section id="dg_sc_screen" class="dg_sc_screen">
+            <div class="container dg_sc_container">
+                <div class="row dg_sc_row">
+                    <div class="col-2"></div>
+                    <div class="col-4 dg_sc_col">
+                        <div class="dg_scen_options_wrap dg_sc_options_wrap">
+                            <ul class="dg_scen_optn">
+                                <li class="dg_sc_optn_item dg_scen_optnon_item active">
                                     <a href="#">
-                                        <img src="./assets/images/icons/bf-up-icon.svg" alt="basementfloors-up"/>
-                                        <span>UP</span>
+                                        <span class="optn_btn"></span>
+                                        <span>ON</span>
                                     </a>
                                 </li>
-                                <li class="dg_bf_list_item">
+                                <li class="dg_sc_optn_item dg_scen_optnoff_item">
                                     <a href="#">
-                                        <img src="./assets/images/icons/bf-down-icon.svg" alt="basementfloors-doen"/>
-                                        <span>DOWN</span>
+                                        <span class="optn_btn"></span>
+                                        <span>OFF</span>
                                     </a>
                                 </li>
                             </ul>
                         </div>
+                        <div class="optn_language">
+                            <h3>ENGLISH</h3>
+                        </div>
                     </div>
+                    <div class="col-4 dg_sc_col">
+                        <div class="dg_scar_options_wrap dg_sc_options_wrap">
+                            <ul class="dg_scar_optn">
+                                <li class="dg_sc_optn_item dg_scar_optnon_item active">
+                                    <a href="#">
+                                        <span class="optn_btn"></span>
+                                        <span>ON</span>
+                                    </a>
+                                </li>
+                                <li class="dg_sc_optn_item dg_scar_optnoff_item">
+                                    <a href="#">
+                                        <span class="optn_btn"></span>
+                                        <span>OFF</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="optn_language">
+                            <h3>عربي</h3>
+                        </div>
+                    </div>
+                    <div class="col-2"></div>
                 </div>
             </div>
         </section>
-        <!--End Basement Floors Screen-->
+        <!--End Show Controls Screen-->
 
         <!--Start Show Model Screen-->
         <section id="dg_sm_screen" class="dg_sm_screen">
@@ -237,13 +272,42 @@
         </section>
         <!--End Show Model Screen-->
 
+        <!--Start Show Controls Screen-->
+        <section id="dg_ss_screen" class="dg_ss_screen">
+            <div class="container dg_ss_container">
+                <div class="row dg_ss_row">
+                    <div class="col-4"></div>
+                    <div class="col-4 dg_ss_col">
+                        <div class="dg_ss_options_wrap">
+                            <ul class="dg_ss_optn">
+                                <li class="dg_ss_optn_item dg_ss_optnon_item active">
+                                    <a href="#">
+                                        <span class="optn_btn"></span>
+                                        <span>ON</span>
+                                    </a>
+                                </li>
+                                <li class="dg_ss_optn_item dg_ss_optnoff_item">
+                                    <a href="#">
+                                        <span class="optn_btn"></span>
+                                        <span>OFF</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-4"></div>
+                </div>
+            </div>
+        </section>
+        <!--End Show Controls Screen-->
+
         <!--Start Model Lights Screen-->
-        <section id="ml_lights_screen" class="ml_lights_screen">
+        <!-- <section id="ml_lights_screen" class="ml_lights_screen">
             <div class="container ml_lights_container">
                 <div class="row ml_lights_row">
                     <div class="col-12 breadcrumbs_col">
                         <a href="javascript:void(0)" onclick="move_start_modellights_right()">
-                            <!-- <h3 class="breadcrumbs"> < SCREENSAVER </h3> -->
+                            <h3 class="breadcrumbs"> < SCREENSAVER </h3>
                         </a>
                     </div>
                     <div class="col_12 ml_content_col">
@@ -445,7 +509,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
         <!--End Model Lights Screen-->
 
         <!--Start Basement Floors Screen-->
@@ -616,7 +680,7 @@
         <!--Start Video Walls Screen-->
 
         <!--Start lights Screen-->
-        <section id="dg_lights_screen" class="dg_lights_screen">
+        <!-- <section id="dg_lights_screen" class="dg_lights_screen">
             <div class="container dg_lights_container">
                 <div class="row dg_lights_row">
                     <div class="col-4 dg_col_content">
@@ -657,6 +721,103 @@
                                 <h3>EXIT SCENE</h3>
                                 <h3>20%</h3>
                             </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+        <!--End lights Screen-->
+
+        <!--Start lights Screen-->
+        <section id="dg_lights_screen" class="dg_lights_screen">
+            <div class="container dg_lights_container">
+                <div class="row dg_lights_main_row">
+                    <div class="col-6">
+                        <div class="row dg_lights_row">
+                            <div class="col-12 dg_lights_col">
+                                <div class="dg_lights_content_wrap dg_lights_20">
+                                    <a href="#">
+                                        <h3>LIGHTS 20%</h3>
+                                        <img src="./assets/images/icons/lights/20percent-lights.svg" alt="20percent-lights">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-12 dg_lights_col">
+                                <div class="dg_lights_content_wrap dg_lights_40">
+                                    <a href="#">
+                                        <h3>LIGHTS 40%</h3>
+                                        <img src="./assets/images/icons/lights/40percent-lights.svg" alt="40percent-lights">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-12 dg_lights_col">
+                                <div class="dg_lights_content_wrap dg_lights_60">
+                                    <a href="#">
+                                        <h3>LIGHTS 60%</h3>
+                                        <img src="./assets/images/icons/lights/60percent-lights.svg" alt="60percent-lights">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-12 dg_lights_col">
+                                <div class="dg_lights_content_wrap dg_lights_entery">
+                                    <a href="#">
+                                        <h3>LIGHTS 80%</h3>
+                                        <img src="./assets/images/icons/lights/80percent-lights.svg" alt="80percent-lights">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-12 dg_lights_col">
+                                <div class="dg_lights_content_wrap all_no_lights">
+                                    <a href="#">
+                                        <h3>ALL LIGHTS</h3>
+                                        <img src="./assets/images/icons/lights/all-lights-on.svg" alt="all-lights">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="row dg_lights_row">
+                            <div class="col-12 dg_lights_col">
+                                <div class="dg_lights_content_wrap dg_lights_20">
+                                    <a href="#">
+                                        <h3>LIGHTS 20%</h3>
+                                        <img src="./assets/images/icons/lights/model-soft-lights.svg" alt="model-soft-lights">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-12 dg_lights_col">
+                                <div class="dg_lights_content_wrap dg_lights_40">
+                                    <a href="#">
+                                        <h3>LIGHTS 40%</h3>
+                                        <img src="./assets/images/icons/lights/natural-soft-lights.svg" alt="natural-soft-lights">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-12 dg_lights_col">
+                                <div class="dg_lights_content_wrap dg_lights_60">
+                                    <a href="#">
+                                        <h3>LIGHTS 60%</h3>
+                                        <img src="./assets/images/icons/lights/model-bright-lights.svg" alt="model-bright-lights">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-12 dg_lights_col">
+                                <div class="dg_lights_content_wrap dg_lights_entery">
+                                    <a href="#">
+                                        <h3>LIGHTS 80%</h3>
+                                        <img src="./assets/images/icons/lights/natural-bright-lights.svg" alt="natural-bright-lights">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-12 dg_lights_col">
+                                <div class="dg_lights_content_wrap all_no_lights">
+                                    <a href="#">
+                                        <h3>ALL LIGHTS</h3>
+                                        <img src="./assets/images/icons/lights/all-light-off.svg" alt="all-lights-off">
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -1239,7 +1400,7 @@
         <!--Start Video Walls Screen-->
 
         <!--Start lights Screen-->
-        <section id="dg_lights_screen" class="dg_lights_screen">
+        <!-- <section id="dg_lights_screen" class="dg_lights_screen">
             <div class="container dg_lights_container">
                 <div class="row dg_lights_row">
                     <div class="col-4 dg_col_content">
@@ -1284,7 +1445,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
         <!--End lights Screen-->
 
     </main>
@@ -1299,7 +1460,7 @@
                         <li class="dg_ft_nav_item dg_ft_nav_item1 active">
                             <a href="#" onclick="move_showmodelactive1(this)" data-fromDir="left">
                                 <div class="dg_ft_nav_img">
-                                    <img src="./assets/images/icons/ftr-backward-icon.svg" alt="back">
+                                    <img src="./assets/images/icons/backward-light-icon.svg" alt="back">
                                 </div>
                                 <div class="dg_ft_nav_link">
                                     <h3>BACK</h3>
@@ -1307,7 +1468,7 @@
                             </a>
                         </li>
                         <li class="dg_ft_nav_item dg_ft_nav_item1 active">
-                            <a href="#" onclick="move_showmodelactive1(this)" data-fromDir="left">
+                            <a href="#" onclick="move_homeactive(this)" data-fromDir="right">
                                 <div class="dg_ft_nav_img">
                                     <img src="./assets/images/icons/ftr-home-icon.svg" alt="main-page">
                                 </div>
@@ -1359,7 +1520,7 @@
                         <li class="dg_ft_nav_item dg_ft_nav_item5">
                             <a href="javascript:void(0)" onclick="move_main_left1()">
                                 <div class="dg_ft_nav_img">
-                                    <img src="./assets/images/icons/ftr-forwards-icon.svg" alt="forward">
+                                    <img src="./assets/images/icons/forward-light-icon.svg" alt="forward">
                                 </div>
                                 <div class="dg_ft_nav_link">
                                     <h3>FORWARD</h3>

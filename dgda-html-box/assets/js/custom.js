@@ -591,7 +591,18 @@ function move_startshow_left() {
     x: -3000,
     duration: 1
   });
-  gsap.fromTo(".dg_sm_screen", {
+  // gsap.fromTo(".dg_sm_screen", {
+  //   opacity: 0,
+  //   x: 3000,
+  //   duration: 1,
+  //   visibility: 'hidden',
+  // }, {
+  //   opacity: 1,
+  //   x: 0,
+  //   duration: 1,
+  //   visibility: 'visible',
+  // });
+  gsap.fromTo(".dg_sc_screen", {
     opacity: 0,
     x: 3000,
     duration: 1,
@@ -614,17 +625,17 @@ function move_startshow_left() {
     x: 3000,
     duration: 1
   });
-  gsap.fromTo(".home_ar .dg_sm_screen", {
-    opacity: 0,
-    x: -3000,
-    duration: 1,
-    visibility: 'hidden',
-  }, {
-    opacity: 1,
-    x: 0,
-    duration: 1,
-    visibility: 'visible',
-  });
+  // gsap.fromTo(".home_ar .dg_sm_screen", {
+  //   opacity: 0,
+  //   x: -3000,
+  //   duration: 1,
+  //   visibility: 'hidden',
+  // }, {
+  //   opacity: 1,
+  //   x: 0,
+  //   duration: 1,
+  //   visibility: 'visible',
+  // });
 
 }
 function move_startshow_right() {
@@ -688,7 +699,7 @@ function move_start_modellights_left() {
     x: -3000,
     duration: 1
   });
-  gsap.fromTo(".ml_lights_screen", {
+  gsap.fromTo(".dg_ss_screen", {
     opacity: 0,
     x: 3000,
     duration: 1,
@@ -711,7 +722,7 @@ function move_start_modellights_left() {
     x: 3000,
     duration: 1
   });
-  gsap.fromTo(".home_ar .ml_lights_screen", {
+  gsap.fromTo(".home_ar .dg_ss_screen", {
     opacity: 0,
     x: -3000,
     duration: 1,
@@ -736,7 +747,7 @@ function move_start_modellights_right() {
     duration: 1,
     visibility: 'visible',
   });
-  gsap.fromTo(".ml_lights_screen", {
+  gsap.fromTo(".dg_ss_screen", {
     opacity: 1,
     x: 0,
     duration: 1,
@@ -760,7 +771,7 @@ function move_start_modellights_right() {
     duration: 1,
     visibility: 'visible',
   });
-  gsap.fromTo(".home_ar .ml_lights_screen", {
+  gsap.fromTo(".home_ar .dg_ss_screen", {
     opacity: 1,
     x: 0,
     duration: 1,
@@ -871,6 +882,132 @@ function move_start_basementfloors_right() {
 
 }
 
+
+
+function move_homeactive(elem) {
+  var nextSibling = $(elem).parent().next();
+  $(nextSibling).find('a').attr('data-fromdir', 'right');
+  
+  var fromDir = elem.getAttribute('data-fromDir');
+  console.log(fromDir)
+  if(fromDir == 'right') {
+    gsap.to(".dg_rs_screen", {
+      opacity: 0,
+      x: 3000,
+      duration: 1,
+      visibility: 'hidden',
+    });
+    gsap.to(".dg_vwalls_screen", {
+      opacity: 0,
+      x: 3000,
+      duration: 1,
+      visibility: 'hidden',
+    });
+    gsap.to(".ml_lights_screen", {
+      opacity: 0,
+      x: 3000,
+      duration: 1,
+      visibility: 'hidden',
+    });
+    gsap.to(".dg_lights_screen", {
+      opacity: 0,
+      x: 3000,
+      duration: 1,
+      visibility: 'hidden',
+    });
+    gsap.to(".dg_bf_screen", {
+      opacity: 0,
+      x: 3000,
+      duration: 1,
+      visibility: 'hidden',
+    });
+    gsap.to(".dg_afrs_screen", {
+      opacity: 0,
+      x: 3000,
+      duration: 1,
+      visibility: 'hidden',
+    });
+    gsap.fromTo(".dg_ft_cont_en", {
+      opacity: 1,
+      bottom: 0,
+      duration: 1,
+    }, {
+      opacity: 0,
+      bottom: -220,
+      duration: 1,
+    });
+    gsap.fromTo(".dg_rs_screen", {
+      opacity: 0,
+      x: -3000,
+      duration: 1,
+      visibility: 'hidden',
+    }, {
+      opacity: 1,
+      x: 0,
+      duration: 1,
+      visibility: 'visible',
+    });
+  } else {
+    gsap.fromTo(".dg_rs_screen", {
+      opacity: 0,
+      x: -3000,
+      duration: 1,
+      visibility: 'hidden',
+    }, {
+      opacity: 1,
+      x: 0,
+      duration: 1,
+      visibility: 'visible',
+    });
+    gsap.to(".dg_afrs_screen", {
+      opacity: 0,
+      x: 3000,
+      duration: 1
+    });
+    gsap.to(".dg_lights_screen", {
+      opacity: 0,
+      x: 3000,
+      duration: 1
+    });
+    gsap.to(".dg_sm_screen", {
+      opacity: 0,
+      x: 3000,
+      duration: 1
+    });
+    gsap.to(".ml_lights_screen", {
+      opacity: 0,
+      x: 3000,
+      duration: 1
+    });
+    gsap.to(".dg_bf_screen", {
+      opacity: 0,
+      x: 3000,
+      duration: 1
+    });
+    gsap.fromTo(".dg_ft_cont_ar", {
+      opacity: 1,
+      bottom: 0,
+      duration: 1,
+    }, {
+      opacity: 0,
+      bottom: -220,
+      duration: 1,
+    });
+    gsap.fromTo(".dg_vwalls_screen", {
+      opacity: 1,
+      x: 0,
+      duration: 1,
+    }, {
+      opacity: 0,
+      x: 3000,
+      duration: 1,
+    });
+  }
+}
+
+
+
+
 function move_showmodelactive(elem) {
   var nextSibling = $(elem).parent().next();
   $(nextSibling).find('a').attr('data-fromdir', 'right');
@@ -885,6 +1022,12 @@ function move_showmodelactive(elem) {
       visibility: 'hidden',
     });
     gsap.to(".dg_vwalls_screen", {
+      opacity: 0,
+      x: 3000,
+      duration: 1,
+      visibility: 'hidden',
+    });
+    gsap.to(".dg_sc_screen", {
       opacity: 0,
       x: 3000,
       duration: 1,
@@ -1142,6 +1285,57 @@ function move_lightsactive(elem) {
 
 
 $(document).ready(function () {
+
+  $(".dg_scen_optnon_item").click(function () {
+    if ($(".dg_scen_optnon_item").hasClass("active")) {
+      $(".dg_scen_optnon_item").removeClass("active");
+    } else {
+      $(".dg_scen_optnon_item").addClass("active");
+      $(".dg_scen_optnoff_item").removeClass("active");
+    }
+  });
+  $(".dg_scen_optnoff_item").click(function () {
+    if ($(".dg_scen_optnoff_item").hasClass("active")) {
+      $(".dg_scen_optnoff_item").removeClass("active");
+    } else {
+      $(".dg_scen_optnoff_item").addClass("active");
+      $(".dg_scen_optnon_item").removeClass("active");
+    }
+  });
+
+  $(".dg_scar_optnon_item").click(function () {
+    if ($(".dg_scar_optnon_item").hasClass("active")) {
+      $(".dg_scar_optnon_item").removeClass("active");
+    } else {
+      $(".dg_scar_optnon_item").addClass("active");
+      $(".dg_scar_optnoff_item").removeClass("active");
+    }
+  });
+  $(".dg_scar_optnoff_item").click(function () {
+    if ($(".dg_scar_optnoff_item").hasClass("active")) {
+      $(".dg_scar_optnoff_item").removeClass("active");
+    } else {
+      $(".dg_scar_optnoff_item").addClass("active");
+      $(".dg_scar_optnon_item").removeClass("active");
+    }
+  });
+
+  $(".dg_ss_optnon_item").click(function () {
+    if ($(".dg_ss_optnon_item").hasClass("active")) {
+      $(".dg_ss_optnon_item").removeClass("active");
+    } else {
+      $(".dg_ss_optnon_item").addClass("active");
+      $(".dg_ss_optnoff_item").removeClass("active");
+    }
+  });
+  $(".dg_ss_optnoff_item").click(function () {
+    if ($(".dg_ss_optnoff_item").hasClass("active")) {
+      $(".dg_ss_optnoff_item").removeClass("active");
+    } else {
+      $(".dg_ss_optnoff_item").addClass("active");
+      $(".dg_ss_optnon_item").removeClass("active");
+    }
+  });
 
   // Added features section for desktop
   $(".navbar-nav a.nav-link-en1").click(function () {
