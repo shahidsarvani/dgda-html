@@ -436,7 +436,7 @@ function move_left_en() {
     opacity: 0,
     display: 'none',
     left: '0',
-    duration: 1,
+    duration: 0,
     delay: 0,
     transform: 'translate(0%, 0%)'
   });
@@ -601,6 +601,12 @@ function move_left_ar() {
 }
 
 function move_startshow_left() {
+  gsap.to(".title_show_control", {
+    opacity: 1,
+    display: 'block',
+    duration: 1,
+    visibility: 'visible',
+  });
   gsap.to(".dg_rs_screen", {
     opacity: 0,
     x: -6000,
@@ -1035,6 +1041,12 @@ function move_showmodelactive(elem) {
   var fromDir = elem.getAttribute('data-fromDir');
   console.log(fromDir)
   if(fromDir == 'right') {
+    gsap.to(".title_show_control", {
+      opacity: 0,
+      display: 'none',
+      duration: 1,
+      visibility: 'hidden',
+    });
     gsap.to(".dg_rs_screen", {
       opacity: 0,
       x: 3000,
@@ -1094,6 +1106,12 @@ function move_showmodelactive(elem) {
       visibility: 'visible',
     });
   } else {
+    gsap.to(".title_show_control", {
+      opacity: 0,
+      display: 'none',
+      duration: 1,
+      visibility: 'hidden',
+    });
     gsap.fromTo(".dg_afrs_screen", {
       opacity: 0,
       x: -3000,
@@ -1305,6 +1323,12 @@ function move_lightsactive(elem) {
 
 
 $(document).ready(function () {
+
+  // $(".dg_afrs_screen a").click(function () {
+  //   $(".title_show_control").css('display', 'block');
+  //   $(".title_show_control").css('opacity', '1');
+  //   $(".title_show_control").css('visibility', 'visible');
+  // })
 
   $(".dg_scen_optnon_item").click(function () {
     if ($(".dg_scen_optnon_item").hasClass("active")) {
