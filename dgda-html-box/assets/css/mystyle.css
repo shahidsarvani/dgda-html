@@ -368,7 +368,7 @@ section.ml_lights_screen{
   /* padding-top: 120px; */
 }
 .dg_afrs_row{
-  margin-top: 150px;
+  /* margin-top: 150px; */
 }
 #dg_rs_screen .logo_diriyah img {
   max-width: 640px;
@@ -390,7 +390,7 @@ section.ml_lights_screen{
 #main_video_btn a {
   margin-bottom: 214px;
   font-size: 44px;
-  color: #EDD8D1;
+  color: #fff;
   text-decoration: none;
   text-align: center;
   line-height: 90px;
@@ -546,7 +546,8 @@ section.ml_lights_screen{
 }
 .lang_items a{
   font-size: 48px;
-  color: #f2a57e;
+  color: #645136;
+  font-family: "Kermes3-SemiBold" !important;
 }
 .lang_items{
   text-align: center;
@@ -850,6 +851,9 @@ section.ml_lights_screen{
 }
 .dg_sm_screen {
   padding-bottom: 143px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .breadcrumbs {
