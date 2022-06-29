@@ -438,6 +438,7 @@ section.ml_lights_screen{
   background-color: #003741;
   height: 6.3628px;
   width: 100%;
+  margin-top: -50px;
 }
 .ml_list_wrap {
   max-height: 1010px;
@@ -719,6 +720,7 @@ section.ml_lights_screen{
 
 .dg_afrs_col a{
   text-align: center;
+  display: block;
 }
 .dg_afrs_col a img{
   max-width: 180px;

@@ -1019,6 +1019,24 @@ function move_homeactive(elem) {
   var fromDir = elem.getAttribute('data-fromDir');
   console.log(fromDir)
   if(fromDir == 'right') {
+    gsap.to(".title_show_control", {
+      opacity: 0,
+      display: 'none',
+      duration: 1,
+      visibility: 'hidden',
+    });
+    gsap.to(".title_night_scene", {
+      opacity: 0,
+      display: 'none',
+      duration: 1,
+      visibility: 'hidden',
+    });
+    gsap.to(".title_basement_floors", {
+      opacity: 0,
+      display: 'none',
+      duration: 1,
+      visibility: 'hidden',
+    });
     gsap.to(".dg_rs_screen", {
       opacity: 0,
       x: 3000,
@@ -1119,6 +1137,24 @@ function move_homeactive(elem) {
       transform: 'translate(0%, 0%)'
     });
   } else {
+    gsap.to(".title_show_control", {
+      opacity: 0,
+      display: 'none',
+      duration: 1,
+      visibility: 'hidden',
+    });
+    gsap.to(".title_night_scene", {
+      opacity: 0,
+      display: 'none',
+      duration: 1,
+      visibility: 'hidden',
+    });
+    gsap.to(".title_basement_floors", {
+      opacity: 0,
+      display: 'none',
+      duration: 1,
+      visibility: 'hidden',
+    });
     gsap.to(".logo_diriyah .ar_logo", {
       opacity: 1,
       display: 'block',
@@ -1568,7 +1604,7 @@ $(document).ready(function () {
       $(".ft_main_page").removeClass("active");
     }
   });
-  $(".start_show_a").click(function () {
+  $(".ft_model").click(function () {
     if ($(".ft_model").hasClass("active")) {
       $(".ft_model").removeClass("active");
     } else {
@@ -1578,26 +1614,36 @@ $(document).ready(function () {
       $(".ft_main_page").removeClass("active");
     }
   });
-  $(".start_modelzone_a").click(function () {
-    if ($(".ft_model").hasClass("active")) {
-      $(".ft_model").removeClass("active");
-    } else {
-      $(".ft_model").addClass("active");
-      $(".ft_videowalls").removeClass("active");
-      $(".ft_lights").removeClass("active");
-      $(".ft_main_page").removeClass("active");
-    }
-  });
-  $(".start_basementfloors_a").click(function () {
-    if ($(".ft_model").hasClass("active")) {
-      $(".ft_model").removeClass("active");
-    } else {
-      $(".ft_model").addClass("active");
-      $(".ft_videowalls").removeClass("active");
-      $(".ft_lights").removeClass("active");
-      $(".ft_main_page").removeClass("active");
-    }
-  });
+  // $(".start_show_a").click(function () {
+  //   if ($(".ft_model").hasClass("active")) {
+  //     $(".ft_model").removeClass("active");
+  //   } else {
+  //     $(".ft_model").addClass("active");
+  //     $(".ft_videowalls").removeClass("active");
+  //     $(".ft_lights").removeClass("active");
+  //     $(".ft_main_page").removeClass("active");
+  //   }
+  // });
+  // $(".start_modelzone_a").click(function () {
+  //   if ($(".ft_model").hasClass("active")) {
+  //     $(".ft_model").removeClass("active");
+  //   } else {
+  //     $(".ft_model").addClass("active");
+  //     $(".ft_videowalls").removeClass("active");
+  //     $(".ft_lights").removeClass("active");
+  //     $(".ft_main_page").removeClass("active");
+  //   }
+  // });
+  // $(".start_basementfloors_a").click(function () {
+  //   if ($(".ft_model").hasClass("active")) {
+  //     $(".ft_model").removeClass("active");
+  //   } else {
+  //     $(".ft_model").addClass("active");
+  //     $(".ft_videowalls").removeClass("active");
+  //     $(".ft_lights").removeClass("active");
+  //     $(".ft_main_page").removeClass("active");
+  //   }
+  // });
   $(".ft_videowalls").click(function () {
     if ($(".ft_videowalls").hasClass("active")) {
       $(".ft_videowalls").removeClass("active");
@@ -1614,7 +1660,7 @@ $(document).ready(function () {
     } else {
       $(".ft_lights").addClass("active");
       $(".ft_videowalls").removeClass("active");
-      $(".ft_lights").removeClass("active");
+      $(".ft_model").removeClass("active");
       $(".ft_main_page").removeClass("active");
     }
   });
