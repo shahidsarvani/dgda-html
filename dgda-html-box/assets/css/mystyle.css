@@ -393,11 +393,14 @@ section.ml_lights_screen{
   color: #EDD8D1;
   text-decoration: none;
   text-align: center;
-  line-height: 80px;
+  line-height: 90px;
 }
 
 #main_video_btn a span, .rs_ar_heading{
   font-family: "Kermes3-SemiBold" !important;
+}
+#main_video_btn a span{
+  font-size: 58px;
 }
 .rs_ar_heading{
   margin-bottom: 10px;
@@ -417,6 +420,10 @@ section.ml_lights_screen{
   left: 42%;
   border-radius: 100%; */
 }
+
+
+
+
 
 .container,
 .container-lg,

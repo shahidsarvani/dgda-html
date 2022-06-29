@@ -1440,6 +1440,18 @@ function move_videowallsactive(elem) {
       visibility: 'hidden',
       duration: 1,
     });
+    gsap.to(".dg_sc_screen", {
+      opacity: 0,
+      x: -3000,
+      visibility: 'hidden',
+      duration: 1,
+    });
+    gsap.to(".dg_ss_screen", {
+      opacity: 0,
+      x: -3000,
+      visibility: 'hidden',
+      duration: 1,
+    });
     gsap.fromTo(".dg_vwalls_screen", {
       opacity: 0,
       x: 3000,
@@ -1475,7 +1487,43 @@ function move_videowallsactive(elem) {
       visibility: 'hidden',
       duration: 1,
     });
+    gsap.to(".title_show_control", {
+      opacity: 0,
+      display: 'none',
+      duration: 1,
+      visibility: 'hidden',
+    });
+    gsap.to(".title_night_scene", {
+      opacity: 0,
+      display: 'none',
+      duration: 1,
+      visibility: 'hidden',
+    });
+    gsap.to(".title_basement_floors", {
+      opacity: 0,
+      display: 'none',
+      duration: 1,
+      visibility: 'hidden',
+    });
   } else {
+    gsap.to(".title_show_control", {
+      opacity: 0,
+      display: 'none',
+      duration: 1,
+      visibility: 'hidden',
+    });
+    gsap.to(".title_night_scene", {
+      opacity: 0,
+      display: 'none',
+      duration: 1,
+      visibility: 'hidden',
+    });
+    gsap.to(".title_basement_floors", {
+      opacity: 0,
+      display: 'none',
+      duration: 1,
+      visibility: 'hidden',
+    });
     gsap.to(".dg_lights_screen", {
       opacity: 0,
       x: 3000,
@@ -1489,6 +1537,18 @@ function move_videowallsactive(elem) {
       duration: 1,
     });
     gsap.to(".dg_afrs_screen", {
+      opacity: 0,
+      x: -3000,
+      visibility: 'hidden',
+      duration: 1,
+    });
+    gsap.to(".dg_sc_screen", {
+      opacity: 0,
+      x: -3000,
+      visibility: 'hidden',
+      duration: 1,
+    });
+    gsap.to(".dg_ss_screen", {
       opacity: 0,
       x: -3000,
       visibility: 'hidden',
@@ -1543,6 +1603,18 @@ function move_lightsactive(elem) {
     visibility: 'hidden',
   });
   gsap.to(".dg_afrs_screen", {
+    opacity: 0,
+    x: -3000,
+    duration: 1,
+    visibility: 'hidden',
+  });
+  gsap.to(".dg_sc_screen", {
+    opacity: 0,
+    x: -3000,
+    duration: 1,
+    visibility: 'hidden',
+  });
+  gsap.to(".dg_ss_screen", {
     opacity: 0,
     x: -3000,
     duration: 1,
