@@ -12,7 +12,7 @@
 </head>
 
 <body class="homepage">
-    <!-- <img class="compare_img" src="./assets/images/screens/lights-screen.png" alt="room-selection-screen"/> -->
+    <!-- <img class="compare_img" src="./assets/images/screens/video-screen.png" alt="room-selection-screen"/> -->
     <main id="en_version" class="home_en">
         <!--Start Header Nav-->
         <header id="header">
@@ -28,12 +28,15 @@
                                     </a>
                                 </div>
                                 <div class="lang-switcher">
-                                    <form action="switcher">
+                                    <div class="lang_items">
+                                        <a class="lang_ar_item" href="#">عربي</a>
+                                    </div>
+                                    <!-- <form action="switcher">
                                         <select name="lang-switcher" id="language">
                                             <option value="arabic">عربي</option>
                                             <option value="english">ENGLISH</option>
                                         </select>
-                                    </form>
+                                    </form> -->
                                 </div>
                             </div>
                         </div>
@@ -162,7 +165,7 @@
                     </div>
                     <div class="col-4 dg_afrs_col">
                         <a class="start_modelzone_a" href="javascript:void(0)" onclick="move_start_modellights_left()">
-                            <img class="screensaver_icon" src="./assets/images/icons/night-scene-icon.svg" alt="night-scene">
+                            <img class="screensaver_icon" src="./assets/images/icons/screensaver-icon.svg" alt="night-scene">
                             <h3 class="dg_afrs_col2_h">MODEL ZONES</h3>
                         </a>
                     </div>
@@ -201,7 +204,7 @@
                             </ul>
                         </div> -->
                         <div class="optn_language">
-                            <a href="#"><h3>ENGLISH</h3></a>
+                            <a onclick="move_startshow_right()" href="#"><h3>ENGLISH</h3></a>
                         </div>
                     </div>
                     <div class="col-4 dg_sc_col">
@@ -222,7 +225,7 @@
                             </ul>
                         </div> -->
                         <div class="optn_language">
-                            <a href="#"><h3>عربي</h3></a>
+                            <a onclick="move_startshow_right()" href="#"><h3>عربي</h3></a>
                         </div>
                     </div>
                     <div class="col-2"></div>
@@ -236,9 +239,9 @@
             <div class="container dg_sm_screen_cont">
                 <div class="row dg_sm_row">
                     <div class="col-12 dg_sm_col">
-                        <a href="javascript:void(0)" onclick="move_startshow_right()">
+                        <a href="javascript:void(0)" onclick="move_startshow_back()">
                             <h3 class="breadcrumbs">
-                                <!-- < MODEL SHOW -->
+                                < MODEL SHOW
                             </h3>
                         </a>
                     </div>
@@ -879,6 +882,11 @@
                                     <a href="javascript:void(0)">
                                         <img src="./assets/images/diriyah-ar-logo.svg" alt="logo" />
                                     </a>
+                                </div>
+                                <div class="lang-switcher">
+                                    <div class="lang_items">
+                                        <a class="lang_ar_item" href="#">ENGLISH</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
