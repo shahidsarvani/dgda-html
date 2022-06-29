@@ -522,6 +522,7 @@ function move_left_en() {
     bottom: -220,
   }, {
     bottom: 0,
+    opacity: 1,
   });
 }
 
@@ -715,6 +716,12 @@ function move_startshow_right() {
 }
 
 function move_start_modellights_left() {
+  gsap.to(".title_night_scene", {
+    opacity: 1,
+    display: 'block',
+    duration: 1,
+    visibility: 'visible',
+  });
   gsap.to(".dg_rs_screen", {
     opacity: 0,
     x: -6000,
@@ -725,7 +732,18 @@ function move_start_modellights_left() {
     x: -3000,
     duration: 1
   });
-  gsap.fromTo(".dg_ss_screen", {
+  // gsap.fromTo(".dg_ss_screen", {
+  //   opacity: 0,
+  //   x: 3000,
+  //   duration: 1,
+  //   visibility: 'hidden',
+  // }, {
+  //   opacity: 1,
+  //   x: 0,
+  //   duration: 1,
+  //   visibility: 'visible',
+  // });
+  gsap.fromTo(".ml_lights_screen", {
     opacity: 0,
     x: 3000,
     duration: 1,
@@ -748,7 +766,7 @@ function move_start_modellights_left() {
     x: 3000,
     duration: 1
   });
-  gsap.fromTo(".home_ar .dg_ss_screen", {
+  gsap.fromTo(".home_ar .ml_lights_screen", {
     opacity: 0,
     x: -3000,
     duration: 1,
@@ -759,6 +777,17 @@ function move_start_modellights_left() {
     duration: 1,
     visibility: 'visible',
   });
+  // gsap.fromTo(".home_ar .dg_ss_screen", {
+  //   opacity: 0,
+  //   x: -3000,
+  //   duration: 1,
+  //   visibility: 'hidden',
+  // }, {
+  //   opacity: 1,
+  //   x: 0,
+  //   duration: 1,
+  //   visibility: 'visible',
+  // });
 
 }
 function move_start_modellights_right() {
@@ -812,6 +841,12 @@ function move_start_modellights_right() {
 }
 
 function move_start_basementfloors_left() {
+  gsap.to(".title_basement_floors", {
+    opacity: 1,
+    display: 'block',
+    duration: 1,
+    visibility: 'visible',
+  });
   gsap.to(".dg_rs_screen", {
     opacity: 0,
     x: -6000,
@@ -972,8 +1007,70 @@ function move_homeactive(elem) {
       x: 0,
       duration: 1,
       visibility: 'visible',
+    })
+    gsap.fromTo(".header-menu-elements", {
+      opacity: 1,
+      x: 0,
+      duration: 1,
+      visibility: 'visible',
+    }, {
+      opacity: 0,
+      x: 3000,
+      duration: 1,
+      visibility: 'hidden',
+    })
+    gsap.to(".logo_diriyah", {
+      left: '36%',
+      duration: 1,
+      delay: 0,
+      transform: 'translate(0%, 0%)'
+    })
+    gsap.to(".lang-switcher", {
+      opacity: 0,
+      visibility: 'hidden',
+      duration: 1,
+      delay: 0,
+    })
+    gsap.to(".logo_diriyah .ar_logo", {
+      opacity: 1,
+      display: 'block',
+      left: '0',
+      duration: 1,
+      delay: 0,
+      transform: 'translate(0%, 0%)'
     });
   } else {
+    gsap.to(".logo_diriyah .ar_logo", {
+      opacity: 1,
+      display: 'block',
+      left: '0',
+      duration: 1,
+      delay: 0,
+      transform: 'translate(0%, 0%)'
+    })
+    gsap.fromTo(".header-menu-elements", {
+      opacity: 1,
+      x: 0,
+      duration: 1,
+      visibility: 'visible',
+    }, {
+      opacity: 0,
+      x: 3000,
+      duration: 1,
+      visibility: 'hidden',
+    });
+    gsap.to(".logo_diriyah", {
+      left: '36%',
+      duration: 1,
+      delay: 0,
+      transform: 'translate(0%, 0%)'
+    })
+    gsap.to(".lang-switcher", {
+      opacity: 0,
+      visibility: 'hidden',
+      duration: 1,
+      delay: 0,
+    })
     gsap.fromTo(".dg_rs_screen", {
       opacity: 0,
       x: -3000,
@@ -988,22 +1085,26 @@ function move_homeactive(elem) {
     gsap.to(".dg_afrs_screen", {
       opacity: 0,
       x: 3000,
-      duration: 1
+      duration: 1,
+      visibility: 'hidden',
     });
     gsap.to(".dg_lights_screen", {
       opacity: 0,
       x: 3000,
-      duration: 1
+      duration: 1,
+      visibility: 'hidden',
     });
     gsap.to(".dg_sm_screen", {
       opacity: 0,
       x: 3000,
-      duration: 1
+      duration: 1,
+      visibility: 'hidden',
     });
     gsap.to(".ml_lights_screen", {
       opacity: 0,
       x: 3000,
-      duration: 1
+      duration: 1,
+      visibility: 'hidden',
     });
     gsap.to(".dg_bf_screen", {
       opacity: 0,
@@ -1042,6 +1143,18 @@ function move_showmodelactive(elem) {
   console.log(fromDir)
   if(fromDir == 'right') {
     gsap.to(".title_show_control", {
+      opacity: 0,
+      display: 'none',
+      duration: 1,
+      visibility: 'hidden',
+    });
+    gsap.to(".title_night_scene", {
+      opacity: 0,
+      display: 'none',
+      duration: 1,
+      visibility: 'hidden',
+    });
+    gsap.to(".title_basement_floors", {
       opacity: 0,
       display: 'none',
       duration: 1,
@@ -1110,7 +1223,19 @@ function move_showmodelactive(elem) {
       opacity: 0,
       display: 'none',
       duration: 1,
-      visibility: 'hidden',
+      visibility: 'visible',
+    });
+    gsap.to(".title_night_scene", {
+      opacity: 0,
+      display: 'none',
+      duration: 1,
+      visibility: 'visible',
+    });
+    gsap.to(".title_basement_floors", {
+      opacity: 0,
+      display: 'none',
+      duration: 1,
+      visibility: 'visible',
     });
     gsap.fromTo(".dg_afrs_screen", {
       opacity: 0,
@@ -1122,6 +1247,12 @@ function move_showmodelactive(elem) {
       x: 0,
       duration: 1,
       visibility: 'visible',
+    });
+    gsap.to(".dg_rs_screen", {
+      opacity: 0,
+      x: 3000,
+      duration: 1,
+      visibility: 'hidden',
     });
     gsap.to(".dg_lights_screen", {
       opacity: 0,
@@ -1143,7 +1274,18 @@ function move_showmodelactive(elem) {
       x: 3000,
       duration: 1
     });
-    
+    gsap.to(".dg_ss_screen", {
+      opacity: 0,
+      x: 3000,
+      duration: 1,
+      visibility: 'visible',
+    });
+    gsap.to(".dg_sc_screen", {
+      opacity: 0,
+      x: 3000,
+      duration: 1,
+      visibility: 'visible',
+    });
     gsap.fromTo(".dg_vwalls_screen", {
       opacity: 1,
       x: 0,
@@ -1324,6 +1466,68 @@ function move_lightsactive(elem) {
 
 $(document).ready(function () {
 
+  
+  $("#dg_rs_screen a #diriyah-room").click(function () {
+    if ($(".ft_model").hasClass("active")) {
+      $(".ft_model").removeClass("active");
+    } else {
+      $(".ft_model").addClass("active");
+      $(".ft_videowalls").removeClass("active");
+      $(".ft_lights").removeClass("active");
+      $(".ft_main_page").removeClass("active");
+    }
+  });
+  $(".start_show_a").click(function () {
+    if ($(".ft_model").hasClass("active")) {
+      $(".ft_model").removeClass("active");
+    } else {
+      $(".ft_model").addClass("active");
+      $(".ft_videowalls").removeClass("active");
+      $(".ft_lights").removeClass("active");
+      $(".ft_main_page").removeClass("active");
+    }
+  });
+  $(".start_modelzone_a").click(function () {
+    if ($(".ft_model").hasClass("active")) {
+      $(".ft_model").removeClass("active");
+    } else {
+      $(".ft_model").addClass("active");
+      $(".ft_videowalls").removeClass("active");
+      $(".ft_lights").removeClass("active");
+      $(".ft_main_page").removeClass("active");
+    }
+  });
+  $(".start_basementfloors_a").click(function () {
+    if ($(".ft_model").hasClass("active")) {
+      $(".ft_model").removeClass("active");
+    } else {
+      $(".ft_model").addClass("active");
+      $(".ft_videowalls").removeClass("active");
+      $(".ft_lights").removeClass("active");
+      $(".ft_main_page").removeClass("active");
+    }
+  });
+  $(".ft_videowalls").click(function () {
+    if ($(".ft_videowalls").hasClass("active")) {
+      $(".ft_videowalls").removeClass("active");
+    } else {
+      $(".ft_videowalls").addClass("active");
+      $(".ft_model").removeClass("active");
+      $(".ft_lights").removeClass("active");
+      $(".ft_main_page").removeClass("active");
+    }
+  });
+  $(".ft_lights").click(function () {
+    if ($(".ft_lights").hasClass("active")) {
+      $(".ft_lights").removeClass("active");
+    } else {
+      $(".ft_lights").addClass("active");
+      $(".ft_videowalls").removeClass("active");
+      $(".ft_lights").removeClass("active");
+      $(".ft_main_page").removeClass("active");
+    }
+  });
+
   // $(".dg_afrs_screen a").click(function () {
   //   $(".title_show_control").css('display', 'block');
   //   $(".title_show_control").css('opacity', '1');
@@ -1471,62 +1675,62 @@ $(document).ready(function () {
   });
 
   // Added features section for desktop
-  $(".ml_dg_anchor1_wrap").click(function () {
-    if ($(".ml_dg_anchor1_wrap").hasClass("active")) {
-      console.log("same tab");
-      $(".ml_dg_anchor1_wrap").removeClass("active");
-      $(".ml_dg_antag1_wrap").removeClass("active");
-      $(".ml_content_container1").removeClass("active");
-    } else {
-      $(".ml_dg_anchor1_wrap").addClass("active");
-      $(".ml_dg_antag1_wrap").addClass("active");
-      $(".ml_content_container1").addClass("active");
-      $(".ml_dg_anchor2_wrap").removeClass("active");
-      $(".ml_dg_antag2_wrap").removeClass("active");
-      $(".ml_content_container2").removeClass("active");
-      $(".ml_dg_anchor3_wrap").removeClass("active");
-      $(".ml_dg_antag3_wrap").removeClass("active");
-      $(".ml_content_container3").removeClass("active");
-    }
-  });
+  // $(".ml_dg_anchor1_wrap").click(function () {
+  //   if ($(".ml_dg_anchor1_wrap").hasClass("active")) {
+  //     console.log("same tab");
+  //     $(".ml_dg_anchor1_wrap").removeClass("active");
+  //     $(".ml_dg_antag1_wrap").removeClass("active");
+  //     $(".ml_content_container1").removeClass("active");
+  //   } else {
+  //     $(".ml_dg_anchor1_wrap").addClass("active");
+  //     $(".ml_dg_antag1_wrap").addClass("active");
+  //     $(".ml_content_container1").addClass("active");
+  //     $(".ml_dg_anchor2_wrap").removeClass("active");
+  //     $(".ml_dg_antag2_wrap").removeClass("active");
+  //     $(".ml_content_container2").removeClass("active");
+  //     $(".ml_dg_anchor3_wrap").removeClass("active");
+  //     $(".ml_dg_antag3_wrap").removeClass("active");
+  //     $(".ml_content_container3").removeClass("active");
+  //   }
+  // });
 
-  $(".ml_dg_anchor2_wrap").click(function () {
-    if ($(".ml_dg_anchor2_wrap").hasClass("active")) {
-      console.log("same tab");
-      $(".ml_dg_anchor2_wrap").removeClass("active");
-      $(".ml_dg_antag2_wrap").removeClass("active");
-      $(".ml_content_container2").removeClass("active");
-    } else {
-      $(".ml_dg_anchor2_wrap").addClass("active");
-      $(".ml_dg_antag2_wrap").addClass("active");
-      $(".ml_content_container2").addClass("active");
-      $(".ml_dg_anchor1_wrap").removeClass("active");
-      $(".ml_dg_antag1_wrap").removeClass("active");
-      $(".ml_content_container1").removeClass("active");
-      $(".ml_dg_anchor3_wrap").removeClass("active");
-      $(".ml_dg_antag3_wrap").removeClass("active");
-      $(".ml_content_container3").removeClass("active");
-    }
-  });
+  // $(".ml_dg_anchor2_wrap").click(function () {
+  //   if ($(".ml_dg_anchor2_wrap").hasClass("active")) {
+  //     console.log("same tab");
+  //     $(".ml_dg_anchor2_wrap").removeClass("active");
+  //     $(".ml_dg_antag2_wrap").removeClass("active");
+  //     $(".ml_content_container2").removeClass("active");
+  //   } else {
+  //     $(".ml_dg_anchor2_wrap").addClass("active");
+  //     $(".ml_dg_antag2_wrap").addClass("active");
+  //     $(".ml_content_container2").addClass("active");
+  //     $(".ml_dg_anchor1_wrap").removeClass("active");
+  //     $(".ml_dg_antag1_wrap").removeClass("active");
+  //     $(".ml_content_container1").removeClass("active");
+  //     $(".ml_dg_anchor3_wrap").removeClass("active");
+  //     $(".ml_dg_antag3_wrap").removeClass("active");
+  //     $(".ml_content_container3").removeClass("active");
+  //   }
+  // });
 
-  $(".ml_dg_anchor3_wrap").click(function () {
-    if ($(".ml_dg_anchor3_wrap").hasClass("active")) {
-      console.log("same tab");
-      $(".ml_dg_anchor3_wrap").removeClass("active");
-      $(".ml_dg_antag3_wrap").removeClass("active");
-      $(".ml_content_container3").removeClass("active");
-    } else {
-      $(".ml_dg_anchor3_wrap").addClass("active");
-      $(".ml_dg_antag3_wrap").addClass("active");
-      $(".ml_content_container3").addClass("active");
-      $(".ml_dg_anchor1_wrap").removeClass("active");
-      $(".ml_dg_antag1_wrap").removeClass("active");
-      $(".ml_content_container1").removeClass("active");
-      $(".ml_dg_anchor2_wrap").removeClass("active");
-      $(".ml_dg_antag2_wrap").removeClass("active");
-      $(".ml_content_container2").removeClass("active");
-    }
-  });
+  // $(".ml_dg_anchor3_wrap").click(function () {
+  //   if ($(".ml_dg_anchor3_wrap").hasClass("active")) {
+  //     console.log("same tab");
+  //     $(".ml_dg_anchor3_wrap").removeClass("active");
+  //     $(".ml_dg_antag3_wrap").removeClass("active");
+  //     $(".ml_content_container3").removeClass("active");
+  //   } else {
+  //     $(".ml_dg_anchor3_wrap").addClass("active");
+  //     $(".ml_dg_antag3_wrap").addClass("active");
+  //     $(".ml_content_container3").addClass("active");
+  //     $(".ml_dg_anchor1_wrap").removeClass("active");
+  //     $(".ml_dg_antag1_wrap").removeClass("active");
+  //     $(".ml_content_container1").removeClass("active");
+  //     $(".ml_dg_anchor2_wrap").removeClass("active");
+  //     $(".ml_dg_antag2_wrap").removeClass("active");
+  //     $(".ml_content_container2").removeClass("active");
+  //   }
+  // });
 
   $(".dg_ft_nav_item1 a").click(function () {
     if ($(".dg_ft_nav_item1").hasClass("active")) {

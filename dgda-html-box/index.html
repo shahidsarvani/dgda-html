@@ -101,7 +101,7 @@
                     <div class="col-6 dg_rs_col">
                         <a href="javascript:void(0)" onclick="move_left_en()">
                             <div id="diriyah-room" class="dg_rs_wrap">
-                                <img src="./assets/images/icons/diriyah-icon.svg" alt="diriyah">
+                                <img class="dg_rs_img" src="./assets/images/icons/diriyah-icon.svg" alt="diriyah">
                                 <h3 class="rs_ar_heading">الدرعية</h3>
                                 <h3>DIRIYAH</h3>
                             </div>
@@ -110,7 +110,7 @@
                     <div class="col-6 dg_rs_col">
                         <a href="javascript:void(0)" onclick="move_left_en()">
                             <div id="wadisafar-room" class="dg_rs_wrap">
-                                <img src="./assets/images/icons/wadi-safar-icon.svg" alt="wadi-safar">
+                                <img class="dg_rs_img" src="./assets/images/icons/wadi-safar-icon.svg" alt="wadi-safar">
                                 <h3 class="rs_ar_heading">وادي صفار</h3>
                                 <h3>WADI SAFAR</h3>
                             </div>
@@ -121,25 +121,53 @@
         </section>
         <!--End Room Selection Screen-->
 
+        <!--Start Room Selection Screen-->
+        <!-- <section id="dg_rs_screen" class="dg_rs_screen">
+            <div class="overlay_sc"></div>
+            <div class="container dg_rs_container">
+                <div class="row dg_rs_row">
+                    <div class="col-6 dg_rs_col">
+                        <a href="javascript:void(0)" onclick="move_left_en()">
+                            <div id="diriyah-room" class="dg_rs_wrap">
+                                <img src="./assets/images/room-diriyah.png" alt="diriyah">
+                                <h3 class="rs_ar_heading">الدرعية</h3>
+                                <h3>DIRIYAH</h3>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-6 dg_rs_col">
+                        <a href="javascript:void(0)" onclick="move_left_en()">
+                            <div id="wadisafar-room" class="dg_rs_wrap">
+                                <img src="./assets/images/room-wadi-safar.png" alt="wadi-safar">
+                                <h3 class="rs_ar_heading">وادي صفار</h3>
+                                <h3>WADI SAFAR</h3>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+        <!--End Room Selection Screen-->
+
         <!--Start After Room Selection Screen-->
         <section id="dg_afrs_screen" class="dg_afrs_screen">
             <div class="container dg_afrs_container">
                 <div class="row dg_afrs_row">
                     <!-- <div class="col-2"></div> -->
                     <div class="col-4 dg_afrs_col">
-                        <a href="javascript:void(0)" onclick="move_startshow_left()">
+                        <a class="start_show_a" href="javascript:void(0)" onclick="move_startshow_left()">
                             <img class="start_show_icon" src="./assets/images/icons/play-icon.svg" alt="start-show">
                             <h3 class="dg_afrs_col1_h">START SHOW</h3>
                         </a>
                     </div>
                     <div class="col-4 dg_afrs_col">
-                        <a href="javascript:void(0)" onclick="move_start_modellights_left()">
+                        <a class="start_modelzone_a" href="javascript:void(0)" onclick="move_start_modellights_left()">
                             <img class="screensaver_icon" src="./assets/images/icons/night-scene-icon.svg" alt="night-scene">
-                            <h3 class="dg_afrs_col2_h">NIGHT SCENE</h3>
+                            <h3 class="dg_afrs_col2_h">MODEL ZONES</h3>
                         </a>
                     </div>
                     <div class="col-4 dg_afrs_col">
-                        <a href="javascript:void(0)" onclick="move_start_basementfloors_left()">
+                        <a class="start_basementfloors_a" href="javascript:void(0)" onclick="move_start_basementfloors_left()">
                             <img class="basementfloors_icon" src="./assets/images/icons/basementfloors-icon.svg" alt="basementfloors">
                             <h3 class="dg_afrs_col2_h">BASEMENTFLOORS</h3>
                         </a>
@@ -156,7 +184,7 @@
                 <div class="row dg_sc_row">
                     <div class="col-2"></div>
                     <div class="col-4 dg_sc_col">
-                        <div class="dg_scen_options_wrap dg_sc_options_wrap">
+                        <!-- <div class="dg_scen_options_wrap dg_sc_options_wrap">
                             <ul class="dg_scen_optn">
                                 <li class="dg_sc_optn_item dg_scen_optnon_item active">
                                     <a href="#">
@@ -171,13 +199,13 @@
                                     </a>
                                 </li>
                             </ul>
-                        </div>
+                        </div> -->
                         <div class="optn_language">
-                            <h3>ENGLISH</h3>
+                            <a href="#"><h3>ENGLISH</h3></a>
                         </div>
                     </div>
                     <div class="col-4 dg_sc_col">
-                        <div class="dg_scar_options_wrap dg_sc_options_wrap">
+                        <!-- <div class="dg_scar_options_wrap dg_sc_options_wrap">
                             <ul class="dg_scar_optn">
                                 <li class="dg_sc_optn_item dg_scar_optnon_item active">
                                     <a href="#">
@@ -192,9 +220,9 @@
                                     </a>
                                 </li>
                             </ul>
-                        </div>
+                        </div> -->
                         <div class="optn_language">
-                            <h3>عربي</h3>
+                            <a href="#"><h3>عربي</h3></a>
                         </div>
                     </div>
                     <div class="col-2"></div>
@@ -303,14 +331,14 @@
         <!--End Show Controls Screen-->
 
         <!--Start Model Lights Screen-->
-        <!-- <section id="ml_lights_screen" class="ml_lights_screen">
+        <section id="ml_lights_screen" class="ml_lights_screen">
             <div class="container ml_lights_container">
                 <div class="row ml_lights_row">
-                    <div class="col-12 breadcrumbs_col">
+                    <!-- <div class="col-12 breadcrumbs_col">
                         <a href="javascript:void(0)" onclick="move_start_modellights_right()">
                             <h3 class="breadcrumbs"> < SCREENSAVER </h3>
                         </a>
-                    </div>
+                    </div> -->
                     <div class="col_12 ml_content_col">
                         <div class="ml_content_container ml_content_container1 active">
                             <div class="ml_image_wrap ml_dg_anchor1_wrap active">
@@ -510,7 +538,7 @@
                     </div>
                 </div>
             </div>
-        </section> -->
+        </section>
         <!--End Model Lights Screen-->
 
         <!--Start Basement Floors Screen-->
@@ -752,6 +780,18 @@
                                 </div>
                             </div>
                             <div class="col-12 dg_lights_col">
+                                <div class="dg_lights_content_wrap dg_lights_40">
+                                    <a href="#">
+                                        <h3>NATURAL SOFT</h3>
+                                        <img src="./assets/images/icons/lights/natural-soft-lights.svg" alt="natural-soft-lights">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="row dg_lights_row">
+                            <div class="col-12 dg_lights_col">
                                 <div class="dg_lights_content_wrap dg_lights_60">
                                     <a href="#">
                                         <h3>LIGHTS 60%</h3>
@@ -768,33 +808,19 @@
                                 </div>
                             </div>
                             <div class="col-12 dg_lights_col">
-                                <div class="dg_lights_content_wrap all_no_lights">
+                                <div class="dg_lights_content_wrap dg_lights_entery">
                                     <a href="#">
-                                        <h3>ALL LIGHTS ON</h3>
-                                        <img src="./assets/images/icons/lights/all-lights-on.svg" alt="all-lights">
+                                        <h3>NATURAL BRIGHT</h3>
+                                        <img class="model_bright_lights" src="./assets/images/icons/lights/natural-bright-lights.svg" alt="natural-bright-lights">
                                     </a>
                                 </div>
                             </div>
                         </div>
                     </div>
+                </div>
+                <div class="row dg_lights_main_row dg_lights_main_row2">
                     <div class="col-6">
                         <div class="row dg_lights_row">
-                            <div class="col-12 dg_lights_col">
-                                <div class="dg_lights_content_wrap dg_lights_20">
-                                    <a href="#">
-                                        <h3>MODEL SOFT</h3>
-                                        <img src="./assets/images/icons/lights/model-soft-lights.svg" alt="model-soft-lights">
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col-12 dg_lights_col">
-                                <div class="dg_lights_content_wrap dg_lights_40">
-                                    <a href="#">
-                                        <h3>NATURAL SOFT</h3>
-                                        <img src="./assets/images/icons/lights/natural-soft-lights.svg" alt="natural-soft-lights">
-                                    </a>
-                                </div>
-                            </div>
                             <div class="col-12 dg_lights_col">
                                 <div class="dg_lights_content_wrap dg_lights_60">
                                     <a href="#">
@@ -804,15 +830,27 @@
                                 </div>
                             </div>
                             <div class="col-12 dg_lights_col">
+                                <div class="dg_lights_content_wrap dg_lights_20">
+                                    <a href="#">
+                                        <h3>MODEL SOFT</h3>
+                                        <img src="./assets/images/icons/lights/model-soft-lights.svg" alt="model-soft-lights">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="row dg_lights_row">
+                            <div class="col-12 dg_lights_col">
                                 <div class="dg_lights_content_wrap dg_lights_entery">
                                     <a href="#">
-                                        <h3>NATURAL BRIGHT</h3>
-                                        <img class="model_bright_lights" src="./assets/images/icons/lights/natural-bright-lights.svg" alt="natural-bright-lights">
+                                        <h3>ALL LIGHTS ON</h3>
+                                        <img src="./assets/images/icons/lights/all-lights-on.svg" alt="all-lights-on">
                                     </a>
                                 </div>
                             </div>
                             <div class="col-12 dg_lights_col">
-                                <div class="dg_lights_content_wrap all_no_lights">
+                                <div class="dg_lights_content_wrap all_no_lights1">
                                     <a href="#">
                                         <h3>ALL LIGHTS OFF</h3>
                                         <img src="./assets/images/icons/lights/all-light-off.svg" alt="all-lights-off">
@@ -1026,11 +1064,11 @@
         <section id="ml_lights_screen" class="ml_lights_screen">
             <div class="container ml_lights_container">
                 <div class="row ml_lights_row">
-                    <div class="col-12 breadcrumbs_col">
+                    <!-- <div class="col-12 breadcrumbs_col">
                         <a href="javascript:void(0)" onclick="move_start_modellights_right()">
                             <h3 class="breadcrumbs">< إضاءات المجسم </h3>
                         </a>
-                    </div>
+                    </div> -->
                     <div class="col_12 ml_content_col">
                         <div class="ml_content_container ml_content_container1 active">
                             <div class="ml_image_wrap ml_dg_anchor1_wrap active">
@@ -1460,13 +1498,13 @@
                     <div class="dg_ft_nav_titles">
                         <div class="dg_ft_navtitle_link">
                             <h3 class="page_title title_show_control">SHOW CONTROLS</h3>
-                            <h3 class="page_title title_night_scene">NIGHT SCENE</h3>
+                            <h3 class="page_title title_night_scene">MODEL ZONES</h3>
                             <h3 class="page_title title_basement_floors">BASEMENT FLOORS</h3>
                             <h3 class="page_title title_lights">LIGHTS</h3>
                         </div>
                     </div>
                     <ul class="dg_ft_nav_list">
-                        <li class="dg_ft_nav_item dg_ft_nav_item1 active">
+                        <li class="dg_ft_nav_item dg_ft_nav_item1">
                             <a href="#" onclick="move_showmodelactive1(this)" data-fromDir="left">
                                 <div class="dg_ft_nav_img">
                                     <img src="./assets/images/icons/backward-light-icon.svg" alt="back">
@@ -1476,7 +1514,7 @@
                                 </div>
                             </a>
                         </li>
-                        <li class="dg_ft_nav_item dg_ft_nav_item1 active">
+                        <li class="dg_ft_nav_item dg_ft_nav_item2 ft_main_page">
                             <a href="#" onclick="move_homeactive(this)" data-fromDir="right">
                                 <div class="dg_ft_nav_img">
                                     <img src="./assets/images/icons/ftr-home-icon.svg" alt="main-page">
@@ -1486,7 +1524,7 @@
                                 </div>
                             </a>
                         </li>
-                        <li class="dg_ft_nav_item dg_ft_nav_item1 active">
+                        <li class="dg_ft_nav_item dg_ft_nav_item3 ft_model">
                             <a href="#" onclick="move_showmodelactive(this)" data-fromDir="left">
                                 <div class="dg_ft_nav_img">
                                     <img src="./assets/images/icons/ftr-model-icon.svg" alt="Model">
@@ -1496,7 +1534,7 @@
                                 </div>
                             </a>
                         </li>
-                        <li class="dg_ft_nav_item dg_ft_nav_item2">
+                        <li class="dg_ft_nav_item dg_ft_nav_item4 ft_videowalls">
                             <a href="#" onclick="move_videowallsactive(this)" data-fromDir="right">
                                 <div class="dg_ft_nav_img">
                                     <img src="./assets/images/icons/ftr-vwalls-icon.svg" alt="VIDEO WALLS">
@@ -1506,7 +1544,7 @@
                                 </div>
                             </a>
                         </li>
-                        <li class="dg_ft_nav_item dg_ft_nav_item3">
+                        <li class="dg_ft_nav_item dg_ft_nav_item5 ft_lights">
                             <a href="#" onclick="move_lightsactive(this)" data-fromDir="right">
                                 <div class="dg_ft_nav_img">
                                     <img src="./assets/images/icons/ftr-lights-icon.svg" alt="LIGHTS">
@@ -1516,7 +1554,7 @@
                                 </div>
                             </a>
                         </li>
-                        <!-- <li class="dg_ft_nav_item dg_ft_nav_item4 dg_ft_nav_link_en">
+                        <!-- <li class="dg_ft_nav_item dg_ft_nav_item6 dg_ft_nav_link_en">
                             <a href="javascript:void(0)" onclick="move_main_left()">
                                 <div class="dg_ft_nav_img dg_ft_nav_img_ar">
                                     <img src="./assets/images/ftr-arabic-icon.svg" alt="ARABIC">
@@ -1526,7 +1564,7 @@
                                 </div>
                             </a>
                         </li> -->
-                        <li class="dg_ft_nav_item dg_ft_nav_item5">
+                        <!-- <li class="dg_ft_nav_item dg_ft_nav_item7">
                             <a href="javascript:void(0)" onclick="move_main_left1()">
                                 <div class="dg_ft_nav_img">
                                     <img src="./assets/images/icons/forward-light-icon.svg" alt="forward">
@@ -1535,7 +1573,7 @@
                                     <h3>FORWARD</h3>
                                 </div>
                             </a>
-                        </li>
+                        </li> -->
                     </ul>
                 </div>
             </div>
