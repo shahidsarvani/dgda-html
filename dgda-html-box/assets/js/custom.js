@@ -1049,6 +1049,18 @@ function move_homeactive(elem) {
       duration: 1,
       visibility: 'hidden',
     });
+    gsap.to(".dg_sc_screen", {
+      opacity: 0,
+      x: 3000,
+      duration: 1,
+      visibility: 'hidden',
+    });
+    gsap.to(".dg_ss_screen", {
+      opacity: 0,
+      x: 3000,
+      duration: 1,
+      visibility: 'hidden',
+    });
     gsap.to(".dg_afrs_screen", {
       opacity: 0,
       x: 3000,
@@ -1162,6 +1174,18 @@ function move_homeactive(elem) {
       visibility: 'hidden',
     });
     gsap.to(".dg_sm_screen", {
+      opacity: 0,
+      x: 3000,
+      duration: 1,
+      visibility: 'hidden',
+    });
+    gsap.to(".dg_sc_screen", {
+      opacity: 0,
+      x: 3000,
+      duration: 1,
+      visibility: 'hidden',
+    });
+    gsap.to(".dg_ss_screen", {
       opacity: 0,
       x: 3000,
       duration: 1,
