@@ -552,15 +552,18 @@ section.ml_lights_screen{
 .lang_items{
   text-align: center;
 }
+
+.dg_ft_nav_item.active img, .nav-item a.active img{
+  filter: brightness(0) saturate(100%) invert(29%) sepia(65%) saturate(268%) hue-rotate(356deg) brightness(93%) contrast(91%);
+}
+
+.nav-link:hover, .nav-link:focus, .nav-link:focus-visible{
+  color: #C87E59 !important;
+}
+
 .nav-link.active, .nav-link.active:hover, .dg_ft_nav_item.active h3{
   /* background-color: rgb(204 102 102 / 20%); */
   color: #645136 !important;
-}
-.dg_ft_nav_item.active img{
-  filter: brightness(0) saturate(100%) invert(29%) sepia(65%) saturate(268%) hue-rotate(356deg) brightness(93%) contrast(91%);
-}
-.nav-link:hover, .nav-link:focus, .nav-link:focus-visible{
-  color: #C87E59 !important;
 }
 
 .header_inner {
