@@ -1,5 +1,5 @@
 //////////// Main section movement/////////////////////
-
+/*
 function move_step_back(){ 
   gsap.fromTo(".dg_afrs_screen", {
     opacity: 0,
@@ -13,7 +13,7 @@ function move_step_back(){
     visibility: 'visible',
   });
 }
-
+*/
 function move_main_left() {
   gsap.to(".home_ar", {
     opacity: 1,
@@ -2398,15 +2398,16 @@ $(document).ready(function () {
 
     $('section').css({"visibility": "hidden", "opacity": "0"});
     $('#' + item_back).css({"visibility": "visible", "opacity": "1", "transform": "translate(0px)"});
+    $('#' + item_back).addClass('current_view');
 
+  
 
     if(item_back == 'dg_rs_screen') {
       $('#footer_en').css({"opacity": "0"});
-      arry = [];
     }else {
       $('#footer_en').css({"opacity": "1"});
     }
-
+    $(this).data('clicked', 'no');
   });
 
   $('#bring_it_back').data('clicked', 'no');
@@ -2419,6 +2420,7 @@ $(document).ready(function () {
        
         if(arry.includes(selection) === false){
           arry.push(selection);
+          console.log(arry)
         }
       }
      }
