@@ -1,6 +1,12 @@
 //////////// Main section movement/////////////////////
 
 function move_main_left() {
+  gsap.to(".home_ar", {
+    opacity: 1,
+    display: 'flex',
+    duration: 1,
+    visibility: 'visible',
+  });
   ///////////////////english animations///////////////////////
   gsap.fromTo("#en_version", {
     opacity: 1,
@@ -165,6 +171,7 @@ function move_main_left() {
     bottom: -220,
   }, {
     bottom: 0,
+    opacity: 1,
   });
   gsap.fromTo(".dg_ft_cont_en", {
     bottom: 0,
@@ -198,6 +205,17 @@ function move_main_right() {
     visibility: 'visible',
   });
   gsap.fromTo(".home_en .dg_sm_screen", {
+    opacity: 0,
+    x: -3000,
+    duration: 1,
+    visibility: 'hidden',
+  }, {
+    opacity: 0,
+    x: -3000,
+    duration: 1,
+    visibility: 'hidden',
+  });
+  gsap.fromTo(".home_en .dg_rs_screen", {
     opacity: 0,
     x: -3000,
     duration: 1,
@@ -528,6 +546,12 @@ function move_left_en() {
 
 
 function move_left_ar() {
+  gsap.to(".lang-switcher", {
+    opacity: 1,
+    visibility: 'visible',
+    duration: 1,
+    delay: 1,
+  })
   // gsap.to(".dg_rs_screen", {
   //   opacity: 0,
   //   x: -3000,
@@ -589,15 +613,17 @@ function move_left_ar() {
     x: 3000,
     duration: 1
   });
-  gsap.fromTo(".dg_ft_cont_ar", {
+  
+  gsap.fromTo(".dg_ft_cont_en", {
     bottom: -220,
   }, {
     bottom: -220,
   });
-  gsap.fromTo(".dg_ft_cont_en", {
+  gsap.fromTo(".dg_ft_cont_ar", {
     bottom: -220,
   }, {
     bottom: 0,
+    opacity: 1,
   });
 }
 
@@ -1016,7 +1042,142 @@ function move_start_basementfloors_right() {
 
 }
 
-
+function move_homeactive_en() {
+  gsap.to(".home_ar", {
+    opacity: 0,
+    display: 'none',
+    duration: 1,
+    visibility: 'hidden',
+  });
+    gsap.to(".title_show_control", {
+      opacity: 0,
+      display: 'none',
+      duration: 1,
+      visibility: 'hidden',
+    });
+    gsap.to(".title_night_scene", {
+      opacity: 0,
+      display: 'none',
+      duration: 1,
+      visibility: 'hidden',
+    });
+    gsap.to(".title_basement_floors", {
+      opacity: 0,
+      display: 'none',
+      duration: 1,
+      visibility: 'hidden',
+    });
+    gsap.to(".logo_diriyah .ar_logo", {
+      opacity: 1,
+      display: 'block',
+      left: '0',
+      duration: 1,
+      delay: 0,
+      transform: 'translate(0%, 0%)'
+    })
+    gsap.fromTo(".header-menu-elements", {
+      opacity: 1,
+      x: 0,
+      duration: 1,
+      visibility: 'visible',
+    }, {
+      opacity: 0,
+      x: 3000,
+      duration: 1,
+      visibility: 'hidden',
+    });
+    gsap.to(".logo_diriyah", {
+      left: '36%',
+      duration: 1,
+      delay: 0,
+      transform: 'translate(0%, 0%)'
+    })
+    gsap.to(".lang-switcher", {
+      opacity: 0,
+      visibility: 'hidden',
+      duration: 1,
+      delay: 0,
+    })
+    gsap.fromTo(".dg_rs_screen", {
+      opacity: 0,
+      x: -3000,
+      duration: 1,
+      visibility: 'hidden',
+    }, {
+      opacity: 1,
+      x: 0,
+      duration: 1,
+      visibility: 'visible',
+    });
+    gsap.to(".dg_afrs_screen", {
+      opacity: 0,
+      x: 3000,
+      duration: 1,
+      visibility: 'hidden',
+    });
+    gsap.to(".dg_lights_screen", {
+      opacity: 0,
+      x: 3000,
+      duration: 1,
+      visibility: 'hidden',
+    });
+    gsap.to(".dg_sm_screen", {
+      opacity: 0,
+      x: 3000,
+      duration: 1,
+      visibility: 'hidden',
+    });
+    gsap.to(".dg_sc_screen", {
+      opacity: 0,
+      x: 3000,
+      duration: 1,
+      visibility: 'hidden',
+    });
+    gsap.to(".dg_ss_screen", {
+      opacity: 0,
+      x: 3000,
+      duration: 1,
+      visibility: 'hidden',
+    });
+    gsap.to(".ml_lights_screen", {
+      opacity: 0,
+      x: 3000,
+      duration: 1,
+      visibility: 'hidden',
+    });
+    gsap.to(".dg_bf_screen", {
+      opacity: 0,
+      x: 3000,
+      duration: 1
+    });
+    gsap.fromTo(".dg_ft_cont_ar", {
+      opacity: 1,
+      bottom: 0,
+      duration: 1,
+    }, {
+      opacity: 0,
+      bottom: -220,
+      duration: 1,
+    });
+    gsap.fromTo(".dg_ft_cont_en", {
+      opacity: 1,
+      bottom: 0,
+      duration: 1,
+    }, {
+      opacity: 0,
+      bottom: -220,
+      duration: 1,
+    });
+    gsap.fromTo(".dg_vwalls_screen", {
+      opacity: 1,
+      x: 0,
+      duration: 1,
+    }, {
+      opacity: 0,
+      x: 3000,
+      duration: 1,
+    });
+  }
 
 function move_homeactive(elem) {
   var nextSibling = $(elem).parent().next();
@@ -1025,6 +1186,37 @@ function move_homeactive(elem) {
   var fromDir = elem.getAttribute('data-fromDir');
   console.log(fromDir)
   if(fromDir == 'right') {
+    gsap.to(".logo_diriyah .ar_logo", {
+      opacity: 1,
+      display: 'block',
+      left: '0',
+      duration: 1,
+      delay: 0,
+      transform: 'translate(0%, 0%)'
+    })
+    gsap.fromTo(".header-menu-elements", {
+      opacity: 1,
+      x: 0,
+      duration: 1,
+      visibility: 'visible',
+    }, {
+      opacity: 0,
+      x: 3000,
+      duration: 1,
+      visibility: 'hidden',
+    });
+    gsap.to(".logo_diriyah", {
+      left: '36%',
+      duration: 1,
+      delay: 0,
+      transform: 'translate(0%, 0%)'
+    })
+    gsap.to(".lang-switcher", {
+      opacity: 0,
+      visibility: 'hidden',
+      duration: 1,
+      delay: 0,
+    })
     gsap.to(".title_show_control", {
       opacity: 0,
       display: 'none',
@@ -1080,6 +1272,12 @@ function move_homeactive(elem) {
       visibility: 'hidden',
     });
     gsap.to(".dg_ss_screen", {
+      opacity: 0,
+      x: 3000,
+      duration: 1,
+      visibility: 'hidden',
+    });
+    gsap.to(".dg_sm_screen", {
       opacity: 0,
       x: 3000,
       duration: 1,
@@ -1141,6 +1339,15 @@ function move_homeactive(elem) {
       duration: 1,
       delay: 0,
       transform: 'translate(0%, 0%)'
+    });
+    gsap.fromTo(".dg_ft_cont_ar", {
+      opacity: 1,
+      bottom: 0,
+      duration: 1,
+    }, {
+      opacity: 0,
+      bottom: -220,
+      duration: 1,
     });
   } else {
     gsap.to(".title_show_control", {
@@ -1245,6 +1452,15 @@ function move_homeactive(elem) {
       duration: 1
     });
     gsap.fromTo(".dg_ft_cont_ar", {
+      opacity: 1,
+      bottom: 0,
+      duration: 1,
+    }, {
+      opacity: 0,
+      bottom: -220,
+      duration: 1,
+    });
+    gsap.fromTo(".dg_ft_cont_en", {
       opacity: 1,
       bottom: 0,
       duration: 1,
@@ -1494,6 +1710,12 @@ function move_videowallsactive(elem) {
       visibility: 'visible',
     });
     gsap.to(".dg_sm_screen", {
+      opacity: 0,
+      x: -3000,
+      visibility: 'hidden',
+      duration: 1, 
+    });
+    gsap.to(".dg_rs_screen", {
       opacity: 0,
       x: -3000,
       visibility: 'hidden',
@@ -1754,6 +1976,12 @@ function move_lightsactive(elem) {
     visibility: 'visible',
   });
   gsap.to(".home_ar .dg_vwalls_screen", {
+    opacity: 0,
+    x: -3000,
+    duration: 1,
+    visibility: 'visible',
+  });
+  gsap.to(".home_ar .dg_rs_screen", {
     opacity: 0,
     x: -3000,
     duration: 1,
