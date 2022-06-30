@@ -2101,6 +2101,83 @@ $(document).ready(function () {
     }
   });
 
+
+
+  // adding current_view class
+  $('.dg_vw_screen').click(function(){
+    $('section').removeClass('current_view');
+    $('#dg_rs_screen').addClass('current_view');
+  });
+
+
+  $('#diriyah-room').click(function(){
+    $('section').removeClass('current_view');
+    $('.dg_afrs_screen.english').addClass('current_view');
+  });
+
+  $('#start_icon_afrs1').click(function() {
+    $('section').removeClass('current_view');
+    $('.dg_sc_screen.english').addClass('current_view');
+  });
+
+  $('#model_district_icon1').click(function() {
+    $('section').removeClass('current_view');
+    $('.ml_lights_screen.english').addClass('current_view');
+  });
+
+
+  $('#basement_floors_icon1').click(function() {
+    $('section').removeClass('current_view');
+    $('.dg_bf_screen.english').addClass('current_view');
+  });
+  $('#diriyah-room2').click(function() {
+    $('section').removeClass('current_view');
+    $('.dg_afrs_screen.english').addClass('current_view');
+  });
+
+
+
+
+
+  let arry = [];
+
+  $(document).click(function(){
+    if($(this).attr('id') != 'bring_it_back'){
+      if($('section').hasClass('current_view')){
+        var selection = $('.current_view').attr('id');
+       
+        if(arry.includes(selection) === false){
+          arry.push(selection);
+        }
+      }
+    }
+  });
+
+  $('#bring_it_back').click(function(){
+    arry.pop();
+    var total_cache = arry.length;
+    var item_back = arry[total_cache-1];
+
+    $('section').css({"visibility": "hidden", "opacity": "0"});
+    $('#' + item_back).addClass('noooopa');
+    $('#' + item_back).css({"visibility": "visible", "opacity": "1", "transform": "translate(0px)"});
+
+
+    if(item_back == 'dg_rs_screen') {
+      $('#footer_en').css({"opacity": "0"});
+      arry = [];
+      console.log(arry);
+    }else {
+      $('#footer_en').css({"opacity": "1"});
+    }
+    arry.pop();
+
+    console.log(arry);
+
+  });
+
+
+
 })
 
 
