@@ -1,9 +1,10 @@
-@font-face {
+
+  /* @font-face {
     font-family: "Kermes3-SemiBold";
     font-style: normal;
     font-weight: normal;
-    src: local("Kermes3-SemiBold"), url("../fonts/kermes3/woff/Kermes3-SemiBold.woff") format("woff");
-  }
+    src: local("Kermes3-SemiBold"), url("../fonts/kermes3/woff/Kermes3-Bold.woff") format("woff");
+  } */
 
 
 [lang="ar"] body,
@@ -31,7 +32,7 @@ html[lang="ar"], [lang="ar"] div, [lang="ar"] h1, [lang="ar"] h2, [lang="ar"] h3
 }
 [lang="ar"] .ml_list_wrap{
     margin-left: unset !important;
-    margin-right: -350px;
+    margin-right: 0px;
 }
 [lang="ar"] .load_log_col .logo_diriyah{
     margin-top: -45px;
@@ -39,4 +40,19 @@ html[lang="ar"], [lang="ar"] div, [lang="ar"] h1, [lang="ar"] h2, [lang="ar"] h3
 [lang="ar"] .ml_dg_list{
     padding-left: 0;
     padding-right: 40px;
+}
+[lang="ar"] .dg_ft_nav_list{
+    margin: 0 0 0 auto !important;
+}
+[lang="ar"] .dg_ft_ar_back_item img, [lang="ar"] .dg_lights_screen img{
+    transform: rotate(180deg);
+}
+[lang="ar"] .basementfloors_icon{
+    margin: 0 -50px 50px auto !important;
+}
+[lang="ar"] .lang_items a{
+    font-size: 60px;
+}
+[lang="ar"] .lang-switcher{
+    margin-top: 190px;
 }

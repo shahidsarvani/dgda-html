@@ -2,6 +2,7 @@ import './bootstrap.min.css';
 import './mystyle.css';
 import logo from './images/dgda_logo.svg';
 import move_left_en from './move-left-en';
+import logo_ar from './images/diriyah-ar-logo.svg';
 
 function Header() {
   return (
@@ -12,11 +13,24 @@ function Header() {
                 <div className="header_inner">
                     <div className="row diri_header_row">
                         <div className="col-31 logo_col_1">
-                            <div className="logo_diriyah">
+                            <div className="load_log_col">
+                                <div className="logo_diriyah">
+                                    <a href="#">
+                                        <img className="ar_logo" src={logo_ar} alt="logo" />
+                                        <img src={logo} alt="logo" />
+                                    </a>
+                                </div>
+                                <div className="lang-switcher">
+                                    <div className="lang_items">
+                                        <a className="lang_ar_item" href="#" onclick="move_main_left()">عربي</a>
+                                    </div>
+                                </div>
+                            </div>
+                            {/* <div className="logo_diriyah">
                                 <a href="#">
                                     <img src={logo} alt="logo" />
                                 </a>
-                            </div>
+                            </div> */}
                         </div>
                         <div class="header-menu-elements" onClick={move_left_en}>
                             <div className="col-61 head_separator_col">

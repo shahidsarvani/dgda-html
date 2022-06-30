@@ -652,17 +652,17 @@ function move_startshow_left() {
     x: 3000,
     duration: 1
   });
-  // gsap.fromTo(".home_ar .dg_sm_screen", {
-  //   opacity: 0,
-  //   x: -3000,
-  //   duration: 1,
-  //   visibility: 'hidden',
-  // }, {
-  //   opacity: 1,
-  //   x: 0,
-  //   duration: 1,
-  //   visibility: 'visible',
-  // });
+  gsap.fromTo(".home_ar .dg_sc_screen", {
+    opacity: 0,
+    x: -3000,
+    duration: 1,
+    visibility: 'hidden',
+  }, {
+    opacity: 1,
+    x: 0,
+    duration: 1,
+    visibility: 'visible',
+  });
 
 }
 
@@ -764,13 +764,19 @@ function move_startshow_right() {
   });
   gsap.to(".home_ar .dg_afrs_screen", {
     opacity: 0,
-    x: -3000,
+    x: 3000,
     duration: 1,
     visibility: 'hidden',
   });
-  gsap.fromTo(".home_ar .dg_sm_screen", {
+  gsap.to(".home_ar .dg_sc_screen", {
     opacity: 0,
     x: 3000,
+    duration: 1,
+    visibility: 'visible',
+  });
+  gsap.fromTo(".home_ar .dg_sm_screen", {
+    opacity: 0,
+    x: -3000,
     duration: 1,
     visibility: 'hidden',
   }, {
@@ -1287,6 +1293,18 @@ function move_showmodelactive(elem) {
       duration: 1,
       visibility: 'hidden',
     });
+    gsap.to(".title_vwalls", {
+      opacity: 0,
+      display: 'none',
+      duration: 1,
+      visibility: 'hidden',
+    });
+    gsap.to(".title_lights", {
+      opacity: 0,
+      display: 'none',
+      duration: 1,
+      visibility: 'hidden',
+    });
     gsap.to(".dg_rs_screen", {
       opacity: 0,
       x: 3000,
@@ -1364,6 +1382,18 @@ function move_showmodelactive(elem) {
       duration: 1,
       visibility: 'visible',
     });
+    gsap.to(".title_vwalls", {
+      opacity: 0,
+      display: 'none',
+      duration: 1,
+      visibility: 'hidden',
+    });
+    gsap.to(".title_lights", {
+      opacity: 0,
+      display: 'none',
+      duration: 1,
+      visibility: 'hidden',
+    });
     gsap.fromTo(".dg_afrs_screen", {
       opacity: 0,
       x: -3000,
@@ -1437,7 +1467,7 @@ function move_videowallsactive(elem) {
     gsap.to(".dg_afrs_screen", {
       opacity: 0,
       x: -3000,
-      visibility: 'hidden',
+      visibility: 'visible',
       duration: 1,
     });
     gsap.to(".dg_sc_screen", {
@@ -1505,6 +1535,18 @@ function move_videowallsactive(elem) {
       duration: 1,
       visibility: 'hidden',
     });
+    gsap.to(".title_lights", {
+      opacity: 0,
+      display: 'none',
+      duration: 1,
+      visibility: 'hidden',
+    });
+    gsap.to(".title_vwalls", {
+      opacity: 1,
+      display: 'block',
+      duration: 1,
+      visibility: 'visible',
+    });
   } else {
     gsap.to(".title_show_control", {
       opacity: 0,
@@ -1523,6 +1565,18 @@ function move_videowallsactive(elem) {
       display: 'none',
       duration: 1,
       visibility: 'hidden',
+    });
+    gsap.to(".title_lights", {
+      opacity: 0,
+      display: 'none',
+      duration: 1,
+      visibility: 'hidden',
+    });
+    gsap.to(".title_vwalls", {
+      opacity: 1,
+      display: 'block',
+      duration: 1,
+      visibility: 'visible',
     });
     gsap.to(".dg_lights_screen", {
       opacity: 0,
@@ -1595,7 +1649,7 @@ function move_vwalls_right() {
 function move_lightsactive(elem) {
   var prevSibling = $(elem).parent().prev();
   // console.log(prevSibling);
-  $(prevSibling).find('a').attr('data-fromdir', 'left')
+  $(prevSibling).find('a').attr('data-fromdir', 'left');
   gsap.to(".dg_vwalls_screen", {
     opacity: 0,
     x: -3000,
@@ -1643,7 +1697,7 @@ function move_lightsactive(elem) {
     duration: 1,
     visibility: 'hidden',
   });
-  // gsap.to("home_en .ml_lights_screen", {
+  // gsap.to("home_ne .ml_lights_screen", {
   //   opacity: 0,
   //   x: -3000,
   //   duration: 1,
@@ -1655,6 +1709,58 @@ function move_lightsactive(elem) {
     duration: 1,
     visibility: 'hidden',
   });
+
+  gsap.to(".title_show_control", {
+    opacity: 0,
+    display: 'none',
+    duration: 1,
+    visibility: 'hidden',
+  });
+  gsap.to(".title_night_scene", {
+    opacity: 0,
+    display: 'none',
+    duration: 1,
+    visibility: 'hidden',
+  });
+  gsap.to(".title_basement_floors", {
+    opacity: 0,
+    display: 'none',
+    duration: 1,
+    visibility: 'hidden',
+  });
+  gsap.to(".title_lights", {
+    opacity: 1,
+    display: 'block',
+    duration: 1,
+    visibility: 'visible',
+  });
+  gsap.to(".title_vwalls", {
+    opacity: 0,
+    display: 'none',
+    duration: 1,
+    visibility: 'hidden',
+  });
+
+  // ////////////////////// ARABIC Animations
+  gsap.fromTo(".home_ar .dg_lights_screen", {
+    opacity: 0,
+    x: 3000,
+    duration: 1,
+    visibility: 'hidden',
+  }, {
+    opacity: 1,
+    x: 0,
+    duration: 1,
+    visibility: 'visible',
+  });
+  gsap.to(".home_ar .dg_vwalls_screen", {
+    opacity: 0,
+    x: -3000,
+    duration: 1,
+    visibility: 'visible',
+  });
+
+
 }
 
 
@@ -1845,7 +1951,7 @@ $(document).ready(function () {
     e.preventDefault();
     $("#main_video_btn").prop( "disabled", true );
   });
-
+  //.lang_items a.lang_en_item
   $(".dg_ft_nav_link_en a").click(function (e) {
     e.preventDefault();
     // $("#ar_version").show();
@@ -1853,6 +1959,19 @@ $(document).ready(function () {
     $("html").attr("lang", "ar");
   });
   $(".dg_ft_nav_link_ar a").click(function (e) {
+    e.preventDefault();
+    // $("#en_version").show();
+    // $("#ar_version").hide();
+    $("html").attr("lang", "en");
+  });
+
+  $(".lang-switcher a.lang_ar_item").click(function (e) {
+    e.preventDefault();
+    // $("#ar_version").show();
+    // $("#en_version").hide();
+    $("html").attr("lang", "ar");
+  });
+  $(".lang-switcher a.lang_en_item").click(function (e) {
     e.preventDefault();
     // $("#en_version").show();
     // $("#ar_version").hide();

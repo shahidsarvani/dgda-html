@@ -18,7 +18,7 @@ function Welcomesection() {
                                 Your browser does not support the video tag.
                         </video>
                         <div id="main_video_btn" className="main_video_btn" onClick={splash_video_fade}>
-                            <a id="video_start_btn" href="#">TAP TO START</a>
+                            <a id="video_start_btn" href="#"><span> أنقر لبدء العرض</span><br/>TAP TO START THE SHOW</a>
                         </div>
                     </div>
                 </div>

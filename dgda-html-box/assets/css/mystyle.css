@@ -769,7 +769,7 @@ section.ml_lights_screen{
 
 
 .home_ar, .home_ar section{
-  display: none;
+  /* display: none; */
 }
 
 .model_bright_lights{

@@ -29,7 +29,7 @@
                                 </div>
                                 <div class="lang-switcher">
                                     <div class="lang_items">
-                                        <a class="lang_ar_item" href="#">عربي</a>
+                                        <a class="lang_ar_item" href="#" onclick="move_main_left()">عربي</a>
                                     </div>
                                     <!-- <form action="switcher">
                                         <select name="lang-switcher" id="language">
@@ -166,13 +166,13 @@
                     <div class="col-4 dg_afrs_col">
                         <a class="start_modelzone_a" href="javascript:void(0)" onclick="move_start_modellights_left()">
                             <img class="screensaver_icon" src="./assets/images/icons/model-zones.svg" alt="night-scene">
-                            <h3 class="dg_afrs_col2_h">MODEL ZONES</h3>
+                            <h3 class="dg_afrs_col2_h">MODEL DISTRICTS</h3>
                         </a>
                     </div>
                     <div class="col-4 dg_afrs_col">
                         <a class="start_basementfloors_a" href="javascript:void(0)" onclick="move_start_basementfloors_left()">
                             <img class="basementfloors_icon" src="./assets/images/icons/basement-floors-updated.svg" alt="basementfloors">
-                            <h3 class="dg_afrs_col2_h">BASEMENTFLOORS</h3>
+                            <h3 class="dg_afrs_col2_h">BASEMENT FLOORS</h3>
                         </a>
                     </div>
                     <!-- <div class="col-2"></div> -->
@@ -885,7 +885,7 @@
                                 </div>
                                 <div class="lang-switcher">
                                     <div class="lang_items">
-                                        <a class="lang_ar_item" href="#">ENGLISH</a>
+                                        <a class="lang_en_item" href="#" onclick="move_main_right()">ENGLISH</a>
                                     </div>
                                 </div>
                             </div>
@@ -978,19 +978,19 @@
                     <div class="col-4 dg_afrs_col">
                         <a href="javascript:void(0)" onclick="move_startshow_left()">
                             <img class="start_show_icon" src="./assets/images/icons/play-icon.svg" alt="start-show"/>
-                            <h3 class="dg_afrs_col1_h">بدء<br/>العرض</h3>
+                            <h3 class="dg_afrs_col1_h">بدء العرض</h3>
                         </a>
                     </div>
                     <div class="col-4 dg_afrs_col">
                         <a href="javascript:void(0)" onclick="move_start_modellights_left()">
-                            <img class="screensaver_icon" src="./assets/images/icons/screensaver-icon.svg" alt="screensaver"/>
-                            <h3 class="dg_afrs_col2_h">إضاءات<br/>المجسم</h3>
+                            <img class="screensaver_icon" src="./assets/images/icons/model-zones.svg" alt="screensaver"/>
+                            <h3 class="dg_afrs_col2_h">مناطق المجسم</h3>
                         </a>
                     </div>
                     <div class="col-4 dg_afrs_col">
                         <a href="javascript:void(0)" onclick="move_start_basementfloors_left()">
-                            <img class="basementfloors_icon" src="./assets/images/icons/basementfloors-icon.svg" alt="basementfloors"/>
-                            <h3 class="dg_afrs_col3_h">المواقف<br/>السفلية</h3>
+                            <img class="basementfloors_icon" src="./assets/images/icons/basement-floors-updated.svg" alt="basementfloors"/>
+                            <h3 class="dg_afrs_col3_h">الطوابق السفلية</h3>
                         </a>
                     </div>
                 </div>
@@ -998,17 +998,70 @@
         </section>
         <!--End After Room Selection Screen-->
 
+        <!--Start Show Controls Screen-->
+        <section id="dg_sc_screen" class="dg_sc_screen">
+            <div class="container dg_sc_container">
+                <div class="row dg_sc_row">
+                    <div class="col-2"></div>
+                    <div class="col-4 dg_sc_col">
+                        <!-- <div class="dg_scen_options_wrap dg_sc_options_wrap">
+                            <ul class="dg_scen_optn">
+                                <li class="dg_sc_optn_item dg_scen_optnon_item active">
+                                    <a href="#">
+                                        <span class="optn_btn"></span>
+                                        <span>ON</span>
+                                    </a>
+                                </li>
+                                <li class="dg_sc_optn_item dg_scen_optnoff_item">
+                                    <a href="#">
+                                        <span class="optn_btn"></span>
+                                        <span>OFF</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div> -->
+                        <div class="optn_language">
+                            <a onclick="move_startshow_right()" href="#"><h3>ENGLISH</h3></a>
+                        </div>
+                    </div>
+                    <div class="col-4 dg_sc_col">
+                        <!-- <div class="dg_scar_options_wrap dg_sc_options_wrap">
+                            <ul class="dg_scar_optn">
+                                <li class="dg_sc_optn_item dg_scar_optnon_item active">
+                                    <a href="#">
+                                        <span class="optn_btn"></span>
+                                        <span>ON</span>
+                                    </a>
+                                </li>
+                                <li class="dg_sc_optn_item dg_scar_optnoff_item">
+                                    <a href="#">
+                                        <span class="optn_btn"></span>
+                                        <span>OFF</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div> -->
+                        <div class="optn_language">
+                            <a onclick="move_startshow_right()" href="#"><h3>ARABIC</h3></a>
+                        </div>
+                    </div>
+                    <div class="col-2"></div>
+                </div>
+            </div>
+        </section>
+        <!--End Show Controls Screen-->
+
         <!--Start Show Model Screen-->
         <section id="dg_sm_screen" class="dg_sm_screen">
             <div class="container dg_sm_screen_cont">
                 <div class="row dg_sm_row">
-                    <div class="col-12 dg_sm_col">
+                    <!-- <div class="col-12 dg_sm_col">
                         <a href="javascript:void(0)" onclick="move_startshow_right()">
                             <h3 class="breadcrumbs">
                               < عرض المجسم
                             </h3>
                         </a>
-                    </div>
+                    </div> -->
                     <div class="dg_sm_video_wrap">
                         <div class="sm_video">
                             <img src="./assets/images/play-video-thumb.png" alt="video thumb">
@@ -1282,13 +1335,13 @@
         <!--Start Basement Floors Screen-->
         <section id="dg_bf_screen" class="dg_bf_screen">
             <div class="container dg_bf_container">
-                <div class="row dg_bfb_row">
+                <!-- <div class="row dg_bfb_row">
                     <div class="col-12 breadcrumbs_col">
                         <a href="javascript:void(0)" onclick="move_start_basementfloors_right()">
                             <h3 class="breadcrumbs">< المواقف السفلية </h3>
                         </a>
                     </div>
-                </div>
+                </div> -->
                 <div class="row dg_bfc_row">
                     <div class="col-12 dg_bf_col">
                         <div class="dg_bf_list_wrap">
@@ -1317,11 +1370,11 @@
         <section id="dg_vwalls_screen" class="dg_vwalls_screen">
             <div class="container dg_vwalls_container">
                 <div class="row dg_vwalls_row">
-                    <div class="col-12 dg_vwalls_col">
+                    <!-- <div class="col-12 dg_vwalls_col">
                         <a href="javascript:void(0)" onclick="move_vwalls_right()">
                             <h3 class="breadcrumbs">< الشاشات الجدارية</h3>
                         </a>
-                    </div>
+                    </div> -->
                     <div class="dg_sm_video_wrap">
                         <div class="sm_video">
                             <!-- <img src="./assets/images/play-video-thumb.png" alt="video thumb"> -->
@@ -1447,6 +1500,113 @@
         <!--Start Video Walls Screen-->
 
         <!--Start lights Screen-->
+        <section id="dg_lights_screen" class="dg_lights_screen">
+            <div class="container dg_lights_container">
+                <div class="row dg_lights_main_row">
+                    <div class="col-6">
+                        <div class="row dg_lights_row">
+                            <div class="col-12 dg_lights_col">
+                                <div class="dg_lights_content_wrap dg_lights_20">
+                                    <a href="#">
+                                        <h3>٢٠٪ درجة إضاءة</h3>
+                                        <img src="./assets/images/icons/lights/20percent-lights.svg" alt="20percent-lights">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-12 dg_lights_col">
+                                <div class="dg_lights_content_wrap dg_lights_40">
+                                    <a href="#">
+                                        <h3>٤٠٪ درجة إضاءة</h3>
+                                        <img src="./assets/images/icons/lights/40percent-lights.svg" alt="40percent-lights">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-12 dg_lights_col">
+                                <div class="dg_lights_content_wrap dg_lights_40">
+                                    <a href="#">
+                                        <h3>إضاءة طبيعية خافتة</h3>
+                                        <img src="./assets/images/icons/lights/natural-soft-lights.svg" alt="natural-soft-lights">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="row dg_lights_row">
+                            <div class="col-12 dg_lights_col">
+                                <div class="dg_lights_content_wrap dg_lights_60">
+                                    <a href="#">
+                                        <h3>٦٠٪ درجة إضاءة</h3>
+                                        <img src="./assets/images/icons/lights/60percent-lights.svg" alt="60percent-lights">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-12 dg_lights_col">
+                                <div class="dg_lights_content_wrap dg_lights_entery">
+                                    <a href="#">
+                                        <h3>٨٠٪ درجة إضاءة</h3>
+                                        <img src="./assets/images/icons/lights/80percent-lights.svg" alt="80percent-lights">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-12 dg_lights_col">
+                                <div class="dg_lights_content_wrap dg_lights_entery">
+                                    <a href="#">
+                                        <h3>درجة الإضاءة الطبيعية</h3>
+                                        <img class="model_bright_lights" src="./assets/images/icons/lights/natural-bright-lights.svg" alt="natural-bright-lights">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row dg_lights_main_row dg_lights_main_row2">
+                    <div class="col-6">
+                        <div class="row dg_lights_row">
+                            <div class="col-12 dg_lights_col">
+                                <div class="dg_lights_content_wrap dg_lights_60">
+                                    <a href="#">
+                                        <h3>إضاءة المجسم الطبيعية</h3>
+                                        <img class="model_bright_lights" src="./assets/images/icons/lights/model-bright-lights.svg" alt="model-bright-lights">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-12 dg_lights_col">
+                                <div class="dg_lights_content_wrap dg_lights_20">
+                                    <a href="#">
+                                        <h3>إضاءة المجسم الخافتة</h3>
+                                        <img src="./assets/images/icons/lights/model-soft-lights.svg" alt="model-soft-lights">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="row dg_lights_row">
+                            <div class="col-12 dg_lights_col">
+                                <div class="dg_lights_content_wrap dg_lights_entery">
+                                    <a href="#">
+                                        <h3>تشغيل كل الأضاءات</h3>
+                                        <img src="./assets/images/icons/lights/all-lights-on.svg" alt="all-lights-on">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-12 dg_lights_col">
+                                <div class="dg_lights_content_wrap all_no_lights1">
+                                    <a href="#">
+                                        <h3>إيقاف كل الأضاءات</h3>
+                                        <img src="./assets/images/icons/lights/all-light-off.svg" alt="all-lights-off">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--End lights Screen-->
+
+        <!--Start lights Screen-->
         <!-- <section id="dg_lights_screen" class="dg_lights_screen">
             <div class="container dg_lights_container">
                 <div class="row dg_lights_row">
@@ -1506,9 +1666,10 @@
                     <div class="dg_ft_nav_titles">
                         <div class="dg_ft_navtitle_link">
                             <h3 class="page_title title_show_control">SHOW CONTROLS</h3>
-                            <h3 class="page_title title_night_scene">MODEL ZONES</h3>
+                            <h3 class="page_title title_night_scene">MODEL DISTRICTS</h3>
                             <h3 class="page_title title_basement_floors">BASEMENT FLOORS</h3>
                             <h3 class="page_title title_lights">LIGHTS</h3>
+                            <h3 class="page_title title_vwalls">VIDEO WALLS</h3>
                         </div>
                     </div>
                     <ul class="dg_ft_nav_list">
@@ -1593,11 +1754,40 @@
         <div class="row dg_ft_row">
             <div class="col-12 dg_ft_col">
                 <div class="dg_ft_nav">
+                    <div class="dg_ft_nav_titles">
+                        <div class="dg_ft_navtitle_link">
+                            <h3 class="page_title title_show_control">لوحة التحكم بالعرض</h3>
+                            <h3 class="page_title title_night_scene">مناطق المجسم</h3>
+                            <h3 class="page_title title_basement_floors">الطوابق السفلية</h3>
+                            <h3 class="page_title title_lights">الإضاءة</h3>
+                            <h3 class="page_title title_vwalls">الشاشات</h3>
+                        </div>
+                    </div>
                     <ul class="dg_ft_nav_list">
+                        <li class="dg_ft_nav_item dg_ft_ar_back_item dg_ft_nav_item1">
+                            <a href="#" onclick="move_showmodelactive1(this)" data-fromDir="left">
+                                <div class="dg_ft_nav_img">
+                                    <img src="./assets/images/icons/backward-light-icon.svg" alt="back">
+                                </div>
+                                <div class="dg_ft_nav_link">
+                                    <h3>الرجوع</h3>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="dg_ft_nav_item dg_ft_nav_item2 ft_main_page">
+                            <a href="#" onclick="move_homeactive(this)" data-fromDir="right">
+                                <div class="dg_ft_nav_img">
+                                    <img src="./assets/images/icons/ftr-home-icon.svg" alt="main-page">
+                                </div>
+                                <div class="dg_ft_nav_link">
+                                    <h3>الصفحة الرئيسية</h3>
+                                </div>
+                            </a>
+                        </li>
                         <li class="dg_ft_nav_item dg_ft_nav_item1 active">
                             <a href="#" onclick="move_showmodelactive(this)" data-fromDir="left">
                                 <div class="dg_ft_nav_img">
-                                    <img src="./assets/images/model.svg" alt="Model">
+                                    <img src="./assets/images/icons/ftr-model-icon.svg" alt="Model">
                                 </div>
                                 <div class="dg_ft_nav_link">
                                     <h3>المجسم</h3>
@@ -1607,20 +1797,20 @@
                         <li class="dg_ft_nav_item dg_ft_nav_item2">
                             <a href="#" onclick="move_videowallsactive(this)" data-fromDir="right">
                                 <div class="dg_ft_nav_img">
-                                    <img src="./assets/images/play.svg" alt="VIDEO WALLS">
+                                    <img src="./assets/images/icons/ftr-vwalls-icon.svg" alt="VIDEO WALLS">
                                 </div>
                                 <div class="dg_ft_nav_link">
-                                    <h3>الشاشات الجدارية</h3>
+                                    <h3>الشاشات</h3>
                                 </div>
                             </a>
                         </li>
                         <li class="dg_ft_nav_item dg_ft_nav_item3">
                             <a href="#" onclick="move_lightsactive(this)" data-fromDir="right">
                                 <div class="dg_ft_nav_img">
-                                    <img src="./assets/images/lighting.svg" alt="LIGHTS">
+                                    <img src="./assets/images/icons/ftr-lights-icon.svg" alt="LIGHTS">
                                 </div>
                                 <div class="dg_ft_nav_link">
-                                    <h3>الإضاءات</h3>
+                                    <h3>الإضاءة</h3>
                                 </div>
                             </a>
                         </li>
