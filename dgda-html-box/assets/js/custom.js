@@ -1,5 +1,19 @@
 //////////// Main section movement/////////////////////
 
+function move_step_back(){ 
+  gsap.fromTo(".dg_afrs_screen", {
+    opacity: 0,
+    x: -3000,
+    duration: 1,
+    visibility: 'hidden',
+  }, {
+    opacity: 1,
+    x: 0,
+    duration: 1,
+    visibility: 'visible',
+  });
+}
+
 function move_main_left() {
   gsap.to(".home_ar", {
     opacity: 1,
