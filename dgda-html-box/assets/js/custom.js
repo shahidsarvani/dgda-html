@@ -2141,8 +2141,37 @@ $(document).ready(function () {
 
   let arry = [];
 
+
+  $('#bring_it_back').click(function(){
+    $(this).data('clicked', 'yes');
+    // console.log(arry);
+    arry.pop();
+    var total_cache = arry.length;
+    // console.log(total_cache);
+    var item_back = arry[total_cache-1];
+
+ 
+
+    // console.log(item_back);
+
+    $('section').css({"visibility": "hidden", "opacity": "0"});
+    $('#' + item_back).css({"visibility": "visible", "opacity": "1", "transform": "translate(0px)"});
+
+
+    if(item_back == 'dg_rs_screen') {
+      $('#footer_en').css({"opacity": "0"});
+      arry = [];
+    }else {
+      $('#footer_en').css({"opacity": "1"});
+    }
+
+  });
+
+  $('#bring_it_back').data('clicked', 'no');
   $(document).click(function(){
-    if($(this).attr('id') != 'bring_it_back'){
+
+    var isClicked = $('#bring_it_back').data('clicked');
+    if( isClicked == 'no') {
       if($('section').hasClass('current_view')){
         var selection = $('.current_view').attr('id');
        
@@ -2150,34 +2179,28 @@ $(document).ready(function () {
           arry.push(selection);
         }
       }
-    }
-  });
+     }
 
-  $('#bring_it_back').click(function(){
-    arry.pop();
-    var total_cache = arry.length;
-    var item_back = arry[total_cache-1];
-
-    $('section').css({"visibility": "hidden", "opacity": "0"});
-    $('#' + item_back).addClass('noooopa');
-    $('#' + item_back).css({"visibility": "visible", "opacity": "1", "transform": "translate(0px)"});
-
-
-    if(item_back == 'dg_rs_screen') {
-      $('#footer_en').css({"opacity": "0"});
-      arry = [];
-      console.log(arry);
-    }else {
-      $('#footer_en').css({"opacity": "1"});
-    }
-    arry.pop();
-
-    console.log(arry);
-
-  });
+     var total_cache = arry.length;
+     console.log(total_cache);
+     console.log(arry);
+     $('section').removeClass('activate_prev');
+     if(total_cache >= 2) {
+       var item_back_prev = arry[total_cache-2];
+       $('section').removeClass('activate_prev');
+       $('#' + item_back_prev).addClass('activate_prev');
 
 
 
-})
+     } 
+
+    });
+
+
+
+
+
+
+});
 
 
