@@ -1133,3 +1133,10 @@ span.sm_video_start_timer {
 .home_ar {
   display: none;
 }
+
+
+
+.home_ar header .ar_logo {
+  opacity: 1 !important;
+  display: block !important;
+}

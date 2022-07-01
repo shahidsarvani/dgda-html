@@ -415,6 +415,7 @@ function splash_video_fade() {
     delay: 2,
     transform: 'translate(0%, 0%)'
   });
+  
   gsap.to(".home_ar .logo_diriyah", {
     padding: '118px 120px 0px 0px',
     top: '0',
@@ -423,6 +424,7 @@ function splash_video_fade() {
     delay: 1,
     transform: 'translate(50%, 0%)'
   });
+  
   gsap.to(".home_ar .logo_diriyah", {
     left: 'unset',
     right: '0',
@@ -430,6 +432,7 @@ function splash_video_fade() {
     delay: 2,
     transform: 'translate(0%, 0%)'
   });
+    
   gsap.to("#header", {
     // position: 'relative',
     position: 'absolute',
@@ -568,7 +571,15 @@ function move_left_ar() {
     visibility: 'visible',
     duration: 1,
     delay: 1,
-  })
+  });
+  gsap.to(".logo_diriyah", {
+    padding: '118px 0 0px 120px',
+    top: '0',
+    width: '100%',
+    duration: 1,
+    delay: 1,
+    transform: 'translate(-50%, 0%)'
+  });
   // gsap.to(".dg_rs_screen", {
   //   opacity: 0,
   //   x: -3000,
@@ -2436,12 +2447,14 @@ $(document).ready(function () {
     $('.home_en').css({"display": "none"});
     $('.footer_en').css({"display": "none"});
     $('.footer_ar').css({"display": "block"});
+    $('.eng_logo').css({"display": "none"});
   });
   $('.lang_en_item').click(function(){
     $('.home_ar').css({"display": "none"});
     $('.home_en').css({"display": "block"});
     $('.footer_ar').css({"display": "none"});
     $('.footer_en').css({"display": "block"});
+    $('.eng_logo').css({"display": "block"});
 
   });
 
@@ -2470,6 +2483,8 @@ $(document).ready(function () {
     $('section').removeClass('current_view');
     $('section').removeClass('activate_prev');
     $('#dg_rs_screen_ar').addClass('current_view');
+    $('#ar_version .eng_logo').css({"display": "block"});
+    
   });
   
   $('#modelzone_link').click(function(){
