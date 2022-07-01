@@ -2375,6 +2375,11 @@ $(document).ready(function () {
     $('.dg_afrs_screen.english').addClass('current_view');
   });
 
+  $('#lang_switch_ar').click(function(){
+    $('section').removeClass('current_view');
+    $('.dg_afrs_screen.arabic').addClass('current_view');
+  });
+
 
 
 
@@ -2407,6 +2412,43 @@ $(document).ready(function () {
     }
     $(this).data('clicked', 'no');
   });
+  
+
+  // arabic ar 
+  $('#bring_it_back_ar').click(function(){
+    $(this).data('clicked', 'yes');
+    // console.log(arry);
+    arry.pop();
+    var total_cache = arry.length;
+    // console.log(total_cache);
+    var item_back = arry[total_cache-1];
+
+ 
+
+    // console.log(item_back);
+
+    $('section').css({"visibility": "hidden", "opacity": "0"});
+    $('#' + item_back).css({"visibility": "visible", "opacity": "1", "transform": "translate(0px)"});
+    $('#' + item_back).addClass('current_view');
+
+  
+
+    if(item_back == 'dg_rs_screen') {
+      $('#footer_en').css({"opacity": "0"});
+    }else {
+      $('#footer_en').css({"opacity": "1"});
+    }
+    $(this).data('clicked', 'no');
+  });
+
+  // end bring back ar
+
+
+
+
+
+
+
 
   $('#bring_it_back').data('clicked', 'no');
   $(document).click(function(){

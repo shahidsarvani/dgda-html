@@ -29,7 +29,7 @@
                                 </div>
                                 <div class="lang-switcher">
                                     <div class="lang_items">
-                                        <a class="lang_ar_item" href="#" onclick="move_main_left()">عربي</a>
+                                        <a id="lang_switch_ar" class="lang_ar_item" href="#" onclick="move_main_left()">عربي</a>
                                     </div>
                                 </div>
                             </div>
@@ -142,7 +142,7 @@
         <!--End Room Selection Screen-->
 
         <!--Start After Room Selection Screen-->
-        <section id="dg_afrs_screen" class="dg_afrs_screen ">
+        <section id="dg_afrs_screen" class="dg_afrs_screen english">
             <div class="container dg_afrs_container">
                 <div class="row dg_afrs_row">
                     <div class="col-4 dg_afrs_col">
@@ -959,7 +959,7 @@
         <!--End Room Selection Screen-->
 
         <!--Start After Room Selection Screen-->
-        <section id="dg_afrs_screen" class="dg_afrs_screen english">
+        <section id="dg_afrs_screen_ar" class="dg_afrs_screen arabic">
             <div class="container dg_afrs_container">
                 <div class="row dg_afrs_row">
                     <div class="col-4 dg_afrs_col">
@@ -1752,7 +1752,7 @@
                     </div>
                     <ul class="dg_ft_nav_list">
                         <li class="dg_ft_nav_item dg_ft_ar_back_item dg_ft_nav_item1">
-                            <a href="#" onclick="move_step_back(this)" data-fromDir="left">
+                            <a href="#" id="bring_it_back_ar" onclick="move_step_back(this)" data-fromDir="left">
                                 <div class="dg_ft_nav_img">
                                     <img src="./assets/images/icons/backward-light-icon.svg" alt="back">
                                 </div>
