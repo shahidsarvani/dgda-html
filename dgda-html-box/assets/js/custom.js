@@ -2344,6 +2344,11 @@ $(document).ready(function () {
 
 
   // adding current_view class
+
+  $('#diriyah-room3').click(function(){
+    $('section').removeClass('current_view');
+    $('.dg_afrs_screen.arabic').addClass('current_view');
+  });
   $('.dg_vw_screen').click(function(){
     $('section').removeClass('current_view');
     $('#dg_rs_screen').addClass('current_view');
@@ -2380,11 +2385,14 @@ $(document).ready(function () {
     $('.dg_afrs_screen.arabic').addClass('current_view');
   });
 
+ 
+
 
 
 
 
   let arry = [];
+
 
 
   $('#bring_it_back').click(function(){
@@ -2398,15 +2406,16 @@ $(document).ready(function () {
  
 
     // console.log(item_back);
-
+    $('section').removeClass('current_view');
     $('section').css({"visibility": "hidden", "opacity": "0"});
     $('#' + item_back).css({"visibility": "visible", "opacity": "1", "transform": "translate(0px)"});
     $('#' + item_back).addClass('current_view');
 
   
 
-    if(item_back == 'dg_rs_screen') {
+    if(item_back == 'dg_rs_screen' || item_back == 'dg_rs_screen_ar') {
       $('#footer_en').css({"opacity": "0"});
+      arry = [];
     }else {
       $('#footer_en').css({"opacity": "1"});
     }
@@ -2426,17 +2435,18 @@ $(document).ready(function () {
  
 
     // console.log(item_back);
-
+    $('section').removeClass('current_view');
     $('section').css({"visibility": "hidden", "opacity": "0"});
     $('#' + item_back).css({"visibility": "visible", "opacity": "1", "transform": "translate(0px)"});
     $('#' + item_back).addClass('current_view');
 
-  
 
-    if(item_back == 'dg_rs_screen') {
-      $('#footer_en').css({"opacity": "0"});
+    if(item_back == 'dg_rs_screen' || item_back == 'dg_rs_screen_ar') {
+      $('#footer_ar').css({"opacity": "0", "visibility": "hidden"});
+      arry = ['dg_rs_screen', 'dg_rs_screen'];
+      
     }else {
-      $('#footer_en').css({"opacity": "1"});
+      $('#footer_ar').css({"opacity": "1", "visibility": "visible"});
     }
     $(this).data('clicked', 'no');
   });
@@ -2452,6 +2462,7 @@ $(document).ready(function () {
 
   $('#bring_it_back').data('clicked', 'no');
   $(document).click(function(){
+
 
     var isClicked = $('#bring_it_back').data('clicked');
     if( isClicked == 'no') {
@@ -2487,6 +2498,14 @@ $(document).ready(function () {
       $('.dg_ft_nav_item').removeClass('active');
       $(this).addClass('active');
     });
+
+
+    $('#lang_switch_ar').click(function(){
+      arry.push('dg_rs_screen_ar');
+      console.log('pushed');
+    });
+
+
 
 
 
