@@ -1,5 +1,5 @@
 //////////// Main section movement/////////////////////
-
+/*
 function move_step_back(){ 
   gsap.fromTo(".activate_prev", {
     opacity: 0,
@@ -13,6 +13,7 @@ function move_step_back(){
     visibility: 'visible',
   });
 }
+*/
 
 function move_main_left() {
   gsap.to(".home_ar", {
