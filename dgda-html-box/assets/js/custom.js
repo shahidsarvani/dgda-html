@@ -2434,8 +2434,12 @@ $(document).ready(function () {
   $('#lang_switch_ar').click(function(){
     $('.home_ar').css({"display": "block"});
     $('.home_en').css({"display": "none"});
-
   });
+  $('.lang_en_item').click(function(){
+    $('.home_ar').css({"display": "none"});
+    $('.home_en').css({"display": "block"});
+  });
+
   $('#new_eng_channel').click(function(){
     $('section').removeClass('current_view');
     $('#dg_sm_screen').addClass('current_view');
@@ -2490,8 +2494,8 @@ $(document).ready(function () {
 
 
 
-
-
+  
+  
 
 
   let arry = [];
@@ -2653,7 +2657,21 @@ $(document).ready(function () {
       else {
         $('.page_title').css({"display": "none"});
       }
-    })
+    });
+
+    $(document).click(function(){
+      if($('.current_view').attr('id') == 'dg_bf_screen') {
+        $('.page_title').css({"display": "none"});
+        $('.page_title.title_basement_floors').css({"display": "block", "visibility": "visible", "opacity": "1"});
+      }
+      else if($('.current_view').attr('id') == 'ml_lights_screen'){
+        $('.page_title').css({"display": "none"});
+        $('.page_title.title_night_scene').css({"display": "block", "visibility": "visible", "opacity": "1"});
+      } 
+      else {
+        $('.page_title').css({"display": "none"});
+      }
+    });
 
 
     $(document).click(function(){
