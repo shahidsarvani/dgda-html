@@ -2443,6 +2443,14 @@ $(document).ready(function () {
 
 
 
+    $('.dg_ft_nav_item').click(function(){
+      $('.dg_ft_nav_item').removeClass('active');
+      $(this).addClass('active');
+    });
+
+
+
+
 
 
 });
