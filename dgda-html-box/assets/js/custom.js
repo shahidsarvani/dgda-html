@@ -2367,7 +2367,7 @@ $(document).ready(function () {
 
   $('#start_icon_afrs1').click(function() {
     $('section').removeClass('current_view');
-    $('.dg_sc_screen.english').addClass('current_view');
+    $('.dg_sc_screen.arabic').addClass('current_view');
   });
 
   $('#model_district_icon1').click(function() {
@@ -2390,7 +2390,91 @@ $(document).ready(function () {
     $('.dg_afrs_screen.arabic').addClass('current_view');
   });
 
+  $('#link_home_back').click(function(){
+    $('section').removeClass('current_view');
+    $('section').removeClass('activate_prev');
+    $('#dg_rs_screen').addClass('current_view');
+  });
+
+
+  $('#optn_click').click(function(){
+    $('section').removeClass('current_view');
+    $('#dg_sm_screen_ar').addClass('current_view');
+  });
+
+
+  $('#optn_click_to_ar').click(function(){
+    $('section').removeClass('current_view');
+    $('#dg_sm_screen_ar').addClass('current_view');
+  });
+
+  $('#model_show').click(function(){
+    $('section').removeClass('current_view');
+    $('#dg_sc_screen').addClass('current_view');
+    $('.dg_sc_screen.arabic').css({"display": "none"});
+  });
+
+
+  $('#walls_video_eng').click(function(){
+    $('section').removeClass('current_view');
+    $('#dg_vwalls_screen').addClass('current_view');
+  });
  
+  $('#lignts_clv').click(function(){
+    $('section').removeClass('current_view');
+    $('#dg_lights_screen').addClass('current_view');
+  });
+
+
+  $('#lignts_clv').click(function(){
+    $('section').removeClass('current_view');
+    $('#dg_sm_screen_ar').addClass('current_view');
+  });
+  
+  $('#lang_switch_ar').click(function(){
+    $('.home_ar').css({"display": "block"});
+    $('.home_en').css({"display": "none"});
+
+  });
+  $('#new_eng_channel').click(function(){
+    $('section').removeClass('current_view');
+    $('#dg_sm_screen').addClass('current_view');
+  });
+  $('#new_eng_channel_ar').click(function(){
+    $('section').removeClass('current_view');
+    $('#dg_sm_screen').addClass('current_view');
+  });
+
+
+  $('#click_ar_alzia').click(function(){
+    $('section').removeClass('current_view');
+    $('#dg_lights_screen_ar').addClass('current_view');
+  });
+  
+  $('#dg_ft_shahaat').click(function(){
+    $('section').removeClass('current_view');
+    $('#dg_vwalls_screen_ar').addClass('current_view');
+  });
+
+
+  $('#main_home_ar_to').click(function(){
+    $('section').removeClass('current_view');
+    $('section').removeClass('activate_prev');
+    $('#dg_rs_screen_ar').addClass('current_view');
+  });
+  
+
+  
+  
+
+  
+
+
+  
+
+  
+
+
 
 
 
@@ -2447,7 +2531,7 @@ $(document).ready(function () {
     $('#' + item_back).addClass('current_view');
 
 
-    if(item_back == 'dg_rs_screen' || item_back == 'dg_rs_screen_ar') {
+    if(item_back == 'dg_rs_screen_ar') {
       $('#footer_ar').css({"opacity": "0", "visibility": "hidden"});
       arry = ['dg_rs_screen', 'dg_rs_screen'];
       
@@ -2530,7 +2614,41 @@ $(document).ready(function () {
       if($('.current_view').attr('id') == 'dg_rs_screen_ar') {
         $('#footer_ar').removeClass('arabic_footer');
       }
+
+      if($('.current_view').attr('id') == 'dg_rs_screen'){
+        $('.logo_diriyah').css({"transform": "translate(0px)", "width": "100%", "top": "0", "padding": "118px 0px 0px 120px", "left": "36%"});
+        $('.logo_diriyah .ar_logo').css({"opacity": "1", "visibility": "visible", "display": "block"});
+        $('.header-menu-elements').css({"opacity": "0", "visibility": "hidden", "display": "none"});
+        $('.lang-switcher.english').css({"opacity": "0", "visibility": "hidden", "display": "none"});
+        
+      }else {
+        $('.lang-switcher.english').css({"opacity": "1", "visibility": "visible", "display": "block"});
+        $('.header-menu-elements').css({"opacity": "1", "visibility": "visible", "transform": "translate(0px)", "display": "flex"});
+      }
     });
+
+    $(document).click(function(){
+      if($('.current_view').attr('id') == 'dg_bf_screen') {
+        $('.page_title').css({"display": "none"});
+        $('.page_title.title_basement_floors').css({"display": "block", "visibility": "visible", "opacity": "1"});
+      }
+      else if($('.current_view').attr('id') == 'ml_lights_screen'){
+        $('.page_title').css({"display": "none"});
+        $('.page_title.title_night_scene').css({"display": "block", "visibility": "visible", "opacity": "1"});
+      } 
+      else {
+        $('.page_title').css({"display": "none"});
+      }
+    })
+
+
+    $(document).click(function(){
+      if($('#dg_rs_screen_ar').hasClass('current_view')){
+        $('#footer_ar').css({"visibility": "hidden", "display": "none"})
+      }else if($('#ar_version section').hasClass('current_view') && $('#dg_rs_screen_ar').hasClass('current_view') == false ) {
+        $('#footer_ar').css({"visibility": "visible", "display": "block", "opacity": "1", "bottom": "0"})
+      }
+    })
     
 
 

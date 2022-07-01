@@ -15,7 +15,7 @@
     <!-- <img class="compare_img" src="./assets/images/screens/video-screen.png" alt="room-selection-screen"/> -->
     <main id="en_version" class="home_en">
         <!--Start Header Nav-->
-        <header id="header">
+        <header id="header" class="english header">
             <div class="container diri_header_cont">
                 <div class="header_inner">
                     <div class="row diri_header_row">
@@ -27,7 +27,7 @@
                                         <img src="./assets/images/dgda_logo.svg" alt="logo" />
                                     </a>
                                 </div>
-                                <div class="lang-switcher">
+                                <div class="lang-switcher english">
                                     <div class="lang_items">
                                         <a id="lang_switch_ar" class="lang_ar_item" href="#" onclick="move_main_left()">عربي</a>
                                     </div>
@@ -146,7 +146,7 @@
             <div class="container dg_afrs_container">
                 <div class="row dg_afrs_row">
                     <div class="col-4 dg_afrs_col">
-                        <a class="start_show_a" href="javascript:void(0)" onclick="move_startshow_left()">
+                        <a id="model_show" class="start_show_a" href="javascript:void(0)" onclick="move_startshow_left()">
                             <img class="start_show_icon" src="./assets/images/icons/play-icon.svg" alt="start-show">
                             <h3 class="dg_afrs_col1_h">START SHOW</h3>
                         </a>
@@ -191,7 +191,7 @@
                             </ul>
                         </div> -->
                         <div class="optn_language">
-                            <a onclick="move_startshow_right()" href="#"><h3>ENGLISH</h3></a>
+                            <a id="new_eng_channel" onclick="move_startshow_right()" href="#"><h3>ENGLISH</h3></a>
                         </div>
                     </div>
                     <div class="col-4 dg_sc_col">
@@ -212,7 +212,7 @@
                             </ul>
                         </div> -->
                         <div class="optn_language">
-                            <a onclick="move_startshow_right()" href="#"><h3>ARABIC</h3></a>
+                            <a id="new_eng_channel_ar" onclick="move_startshow_right()" href="#"><h3>ARABIC</h3></a>
                         </div>
                     </div>
                     <div class="col-2"></div>
@@ -934,6 +934,35 @@
         <!--End Video Screen-->
 
 
+              <!--Start Room Selection Screen-->
+              <section id="dg_rs_screen" class="dg_rs_screen">
+                <div class="overlay_sc"></div>
+                <div class="container dg_rs_container">
+                    <div class="row dg_rs_row">
+                        <div class="col-6 dg_rs_col">
+                            <a href="javascript:void(0)" onclick="move_left_en()">
+                                <div id="diriyah-room2" class="dg_rs_wrap">
+                                    <img class="dg_rs_img" src="./assets/images/icons/diriyah-icon.svg" alt="diriyah">
+                                    <h3 class="rs_ar_heading">الدرعية</h3>
+                                    <h3>DIRIYAH</h3>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-6 dg_rs_col">
+                            <a href="javascript:void(0)" onclick="move_left_en()">
+                                <div id="wadisafar-room" class="dg_rs_wrap">
+                                    <img class="dg_rs_img" src="./assets/images/icons/wadi-safar-icon.svg" alt="wadi-safar">
+                                    <h3 class="rs_ar_heading">وادي صفار</h3>
+                                    <h3>WADI SAFAR</h3>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--End Room Selection Screen-->
+
+
 
         <!--Start After Room Selection Screen-->
         <section id="dg_afrs_screen_ar" class="dg_afrs_screen arabic">
@@ -963,7 +992,7 @@
         <!--End After Room Selection Screen-->
 
         <!--Start Show Controls Screen-->
-        <section id="dg_sc_screen" class="dg_sc_screen english">
+        <section id="dg_sc_screen_ar" class="dg_sc_screen arabic">
             <div class="container dg_sc_container">
                 <div class="row dg_sc_row">
                     <div class="col-2"></div>
@@ -985,7 +1014,7 @@
                             </ul>
                         </div> -->
                         <div class="optn_language">
-                            <a onclick="move_startshow_right()" href="#"><h3>إنكليزي</h3></a>
+                            <a id="optn_click" onclick="move_startshow_right()" href="#"><h3>إنكليزي</h3></a>
                         </div>
                     </div>
                     <div class="col-4 dg_sc_col">
@@ -1006,7 +1035,7 @@
                             </ul>
                         </div> -->
                         <div class="optn_language">
-                            <a onclick="move_startshow_right()" href="#"><h3>عربي</h3></a>
+                            <a id="optn_click_to_ar" onclick="move_startshow_right()" href="#"><h3>عربي</h3></a>
                         </div>
                     </div>
                     <div class="col-2"></div>
@@ -1016,7 +1045,7 @@
         <!--End Show Controls Screen-->
 
         <!--Start Show Model Screen-->
-        <section id="dg_sm_screen" class="dg_sm_screen">
+        <section id="dg_sm_screen_ar" class="dg_sm_screen">
             <div class="container dg_sm_screen_cont">
                 <div class="row dg_sm_row">
                     <!-- <div class="col-12 dg_sm_col">
@@ -1331,7 +1360,7 @@
         <!--End Basement Floors Screen-->
 
         <!--Start Video Walls Screen-->
-        <section id="dg_vwalls_screen" class="dg_vwalls_screen">
+        <section id="dg_vwalls_screen_ar" class="dg_vwalls_screen">
             <div class="container dg_vwalls_container">
                 <div class="row dg_vwalls_row">
                     <!-- <div class="col-12 dg_vwalls_col">
@@ -1492,7 +1521,7 @@
                 <!--End Room Selection Screen-->
 
         <!--Start lights Screen-->
-        <section id="dg_lights_screen" class="dg_lights_screen">
+        <section id="dg_lights_screen_ar" class="dg_lights_screen">
             <div class="container dg_lights_container">
                 <div class="row dg_lights_main_row">
                     <div class="col-6">
@@ -1677,7 +1706,7 @@
                             </a>
                         </li>
                         <li class="dg_ft_nav_item dg_ft_nav_item2 ft_main_page">
-                            <a href="#" onclick="move_homeactive(this)" data-fromDir="right">
+                            <a id="main_home_ar_to" href="#" onclick="move_homeactive(this)" data-fromDir="right">
                                 <div class="dg_ft_nav_img">
                                     <img src="./assets/images/icons/ftr-home-icon.svg" alt="main-page">
                                 </div>
@@ -1697,7 +1726,7 @@
                             </a>
                         </li>
                         <li class="dg_ft_nav_item dg_ft_nav_item2">
-                            <a href="#" onclick="move_videowallsactive(this)" data-fromDir="right">
+                            <a id="dg_ft_shahaat" href="#" onclick="move_videowallsactive(this)" data-fromDir="right">
                                 <div class="dg_ft_nav_img">
                                     <img src="./assets/images/icons/ftr-vwalls-icon.svg" alt="VIDEO WALLS">
                                 </div>
@@ -1707,7 +1736,7 @@
                             </a>
                         </li>
                         <li class="dg_ft_nav_item dg_ft_nav_item3">
-                            <a href="#" onclick="move_lightsactive(this)" data-fromDir="right">
+                            <a id="click_ar_alzia" href="#" onclick="move_lightsactive(this)" data-fromDir="right">
                                 <div class="dg_ft_nav_img">
                                     <img src="./assets/images/icons/ftr-lights-icon.svg" alt="LIGHTS">
                                 </div>
@@ -1759,7 +1788,7 @@
                             </a>
                         </li>
                         <li class="dg_ft_nav_item dg_ft_nav_item2 ft_main_page">
-                            <a href="#" onclick="move_homeactive_en(this)" data-fromDir="right">
+                            <a id="link_home_back" href="#" onclick="move_homeactive_en(this)" data-fromDir="right">
                                 <div class="dg_ft_nav_img">
                                     <img src="./assets/images/icons/ftr-home-icon.svg" alt="main-page">
                                 </div>
@@ -1779,7 +1808,7 @@
                             </a>
                         </li>
                         <li class="dg_ft_nav_item dg_ft_nav_item4 ft_videowalls">
-                            <a href="#" onclick="move_videowallsactive(this)" data-fromDir="right">
+                            <a id="walls_video_eng" href="#" onclick="move_videowallsactive(this)" data-fromDir="right">
                                 <div class="dg_ft_nav_img">
                                     <img src="./assets/images/icons/ftr-vwalls-icon.svg" alt="VIDEO WALLS">
                                 </div>
@@ -1789,7 +1818,7 @@
                             </a>
                         </li>
                         <li class="dg_ft_nav_item dg_ft_nav_item5 ft_lights">
-                            <a href="#" onclick="move_lightsactive(this)" data-fromDir="right">
+                            <a href="#" id="lignts_clv" onclick="move_lightsactive(this)" data-fromDir="right">
                                 <div class="dg_ft_nav_img">
                                     <img src="./assets/images/icons/ftr-lights-icon.svg" alt="LIGHTS">
                                 </div>

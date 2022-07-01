@@ -1129,3 +1129,7 @@ span.sm_video_start_timer {
   visibility: visible !important;
   opacity: 1 !important;
 }
+
+.home_ar {
+  display: none;
+}
