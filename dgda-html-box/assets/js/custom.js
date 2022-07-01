@@ -2434,10 +2434,15 @@ $(document).ready(function () {
   $('#lang_switch_ar').click(function(){
     $('.home_ar').css({"display": "block"});
     $('.home_en').css({"display": "none"});
+    $('.footer_en').css({"display": "none"});
+    $('.footer_ar').css({"display": "block"});
   });
   $('.lang_en_item').click(function(){
     $('.home_ar').css({"display": "none"});
     $('.home_en').css({"display": "block"});
+    $('.footer_ar').css({"display": "none"});
+    $('.footer_en').css({"display": "block"});
+
   });
 
   $('#new_eng_channel').click(function(){
@@ -2680,10 +2685,18 @@ $(document).ready(function () {
       }else if($('#ar_version section').hasClass('current_view') && $('#dg_rs_screen_ar').hasClass('current_view') == false ) {
         $('#footer_ar').css({"visibility": "visible", "display": "block", "opacity": "1", "bottom": "0"})
       }
-    })
+    });
+    $(document).click(function(){
+      if($('#dg_afrs_screen').hasClass('current_view') || $('#dg_afrs_screen_ar').hasClass('current_view') ){
+        $('.dg_ft_nav_item').removeClass('active');
+        $('.new_home_model').addClass('active');
+        $('.new_home_ar').addClass('active');
+        
+      }
+    });
     
 
-
+    
 
 
 });
