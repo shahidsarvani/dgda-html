@@ -1121,3 +1121,11 @@ span.sm_video_start_timer {
 .dg_lights_row{
   margin-top: 42px;
 }
+
+
+
+.arabic_footer {
+  bottom: 0px !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}

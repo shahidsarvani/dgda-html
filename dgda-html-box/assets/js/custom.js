@@ -1,5 +1,10 @@
 //////////// Main section movement/////////////////////
 
+
+
+
+
+
 function move_step_back(){ 
   gsap.fromTo(".activate_prev", {
     opacity: 0,
@@ -2419,6 +2424,7 @@ $(document).ready(function () {
     }else {
       $('#footer_en').css({"opacity": "1"});
     }
+
     $(this).data('clicked', 'no');
   });
   
@@ -2448,6 +2454,9 @@ $(document).ready(function () {
     }else {
       $('#footer_ar').css({"opacity": "1", "visibility": "visible"});
     }
+
+
+ 
     $(this).data('clicked', 'no');
   });
 
@@ -2462,6 +2471,8 @@ $(document).ready(function () {
 
   $('#bring_it_back').data('clicked', 'no');
   $(document).click(function(){
+
+
 
 
     var isClicked = $('#bring_it_back').data('clicked');
@@ -2489,6 +2500,7 @@ $(document).ready(function () {
 
      } 
 
+
     });
 
 
@@ -2502,12 +2514,24 @@ $(document).ready(function () {
 
     $('#lang_switch_ar').click(function(){
       arry.push('dg_rs_screen_ar');
-      console.log('pushed');
     });
 
 
 
+    $(document).click(function(){
+      if($('.current_view').hasClass('arabic')){
+        console.log('check');
+        $('#footer_ar').addClass('arabic_footer');
+        $('#footer_ar').css({"opacity": "1 !important", "visibility": "visible !important", "bottom": "0"});
+        $('#footer_en').css({"opacity": "0", "visibility": "hidden"});
+    
+      }
 
+      if($('.current_view').attr('id') == 'dg_rs_screen_ar') {
+        $('#footer_ar').removeClass('arabic_footer');
+      }
+    });
+    
 
 
 
