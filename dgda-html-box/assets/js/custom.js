@@ -2463,6 +2463,20 @@ $(document).ready(function () {
     $('#dg_rs_screen_ar').addClass('current_view');
   });
   
+  $('#modelzone_link').click(function(){
+    $('section').removeClass('current_view');
+    $('#ml_lights_screen').addClass('current_view');
+  });
+
+  $('#basement_floor_to').click(function(){
+    $('section').removeClass('current_view');
+    $('#dg_bf_screen').addClass('current_view');
+  });
+
+
+  
+
+  
 
   
   
