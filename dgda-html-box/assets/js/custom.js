@@ -2671,15 +2671,15 @@ $(document).ready(function () {
   $('#lang_switch_ar').click(function(){
     $('.home_ar').css({"display": "block"});
     $('.home_en').css({"display": "none"});
-    $('.footer_en').css({"display": "none"});
-    $('.footer_ar').css({"display": "block"});
+    $('#footer_en').css({"display": "none"});
+    $('#footer_ar').css({"display": "block"});
     $('.eng_logo').css({"display": "none"});
   });
   $('.lang_en_item').click(function(){
     $('.home_ar').css({"display": "none"});
     $('.home_en').css({"display": "block"});
-    $('.footer_ar').css({"display": "none"});
-    $('.footer_en').css({"display": "block"});
+    $('#footer_ar').css({"display": "none"});
+    $('#footer_en').css({"display": "block"});
     $('.eng_logo').css({"display": "block"});
 
   });
