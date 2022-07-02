@@ -24,6 +24,14 @@ function move_main_left() {
     duration: 1,
     visibility: 'visible',
   });
+  gsap.to(".home_ar .logo_diriyah", {
+    width: '100%',
+    x: 0,
+    top: 0,
+    left: 'unset',
+    right: 0,
+    padding: '118px 120px 0px 0px',
+  });
   ///////////////////english animations///////////////////////
   gsap.fromTo("#en_version", {
     opacity: 1,
@@ -185,15 +193,22 @@ function move_main_left() {
 
   //////// footer movement////////////
   gsap.fromTo(".dg_ft_cont_ar", {
+    opacity: 0,
     bottom: -220,
+    visibility: 'hidden',
   }, {
     bottom: 0,
     opacity: 1,
+    visibility: 'visible',
   });
   gsap.fromTo(".dg_ft_cont_en", {
+    opacity: 1,
     bottom: 0,
+    visibility: 'visible',
   }, {
+    opacity: 0,
     bottom: -220,
+    visibility: 'hidden',
   });
 }
 
@@ -370,13 +385,21 @@ function move_main_right() {
   });
   gsap.fromTo(".dg_ft_cont_ar", {
     bottom: 0,
+    opacity: 1,
+    visibility: 'visible',
   }, {
+    opacity: 0,
     bottom: -220,
+    visibility: 'hidden',
   });
   gsap.fromTo(".dg_ft_cont_en", {
+    opacity: 0,
     bottom: -220,
+    visibility: 'hidden',
   }, {
+    opacity: 1,
     bottom: 0,
+    visibility: 'visible',
   });
 }
 
@@ -403,10 +426,10 @@ function splash_video_fade() {
   // });
   gsap.to(".logo_diriyah", {
     padding: '118px 0 0px 120px',
-    top: '0',
+    top: '0%',
     width: '100%',
     duration: 1,
-    delay: 1,
+    delay: 2,
     transform: 'translate(-50%, 0%)'
   });
   gsap.to(".logo_diriyah", {
@@ -484,6 +507,26 @@ function move_left_en() {
     delay: 0,
     transform: 'translate(0%, 0%)'
   });
+  gsap.to(".home_ar .logo_diriyah", {
+    left: 'unset',
+    right: '0',
+    duration: 1,
+    delay: 0,
+    transform: 'translate(0%, 0%)'
+  });
+  gsap.to(".home_ar .eng_logo", {
+    display: 'none',
+    duration: 0,
+    delay: 0,
+    transform: 'translate(0%, 0%)'
+  });
+  gsap.to(".home_ar .lang-switcher", {
+    opacity: 1,
+    display: 'block',
+    visibility: 'visible',
+    duration: 1,
+    delay: 0,
+  })
   gsap.to(".lang-switcher", {
     opacity: 1,
     visibility: 'visible',
@@ -551,7 +594,12 @@ function move_left_en() {
     x: 3000,
     duration: 1
   });
-  gsap.fromTo(".dg_ft_cont_ar", {
+  gsap.fromTo(".body_ar .dg_ft_cont_ar", {
+    bottom: -220,
+  }, {
+    bottom: 0,
+  });
+  gsap.fromTo("body_en .dg_ft_cont_ar", {
     bottom: -220,
   }, {
     bottom: -220,
@@ -1203,6 +1251,174 @@ function move_homeactive_en() {
     }, {
       opacity: 0,
       x: 3000,
+      duration: 1,
+    });
+  }
+
+  function move_homeactive_ar(){
+    gsap.to(".logo_diriyah .eng_logo", {
+      opacity: 1,
+      display: 'block',
+      left: '0',
+      duration: 1,
+      delay: 0,
+      transform: 'translate(0%, 0%)'
+    })
+    gsap.fromTo(".header-menu-elements", {
+      opacity: 1,
+      x: 0,
+      duration: 1,
+      visibility: 'visible',
+    }, {
+      opacity: 0,
+      x: -3000,
+      duration: 1,
+      visibility: 'hidden',
+    });
+    gsap.to(".logo_diriyah", {
+      left: 'unset',
+      right: '36%',
+      duration: 1,
+      delay: 0,
+      transform: 'translate(0%, 0%)'
+    })
+    gsap.to(".lang-switcher", {
+      opacity: 0,
+      visibility: 'hidden',
+      display: 'none',
+      duration: 1,
+      delay: 0,
+    })
+    gsap.to(".title_show_control", {
+      opacity: 0,
+      display: 'none',
+      duration: 1,
+      visibility: 'hidden',
+    });
+    gsap.to(".title_night_scene", {
+      opacity: 0,
+      display: 'none',
+      duration: 1,
+      visibility: 'hidden',
+    });
+    gsap.to(".title_basement_floors", {
+      opacity: 0,
+      display: 'none',
+      duration: 1,
+      visibility: 'hidden',
+    });
+    gsap.to(".dg_rs_screen", {
+      opacity: 0,
+      x: 3000,
+      duration: 1,
+      visibility: 'hidden',
+    });
+    gsap.to(".dg_vwalls_screen", {
+      opacity: 0,
+      x: 3000,
+      duration: 1,
+      visibility: 'hidden',
+    });
+    gsap.to(".ml_lights_screen", {
+      opacity: 0,
+      x: 3000,
+      duration: 1,
+      visibility: 'hidden',
+    });
+    gsap.to(".dg_lights_screen", {
+      opacity: 0,
+      x: 3000,
+      duration: 1,
+      visibility: 'hidden',
+    });
+    gsap.to(".dg_bf_screen", {
+      opacity: 0,
+      x: 3000,
+      duration: 1,
+      visibility: 'hidden',
+    });
+    gsap.to(".dg_sc_screen", {
+      opacity: 0,
+      x: 3000,
+      duration: 1,
+      visibility: 'hidden',
+    });
+    gsap.to(".dg_ss_screen", {
+      opacity: 0,
+      x: 3000,
+      duration: 1,
+      visibility: 'hidden',
+    });
+    gsap.to(".dg_sm_screen", {
+      opacity: 0,
+      x: 3000,
+      duration: 1,
+      visibility: 'hidden',
+    });
+    gsap.to(".dg_afrs_screen", {
+      opacity: 0,
+      x: 3000,
+      duration: 1,
+      visibility: 'hidden',
+    });
+    gsap.fromTo(".dg_ft_cont_en", {
+      opacity: 1,
+      bottom: 0,
+      duration: 1,
+    }, {
+      opacity: 0,
+      bottom: -220,
+      duration: 1,
+    });
+    gsap.fromTo(".dg_rs_screen", {
+      opacity: 0,
+      x: -3000,
+      duration: 1,
+      visibility: 'hidden',
+    }, {
+      opacity: 1,
+      x: 0,
+      duration: 1,
+      visibility: 'visible',
+    })
+    gsap.fromTo(".header-menu-elements", {
+      opacity: 1,
+      x: 0,
+      duration: 1,
+      visibility: 'visible',
+    }, {
+      opacity: 0,
+      x: 3000,
+      duration: 1,
+      visibility: 'hidden',
+    })
+    gsap.to(".logo_diriyah", {
+      left: '36%',
+      duration: 1,
+      delay: 0,
+      transform: 'translate(0%, 0%)'
+    })
+    gsap.to(".lang-switcher", {
+      opacity: 0,
+      visibility: 'hidden',
+      duration: 1,
+      delay: 0,
+    })
+    gsap.to(".logo_diriyah .ar_logo", {
+      opacity: 1,
+      display: 'block',
+      left: '0',
+      duration: 1,
+      delay: 0,
+      transform: 'translate(0%, 0%)'
+    });
+    gsap.fromTo(".dg_ft_cont_ar", {
+      opacity: 1,
+      bottom: 0,
+      duration: 1,
+    }, {
+      opacity: 0,
+      bottom: -220,
       duration: 1,
     });
   }
@@ -2358,6 +2574,16 @@ $(document).ready(function () {
   });
 
 
+
+  
+  $('.home_en .lang-switcher').click(function(){
+    $('body').addClass('body_ar');
+    $('body').removeClass('body_en');
+  });
+  $('.home_ar .lang-switcher').click(function(){
+    $('body').addClass('body_en');
+    $('body').removeClass('body_ar');
+  });
 
   // adding current_view class
 

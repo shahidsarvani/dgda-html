@@ -553,6 +553,7 @@ section.ml_lights_screen{
   text-align: center;
 }
 
+
 .dg_ft_nav_item.active img, .nav-item a.active img{
   filter: brightness(0) saturate(100%) invert(29%) sepia(65%) saturate(268%) hue-rotate(356deg) brightness(93%) contrast(91%);
 }
@@ -1124,11 +1125,11 @@ span.sm_video_start_timer {
 
 
 
-.arabic_footer {
+/* .arabic_footer {
   bottom: 0px !important;
   visibility: visible !important;
   opacity: 1 !important;
-}
+} */
 
 .home_ar {
   display: none;
