@@ -2896,6 +2896,15 @@ $(document).ready(function () {
       arry.push('dg_rs_screen_ar');
     });
 
+    $('.lang_en_item').click(function(){
+      arry = [];
+      arry.push('dg_rs_screen', 'dg_rs_screen');
+    });
+
+
+  
+
+
 
 
     $(document).click(function(){
