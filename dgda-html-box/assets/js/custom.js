@@ -109,6 +109,28 @@ function move_main_left() {
     duration: 1,
     visibility: 'hidden',
   });
+  gsap.fromTo(".home_en .dg_sc_screen", {
+    opacity: 1,
+    x: 0,
+    duration: 1,
+    visibility: 'visible',
+  }, {
+    opacity: 0,
+    x: -3000,
+    duration: 1,
+    visibility: 'hidden',
+  });
+  gsap.fromTo(".home_en .dg_ss_screen", {
+    opacity: 1,
+    x: 0,
+    duration: 1,
+    visibility: 'visible',
+  }, {
+    opacity: 0,
+    x: -3000,
+    duration: 1,
+    visibility: 'hidden',
+  });
   gsap.fromTo(".home_en .dg_bf_screen", {
     opacity: 1,
     x: 0,
@@ -189,6 +211,28 @@ function move_main_left() {
     duration: 1,
     visibility: 'hidden',
   });
+  gsap.fromTo(".home_ar .dg_ss_screen", {
+    opacity: 1,
+    x: 0,
+    duration: 1,
+    visibility: 'hidden',
+  }, {
+    opacity: 1,
+    x: 3000,
+    duration: 1,
+    visibility: 'hidden',
+  });
+  gsap.fromTo(".home_ar .dg_sc_screen", {
+    opacity: 1,
+    x: 0,
+    duration: 1,
+    visibility: 'hidden',
+  }, {
+    opacity: 1,
+    x: 3000,
+    duration: 1,
+    visibility: 'hidden',
+  });
   gsap.fromTo(".home_ar .dg_vwalls_screen", {
     opacity: 0,
     x: 3000,
@@ -245,6 +289,36 @@ function move_main_left() {
 }
 
 function move_main_right() {
+  gsap.to(".title_show_control", {
+    opacity: 0,
+    display: 'none',
+    duration: 1,
+    visibility: 'hidden',
+  });
+  gsap.to(".title_night_scene", {
+    opacity: 0,
+    display: 'none',
+    duration: 1,
+    visibility: 'hidden',
+  });
+  gsap.to(".title_basement_floors", {
+    opacity: 0,
+    display: 'none',
+    duration: 1,
+    visibility: 'hidden',
+  });
+  gsap.to(".title_lights", {
+    opacity: 0,
+    display: 'none',
+    duration: 1,
+    visibility: 'hidden',
+  });
+  gsap.to(".title_vwalls", {
+    opacity: 1,
+    display: 'none',
+    duration: 1,
+    visibility: 'hidden',
+  });
   ///////////////////arabic animations///////////////////////
   gsap.fromTo("#en_version", {
     opacity: 0,
@@ -302,6 +376,28 @@ function move_main_right() {
     visibility: 'hidden',
   });
   gsap.fromTo(".home_en .dg_bf_screen", {
+    opacity: 0,
+    x: -3000,
+    duration: 1,
+    visibility: 'hidden',
+  }, {
+    opacity: 0,
+    x: -3000,
+    duration: 1,
+    visibility: 'hidden',
+  });
+  gsap.fromTo(".home_en .dg_sc_screen", {
+    opacity: 0,
+    x: -3000,
+    duration: 1,
+    visibility: 'hidden',
+  }, {
+    opacity: 0,
+    x: -3000,
+    duration: 1,
+    visibility: 'hidden',
+  });
+  gsap.fromTo(".home_en .dg_ss_screen", {
     opacity: 0,
     x: -3000,
     duration: 1,
@@ -2680,7 +2776,7 @@ $(document).ready(function () {
   $('#model_show').click(function(){
     $('section').removeClass('current_view');
     $('#dg_sc_screen').addClass('current_view');
-    $('.dg_sc_screen.arabic').css({"display": "none"});
+    // $('.dg_sc_screen.arabic').css({"display": "none"});
   });
 
 
