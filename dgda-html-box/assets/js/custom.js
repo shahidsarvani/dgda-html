@@ -18,6 +18,38 @@ function move_step_back(){
 }
 
 function move_main_left() {
+  gsap.to(".title_show_control", {
+    opacity: 0,
+    display: 'none',
+    duration: 1,
+    visibility: 'hidden',
+  });
+  gsap.to(".title_night_scene", {
+    opacity: 0,
+    display: 'none',
+    duration: 1,
+    visibility: 'hidden',
+  });
+  gsap.to(".title_basement_floors", {
+    opacity: 0,
+    display: 'none',
+    duration: 1,
+    visibility: 'hidden',
+  });
+  gsap.to(".title_lights", {
+    opacity: 0,
+    display: 'none',
+    duration: 1,
+    visibility: 'hidden',
+  });
+  gsap.to(".title_vwalls", {
+    opacity: 1,
+    display: 'none',
+    duration: 1,
+    visibility: 'hidden',
+  });
+
+
   gsap.to(".home_ar", {
     opacity: 1,
     display: 'flex',
