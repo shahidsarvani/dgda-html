@@ -2809,6 +2809,7 @@ $(document).ready(function () {
     $('#footer_ar').css({"display": "none"});
     $('#footer_en').css({"display": "block"});
     $('.eng_logo').css({"display": "block"});
+    $('#dg_afrs_screen').addClass('current_view');
 
   });
 
