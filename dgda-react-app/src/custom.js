@@ -3,7 +3,65 @@ import $ from "jquery";
 
 //////////// Main section movement/////////////////////
 
+function move_step_back(){ 
+  gsap.fromTo(".activate_prev", {
+    opacity: 0,
+    x: -3000,
+    duration: 1,
+  }, {
+    opacity: 1,
+    x: 0,
+    duration: 1,
+  });
+}
+
 function move_main_left() {
+  gsap.to(".title_show_control", {
+    opacity: 0,
+    display: 'none',
+    duration: 1,
+    visibility: 'hidden',
+  });
+  gsap.to(".title_night_scene", {
+    opacity: 0,
+    display: 'none',
+    duration: 1,
+    visibility: 'hidden',
+  });
+  gsap.to(".title_basement_floors", {
+    opacity: 0,
+    display: 'none',
+    duration: 1,
+    visibility: 'hidden',
+  });
+  gsap.to(".title_lights", {
+    opacity: 0,
+    display: 'none',
+    duration: 1,
+    visibility: 'hidden',
+  });
+  gsap.to(".title_vwalls", {
+    opacity: 1,
+    display: 'none',
+    duration: 1,
+    visibility: 'hidden',
+  });
+
+
+  gsap.to(".home_ar", {
+    opacity: 1,
+    display: 'flex',
+    duration: 1,
+    visibility: 'visible',
+  });
+  gsap.to(".home_ar .logo_diriyah", {
+    width: '100%',
+    x: 0,
+    top: 0,
+    left: 'unset',
+    right: 0,
+    padding: '118px 120px 0px 0px',
+  });
   ///////////////////english animations///////////////////////
   gsap.fromTo("#en_version", {
     opacity: 1,
@@ -41,6 +99,28 @@ function move_main_left() {
   gsap.fromTo(".home_en .ml_lights_screen", {
     opacity: 1,
     x: -3000,
+    duration: 1,
+    visibility: 'visible',
+  }, {
+    opacity: 0,
+    x: -3000,
+    duration: 1,
+    visibility: 'hidden',
+  });
+  gsap.fromTo(".home_en .dg_sc_screen", {
+    opacity: 1,
+    x: 0,
+    duration: 1,
+    visibility: 'visible',
+  }, {
+    opacity: 0,
+    x: -3000,
+    duration: 1,
+    visibility: 'hidden',
+  });
+  gsap.fromTo(".home_en .dg_ss_screen", {
+    opacity: 1,
+    x: 0,
     duration: 1,
     visibility: 'visible',
   }, {
@@ -129,6 +209,28 @@ function move_main_left() {
     duration: 1,
     visibility: 'hidden',
   });
+  gsap.fromTo(".home_ar .dg_ss_screen", {
+    opacity: 1,
+    x: 0,
+    duration: 1,
+    visibility: 'hidden',
+  }, {
+    opacity: 1,
+    x: 3000,
+    duration: 1,
+    visibility: 'hidden',
+  });
+  gsap.fromTo(".home_ar .dg_sc_screen", {
+    opacity: 1,
+    x: 0,
+    duration: 1,
+    visibility: 'hidden',
+  }, {
+    opacity: 1,
+    x: 3000,
+    duration: 1,
+    visibility: 'hidden',
+  });
   gsap.fromTo(".home_ar .dg_vwalls_screen", {
     opacity: 0,
     x: 3000,
@@ -165,18 +267,56 @@ function move_main_left() {
 
   //////// footer movement////////////
   gsap.fromTo(".dg_ft_cont_ar", {
+    opacity: 0,
     bottom: -220,
+    visibility: 'hidden',
   }, {
     bottom: 0,
+    opacity: 1,
+    visibility: 'visible',
   });
   gsap.fromTo(".dg_ft_cont_en", {
+    opacity: 1,
     bottom: 0,
+    visibility: 'visible',
   }, {
+    opacity: 0,
     bottom: -220,
+    visibility: 'hidden',
   });
 }
 
 function move_main_right() {
+  gsap.to(".title_show_control", {
+    opacity: 0,
+    display: 'none',
+    duration: 1,
+    visibility: 'hidden',
+  });
+  gsap.to(".title_night_scene", {
+    opacity: 0,
+    display: 'none',
+    duration: 1,
+    visibility: 'hidden',
+  });
+  gsap.to(".title_basement_floors", {
+    opacity: 0,
+    display: 'none',
+    duration: 1,
+    visibility: 'hidden',
+  });
+  gsap.to(".title_lights", {
+    opacity: 0,
+    display: 'none',
+    duration: 1,
+    visibility: 'hidden',
+  });
+  gsap.to(".title_vwalls", {
+    opacity: 1,
+    display: 'none',
+    duration: 1,
+    visibility: 'hidden',
+  });
   ///////////////////arabic animations///////////////////////
   gsap.fromTo("#en_version", {
     opacity: 0,
@@ -211,6 +351,17 @@ function move_main_right() {
     duration: 1,
     visibility: 'hidden',
   });
+  gsap.fromTo(".home_en .dg_rs_screen", {
+    opacity: 0,
+    x: -3000,
+    duration: 1,
+    visibility: 'hidden',
+  }, {
+    opacity: 0,
+    x: -3000,
+    duration: 1,
+    visibility: 'hidden',
+  });
   gsap.fromTo(".home_en .ml_lights_screen", {
     opacity: 0,
     x: -3000,
@@ -223,6 +374,28 @@ function move_main_right() {
     visibility: 'hidden',
   });
   gsap.fromTo(".home_en .dg_bf_screen", {
+    opacity: 0,
+    x: -3000,
+    duration: 1,
+    visibility: 'hidden',
+  }, {
+    opacity: 0,
+    x: -3000,
+    duration: 1,
+    visibility: 'hidden',
+  });
+  gsap.fromTo(".home_en .dg_sc_screen", {
+    opacity: 0,
+    x: -3000,
+    duration: 1,
+    visibility: 'hidden',
+  }, {
+    opacity: 0,
+    x: -3000,
+    duration: 1,
+    visibility: 'hidden',
+  });
+  gsap.fromTo(".home_en .dg_ss_screen", {
     opacity: 0,
     x: -3000,
     duration: 1,
@@ -338,13 +511,21 @@ function move_main_right() {
   });
   gsap.fromTo(".dg_ft_cont_ar", {
     bottom: 0,
+    opacity: 1,
+    visibility: 'visible',
   }, {
+    opacity: 0,
     bottom: -220,
+    visibility: 'hidden',
   });
   gsap.fromTo(".dg_ft_cont_en", {
+    opacity: 0,
     bottom: -220,
+    visibility: 'hidden',
   }, {
+    opacity: 1,
     bottom: 0,
+    visibility: 'visible',
   });
 }
 
@@ -371,10 +552,10 @@ function splash_video_fade() {
   // });
   gsap.to(".logo_diriyah", {
     padding: '118px 0 0px 120px',
-    top: '0',
+    top: '0%',
     width: '100%',
     duration: 1,
-    delay: 1,
+    delay: 2,
     transform: 'translate(-50%, 0%)'
   });
   gsap.to(".logo_diriyah", {
@@ -383,6 +564,7 @@ function splash_video_fade() {
     delay: 2,
     transform: 'translate(0%, 0%)'
   });
+  
   gsap.to(".home_ar .logo_diriyah", {
     padding: '118px 120px 0px 0px',
     top: '0',
@@ -391,6 +573,7 @@ function splash_video_fade() {
     delay: 1,
     transform: 'translate(50%, 0%)'
   });
+  
   gsap.to(".home_ar .logo_diriyah", {
     left: 'unset',
     right: '0',
@@ -398,6 +581,7 @@ function splash_video_fade() {
     delay: 2,
     transform: 'translate(0%, 0%)'
   });
+    
   gsap.to("#header", {
     // position: 'relative',
     position: 'absolute',
@@ -449,6 +633,26 @@ function move_left_en() {
     delay: 0,
     transform: 'translate(0%, 0%)'
   });
+  gsap.to(".home_ar .logo_diriyah", {
+    left: 'unset',
+    right: '0',
+    duration: 1,
+    delay: 0,
+    transform: 'translate(0%, 0%)'
+  });
+  gsap.to(".home_ar .eng_logo", {
+    display: 'none',
+    duration: 0,
+    delay: 0,
+    transform: 'translate(0%, 0%)'
+  });
+  gsap.to(".home_ar .lang-switcher", {
+    opacity: 1,
+    display: 'block',
+    visibility: 'visible',
+    duration: 1,
+    delay: 0,
+  })
   gsap.to(".lang-switcher", {
     opacity: 1,
     visibility: 'visible',
@@ -516,7 +720,12 @@ function move_left_en() {
     x: 3000,
     duration: 1
   });
-  gsap.fromTo(".dg_ft_cont_ar", {
+  gsap.fromTo(".body_ar .dg_ft_cont_ar", {
+    bottom: -220,
+  }, {
+    bottom: 0,
+  });
+  gsap.fromTo("body_en .dg_ft_cont_ar", {
     bottom: -220,
   }, {
     bottom: -220,
@@ -531,6 +740,20 @@ function move_left_en() {
 
 
 function move_left_ar() {
+  gsap.to(".lang-switcher", {
+    opacity: 1,
+    visibility: 'visible',
+    duration: 1,
+    delay: 1,
+  });
+  gsap.to(".logo_diriyah", {
+    padding: '118px 0 0px 120px',
+    top: '0',
+    width: '100%',
+    duration: 1,
+    delay: 1,
+    transform: 'translate(-50%, 0%)'
+  });
   // gsap.to(".dg_rs_screen", {
   //   opacity: 0,
   //   x: -3000,
@@ -592,15 +815,17 @@ function move_left_ar() {
     x: 3000,
     duration: 1
   });
-  gsap.fromTo(".dg_ft_cont_ar", {
+  
+  gsap.fromTo(".dg_ft_cont_en", {
     bottom: -220,
   }, {
     bottom: -220,
   });
-  gsap.fromTo(".dg_ft_cont_en", {
+  gsap.fromTo(".dg_ft_cont_ar", {
     bottom: -220,
   }, {
     bottom: 0,
+    opacity: 1,
   });
 }
 
@@ -1019,15 +1244,177 @@ function move_start_basementfloors_right() {
 
 }
 
+function move_homeactive_en() {
+  gsap.to(".home_ar", {
+    opacity: 0,
+    display: 'none',
+    duration: 1,
+    visibility: 'hidden',
+  });
+    gsap.to(".title_show_control", {
+      opacity: 0,
+      display: 'none',
+      duration: 1,
+      visibility: 'hidden',
+    });
+    gsap.to(".title_night_scene", {
+      opacity: 0,
+      display: 'none',
+      duration: 1,
+      visibility: 'hidden',
+    });
+    gsap.to(".title_basement_floors", {
+      opacity: 0,
+      display: 'none',
+      duration: 1,
+      visibility: 'hidden',
+    });
+    gsap.to(".logo_diriyah .ar_logo", {
+      opacity: 1,
+      display: 'block',
+      left: '0',
+      duration: 1,
+      delay: 0,
+      transform: 'translate(0%, 0%)'
+    })
+    gsap.fromTo(".header-menu-elements", {
+      opacity: 1,
+      x: 0,
+      duration: 1,
+      visibility: 'visible',
+    }, {
+      opacity: 0,
+      x: 3000,
+      duration: 1,
+      visibility: 'hidden',
+    });
+    gsap.to(".logo_diriyah", {
+      left: '36%',
+      duration: 1,
+      delay: 0,
+      transform: 'translate(0%, 0%)'
+    })
+    gsap.to(".lang-switcher", {
+      opacity: 0,
+      visibility: 'hidden',
+      duration: 1,
+      delay: 0,
+    })
+    gsap.fromTo(".dg_rs_screen", {
+      opacity: 0,
+      x: -3000,
+      duration: 1,
+      visibility: 'hidden',
+    }, {
+      opacity: 1,
+      x: 0,
+      duration: 1,
+      visibility: 'visible',
+    });
+    gsap.to(".dg_afrs_screen", {
+      opacity: 0,
+      x: 3000,
+      duration: 1,
+      visibility: 'hidden',
+    });
+    gsap.to(".dg_lights_screen", {
+      opacity: 0,
+      x: 3000,
+      duration: 1,
+      visibility: 'hidden',
+    });
+    gsap.to(".dg_sm_screen", {
+      opacity: 0,
+      x: 3000,
+      duration: 1,
+      visibility: 'hidden',
+    });
+    gsap.to(".dg_sc_screen", {
+      opacity: 0,
+      x: 3000,
+      duration: 1,
+      visibility: 'hidden',
+    });
+    gsap.to(".dg_ss_screen", {
+      opacity: 0,
+      x: 3000,
+      duration: 1,
+      visibility: 'hidden',
+    });
+    gsap.to(".ml_lights_screen", {
+      opacity: 0,
+      x: 3000,
+      duration: 1,
+      visibility: 'hidden',
+    });
+    gsap.to(".dg_bf_screen", {
+      opacity: 0,
+      x: 3000,
+      duration: 1
+    });
+    gsap.fromTo(".dg_ft_cont_ar", {
+      opacity: 1,
+      bottom: 0,
+      duration: 1,
+    }, {
+      opacity: 0,
+      bottom: -220,
+      duration: 1,
+    });
+    gsap.fromTo(".dg_ft_cont_en", {
+      opacity: 1,
+      bottom: 0,
+      duration: 1,
+    }, {
+      opacity: 0,
+      bottom: -220,
+      duration: 1,
+    });
+    gsap.fromTo(".dg_vwalls_screen", {
+      opacity: 1,
+      x: 0,
+      duration: 1,
+    }, {
+      opacity: 0,
+      x: 3000,
+      duration: 1,
+    });
+  }
 
-
-function move_homeactive(elem) {
-  var nextSibling = $(elem).parent().next();
-  $(nextSibling).find('a').attr('data-fromdir', 'right');
-  
-  var fromDir = elem.getAttribute('data-fromDir');
-  console.log(fromDir)
-  if(fromDir == 'right') {
+  function move_homeactive_ar(){
+    gsap.to(".logo_diriyah .eng_logo", {
+      opacity: 1,
+      display: 'block',
+      left: '0',
+      duration: 1,
+      delay: 0,
+      transform: 'translate(0%, 0%)'
+    })
+    gsap.fromTo(".header-menu-elements", {
+      opacity: 1,
+      x: 0,
+      duration: 1,
+      visibility: 'visible',
+    }, {
+      opacity: 0,
+      x: -3000,
+      duration: 1,
+      visibility: 'hidden',
+    });
+    gsap.to(".logo_diriyah", {
+      left: 'unset',
+      right: '36%',
+      duration: 1,
+      delay: 0,
+      transform: 'translate(0%, 0%)'
+    })
+    gsap.to(".lang-switcher", {
+      opacity: 0,
+      visibility: 'hidden',
+      display: 'none',
+      duration: 1,
+      delay: 0,
+    })
     gsap.to(".title_show_control", {
       opacity: 0,
       display: 'none',
@@ -1083,6 +1470,12 @@ function move_homeactive(elem) {
       visibility: 'hidden',
     });
     gsap.to(".dg_ss_screen", {
+      opacity: 0,
+      x: 3000,
+      duration: 1,
+      visibility: 'hidden',
+    });
+    gsap.to(".dg_sm_screen", {
       opacity: 0,
       x: 3000,
       duration: 1,
@@ -1144,6 +1537,187 @@ function move_homeactive(elem) {
       duration: 1,
       delay: 0,
       transform: 'translate(0%, 0%)'
+    });
+    gsap.fromTo(".dg_ft_cont_ar", {
+      opacity: 1,
+      bottom: 0,
+      duration: 1,
+    }, {
+      opacity: 0,
+      bottom: -220,
+      duration: 1,
+    });
+  }
+
+function move_homeactive(elem) {
+  var nextSibling = $(elem).parent().next();
+  $(nextSibling).find('a').attr('data-fromdir', 'right');
+  
+  var fromDir = elem.getAttribute('data-fromDir');
+  console.log(fromDir)
+  if(fromDir == 'right') {
+    gsap.to(".logo_diriyah .ar_logo", {
+      opacity: 1,
+      display: 'block',
+      left: '0',
+      duration: 1,
+      delay: 0,
+      transform: 'translate(0%, 0%)'
+    })
+    gsap.fromTo(".header-menu-elements", {
+      opacity: 1,
+      x: 0,
+      duration: 1,
+      visibility: 'visible',
+    }, {
+      opacity: 0,
+      x: 3000,
+      duration: 1,
+      visibility: 'hidden',
+    });
+    gsap.to(".logo_diriyah", {
+      left: '36%',
+      duration: 1,
+      delay: 0,
+      transform: 'translate(0%, 0%)'
+    })
+    gsap.to(".lang-switcher", {
+      opacity: 0,
+      visibility: 'hidden',
+      duration: 1,
+      delay: 0,
+    })
+    gsap.to(".title_show_control", {
+      opacity: 0,
+      display: 'none',
+      duration: 1,
+      visibility: 'hidden',
+    });
+    gsap.to(".title_night_scene", {
+      opacity: 0,
+      display: 'none',
+      duration: 1,
+      visibility: 'hidden',
+    });
+    gsap.to(".title_basement_floors", {
+      opacity: 0,
+      display: 'none',
+      duration: 1,
+      visibility: 'hidden',
+    });
+    gsap.to(".dg_rs_screen", {
+      opacity: 0,
+      x: 3000,
+      duration: 1,
+      visibility: 'hidden',
+    });
+    gsap.to(".dg_vwalls_screen", {
+      opacity: 0,
+      x: 3000,
+      duration: 1,
+      visibility: 'hidden',
+    });
+    gsap.to(".ml_lights_screen", {
+      opacity: 0,
+      x: 3000,
+      duration: 1,
+      visibility: 'hidden',
+    });
+    gsap.to(".dg_lights_screen", {
+      opacity: 0,
+      x: 3000,
+      duration: 1,
+      visibility: 'hidden',
+    });
+    gsap.to(".dg_bf_screen", {
+      opacity: 0,
+      x: 3000,
+      duration: 1,
+      visibility: 'hidden',
+    });
+    gsap.to(".dg_sc_screen", {
+      opacity: 0,
+      x: 3000,
+      duration: 1,
+      visibility: 'hidden',
+    });
+    gsap.to(".dg_ss_screen", {
+      opacity: 0,
+      x: 3000,
+      duration: 1,
+      visibility: 'hidden',
+    });
+    gsap.to(".dg_sm_screen", {
+      opacity: 0,
+      x: 3000,
+      duration: 1,
+      visibility: 'hidden',
+    });
+    gsap.to(".dg_afrs_screen", {
+      opacity: 0,
+      x: 3000,
+      duration: 1,
+      visibility: 'hidden',
+    });
+    gsap.fromTo(".dg_ft_cont_en", {
+      opacity: 1,
+      bottom: 0,
+      duration: 1,
+    }, {
+      opacity: 0,
+      bottom: -220,
+      duration: 1,
+    });
+    gsap.fromTo(".dg_rs_screen", {
+      opacity: 0,
+      x: -3000,
+      duration: 1,
+      visibility: 'hidden',
+    }, {
+      opacity: 1,
+      x: 0,
+      duration: 1,
+      visibility: 'visible',
+    })
+    gsap.fromTo(".header-menu-elements", {
+      opacity: 1,
+      x: 0,
+      duration: 1,
+      visibility: 'visible',
+    }, {
+      opacity: 0,
+      x: 3000,
+      duration: 1,
+      visibility: 'hidden',
+    })
+    gsap.to(".logo_diriyah", {
+      left: '36%',
+      duration: 1,
+      delay: 0,
+      transform: 'translate(0%, 0%)'
+    })
+    gsap.to(".lang-switcher", {
+      opacity: 0,
+      visibility: 'hidden',
+      duration: 1,
+      delay: 0,
+    })
+    gsap.to(".logo_diriyah .ar_logo", {
+      opacity: 1,
+      display: 'block',
+      left: '0',
+      duration: 1,
+      delay: 0,
+      transform: 'translate(0%, 0%)'
+    });
+    gsap.fromTo(".dg_ft_cont_ar", {
+      opacity: 1,
+      bottom: 0,
+      duration: 1,
+    }, {
+      opacity: 0,
+      bottom: -220,
+      duration: 1,
     });
   } else {
     gsap.to(".title_show_control", {
@@ -1248,6 +1822,15 @@ function move_homeactive(elem) {
       duration: 1
     });
     gsap.fromTo(".dg_ft_cont_ar", {
+      opacity: 1,
+      bottom: 0,
+      duration: 1,
+    }, {
+      opacity: 0,
+      bottom: -220,
+      duration: 1,
+    });
+    gsap.fromTo(".dg_ft_cont_en", {
       opacity: 1,
       bottom: 0,
       duration: 1,
@@ -1497,6 +2080,12 @@ function move_videowallsactive(elem) {
       visibility: 'visible',
     });
     gsap.to(".dg_sm_screen", {
+      opacity: 0,
+      x: -3000,
+      visibility: 'hidden',
+      duration: 1, 
+    });
+    gsap.to(".dg_rs_screen", {
       opacity: 0,
       x: -3000,
       visibility: 'hidden',
@@ -1757,6 +2346,12 @@ function move_lightsactive(elem) {
     visibility: 'visible',
   });
   gsap.to(".home_ar .dg_vwalls_screen", {
+    opacity: 0,
+    x: -3000,
+    duration: 1,
+    visibility: 'visible',
+  });
+  gsap.to(".home_ar .dg_rs_screen", {
     opacity: 0,
     x: -3000,
     duration: 1,
@@ -2104,6 +2699,383 @@ $(document).ready(function () {
     }
   });
 
-})
+
+
+  
+  $('.home_en .lang-switcher').click(function(){
+    $('body').addClass('body_ar');
+    $('body').removeClass('body_en');
+  });
+  $('.home_ar .lang-switcher').click(function(){
+    $('body').addClass('body_en');
+    $('body').removeClass('body_ar');
+  });
+
+  // adding current_view class
+
+  $('#diriyah-room3').click(function(){
+    $('section').removeClass('current_view');
+    $('.dg_afrs_screen.arabic').addClass('current_view');
+  });
+  $('.dg_vw_screen').click(function(){
+    $('section').removeClass('current_view');
+    $('#dg_rs_screen').addClass('current_view');
+  });
+
+
+  $('#diriyah-room').click(function(){
+    $('section').removeClass('current_view');
+    $('.dg_afrs_screen.english').addClass('current_view');
+  });
+
+  $('#start_icon_afrs1').click(function() {
+    $('section').removeClass('current_view');
+    $('.dg_sc_screen.arabic').addClass('current_view');
+  });
+
+  $('#model_district_icon1').click(function() {
+    $('section').removeClass('current_view');
+    $('.ml_lights_screen.english').addClass('current_view');
+  });
+
+
+  $('#basement_floors_icon1').click(function() {
+    $('section').removeClass('current_view');
+    $('.dg_bf_screen.english').addClass('current_view');
+  });
+  $('#diriyah-room2').click(function() {
+    $('section').removeClass('current_view');
+    $('.dg_afrs_screen.english').addClass('current_view');
+  });
+
+  $('#lang_switch_ar').click(function(){
+    $('section').removeClass('current_view');
+    $('.dg_afrs_screen.arabic').addClass('current_view');
+  });
+
+  $('#link_home_back').click(function(){
+    $('section').removeClass('current_view');
+    $('section').removeClass('activate_prev');
+    $('#dg_rs_screen').addClass('current_view');
+  });
+
+
+  $('#optn_click').click(function(){
+    $('section').removeClass('current_view');
+    $('#dg_sm_screen_ar').addClass('current_view');
+  });
+
+
+  $('#optn_click_to_ar').click(function(){
+    $('section').removeClass('current_view');
+    $('#dg_sm_screen_ar').addClass('current_view');
+  });
+
+  $('#model_show').click(function(){
+    $('section').removeClass('current_view');
+    $('#dg_sc_screen').addClass('current_view');
+    // $('.dg_sc_screen.arabic').css({"display": "none"});
+  });
+
+
+  $('#walls_video_eng').click(function(){
+    $('section').removeClass('current_view');
+    $('#dg_vwalls_screen').addClass('current_view');
+  });
+ 
+  $('#lignts_clv').click(function(){
+    $('section').removeClass('current_view');
+    $('#dg_lights_screen').addClass('current_view');
+  });
+
+
+  $('#lignts_clv').click(function(){
+    $('section').removeClass('current_view');
+    $('#dg_sm_screen_ar').addClass('current_view');
+  });
+  
+  $('#lang_switch_ar').click(function(){
+    $('.home_ar').css({"display": "block"});
+    $('.home_en').css({"display": "none"});
+    $('#footer_en').css({"display": "none"});
+    $('#footer_ar').css({"display": "block"});
+    $('.eng_logo').css({"display": "none"});
+  });
+  $('.lang_en_item').click(function(){
+    $('.home_ar').css({"display": "none"});
+    $('.home_en').css({"display": "block"});
+    $('#footer_ar').css({"display": "none"});
+    $('#footer_en').css({"display": "block"});
+    $('.eng_logo').css({"display": "block"});
+    $('#dg_afrs_screen').addClass('current_view');
+
+  });
+
+  $('#new_eng_channel').click(function(){
+    $('section').removeClass('current_view');
+    $('#dg_sm_screen').addClass('current_view');
+  });
+  $('#new_eng_channel_ar').click(function(){
+    $('section').removeClass('current_view');
+    $('#dg_sm_screen').addClass('current_view');
+  });
+
+
+  $('#click_ar_alzia').click(function(){
+    $('section').removeClass('current_view');
+    $('#dg_lights_screen_ar').addClass('current_view');
+  });
+  
+  $('#dg_ft_shahaat').click(function(){
+    $('section').removeClass('current_view');
+    $('#dg_vwalls_screen_ar').addClass('current_view');
+  });
+
+
+  $('#main_home_ar_to').click(function(){
+    $('section').removeClass('current_view');
+    $('section').removeClass('activate_prev');
+    $('#dg_rs_screen_ar').addClass('current_view');
+    $('#ar_version .eng_logo').css({"display": "block"});
+    
+  });
+  
+  $('#modelzone_link').click(function(){
+    $('section').removeClass('current_view');
+    $('#ml_lights_screen').addClass('current_view');
+  });
+
+  $('#basement_floor_to').click(function(){
+    $('section').removeClass('current_view');
+    $('#dg_bf_screen').addClass('current_view');
+  });
+
+
+  
+
+  
+
+  
+  
+
+  
+
+
+  
+
+  
+
+
+
+  
+  
+
+
+  let arry = [];
+
+
+
+  $('#bring_it_back').click(function(){
+    $(this).data('clicked', 'yes');
+    // console.log(arry);
+    arry.pop();
+    var total_cache = arry.length;
+    // console.log(total_cache);
+    var item_back = arry[total_cache-1];
+
+ 
+
+    // console.log(item_back);
+    $('section').removeClass('current_view');
+    $('section').css({"visibility": "hidden", "opacity": "0"});
+    $('#' + item_back).css({"visibility": "visible", "opacity": "1", "transform": "translate(0px)"});
+    $('#' + item_back).addClass('current_view');
+
+  
+
+    if(item_back == 'dg_rs_screen' || item_back == 'dg_rs_screen_ar') {
+      $('#footer_en').css({"opacity": "0"});
+      arry = [];
+    }else {
+      $('#footer_en').css({"opacity": "1"});
+    }
+
+    $(this).data('clicked', 'no');
+  });
+  
+
+  // arabic ar 
+  $('#bring_it_back_ar').click(function(){
+    $(this).data('clicked', 'yes');
+    // console.log(arry);
+    arry.pop();
+    var total_cache = arry.length;
+    // console.log(total_cache);
+    var item_back = arry[total_cache-1];
+
+ 
+
+    // console.log(item_back);
+    $('section').removeClass('current_view');
+    $('section').css({"visibility": "hidden", "opacity": "0"});
+    $('#' + item_back).css({"visibility": "visible", "opacity": "1", "transform": "translate(0px)"});
+    $('#' + item_back).addClass('current_view');
+
+
+    if(item_back == 'dg_rs_screen_ar') {
+      $('#footer_ar').css({"opacity": "0", "visibility": "hidden"});
+      arry = ['dg_rs_screen', 'dg_rs_screen'];
+      
+    }else {
+      $('#footer_ar').css({"opacity": "1", "visibility": "visible"});
+    }
+
+
+ 
+    $(this).data('clicked', 'no');
+  });
+
+  // end bring back ar
+
+
+
+
+
+
+
+
+  $('#bring_it_back').data('clicked', 'no');
+  $(document).click(function(){
+
+
+
+
+    var isClicked = $('#bring_it_back').data('clicked');
+    if( isClicked == 'no') {
+      if($('section').hasClass('current_view')){
+        var selection = $('.current_view').attr('id');
+       
+        if(arry.includes(selection) === false){
+          arry.push(selection);
+          console.log(arry)
+        }
+      }
+     }
+
+     var total_cache = arry.length;
+     console.log(total_cache);
+     console.log(arry);
+     $('section').removeClass('activate_prev');
+     if(total_cache >= 2) {
+       var item_back_prev = arry[total_cache-2];
+       $('section').removeClass('activate_prev');
+       $('#' + item_back_prev).addClass('activate_prev');
+
+
+
+     } 
+
+
+    });
+
+
+
+
+    $('.dg_ft_nav_item').click(function(){
+      $('.dg_ft_nav_item').removeClass('active');
+      $(this).addClass('active');
+    });
+
+
+    $('#lang_switch_ar').click(function(){
+      arry.push('dg_rs_screen_ar');
+    });
+
+    $('.lang_en_item').click(function(){
+      arry = [];
+      arry.push('dg_rs_screen', 'dg_rs_screen');
+    });
+
+
+  
+
+
+
+
+    $(document).click(function(){
+      if($('.current_view').hasClass('arabic')){
+        console.log('check');
+        $('#footer_ar').addClass('arabic_footer');
+        $('#footer_ar').css({"opacity": "1 !important", "visibility": "visible !important", "bottom": "0"});
+        $('#footer_en').css({"opacity": "0", "visibility": "hidden"});
+    
+      }
+
+      if($('.current_view').attr('id') == 'dg_rs_screen_ar') {
+        $('#footer_ar').removeClass('arabic_footer');
+      }
+
+      if($('.current_view').attr('id') == 'dg_rs_screen'){
+        $('.logo_diriyah').css({"transform": "translate(0px)", "width": "100%", "top": "0", "padding": "118px 0px 0px 120px", "left": "36%"});
+        $('.logo_diriyah .ar_logo').css({"opacity": "1", "visibility": "visible", "display": "block"});
+        $('.header-menu-elements').css({"opacity": "0", "visibility": "hidden", "display": "none"});
+        $('.lang-switcher.english').css({"opacity": "0", "visibility": "hidden", "display": "none"});
+        
+      }else {
+        $('.lang-switcher.english').css({"opacity": "1", "visibility": "visible", "display": "block"});
+        $('.header-menu-elements').css({"opacity": "1", "visibility": "visible", "transform": "translate(0px)", "display": "flex"});
+      }
+    });
+
+    $(document).click(function(){
+      if($('.current_view').attr('id') == 'dg_bf_screen') {
+        $('.page_title').css({"display": "none"});
+        $('.page_title.title_basement_floors').css({"display": "block", "visibility": "visible", "opacity": "1"});
+      }
+      else if($('.current_view').attr('id') == 'ml_lights_screen'){
+        $('.page_title').css({"display": "none"});
+        $('.page_title.title_night_scene').css({"display": "block", "visibility": "visible", "opacity": "1"});
+      } 
+      else {
+        $('.page_title').css({"display": "none"});
+      }
+    });
+
+    $(document).click(function(){
+      if($('.current_view').attr('id') == 'dg_bf_screen') {
+        $('.page_title').css({"display": "none"});
+        $('.page_title.title_basement_floors').css({"display": "block", "visibility": "visible", "opacity": "1"});
+      }
+      else if($('.current_view').attr('id') == 'ml_lights_screen'){
+        $('.page_title').css({"display": "none"});
+        $('.page_title.title_night_scene').css({"display": "block", "visibility": "visible", "opacity": "1"});
+      } 
+      else {
+        $('.page_title').css({"display": "none"});
+      }
+    });
+
+
+    $(document).click(function(){
+      if($('#dg_rs_screen_ar').hasClass('current_view')){
+        $('#footer_ar').css({"visibility": "hidden", "display": "none"})
+      }else if($('#ar_version section').hasClass('current_view') && $('#dg_rs_screen_ar').hasClass('current_view') == false ) {
+        $('#footer_ar').css({"visibility": "visible", "display": "block", "opacity": "1", "bottom": "0"})
+      }
+    });
+    $(document).click(function(){
+      if($('#dg_afrs_screen').hasClass('current_view') || $('#dg_afrs_screen_ar').hasClass('current_view') ){
+        $('.dg_ft_nav_item').removeClass('active');
+        $('.new_home_model').addClass('active');
+        $('.new_home_ar').addClass('active');
+        
+      }
+    });
+    
+
+    
+
+
+});
 
 

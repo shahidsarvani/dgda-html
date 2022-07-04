@@ -40,25 +40,14 @@ img {
   max-width: 100%;
 }
 
-.main_en section{
-  /* text-align: left; */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-/* 
-.main_en .container{
-  margin-top: -420px;
-} */
-
 section {
   position: absolute;
   top: 0;
   left: 0;
-  margin-top: 300px;
+  padding-top: 300px;
   width: 100%;
   /* height: 100%; */
-  height: calc(100vh - 300px);
+  height: 100vh;
 }
 #ar_version{
   /* display: none; */
@@ -166,8 +155,7 @@ section {
 }
 
 section.ml_lights_screen{
-  /* padding-top: 100px; */
-  margin-top: 200px;
+  padding-top: 100px;
 }
 
 .dg_sc_optn_item.active .optn_btn, .dg_ss_optn_item.active .optn_btn{
@@ -251,12 +239,6 @@ section.ml_lights_screen{
 
 
 /*********************************************************************************************/
-.load_log_col.logowrapanim {
-  position: relative;
-  animation-name: logowraptransition;
-  animation-duration: 2s;
-  animation-delay: 2s;
-}
 
 .load_log_col .logo_diriyah {
   top: 50%;
@@ -265,88 +247,6 @@ section.ml_lights_screen{
   position: absolute;
   max-width: 720px;
   transform: translate(-50%, -50%);
-}
-
-/* .load_log_col .logo_diriyah {
-  display: none;
-} */
-
-.load_log_col .logo_diriyah.startanim {
-  position: relative;
-  animation-name: logotransition;
-  animation-duration: 2s;
-  /* animation-delay: 0.2s; */
-  left: 0%;
-  top: 0%;
-  animation-delay: 2s;
-  display: block;
-}
-
-/* .dg_rs_row.firstsecanimOut{
-  left: -100%; 
-  top: 72px;
-} */
-.dg_rs_row.firstsecanim {
-  position: relative;
-  animation-name: firstsec;
-  animation-duration: 2s;
-  animation-delay: 2s;
-}
-
-@keyframes logotransition {
-  0% {
-    left: 140%;
-    top: 39%;
-    transform: scale(1.2);
-    height: 100vh;
-    max-width: 700px;
-  }
-
-  50% {
-    left: 140%;
-    top: 0%;
-    transform: scale(1);
-    height: 0vh;
-    max-width: 640px;
-  }
-
-  100% {
-    left: 0%;
-    top: 0%;
-    transform: scale(1);
-    height: 0vh;
-    max-width: 640px;
-  }
-}
-
-@keyframes logowraptransition {
-  0% {
-    height: 100vh;
-  }
-
-  50% {
-    height: 0vh;
-  }
-
-  100% {
-    height: 0vh;
-  }
-}
-
-@keyframes firstsec {
-  0% {
-    left: 200%;
-    top: 0px;
-  }
-
-  /* 50%  {
-    left: 150%; 
-    top: 0px;
-  } */
-  100% {
-    left: 0%;
-    top: 0px;
-  }
 }
 
 
@@ -551,6 +451,7 @@ section.ml_lights_screen{
   text-align: center;
 }
 
+
 .dg_ft_nav_item.active img, .nav-item a.active img{
   filter: brightness(0) saturate(100%) invert(29%) sepia(65%) saturate(268%) hue-rotate(356deg) brightness(93%) contrast(91%);
 }
@@ -619,7 +520,7 @@ section.ml_lights_screen{
   margin: 0 5px;
 }
 .dg_ft_nav_list li:first-child h3, .dg_ft_nav_list li:last-child h3{
-  /* color: #D69E6B; */
+  color: #D69E6B;
 }
 
 .dg_ft_nav_img {
@@ -697,13 +598,10 @@ section.ml_lights_screen{
   display: none;
 }
 .dg_vwalls_row .sm_video_track_wrap{
-  margin-top: 0px !important;
+  margin-top: 128px !important;
 }
 .dg_vwalls_row .sm_video_controls{
   margin-top: 53px !important;
-}
-.dg_vwalls_row{
-  text-align: left;
 }
 
 /*//////////////////////ROOM SELECTION SCREEN///////////////////////*/
@@ -727,7 +625,8 @@ section.ml_lights_screen{
 }
 
 .dg_rs_wrap img.dg_rs_img{
- max-width: 75%;
+ /* max-width: 75%; for icons */
+ max-width: 100%; /*for images*/
 }
 
 .dg_afrs_col a{
@@ -746,7 +645,7 @@ section.ml_lights_screen{
   margin: 0 auto 50px -50px !important;
 }
 .basementfloors_icon{
-  margin: 0 0px 50px auto !important;
+  margin: 0 60px 50px auto !important;
 }
 
 .dg_rs_wrap h3 {
@@ -795,7 +694,7 @@ section.ml_lights_screen{
 
 .dg_rs_row {
   max-width: 1920px;
-  margin: 70px auto 0;
+  margin: 270px auto 0;
 }
 
 
@@ -895,7 +794,6 @@ section.ml_lights_screen{
   position: relative;
   margin-top: 45px;
   font-size: 36px;
-  text-align: left;
 }
 
 span.sm_video_end_timer {
@@ -907,22 +805,40 @@ span.sm_video_start_timer {
   color: #003741;
 }
 
+.dg_ft_nav_item.active img.non_active_img, .dg_ft_nav_item img.active_img{
+  display: none;
+}
+.dg_ft_nav_item.active img.active_img{
+  display: block;
+  filter: none !important;
+}
+
+.dg_ft_nav_img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .sm_vc_list img {
   width: 36.5px;
   height: 36.5px;
 }
 
+.sm_vc_list .sm_vc_fastrewind_item img, .sm_vc_list .sm_vc_fastforward_item img{
+  width: 70px;
+}
+
 .sm_vc_lowvol_item img{
-  width: 60px !important;
-  height: 60px !important;
+  width: 55px !important;
+  height: 55px !important;
 }
 .sm_vc_heighvol_item img{
-  width: 70px !important;
-  height: 70px !important;
+  width: 55px !important;
+  height: 55px !important;
 }
 .sm_vc_mute_item img{
-  width: 65px !important;
-  height: 65px !important;
+  width: 55px !important;
+  height: 55px !important;
 }
 
 .sm_video_controls {
@@ -1122,4 +1038,25 @@ span.sm_video_start_timer {
 }
 .dg_lights_row{
   margin-top: 42px;
+}
+
+
+
+
+
+/* .arabic_footer {
+  bottom: 0px !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+} */
+
+.home_ar {
+  display: none;
+}
+
+
+
+.home_ar header .ar_logo {
+  opacity: 1 !important;
+  display: block !important;
 }
