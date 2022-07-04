@@ -48,6 +48,6 @@ function move_start_basementfloors_right() {
     visibility: 'visible',
   });
   
-  }
+}
 
-  export default move_start_basementfloors_right;
+export default move_start_basementfloors_right;

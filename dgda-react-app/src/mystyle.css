@@ -40,6 +40,12 @@ img {
   max-width: 100%;
 }
 
+.header-wrap{
+  position: absolute;
+  width: 100%;
+  z-index: 99;
+}
+
 section {
   position: absolute;
   top: 0;
@@ -645,7 +651,7 @@ section.ml_lights_screen{
   margin: 0 auto 50px -50px !important;
 }
 .basementfloors_icon{
-  margin: 0 60px 50px auto !important;
+  margin: 0 0px 50px auto !important;
 }
 
 .dg_rs_wrap h3 {
@@ -794,6 +800,11 @@ section.ml_lights_screen{
   position: relative;
   margin-top: 45px;
   font-size: 36px;
+  text-align: left;
+}
+
+.dg_vwalls_screen .dg_media_list_wrap{
+  text-align: left;
 }
 
 span.sm_video_end_timer {

@@ -1,7 +1,7 @@
 import '../bootstrap.min.css';
 import '../mystyle.css';
-import diriyahRoom from '../images/icons/diriyah-icon.svg';
-import wadiSafRoom from '../images/icons/wadi-safar-icon.svg';
+import diriyahRoom from '../images/room-diriyah.png';
+import wadiSafRoom from '../images/room-wadi-safar.png';
 import move_left_en from '../move-left-en';
 import { useState, useEffect } from 'react'
 

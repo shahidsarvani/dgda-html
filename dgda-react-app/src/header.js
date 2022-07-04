@@ -4,7 +4,8 @@ import logo from './images/dgda_logo.svg';
 import move_left_en from './move-left-en';
 import logo_ar from './images/diriyah-ar-logo.svg';
 import diriyah_icon from './images/icons/diriyah-icon.svg';
-import wadi_icon from './images/icons/wadi-safar-icon.svg'
+import wadi_icon from './images/icons/wadi-safar-icon.svg';
+import move_main_left from './move-main-left';
 
 function Header() {
   return (
@@ -24,7 +25,7 @@ function Header() {
                                 </div>
                                 <div className="lang-switcher">
                                     <div className="lang_items">
-                                        <a className="lang_ar_item" href="#" onClick="move_main_left()">عربي</a>
+                                        <a className="lang_ar_item" href="#" onClick={move_main_left}>عربي</a>
                                     </div>
                                 </div>
                             </div>

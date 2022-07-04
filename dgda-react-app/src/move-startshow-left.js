@@ -17,6 +17,17 @@ function move_startshow_left() {
     x: -3000,
     duration: 1
   });
+  // gsap.fromTo(".dg_sm_screen", {
+  //   opacity: 0,
+  //   x: 3000,
+  //   duration: 1,
+  //   visibility: 'hidden',
+  // }, {
+  //   opacity: 1,
+  //   x: 0,
+  //   duration: 1,
+  //   visibility: 'visible',
+  // });
   gsap.fromTo(".dg_sc_screen", {
     opacity: 0,
     x: 3000,
@@ -52,6 +63,6 @@ function move_startshow_left() {
     visibility: 'visible',
   });
   
-  }
+}
 
-  export default move_startshow_left;
+export default move_startshow_left;

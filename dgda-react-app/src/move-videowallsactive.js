@@ -37,6 +37,12 @@ function videowallsactive() {
       visibility: 'hidden',
       duration: 1,
     });
+    gsap.to(".dg_sm_screen", {
+      opacity: 0,
+      x: 3000,
+      visibility: 'hidden',
+      duration: 1,
+    });
     gsap.to(".ml_lights_screen", {
       opacity: 0,
       x: -3000,

@@ -1,6 +1,6 @@
 import '../bootstrap.min.css';
 import '../mystyle.css';
-import video from '../videos/dgda_intro.mp4';
+import video from '../videos/dgdA_UI_Intro-10secs.mp4';
 import splash_video_fade from '../splash-video-fade';
 
 
