@@ -62,3 +62,6 @@ html[lang="ar"], [lang="ar"] div, [lang="ar"] h1, [lang="ar"] h2, [lang="ar"] h3
 [lang="ar"] .lang-switcher{
     margin-top: 190px;
 }
+[lang="ar"] .sm_vc_list .sm_vc_fastrewind_item img, [lang="ar"] .sm_vc_list .sm_vc_fastforward_item img{
+    transform: rotate(180deg);
+}
