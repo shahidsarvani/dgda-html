@@ -639,7 +639,8 @@ section.ml_lights_screen{
 }
 
 .dg_rs_wrap img.dg_rs_img{
- max-width: 75%;
+ /* max-width: 75%; for icons */
+ max-width: 100%; /*for images*/
 }
 
 .dg_afrs_col a{
@@ -823,17 +824,21 @@ span.sm_video_start_timer {
   height: 36.5px;
 }
 
+.sm_vc_list .sm_vc_fastrewind_item img, .sm_vc_list .sm_vc_fastforward_item img{
+  width: 70px;
+}
+
 .sm_vc_lowvol_item img{
-  width: 60px !important;
-  height: 60px !important;
+  width: 55px !important;
+  height: 55px !important;
 }
 .sm_vc_heighvol_item img{
-  width: 70px !important;
-  height: 70px !important;
+  width: 55px !important;
+  height: 55px !important;
 }
 .sm_vc_mute_item img{
-  width: 65px !important;
-  height: 65px !important;
+  width: 55px !important;
+  height: 55px !important;
 }
 
 .sm_video_controls {
