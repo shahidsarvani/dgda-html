@@ -6,7 +6,7 @@ import splash_video_fade from '../splash-video-fade';
 
 function Welcomesection() {
   return (
-    <div className="room_selection_screen">
+    <div className="welcome_video_screen">
 
         <section className="dg_vw_screen">
             <div className="container-fluid dg_vw_cont">

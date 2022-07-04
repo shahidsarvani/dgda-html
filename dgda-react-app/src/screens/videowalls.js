@@ -6,6 +6,8 @@ import Videostopicon from '../images/video-controls/video-stop-control-icon.svg'
 import Videolowvolicon from '../images/video-controls/video-low-volum-icon.svg';
 import Videohighvolicon from '../images/video-controls/video-full-volum-icon.svg';
 import Videomutevolicon from '../images/video-controls/video-mute-icon.svg';
+import fast_rewind from '../images/video-controls/fast-rewind.svg';
+import fast_forward from '../images/video-controls/fast-forward.svg';
 import move_vwalls_right from '../move-vwalls-right';
 import { useState, useEffect } from 'react';
 
@@ -32,6 +34,11 @@ function Videowalls() {
                             </div>
                             <div className="sm_video_controls">
                                 <ul className="sm_vc_list">
+                                    <li className="sm_vc_item sm_vc_fastrewind_item">
+                                        <a href="#">
+                                            <img src={fast_rewind} alt="sm-video-fastrewind"/>
+                                        </a>
+                                    </li>
                                     <li className="sm_vc_item sm_vc_play_item">
                                         <a href="#">
                                             <img src={Videoplayicon} alt="sm-video-play" />
@@ -45,6 +52,11 @@ function Videowalls() {
                                     <li className="sm_vc_item sm_vc_stop_item">
                                         <a href="#">
                                             <img src={Videostopicon} alt="sm-video-play" />
+                                        </a>
+                                    </li>
+                                    <li className="sm_vc_item sm_vc_fastforward_item">
+                                        <a href="#">
+                                            <img src={fast_forward} alt="sm-video-fastforward"/>
                                         </a>
                                     </li>
                                     <li className="sm_vc_item sm_vc_lowvol_item">
