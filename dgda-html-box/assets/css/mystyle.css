@@ -827,6 +827,11 @@ span.sm_video_start_timer {
   filter: none !important;
 }
 
+.wadi_e_safar_room_page .dg_afrs_row{
+  max-width: 1700px;
+  margin: 0 auto;
+}
+
 .dg_ft_nav_img{
   display: flex;
   justify-content: center;

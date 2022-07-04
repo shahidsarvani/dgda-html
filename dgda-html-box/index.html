@@ -13,6 +13,9 @@
 
 <body class="homepage">
     <!-- <img class="compare_img" src="./assets/images/screens/video-screen.png" alt="room-selection-screen"/> -->
+    
+    
+    <!--Start Main English -->
     <main id="en_version" class="home_en">
         <!--Start Header Nav-->
         <header id="header" class="english header">
@@ -91,7 +94,7 @@
             <div class="container dg_rs_container">
                 <div class="row dg_rs_row">
                     <div class="col-6 dg_rs_col">
-                        <a href="javascript:void(0)" onclick="move_left_en()">
+                        <a id="diriyah_room_link" href="javascript:void(0)" onclick="move_left_en()">
                             <div id="diriyah-room2" class="dg_rs_wrap">
                                 <!-- <img class="dg_rs_img" src="./assets/images/icons/diriyah-icon.svg" alt="diriyah"> -->
                                 <img class="dg_rs_img" src="./assets/images/room-diriyah.png" alt="diriyah">
@@ -101,7 +104,7 @@
                         </a>
                     </div>
                     <div class="col-6 dg_rs_col">
-                        <a href="javascript:void(0)" onclick="move_left_en()">
+                        <a id="wadisafar_room_link" href="javascript:void(0)" onclick="move_wadi_left_en()">
                             <div id="wadisafar-room" class="dg_rs_wrap">
                                 <img class="dg_rs_img" src="./assets/images/room-wadi-safar.png" alt="wadi-safar">
                                 <h3 class="rs_ar_heading">وادي صفار</h3>
@@ -142,395 +145,427 @@
         </section> -->
         <!--End Room Selection Screen-->
 
-        <!--Start After Room Selection Screen-->
-        <section id="dg_afrs_screen" class="dg_afrs_screen english">
-            <div class="container dg_afrs_container">
-                <div class="row dg_afrs_row">
-                    <div class="col-4 dg_afrs_col">
-                        <a id="model_show" class="start_show_a" href="javascript:void(0)" onclick="move_startshow_left()">
-                            <img class="start_show_icon" src="./assets/images/icons/play-icon.svg" alt="start-show">
-                            <h3 class="dg_afrs_col1_h">START SHOW</h3>
-                        </a>
-                    </div>
-                    <div class="col-4 dg_afrs_col">
-                        <a id="modelzone_link" class="start_modelzone_a" href="javascript:void(0)" onclick="move_start_modellights_left()">
-                            <img class="screensaver_icon" src="./assets/images/icons/model-zones.svg" alt="night-scene">
-                            <h3 class="dg_afrs_col2_h">MODEL DISTRICTS</h3>
-                        </a>
-                    </div>
-                    <div class="col-4 dg_afrs_col">
-                        <a id="basement_floor_to" class="start_basementfloors_a" href="javascript:void(0)" onclick="move_start_basementfloors_left()">
-                            <img class="basementfloors_icon" src="./assets/images/icons/basement-floors-updated.svg" alt="basementfloors">
-                            <h3 class="dg_afrs_col2_h">BASEMENT FLOORS</h3>
-                        </a>
+        <!--Start Diriyah Room Selection Screen-->
+        <div class="diriyah_room_page">
+            <!--Start After Room Selection Screen-->
+            <section id="dg_afrs_screen" class="dg_afrs_screen english">
+                <div class="container dg_afrs_container">
+                    <div class="row dg_afrs_row">
+                        <div class="col-4 dg_afrs_col">
+                            <a id="model_show" class="start_show_a" href="javascript:void(0)" onclick="move_startshow_left()">
+                                <img class="start_show_icon" src="./assets/images/icons/play-icon.svg" alt="start-show">
+                                <h3 class="dg_afrs_col1_h">START SHOW</h3>
+                            </a>
+                        </div>
+                        <div class="col-4 dg_afrs_col">
+                            <a id="modelzone_link" class="start_modelzone_a" href="javascript:void(0)" onclick="move_start_modellights_left()">
+                                <img class="screensaver_icon" src="./assets/images/icons/model-zones.svg" alt="night-scene">
+                                <h3 class="dg_afrs_col2_h">MODEL DISTRICTS</h3>
+                            </a>
+                        </div>
+                        <div class="col-4 dg_afrs_col">
+                            <a id="basement_floor_to" class="start_basementfloors_a" href="javascript:void(0)" onclick="move_start_basementfloors_left()">
+                                <img class="basementfloors_icon" src="./assets/images/icons/basement-floors-updated.svg" alt="basementfloors">
+                                <h3 class="dg_afrs_col2_h">BASEMENT FLOORS</h3>
+                            </a>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <!--End After Room Selection Screen-->
-
-        <!--Start Show Controls Screen-->
-        <section id="dg_sc_screen" class="dg_sc_screen english">
-            <div class="container dg_sc_container">
-                <div class="row dg_sc_row">
-                    <div class="col-2"></div>
-                    <div class="col-4 dg_sc_col">
-                        <!-- <div class="dg_scen_options_wrap dg_sc_options_wrap">
-                            <ul class="dg_scen_optn">
-                                <li class="dg_sc_optn_item dg_scen_optnon_item active">
-                                    <a href="#">
-                                        <span class="optn_btn"></span>
-                                        <span>ON</span>
-                                    </a>
-                                </li>
-                                <li class="dg_sc_optn_item dg_scen_optnoff_item">
-                                    <a href="#">
-                                        <span class="optn_btn"></span>
-                                        <span>OFF</span>
-                                    </a>
-                                </li>
-                            </ul>
+            </section>
+            <!--End After Room Selection Screen-->
+            <!--Start Show Controls Screen-->
+            <section id="dg_sc_screen" class="dg_sc_screen english">
+                <div class="container dg_sc_container">
+                    <div class="row dg_sc_row">
+                        <div class="col-2"></div>
+                        <div class="col-4 dg_sc_col">
+                            <!-- <div class="dg_scen_options_wrap dg_sc_options_wrap">
+                                <ul class="dg_scen_optn">
+                                    <li class="dg_sc_optn_item dg_scen_optnon_item active">
+                                        <a href="#">
+                                            <span class="optn_btn"></span>
+                                            <span>ON</span>
+                                        </a>
+                                    </li>
+                                    <li class="dg_sc_optn_item dg_scen_optnoff_item">
+                                        <a href="#">
+                                            <span class="optn_btn"></span>
+                                            <span>OFF</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div> -->
+                            <div class="optn_language">
+                                <a id="new_eng_channel" onclick="move_startshow_right()" href="#"><h3>ENGLISH</h3></a>
+                            </div>
+                        </div>
+                        <div class="col-4 dg_sc_col">
+                            <!-- <div class="dg_scar_options_wrap dg_sc_options_wrap">
+                                <ul class="dg_scar_optn">
+                                    <li class="dg_sc_optn_item dg_scar_optnon_item active">
+                                        <a href="#">
+                                            <span class="optn_btn"></span>
+                                            <span>ON</span>
+                                        </a>
+                                    </li>
+                                    <li class="dg_sc_optn_item dg_scar_optnoff_item">
+                                        <a href="#">
+                                            <span class="optn_btn"></span>
+                                            <span>OFF</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div> -->
+                            <div class="optn_language">
+                                <a id="new_eng_channel_ar" onclick="move_startshow_right()" href="#"><h3>ARABIC</h3></a>
+                            </div>
+                        </div>
+                        <div class="col-2"></div>
+                    </div>
+                </div>
+            </section>
+            <!--End Show Controls Screen-->
+            <!--Start Show Model Screen-->
+            <section id="dg_sm_screen" class="dg_sm_screen">
+                <div class="container dg_sm_screen_cont">
+                    <div class="row dg_sm_row">
+                        <!-- <div class="col-12 dg_sm_col">
+                            <a href="javascript:void(0)" onclick="move_startshow_back()">
+                                <h3 class="breadcrumbs">
+                                    < MODEL SHOW
+                                </h3>
+                            </a>
                         </div> -->
-                        <div class="optn_language">
-                            <a id="new_eng_channel" onclick="move_startshow_right()" href="#"><h3>ENGLISH</h3></a>
+                        <div class="dg_sm_video_wrap">
+                            <div class="sm_video">
+                                <img src="./assets/images/play-video-thumb.png" alt="video thumb">
+                                <!-- <video width="100%" height="754" controls="false" autoplay="autoplay">
+                                    <source src="./assets/videos/dg_room_ui_v21.mp4" type="video/mp4">
+                                    <source src="movie.ogg" type="video/ogg">
+                                    Your browser does not support the video tag.
+                                </video> -->
+                            </div>
+                            <div class="sm_video_track_wrap">
+                                <div class="sm_video_track">
+                                    <div class="sm_video_unplayed_track"></div>
+                                    <div class="sm_video_played_track"></div>
+                                </div>
+                                <div class="sm_video_timers">
+                                    <span class="sm_video_start_timer">1:45</span>
+                                    <span class="sm_video_end_timer">-0.30</span>
+                                </div>
+                            </div>
+                            <div class="sm_video_controls">
+                                <ul class="sm_vc_list">
+                                    <!-- <li class="sm_vc_item sm_vc_fastrewind_item">
+                                        <a href="#">
+                                            <img src="./assets/images/video-controls/fast-rewind.svg" alt="sm-video-fastrewind">
+                                        </a>
+                                    </li> -->
+                                    <li class="sm_vc_item sm_vc_play_item">
+                                        <a href="#">
+                                            <img src="./assets/images/video-controls/video-play-control-icon.svg" alt="sm-video-play">
+                                        </a>
+                                    </li>
+                                    <li class="sm_vc_item sm_vc_pause_item">
+                                        <a href="#">
+                                            <img src="./assets/images/video-controls/video-pause-control-icon.svg" alt="sm-video-play">
+                                        </a>
+                                    </li>
+                                    <li class="sm_vc_item sm_vc_stop_item">
+                                        <a href="#">
+                                            <img src="./assets/images/video-controls/video-stop-control-icon.svg" alt="sm-video-play">
+                                        </a>
+                                    </li>
+                                    <!-- <li class="sm_vc_item sm_vc_fastforward_item">
+                                        <a href="#">
+                                            <img src="./assets/images/video-controls/fast-forward.svg" alt="sm-video-fastforward">
+                                        </a>
+                                    </li> -->
+                                    <li class="sm_vc_item sm_vc_lowvol_item">
+                                        <a href="#">
+                                            <img src="./assets/images/video-controls/video-low-volum-icon.svg" alt="sm-video-play">
+                                        </a>
+                                    </li>
+                                    <li class="sm_vc_item sm_vc_heighvol_item">
+                                        <a href="#">
+                                            <img src="./assets/images/video-controls/video-full-volum-icon.svg" alt="sm-video-play">
+                                        </a>
+                                    </li>
+                                    <li class="sm_vc_item sm_vc_mute_item">
+                                        <a href="#">
+                                            <img src="./assets/images/video-controls/video-mute-icon.svg" alt="sm-video-play">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-4 dg_sc_col">
-                        <!-- <div class="dg_scar_options_wrap dg_sc_options_wrap">
-                            <ul class="dg_scar_optn">
-                                <li class="dg_sc_optn_item dg_scar_optnon_item active">
-                                    <a href="#">
-                                        <span class="optn_btn"></span>
-                                        <span>ON</span>
-                                    </a>
-                                </li>
-                                <li class="dg_sc_optn_item dg_scar_optnoff_item">
-                                    <a href="#">
-                                        <span class="optn_btn"></span>
-                                        <span>OFF</span>
-                                    </a>
-                                </li>
-                            </ul>
+                </div>
+            </section>
+            <!--End Show Model Screen-->
+            <!--Start Show Controls Screen-->
+            <section id="dg_ss_screen" class="dg_ss_screen">
+                <div class="container dg_ss_container">
+                    <div class="row dg_ss_row">
+                        <div class="col-4"></div>
+                        <div class="col-4 dg_ss_col">
+                            <div class="dg_ss_options_wrap">
+                                <ul class="dg_ss_optn">
+                                    <li class="dg_ss_optn_item dg_ss_optnon_item active">
+                                        <a href="#">
+                                            <span class="optn_btn"></span>
+                                            <span>ON</span>
+                                        </a>
+                                    </li>
+                                    <li class="dg_ss_optn_item dg_ss_optnoff_item">
+                                        <a href="#">
+                                            <span class="optn_btn"></span>
+                                            <span>OFF</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-4"></div>
+                    </div>
+                </div>
+            </section>
+            <!--End Show Controls Screen-->
+            <!--Start Model Lights Screen-->
+            <section id="ml_lights_screen" class="ml_lights_screen">
+                <div class="container ml_lights_container">
+                    <div class="row ml_lights_row">
+                        <!-- <div class="col-12 breadcrumbs_col">
+                            <a href="javascript:void(0)" onclick="move_start_modellights_right()">
+                                <h3 class="breadcrumbs"> < SCREENSAVER </h3>
+                            </a>
                         </div> -->
-                        <div class="optn_language">
-                            <a id="new_eng_channel_ar" onclick="move_startshow_right()" href="#"><h3>ARABIC</h3></a>
+                        <div class="col_12 ml_content_col">
+                            <div class="ml_content_container ml_content_container1 active">
+                                <div class="ml_image_wrap ml_dg_anchor1_wrap active">
+                                    <img src="./assets/images/model-lights/dg1.png" alt="DG1">
+                                    <h3>DG1</h3>
+                                </div>
+                                <div class="ml_list_wrap ml_dg_antag1_wrap active">
+                                    <ul class="ml_dg_list ml_dg1_list">
+                                        <li class="ml_dg_list_item">
+                                            <a href="#">
+                                                1. ZONE 1
+                                            </a>
+                                        </li>
+                                        <li class="ml_dg_list_item">
+                                            <a href="#">
+                                                2. ZONE 2
+                                            </a>
+                                        </li>
+                                        <li class="ml_dg_list_item">
+                                            <a href="#">
+                                                3. ZONE 3
+                                            </a>
+                                        </li>
+                                        <li class="ml_dg_list_item">
+                                            <a href="#">
+                                                4. ZONE 4
+                                            </a>
+                                        </li>
+                                        <li class="ml_dg_list_item">
+                                            <a href="#">
+                                                5. ZONE 5
+                                            </a>
+                                        </li>
+                                        <li class="ml_dg_list_item">
+                                            <a href="#">
+                                                6. ZONE 6
+                                            </a>
+                                        </li>
+                                        <li class="ml_dg_list_item">
+                                            <a href="#">
+                                                7. ZONE 7
+                                            </a>
+                                        </li>
+                                        <li class="ml_dg_list_item">
+                                            <a href="#">
+                                                7. ZONE 7
+                                            </a>
+                                        </li>
+                                        <li class="ml_dg_list_item">
+                                            <a href="#">
+                                                7. ZONE 7
+                                            </a>
+                                        </li>
+                                        <li class="ml_dg_list_item">
+                                            <a href="#">
+                                                7. ZONE 7
+                                            </a>
+                                        </li>
+                                        <li class="ml_dg_list_item">
+                                            <a href="#">
+                                                7. ZONE 7
+                                            </a>
+                                        </li>
+                                        <li class="ml_dg_list_item">
+                                            <a href="#">
+                                                7. ZONE 7
+                                            </a>
+                                        </li>
+                                        <li class="ml_dg_list_item">
+                                            <a href="#">
+                                                7. ZONE 7
+                                            </a>
+                                        </li>
+                                        <li class="ml_dg_list_item">
+                                            <a href="#">
+                                                7. ZONE 7
+                                            </a>
+                                        </li>
+                                        <li class="ml_dg_list_item">
+                                            <a href="#">
+                                                7. ZONE 7
+                                            </a>
+                                        </li>
+                                        <li class="ml_dg_list_item">
+                                            <a href="#">
+                                                7. ZONE 7
+                                            </a>
+                                        </li>
+                                        <li class="ml_dg_list_item">
+                                            <a href="#">
+                                                7. ZONE 7
+                                            </a>
+                                        </li>
+                                        <li class="ml_dg_list_item">
+                                            <a href="#">
+                                                7. ZONE 7
+                                            </a>
+                                        </li>
+                                        <li class="ml_dg_list_item">
+                                            <a href="#">
+                                                7. ZONE 7
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="ml_content_container ml_content_container2">
+                                <div class="ml_image_wrap ml_dg_anchor2_wrap">
+                                    <img src="./assets/images/model-lights/dg1.png" alt="DG1">
+                                    <h3>DG2</h3>
+                                </div>
+                                <div class="ml_list_wrap ml_dg_antag2_wrap">
+                                    <ul class="ml_dg_list ml_dg2_list">
+                                        <li class="ml_dg_list_item">
+                                            <a href="#">
+                                                1. ZONE 1
+                                            </a>
+                                        </li>
+                                        <li class="ml_dg_list_item">
+                                            <a href="#">
+                                                2. ZONE 2
+                                            </a>
+                                        </li>
+                                        <li class="ml_dg_list_item">
+                                            <a href="#">
+                                                3. ZONE 3
+                                            </a>
+                                        </li>
+                                        <li class="ml_dg_list_item">
+                                            <a href="#">
+                                                4. ZONE 4
+                                            </a>
+                                        </li>
+                                        <li class="ml_dg_list_item">
+                                            <a href="#">
+                                                5. ZONE 5
+                                            </a>
+                                        </li>
+                                        <li class="ml_dg_list_item">
+                                            <a href="#">
+                                                6. ZONE 6
+                                            </a>
+                                        </li>
+                                        <li class="ml_dg_list_item">
+                                            <a href="#">
+                                                7. ZONE 7
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="ml_content_container ml_content_container3">
+                                <div class="ml_image_wrap ml_dg_anchor3_wrap">
+                                    <img src="./assets/images/model-lights/dg1.png" alt="DG1">
+                                    <h3>DG3</h3>
+                                </div>
+                                <div class="ml_list_wrap ml_dg_antag3_wrap">
+                                    <ul class="ml_dg_list ml_dg3_list">
+                                        <li class="ml_dg_list_item">
+                                            <a href="#">
+                                                1. ZONE 1
+                                            </a>
+                                        </li>
+                                        <li class="ml_dg_list_item">
+                                            <a href="#">
+                                                2. ZONE 2
+                                            </a>
+                                        </li>
+                                        <li class="ml_dg_list_item">
+                                            <a href="#">
+                                                3. ZONE 3
+                                            </a>
+                                        </li>
+                                        <li class="ml_dg_list_item">
+                                            <a href="#">
+                                                4. ZONE 4
+                                            </a>
+                                        </li>
+                                        <li class="ml_dg_list_item">
+                                            <a href="#">
+                                                5. ZONE 5
+                                            </a>
+                                        </li>
+                                        <li class="ml_dg_list_item">
+                                            <a href="#">
+                                                6. ZONE 6
+                                            </a>
+                                        </li>
+                                        <li class="ml_dg_list_item">
+                                            <a href="#">
+                                                7. ZONE 7
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-2"></div>
                 </div>
-            </div>
-        </section>
-        <!--End Show Controls Screen-->
-
-        <!--Start Show Model Screen-->
-        <section id="dg_sm_screen" class="dg_sm_screen">
-            <div class="container dg_sm_screen_cont">
-                <div class="row dg_sm_row">
-                    <!-- <div class="col-12 dg_sm_col">
-                        <a href="javascript:void(0)" onclick="move_startshow_back()">
-                            <h3 class="breadcrumbs">
-                                < MODEL SHOW
-                            </h3>
-                        </a>
-                    </div> -->
-                    <div class="dg_sm_video_wrap">
-                        <div class="sm_video">
-                            <img src="./assets/images/play-video-thumb.png" alt="video thumb">
-                            <!-- <video width="100%" height="754" controls="false" autoplay="autoplay">
-                                <source src="./assets/videos/dg_room_ui_v21.mp4" type="video/mp4">
-                                <source src="movie.ogg" type="video/ogg">
-                                Your browser does not support the video tag.
-                            </video> -->
-                        </div>
-                        <div class="sm_video_track_wrap">
-                            <div class="sm_video_track">
-                                <div class="sm_video_unplayed_track"></div>
-                                <div class="sm_video_played_track"></div>
-                            </div>
-                            <div class="sm_video_timers">
-                                <span class="sm_video_start_timer">1:45</span>
-                                <span class="sm_video_end_timer">-0.30</span>
-                            </div>
-                        </div>
-                        <div class="sm_video_controls">
-                            <ul class="sm_vc_list">
-                                <!-- <li class="sm_vc_item sm_vc_fastrewind_item">
-                                    <a href="#">
-                                        <img src="./assets/images/video-controls/fast-rewind.svg" alt="sm-video-fastrewind">
-                                    </a>
-                                </li> -->
-                                <li class="sm_vc_item sm_vc_play_item">
-                                    <a href="#">
-                                        <img src="./assets/images/video-controls/video-play-control-icon.svg" alt="sm-video-play">
-                                    </a>
-                                </li>
-                                <li class="sm_vc_item sm_vc_pause_item">
-                                    <a href="#">
-                                        <img src="./assets/images/video-controls/video-pause-control-icon.svg" alt="sm-video-play">
-                                    </a>
-                                </li>
-                                <li class="sm_vc_item sm_vc_stop_item">
-                                    <a href="#">
-                                        <img src="./assets/images/video-controls/video-stop-control-icon.svg" alt="sm-video-play">
-                                    </a>
-                                </li>
-                                <!-- <li class="sm_vc_item sm_vc_fastforward_item">
-                                    <a href="#">
-                                        <img src="./assets/images/video-controls/fast-forward.svg" alt="sm-video-fastforward">
-                                    </a>
-                                </li> -->
-                                <li class="sm_vc_item sm_vc_lowvol_item">
-                                    <a href="#">
-                                        <img src="./assets/images/video-controls/video-low-volum-icon.svg" alt="sm-video-play">
-                                    </a>
-                                </li>
-                                <li class="sm_vc_item sm_vc_heighvol_item">
-                                    <a href="#">
-                                        <img src="./assets/images/video-controls/video-full-volum-icon.svg" alt="sm-video-play">
-                                    </a>
-                                </li>
-                                <li class="sm_vc_item sm_vc_mute_item">
-                                    <a href="#">
-                                        <img src="./assets/images/video-controls/video-mute-icon.svg" alt="sm-video-play">
-                                    </a>
-                                </li>
-                            </ul>
+            </section>
+            <!--End Model Lights Screen-->
+            <!--Start Basement Floors Screen-->
+            <section id="dg_bf_screen" class="dg_bf_screen">
+                <div class="container dg_bf_container">
+                    <div class="row dg_bfb_row">
+                        <div class="col-12 breadcrumbs_col">
+                            <a href="javascript:void(0)" onclick="move_start_basementfloors_right()">
+                                <!-- <h3 class="breadcrumbs"> < BASEMENT FLOORS </h3> -->
+                            </a>
                         </div>
                     </div>
-                </div>
-            </div>
-        </section>
-        <!--End Show Model Screen-->
-
-        <!--Start Show Controls Screen-->
-        <section id="dg_ss_screen" class="dg_ss_screen">
-            <div class="container dg_ss_container">
-                <div class="row dg_ss_row">
-                    <div class="col-4"></div>
-                    <div class="col-4 dg_ss_col">
-                        <div class="dg_ss_options_wrap">
-                            <ul class="dg_ss_optn">
-                                <li class="dg_ss_optn_item dg_ss_optnon_item active">
-                                    <a href="#">
-                                        <span class="optn_btn"></span>
-                                        <span>ON</span>
-                                    </a>
-                                </li>
-                                <li class="dg_ss_optn_item dg_ss_optnoff_item">
-                                    <a href="#">
-                                        <span class="optn_btn"></span>
-                                        <span>OFF</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-4"></div>
-                </div>
-            </div>
-        </section>
-        <!--End Show Controls Screen-->
-
-        <!--Start Model Lights Screen-->
-        <section id="ml_lights_screen" class="ml_lights_screen">
-            <div class="container ml_lights_container">
-                <div class="row ml_lights_row">
-                    <!-- <div class="col-12 breadcrumbs_col">
-                        <a href="javascript:void(0)" onclick="move_start_modellights_right()">
-                            <h3 class="breadcrumbs"> < SCREENSAVER </h3>
-                        </a>
-                    </div> -->
-                    <div class="col_12 ml_content_col">
-                        <div class="ml_content_container ml_content_container1 active">
-                            <div class="ml_image_wrap ml_dg_anchor1_wrap active">
-                                <img src="./assets/images/model-lights/dg1.png" alt="DG1">
-                                <h3>DG1</h3>
-                            </div>
-                            <div class="ml_list_wrap ml_dg_antag1_wrap active">
-                                <ul class="ml_dg_list ml_dg1_list">
-                                    <li class="ml_dg_list_item">
+                    <div class="row dg_bfc_row">
+                        <div class="col-12 dg_bf_col">
+                            <div class="dg_bf_list_wrap">
+                                <ul class="dg_bf_list">
+                                    <li class="dg_bf_list_item">
                                         <a href="#">
-                                            1. ZONE 1
+                                            <img src="./assets/images/icons/bf-up-icon.svg" alt="basementfloors-up"/>
+                                            <span>UP</span>
                                         </a>
                                     </li>
-                                    <li class="ml_dg_list_item">
+                                    <li class="dg_bf_list_item">
                                         <a href="#">
-                                            2. ZONE 2
-                                        </a>
-                                    </li>
-                                    <li class="ml_dg_list_item">
-                                        <a href="#">
-                                            3. ZONE 3
-                                        </a>
-                                    </li>
-                                    <li class="ml_dg_list_item">
-                                        <a href="#">
-                                            4. ZONE 4
-                                        </a>
-                                    </li>
-                                    <li class="ml_dg_list_item">
-                                        <a href="#">
-                                            5. ZONE 5
-                                        </a>
-                                    </li>
-                                    <li class="ml_dg_list_item">
-                                        <a href="#">
-                                            6. ZONE 6
-                                        </a>
-                                    </li>
-                                    <li class="ml_dg_list_item">
-                                        <a href="#">
-                                            7. ZONE 7
-                                        </a>
-                                    </li>
-                                    <li class="ml_dg_list_item">
-                                        <a href="#">
-                                            7. ZONE 7
-                                        </a>
-                                    </li>
-                                    <li class="ml_dg_list_item">
-                                        <a href="#">
-                                            7. ZONE 7
-                                        </a>
-                                    </li>
-                                    <li class="ml_dg_list_item">
-                                        <a href="#">
-                                            7. ZONE 7
-                                        </a>
-                                    </li>
-                                    <li class="ml_dg_list_item">
-                                        <a href="#">
-                                            7. ZONE 7
-                                        </a>
-                                    </li>
-                                    <li class="ml_dg_list_item">
-                                        <a href="#">
-                                            7. ZONE 7
-                                        </a>
-                                    </li>
-                                    <li class="ml_dg_list_item">
-                                        <a href="#">
-                                            7. ZONE 7
-                                        </a>
-                                    </li>
-                                    <li class="ml_dg_list_item">
-                                        <a href="#">
-                                            7. ZONE 7
-                                        </a>
-                                    </li>
-                                    <li class="ml_dg_list_item">
-                                        <a href="#">
-                                            7. ZONE 7
-                                        </a>
-                                    </li>
-                                    <li class="ml_dg_list_item">
-                                        <a href="#">
-                                            7. ZONE 7
-                                        </a>
-                                    </li>
-                                    <li class="ml_dg_list_item">
-                                        <a href="#">
-                                            7. ZONE 7
-                                        </a>
-                                    </li>
-                                    <li class="ml_dg_list_item">
-                                        <a href="#">
-                                            7. ZONE 7
-                                        </a>
-                                    </li>
-                                    <li class="ml_dg_list_item">
-                                        <a href="#">
-                                            7. ZONE 7
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="ml_content_container ml_content_container2">
-                            <div class="ml_image_wrap ml_dg_anchor2_wrap">
-                                <img src="./assets/images/model-lights/dg1.png" alt="DG1">
-                                <h3>DG2</h3>
-                            </div>
-                            <div class="ml_list_wrap ml_dg_antag2_wrap">
-                                <ul class="ml_dg_list ml_dg2_list">
-                                    <li class="ml_dg_list_item">
-                                        <a href="#">
-                                            1. ZONE 1
-                                        </a>
-                                    </li>
-                                    <li class="ml_dg_list_item">
-                                        <a href="#">
-                                            2. ZONE 2
-                                        </a>
-                                    </li>
-                                    <li class="ml_dg_list_item">
-                                        <a href="#">
-                                            3. ZONE 3
-                                        </a>
-                                    </li>
-                                    <li class="ml_dg_list_item">
-                                        <a href="#">
-                                            4. ZONE 4
-                                        </a>
-                                    </li>
-                                    <li class="ml_dg_list_item">
-                                        <a href="#">
-                                            5. ZONE 5
-                                        </a>
-                                    </li>
-                                    <li class="ml_dg_list_item">
-                                        <a href="#">
-                                            6. ZONE 6
-                                        </a>
-                                    </li>
-                                    <li class="ml_dg_list_item">
-                                        <a href="#">
-                                            7. ZONE 7
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="ml_content_container ml_content_container3">
-                            <div class="ml_image_wrap ml_dg_anchor3_wrap">
-                                <img src="./assets/images/model-lights/dg1.png" alt="DG1">
-                                <h3>DG3</h3>
-                            </div>
-                            <div class="ml_list_wrap ml_dg_antag3_wrap">
-                                <ul class="ml_dg_list ml_dg3_list">
-                                    <li class="ml_dg_list_item">
-                                        <a href="#">
-                                            1. ZONE 1
-                                        </a>
-                                    </li>
-                                    <li class="ml_dg_list_item">
-                                        <a href="#">
-                                            2. ZONE 2
-                                        </a>
-                                    </li>
-                                    <li class="ml_dg_list_item">
-                                        <a href="#">
-                                            3. ZONE 3
-                                        </a>
-                                    </li>
-                                    <li class="ml_dg_list_item">
-                                        <a href="#">
-                                            4. ZONE 4
-                                        </a>
-                                    </li>
-                                    <li class="ml_dg_list_item">
-                                        <a href="#">
-                                            5. ZONE 5
-                                        </a>
-                                    </li>
-                                    <li class="ml_dg_list_item">
-                                        <a href="#">
-                                            6. ZONE 6
-                                        </a>
-                                    </li>
-                                    <li class="ml_dg_list_item">
-                                        <a href="#">
-                                            7. ZONE 7
+                                            <img src="./assets/images/icons/bf-down-icon.svg" alt="basementfloors-doen"/>
+                                            <span>DOWN</span>
                                         </a>
                                     </li>
                                 </ul>
@@ -538,346 +573,1110 @@
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <!--End Model Lights Screen-->
+            </section>
+            <!--End Basement Floors Screen-->
+            <!--Start Video Walls Screen-->
+            <section id="dg_vwalls_screen" class="dg_vwalls_screen">
+                <div class="container dg_vwalls_container">
+                    <div class="row dg_vwalls_row">
+                        <div class="col-12 dg_vwalls_col">
+                            <a href="javascript:void(0)" onclick="move_vwalls_right()">
+                                <!-- <h3 class="breadcrumbs"> < VIDEO WALLS </h3> -->
+                            </a>
+                        </div>
+                        <div class="dg_sm_video_wrap">
+                            <div class="sm_video">
+                                <!-- <img src="./assets/images/play-video-thumb.png" alt="video thumb"> -->
+                                <!-- <video width="100%" height="754" controls="false" autoplay="autoplay">
+                                    <source src="./assets/videos/dg_room_ui_v21.mp4" type="video/mp4">
+                                    <source src="movie.ogg" type="video/ogg">
+                                    Your browser does not support the video tag.
+                                </video> -->
+                            </div>
+                            <div class="sm_video_track_wrap">
+                                <div class="sm_video_track">
+                                    <div class="sm_video_unplayed_track"></div>
+                                    <div class="sm_video_played_track"></div>
+                                </div>
+                                <div class="sm_video_timers">
+                                    <span class="sm_video_start_timer">1:45</span>
+                                    <span class="sm_video_end_timer">-0.30</span>
+                                </div>
+                            </div>
+                            <div class="sm_video_controls">
+                                <ul class="sm_vc_list">
+                                    <li class="sm_vc_item sm_vc_fastrewind_item">
+                                        <a href="#">
+                                            <img src="./assets/images/video-controls/fast-rewind.svg" alt="sm-video-fastrewind">
+                                        </a>
+                                    </li>
+                                    <li class="sm_vc_item sm_vc_play_item">
+                                        <a href="#">
+                                            <img src="./assets/images/video-controls/video-play-control-icon.svg" alt="sm-video-play">
+                                        </a>
+                                    </li>
+                                    <li class="sm_vc_item sm_vc_pause_item">
+                                        <a href="#">
+                                            <img src="./assets/images/video-controls/video-pause-control-icon.svg" alt="sm-video-play">
+                                        </a>
+                                    </li>
+                                    <li class="sm_vc_item sm_vc_stop_item">
+                                        <a href="#">
+                                            <img src="./assets/images/video-controls/video-stop-control-icon.svg" alt="sm-video-play">
+                                        </a>
+                                    </li>
+                                    <li class="sm_vc_item sm_vc_fastforward_item">
+                                        <a href="#">
+                                            <img src="./assets/images/video-controls/fast-forward.svg" alt="sm-video-fastforward">
+                                        </a>
+                                    </li>
+                                    <li class="sm_vc_item sm_vc_lowvol_item">
+                                        <a href="#">
+                                            <img src="./assets/images/video-controls/video-low-volum-icon.svg" alt="sm-video-play">
+                                        </a>
+                                    </li>
+                                    <li class="sm_vc_item sm_vc_heighvol_item">
+                                        <a href="#">
+                                            <img src="./assets/images/video-controls/video-full-volum-icon.svg" alt="sm-video-play">
+                                        </a>
+                                    </li>
+                                    <li class="sm_vc_item sm_vc_mute_item">
+                                        <a href="#">
+                                            <img src="./assets/images/video-controls/video-mute-icon.svg" alt="sm-video-play">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="dg_media_list_wrap">
+                                <h2>MEDIA</h2>
+                                <ul class="dg_media_list">
+                                    <li class="dg_media_item">
+                                        <a href="#">
+                                            <h3>1. ZONE 1</h3>
+                                        </a>
+                                    </li>
+                                    <li class="dg_media_item">
+                                        <a href="#">
+                                            <h3>2. ZONE 2</h3>
+                                        </a>
+                                    </li>
+                                    <li class="dg_media_item">
+                                        <a href="#">
+                                            <h3>3. ZONE 3</h3>
+                                        </a>
+                                    </li>
+                                    <li class="dg_media_item">
+                                        <a href="#">
+                                            <h3>4. ZONE 4</h3>
+                                        </a>
+                                    </li>
+                                    <li class="dg_media_item">
+                                        <a href="#">
+                                            <h3>5. ZONE 5</h3>
+                                        </a>
+                                    </li>
+                                    <li class="dg_media_item">
+                                        <a href="#">
+                                            <h3>6. ZONE 6</h3>
+                                        </a>
+                                    </li>
+                                    <li class="dg_media_item">
+                                        <a href="#">
+                                            <h3>7. ZONE 7</h3>
+                                        </a>
+                                    </li>
+                                    <li class="dg_media_item">
+                                        <a href="#">
+                                            <h3>8. ZONE 8</h3>
+                                        </a>
+                                    </li>
+                                    <li class="dg_media_item">
+                                        <a href="#">
+                                            <h3>9. ZONE 9</h3>
+                                        </a>
+                                    </li>
+                                    <li class="dg_media_item">
+                                        <a href="#">
+                                            <h3>10. ZONE 10</h3>
+                                        </a>
+                                    </li>
+                                    <li class="dg_media_item">
+                                        <a href="#">
+                                            <h3>11. ZONE 11</h3>
+                                        </a>
+                                    </li>
+                                    <li class="dg_media_item">
+                                        <a href="#">
+                                            <h3>12. ZONE 12</h3>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--Start Video Walls Screen-->
+            <!--Start lights Screen-->
+            <!-- <section id="dg_lights_screen" class="dg_lights_screen">
+                <div class="container dg_lights_container">
+                    <div class="row dg_lights_row">
+                        <div class="col-4 dg_col_content">
+                            <div class="dg_lights_content_wrap dg_lights_morning">
+                                <a href="#">
+                                    <h3>MORNING</h3>
+                                    <h3>80%</h3>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-4 dg_col_content">
+                            <div class="dg_lights_content_wrap dg_lights_afternoon">
+                                <a href="#">
+                                    <h3>AFTERNOON</h3>
+                                    <h3>100%</h3>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-4 dg_col_content">
+                            <div class="dg_lights_content_wrap dg_lights_evening">
+                                <a href="#">
+                                    <h3>EVENING</h3>
+                                    <h3>40%</h3>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-4 dg_col_content">
+                            <div class="dg_lights_content_wrap dg_lights_entery">
+                                <a href="#">
+                                    <h3>ENTERY SCENE</h3>
+                                    <h3>0%</h3>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-4 dg_col_content">
+                            <div class="dg_lights_content_wrap dg_lights_exit">
+                                <a href="#">
+                                    <h3>EXIT SCENE</h3>
+                                    <h3>20%</h3>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section> -->
+            <!--End lights Screen-->
 
-        <!--Start Basement Floors Screen-->
-        <section id="dg_bf_screen" class="dg_bf_screen">
-            <div class="container dg_bf_container">
-                <div class="row dg_bfb_row">
-                    <div class="col-12 breadcrumbs_col">
-                        <a href="javascript:void(0)" onclick="move_start_basementfloors_right()">
-                            <!-- <h3 class="breadcrumbs"> < BASEMENT FLOORS </h3> -->
-                        </a>
+            <!--Start lights Screen-->
+            <section id="dg_lights_screen" class="dg_lights_screen">
+                <div class="container dg_lights_container">
+                    <div class="row dg_lights_main_row">
+                        <div class="col-6">
+                            <div class="row dg_lights_row">
+                                <div class="col-12 dg_lights_col">
+                                    <div class="dg_lights_content_wrap dg_lights_20">
+                                        <a href="#">
+                                            <h3>LIGHTS 20%</h3>
+                                            <img src="./assets/images/icons/lights/20percent-lights.svg" alt="20percent-lights">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-12 dg_lights_col">
+                                    <div class="dg_lights_content_wrap dg_lights_40">
+                                        <a href="#">
+                                            <h3>LIGHTS 40%</h3>
+                                            <img src="./assets/images/icons/lights/40percent-lights.svg" alt="40percent-lights">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-12 dg_lights_col">
+                                    <div class="dg_lights_content_wrap dg_lights_40">
+                                        <a href="#">
+                                            <h3>NATURAL SOFT</h3>
+                                            <img src="./assets/images/icons/lights/natural-soft-lights.svg" alt="natural-soft-lights">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="row dg_lights_row">
+                                <div class="col-12 dg_lights_col">
+                                    <div class="dg_lights_content_wrap dg_lights_60">
+                                        <a href="#">
+                                            <h3>LIGHTS 60%</h3>
+                                            <img src="./assets/images/icons/lights/60percent-lights.svg" alt="60percent-lights">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-12 dg_lights_col">
+                                    <div class="dg_lights_content_wrap dg_lights_entery">
+                                        <a href="#">
+                                            <h3>LIGHTS 80%</h3>
+                                            <img src="./assets/images/icons/lights/80percent-lights.svg" alt="80percent-lights">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-12 dg_lights_col">
+                                    <div class="dg_lights_content_wrap dg_lights_entery">
+                                        <a href="#">
+                                            <h3>NATURAL BRIGHT</h3>
+                                            <img class="model_bright_lights" src="./assets/images/icons/lights/natural-bright-lights.svg" alt="natural-bright-lights">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="row dg_bfc_row">
-                    <div class="col-12 dg_bf_col">
-                        <div class="dg_bf_list_wrap">
-                            <ul class="dg_bf_list">
-                                <li class="dg_bf_list_item">
-                                    <a href="#">
-                                        <img src="./assets/images/icons/bf-up-icon.svg" alt="basementfloors-up"/>
-                                        <span>UP</span>
-                                    </a>
-                                </li>
-                                <li class="dg_bf_list_item">
-                                    <a href="#">
-                                        <img src="./assets/images/icons/bf-down-icon.svg" alt="basementfloors-doen"/>
-                                        <span>DOWN</span>
-                                    </a>
-                                </li>
-                            </ul>
+                    <div class="row dg_lights_main_row dg_lights_main_row2">
+                        <div class="col-6">
+                            <div class="row dg_lights_row">
+                                <div class="col-12 dg_lights_col">
+                                    <div class="dg_lights_content_wrap dg_lights_60">
+                                        <a href="#">
+                                            <h3>MODEL BRIGHT</h3>
+                                            <img class="model_bright_lights" src="./assets/images/icons/lights/model-bright-lights.svg" alt="model-bright-lights">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-12 dg_lights_col">
+                                    <div class="dg_lights_content_wrap dg_lights_20">
+                                        <a href="#">
+                                            <h3>MODEL SOFT</h3>
+                                            <img src="./assets/images/icons/lights/model-soft-lights.svg" alt="model-soft-lights">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="row dg_lights_row">
+                                <div class="col-12 dg_lights_col">
+                                    <div class="dg_lights_content_wrap dg_lights_entery">
+                                        <a href="#">
+                                            <h3>ALL LIGHTS ON</h3>
+                                            <img src="./assets/images/icons/lights/all-lights-on.svg" alt="all-lights-on">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-12 dg_lights_col">
+                                    <div class="dg_lights_content_wrap all_no_lights1">
+                                        <a href="#">
+                                            <h3>ALL LIGHTS OFF</h3>
+                                            <img src="./assets/images/icons/lights/all-light-off.svg" alt="all-lights-off">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <!--End Basement Floors Screen-->
+            </section>
+            <!--End lights Screen-->
+        </div>
+        <!--End Diriyah Room Selection Screen-->
 
-        <!--Start Video Walls Screen-->
-        <section id="dg_vwalls_screen" class="dg_vwalls_screen">
-            <div class="container dg_vwalls_container">
-                <div class="row dg_vwalls_row">
-                    <div class="col-12 dg_vwalls_col">
-                        <a href="javascript:void(0)" onclick="move_vwalls_right()">
-                            <!-- <h3 class="breadcrumbs"> < VIDEO WALLS </h3> -->
-                        </a>
+        <!--Start Diriyah Room Selection Screen-->
+        <div class="wadi_e_safar_room_page">
+            <!--Start After Room Selection Screen-->
+            <section id="dg_afrs_screen" class="dg_afrs_screen english">
+                <div class="container dg_afrs_container">
+                    <div class="row dg_afrs_row">
+                        <div class="col-6 dg_afrs_col">
+                            <a id="model_show" class="start_show_a" href="javascript:void(0)" onclick="move_startshow_left()">
+                                <img class="start_show_icon" src="./assets/images/icons/play-icon.svg" alt="start-show">
+                                <h3 class="dg_afrs_col1_h">START SHOW</h3>
+                            </a>
+                        </div>
+                        <div class="col-6 dg_afrs_col">
+                            <a id="modelzone_link" class="start_modelzone_a" href="javascript:void(0)" onclick="move_start_modellights_left()">
+                                <img class="screensaver_icon" src="./assets/images/icons/ftr-vwalls-icon.svg" alt="night-scene">
+                                <h3 class="dg_afrs_col2_h">VIDEO WALLS</h3>
+                            </a>
+                        </div>
+                        <!-- <div class="col-4 dg_afrs_col">
+                            <a id="basement_floor_to" class="start_basementfloors_a" href="javascript:void(0)" onclick="move_start_basementfloors_left()">
+                                <img class="basementfloors_icon" src="./assets/images/icons/basement-floors-updated.svg" alt="basementfloors">
+                                <h3 class="dg_afrs_col2_h">BASEMENT FLOORS</h3>
+                            </a>
+                        </div> -->
                     </div>
-                    <div class="dg_sm_video_wrap">
-                        <div class="sm_video">
-                            <!-- <img src="./assets/images/play-video-thumb.png" alt="video thumb"> -->
-                            <!-- <video width="100%" height="754" controls="false" autoplay="autoplay">
-                                <source src="./assets/videos/dg_room_ui_v21.mp4" type="video/mp4">
-                                <source src="movie.ogg" type="video/ogg">
-                                Your browser does not support the video tag.
-                            </video> -->
-                        </div>
-                        <div class="sm_video_track_wrap">
-                            <div class="sm_video_track">
-                                <div class="sm_video_unplayed_track"></div>
-                                <div class="sm_video_played_track"></div>
+                </div>
+            </section>
+            <!--End After Room Selection Screen-->
+            <!--Start Show Controls Screen-->
+            <section id="dg_sc_screen" class="dg_sc_screen english">
+                <div class="container dg_sc_container">
+                    <div class="row dg_sc_row">
+                        <div class="col-2"></div>
+                        <div class="col-4 dg_sc_col">
+                            <!-- <div class="dg_scen_options_wrap dg_sc_options_wrap">
+                                <ul class="dg_scen_optn">
+                                    <li class="dg_sc_optn_item dg_scen_optnon_item active">
+                                        <a href="#">
+                                            <span class="optn_btn"></span>
+                                            <span>ON</span>
+                                        </a>
+                                    </li>
+                                    <li class="dg_sc_optn_item dg_scen_optnoff_item">
+                                        <a href="#">
+                                            <span class="optn_btn"></span>
+                                            <span>OFF</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div> -->
+                            <div class="optn_language">
+                                <a id="new_eng_channel" onclick="move_startshow_right()" href="#"><h3>ENGLISH</h3></a>
                             </div>
-                            <div class="sm_video_timers">
-                                <span class="sm_video_start_timer">1:45</span>
-                                <span class="sm_video_end_timer">-0.30</span>
+                        </div>
+                        <div class="col-4 dg_sc_col">
+                            <!-- <div class="dg_scar_options_wrap dg_sc_options_wrap">
+                                <ul class="dg_scar_optn">
+                                    <li class="dg_sc_optn_item dg_scar_optnon_item active">
+                                        <a href="#">
+                                            <span class="optn_btn"></span>
+                                            <span>ON</span>
+                                        </a>
+                                    </li>
+                                    <li class="dg_sc_optn_item dg_scar_optnoff_item">
+                                        <a href="#">
+                                            <span class="optn_btn"></span>
+                                            <span>OFF</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div> -->
+                            <div class="optn_language">
+                                <a id="new_eng_channel_ar" onclick="move_startshow_right()" href="#"><h3>ARABIC</h3></a>
                             </div>
                         </div>
-                        <div class="sm_video_controls">
-                            <ul class="sm_vc_list">
-                                <li class="sm_vc_item sm_vc_fastrewind_item">
-                                    <a href="#">
-                                        <img src="./assets/images/video-controls/fast-rewind.svg" alt="sm-video-fastrewind">
-                                    </a>
-                                </li>
-                                <li class="sm_vc_item sm_vc_play_item">
-                                    <a href="#">
-                                        <img src="./assets/images/video-controls/video-play-control-icon.svg" alt="sm-video-play">
-                                    </a>
-                                </li>
-                                <li class="sm_vc_item sm_vc_pause_item">
-                                    <a href="#">
-                                        <img src="./assets/images/video-controls/video-pause-control-icon.svg" alt="sm-video-play">
-                                    </a>
-                                </li>
-                                <li class="sm_vc_item sm_vc_stop_item">
-                                    <a href="#">
-                                        <img src="./assets/images/video-controls/video-stop-control-icon.svg" alt="sm-video-play">
-                                    </a>
-                                </li>
-                                <li class="sm_vc_item sm_vc_fastforward_item">
-                                    <a href="#">
-                                        <img src="./assets/images/video-controls/fast-forward.svg" alt="sm-video-fastforward">
-                                    </a>
-                                </li>
-                                <li class="sm_vc_item sm_vc_lowvol_item">
-                                    <a href="#">
-                                        <img src="./assets/images/video-controls/video-low-volum-icon.svg" alt="sm-video-play">
-                                    </a>
-                                </li>
-                                <li class="sm_vc_item sm_vc_heighvol_item">
-                                    <a href="#">
-                                        <img src="./assets/images/video-controls/video-full-volum-icon.svg" alt="sm-video-play">
-                                    </a>
-                                </li>
-                                <li class="sm_vc_item sm_vc_mute_item">
-                                    <a href="#">
-                                        <img src="./assets/images/video-controls/video-mute-icon.svg" alt="sm-video-play">
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="dg_media_list_wrap">
-                            <h2>MEDIA</h2>
-                            <ul class="dg_media_list">
-                                <li class="dg_media_item">
-                                    <a href="#">
-                                        <h3>1. ZONE 1</h3>
-                                    </a>
-                                </li>
-                                <li class="dg_media_item">
-                                    <a href="#">
-                                        <h3>2. ZONE 2</h3>
-                                    </a>
-                                </li>
-                                <li class="dg_media_item">
-                                    <a href="#">
-                                        <h3>3. ZONE 3</h3>
-                                    </a>
-                                </li>
-                                <li class="dg_media_item">
-                                    <a href="#">
-                                        <h3>4. ZONE 4</h3>
-                                    </a>
-                                </li>
-                                <li class="dg_media_item">
-                                    <a href="#">
-                                        <h3>5. ZONE 5</h3>
-                                    </a>
-                                </li>
-                                <li class="dg_media_item">
-                                    <a href="#">
-                                        <h3>6. ZONE 6</h3>
-                                    </a>
-                                </li>
-                                <li class="dg_media_item">
-                                    <a href="#">
-                                        <h3>7. ZONE 7</h3>
-                                    </a>
-                                </li>
-                                <li class="dg_media_item">
-                                    <a href="#">
-                                        <h3>8. ZONE 8</h3>
-                                    </a>
-                                </li>
-                                <li class="dg_media_item">
-                                    <a href="#">
-                                        <h3>9. ZONE 9</h3>
-                                    </a>
-                                </li>
-                                <li class="dg_media_item">
-                                    <a href="#">
-                                        <h3>10. ZONE 10</h3>
-                                    </a>
-                                </li>
-                                <li class="dg_media_item">
-                                    <a href="#">
-                                        <h3>11. ZONE 11</h3>
-                                    </a>
-                                </li>
-                                <li class="dg_media_item">
-                                    <a href="#">
-                                        <h3>12. ZONE 12</h3>
-                                    </a>
-                                </li>
-                            </ul>
+                        <div class="col-2"></div>
+                    </div>
+                </div>
+            </section>
+            <!--End Show Controls Screen-->
+            <!--Start Show Model Screen-->
+            <section id="dg_sm_screen" class="dg_sm_screen">
+                <div class="container dg_sm_screen_cont">
+                    <div class="row dg_sm_row">
+                        <!-- <div class="col-12 dg_sm_col">
+                            <a href="javascript:void(0)" onclick="move_startshow_back()">
+                                <h3 class="breadcrumbs">
+                                    < MODEL SHOW
+                                </h3>
+                            </a>
+                        </div> -->
+                        <div class="dg_sm_video_wrap">
+                            <div class="sm_video">
+                                <img src="./assets/images/play-video-thumb.png" alt="video thumb">
+                                <!-- <video width="100%" height="754" controls="false" autoplay="autoplay">
+                                    <source src="./assets/videos/dg_room_ui_v21.mp4" type="video/mp4">
+                                    <source src="movie.ogg" type="video/ogg">
+                                    Your browser does not support the video tag.
+                                </video> -->
+                            </div>
+                            <div class="sm_video_track_wrap">
+                                <div class="sm_video_track">
+                                    <div class="sm_video_unplayed_track"></div>
+                                    <div class="sm_video_played_track"></div>
+                                </div>
+                                <div class="sm_video_timers">
+                                    <span class="sm_video_start_timer">1:45</span>
+                                    <span class="sm_video_end_timer">-0.30</span>
+                                </div>
+                            </div>
+                            <div class="sm_video_controls">
+                                <ul class="sm_vc_list">
+                                    <!-- <li class="sm_vc_item sm_vc_fastrewind_item">
+                                        <a href="#">
+                                            <img src="./assets/images/video-controls/fast-rewind.svg" alt="sm-video-fastrewind">
+                                        </a>
+                                    </li> -->
+                                    <li class="sm_vc_item sm_vc_play_item">
+                                        <a href="#">
+                                            <img src="./assets/images/video-controls/video-play-control-icon.svg" alt="sm-video-play">
+                                        </a>
+                                    </li>
+                                    <li class="sm_vc_item sm_vc_pause_item">
+                                        <a href="#">
+                                            <img src="./assets/images/video-controls/video-pause-control-icon.svg" alt="sm-video-play">
+                                        </a>
+                                    </li>
+                                    <li class="sm_vc_item sm_vc_stop_item">
+                                        <a href="#">
+                                            <img src="./assets/images/video-controls/video-stop-control-icon.svg" alt="sm-video-play">
+                                        </a>
+                                    </li>
+                                    <!-- <li class="sm_vc_item sm_vc_fastforward_item">
+                                        <a href="#">
+                                            <img src="./assets/images/video-controls/fast-forward.svg" alt="sm-video-fastforward">
+                                        </a>
+                                    </li> -->
+                                    <li class="sm_vc_item sm_vc_lowvol_item">
+                                        <a href="#">
+                                            <img src="./assets/images/video-controls/video-low-volum-icon.svg" alt="sm-video-play">
+                                        </a>
+                                    </li>
+                                    <li class="sm_vc_item sm_vc_heighvol_item">
+                                        <a href="#">
+                                            <img src="./assets/images/video-controls/video-full-volum-icon.svg" alt="sm-video-play">
+                                        </a>
+                                    </li>
+                                    <li class="sm_vc_item sm_vc_mute_item">
+                                        <a href="#">
+                                            <img src="./assets/images/video-controls/video-mute-icon.svg" alt="sm-video-play">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <!--Start Video Walls Screen-->
+            </section>
+            <!--End Show Model Screen-->
+            <!--Start Show Controls Screen-->
+            <section id="dg_ss_screen" class="dg_ss_screen">
+                <div class="container dg_ss_container">
+                    <div class="row dg_ss_row">
+                        <div class="col-4"></div>
+                        <div class="col-4 dg_ss_col">
+                            <div class="dg_ss_options_wrap">
+                                <ul class="dg_ss_optn">
+                                    <li class="dg_ss_optn_item dg_ss_optnon_item active">
+                                        <a href="#">
+                                            <span class="optn_btn"></span>
+                                            <span>ON</span>
+                                        </a>
+                                    </li>
+                                    <li class="dg_ss_optn_item dg_ss_optnoff_item">
+                                        <a href="#">
+                                            <span class="optn_btn"></span>
+                                            <span>OFF</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-4"></div>
+                    </div>
+                </div>
+            </section>
+            <!--End Show Controls Screen-->
+            <!--Start Model Lights Screen-->
+            <section id="ml_lights_screen" class="ml_lights_screen">
+                <div class="container ml_lights_container">
+                    <div class="row ml_lights_row">
+                        <!-- <div class="col-12 breadcrumbs_col">
+                            <a href="javascript:void(0)" onclick="move_start_modellights_right()">
+                                <h3 class="breadcrumbs"> < SCREENSAVER </h3>
+                            </a>
+                        </div> -->
+                        <div class="col_12 ml_content_col">
+                            <div class="ml_content_container ml_content_container1 active">
+                                <div class="ml_image_wrap ml_dg_anchor1_wrap active">
+                                    <img src="./assets/images/model-lights/dg1.png" alt="DG1">
+                                    <h3>DG1</h3>
+                                </div>
+                                <div class="ml_list_wrap ml_dg_antag1_wrap active">
+                                    <ul class="ml_dg_list ml_dg1_list">
+                                        <li class="ml_dg_list_item">
+                                            <a href="#">
+                                                1. ZONE 1
+                                            </a>
+                                        </li>
+                                        <li class="ml_dg_list_item">
+                                            <a href="#">
+                                                2. ZONE 2
+                                            </a>
+                                        </li>
+                                        <li class="ml_dg_list_item">
+                                            <a href="#">
+                                                3. ZONE 3
+                                            </a>
+                                        </li>
+                                        <li class="ml_dg_list_item">
+                                            <a href="#">
+                                                4. ZONE 4
+                                            </a>
+                                        </li>
+                                        <li class="ml_dg_list_item">
+                                            <a href="#">
+                                                5. ZONE 5
+                                            </a>
+                                        </li>
+                                        <li class="ml_dg_list_item">
+                                            <a href="#">
+                                                6. ZONE 6
+                                            </a>
+                                        </li>
+                                        <li class="ml_dg_list_item">
+                                            <a href="#">
+                                                7. ZONE 7
+                                            </a>
+                                        </li>
+                                        <li class="ml_dg_list_item">
+                                            <a href="#">
+                                                7. ZONE 7
+                                            </a>
+                                        </li>
+                                        <li class="ml_dg_list_item">
+                                            <a href="#">
+                                                7. ZONE 7
+                                            </a>
+                                        </li>
+                                        <li class="ml_dg_list_item">
+                                            <a href="#">
+                                                7. ZONE 7
+                                            </a>
+                                        </li>
+                                        <li class="ml_dg_list_item">
+                                            <a href="#">
+                                                7. ZONE 7
+                                            </a>
+                                        </li>
+                                        <li class="ml_dg_list_item">
+                                            <a href="#">
+                                                7. ZONE 7
+                                            </a>
+                                        </li>
+                                        <li class="ml_dg_list_item">
+                                            <a href="#">
+                                                7. ZONE 7
+                                            </a>
+                                        </li>
+                                        <li class="ml_dg_list_item">
+                                            <a href="#">
+                                                7. ZONE 7
+                                            </a>
+                                        </li>
+                                        <li class="ml_dg_list_item">
+                                            <a href="#">
+                                                7. ZONE 7
+                                            </a>
+                                        </li>
+                                        <li class="ml_dg_list_item">
+                                            <a href="#">
+                                                7. ZONE 7
+                                            </a>
+                                        </li>
+                                        <li class="ml_dg_list_item">
+                                            <a href="#">
+                                                7. ZONE 7
+                                            </a>
+                                        </li>
+                                        <li class="ml_dg_list_item">
+                                            <a href="#">
+                                                7. ZONE 7
+                                            </a>
+                                        </li>
+                                        <li class="ml_dg_list_item">
+                                            <a href="#">
+                                                7. ZONE 7
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="ml_content_container ml_content_container2">
+                                <div class="ml_image_wrap ml_dg_anchor2_wrap">
+                                    <img src="./assets/images/model-lights/dg1.png" alt="DG1">
+                                    <h3>DG2</h3>
+                                </div>
+                                <div class="ml_list_wrap ml_dg_antag2_wrap">
+                                    <ul class="ml_dg_list ml_dg2_list">
+                                        <li class="ml_dg_list_item">
+                                            <a href="#">
+                                                1. ZONE 1
+                                            </a>
+                                        </li>
+                                        <li class="ml_dg_list_item">
+                                            <a href="#">
+                                                2. ZONE 2
+                                            </a>
+                                        </li>
+                                        <li class="ml_dg_list_item">
+                                            <a href="#">
+                                                3. ZONE 3
+                                            </a>
+                                        </li>
+                                        <li class="ml_dg_list_item">
+                                            <a href="#">
+                                                4. ZONE 4
+                                            </a>
+                                        </li>
+                                        <li class="ml_dg_list_item">
+                                            <a href="#">
+                                                5. ZONE 5
+                                            </a>
+                                        </li>
+                                        <li class="ml_dg_list_item">
+                                            <a href="#">
+                                                6. ZONE 6
+                                            </a>
+                                        </li>
+                                        <li class="ml_dg_list_item">
+                                            <a href="#">
+                                                7. ZONE 7
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="ml_content_container ml_content_container3">
+                                <div class="ml_image_wrap ml_dg_anchor3_wrap">
+                                    <img src="./assets/images/model-lights/dg1.png" alt="DG1">
+                                    <h3>DG3</h3>
+                                </div>
+                                <div class="ml_list_wrap ml_dg_antag3_wrap">
+                                    <ul class="ml_dg_list ml_dg3_list">
+                                        <li class="ml_dg_list_item">
+                                            <a href="#">
+                                                1. ZONE 1
+                                            </a>
+                                        </li>
+                                        <li class="ml_dg_list_item">
+                                            <a href="#">
+                                                2. ZONE 2
+                                            </a>
+                                        </li>
+                                        <li class="ml_dg_list_item">
+                                            <a href="#">
+                                                3. ZONE 3
+                                            </a>
+                                        </li>
+                                        <li class="ml_dg_list_item">
+                                            <a href="#">
+                                                4. ZONE 4
+                                            </a>
+                                        </li>
+                                        <li class="ml_dg_list_item">
+                                            <a href="#">
+                                                5. ZONE 5
+                                            </a>
+                                        </li>
+                                        <li class="ml_dg_list_item">
+                                            <a href="#">
+                                                6. ZONE 6
+                                            </a>
+                                        </li>
+                                        <li class="ml_dg_list_item">
+                                            <a href="#">
+                                                7. ZONE 7
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--End Model Lights Screen-->
+            <!--Start Basement Floors Screen-->
+            <section id="dg_bf_screen" class="dg_bf_screen">
+                <div class="container dg_bf_container">
+                    <div class="row dg_bfb_row">
+                        <div class="col-12 breadcrumbs_col">
+                            <a href="javascript:void(0)" onclick="move_start_basementfloors_right()">
+                                <!-- <h3 class="breadcrumbs"> < BASEMENT FLOORS </h3> -->
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row dg_bfc_row">
+                        <div class="col-12 dg_bf_col">
+                            <div class="dg_bf_list_wrap">
+                                <ul class="dg_bf_list">
+                                    <li class="dg_bf_list_item">
+                                        <a href="#">
+                                            <img src="./assets/images/icons/bf-up-icon.svg" alt="basementfloors-up"/>
+                                            <span>UP</span>
+                                        </a>
+                                    </li>
+                                    <li class="dg_bf_list_item">
+                                        <a href="#">
+                                            <img src="./assets/images/icons/bf-down-icon.svg" alt="basementfloors-doen"/>
+                                            <span>DOWN</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--End Basement Floors Screen-->
+            <!--Start Video Walls Screen-->
+            <section id="dg_vwalls_screen" class="dg_vwalls_screen">
+                <div class="container ml_lights_container">
+                    <div class="row ml_lights_row">
+                        <!-- <div class="col-12 breadcrumbs_col">
+                            <a href="javascript:void(0)" onclick="move_start_modellights_right()">
+                                <h3 class="breadcrumbs"> < SCREENSAVER </h3>
+                            </a>
+                        </div> -->
+                        <div class="col_12 ml_content_col">
+                            <div class="ml_content_container ml_content_container1 active">
+                                <div class="ml_image_wrap ml_dg_anchor1_wrap active">
+                                    <img src="./assets/images/model-lights/dg1.png" alt="DG1">
+                                    <h3>DG1</h3>
+                                </div>
+                                <div class="ml_list_wrap ml_dg_antag1_wrap active">
+                                    <ul class="ml_dg_list ml_dg1_list">
+                                        <li class="ml_dg_list_item">
+                                            <a href="#">
+                                                1. ZONE 1
+                                            </a>
+                                        </li>
+                                        <li class="ml_dg_list_item">
+                                            <a href="#">
+                                                2. ZONE 2
+                                            </a>
+                                        </li>
+                                        <li class="ml_dg_list_item">
+                                            <a href="#">
+                                                3. ZONE 3
+                                            </a>
+                                        </li>
+                                        <li class="ml_dg_list_item">
+                                            <a href="#">
+                                                4. ZONE 4
+                                            </a>
+                                        </li>
+                                        <li class="ml_dg_list_item">
+                                            <a href="#">
+                                                5. ZONE 5
+                                            </a>
+                                        </li>
+                                        <li class="ml_dg_list_item">
+                                            <a href="#">
+                                                6. ZONE 6
+                                            </a>
+                                        </li>
+                                        <li class="ml_dg_list_item">
+                                            <a href="#">
+                                                7. ZONE 7
+                                            </a>
+                                        </li>
+                                        <li class="ml_dg_list_item">
+                                            <a href="#">
+                                                7. ZONE 7
+                                            </a>
+                                        </li>
+                                        <li class="ml_dg_list_item">
+                                            <a href="#">
+                                                7. ZONE 7
+                                            </a>
+                                        </li>
+                                        <li class="ml_dg_list_item">
+                                            <a href="#">
+                                                7. ZONE 7
+                                            </a>
+                                        </li>
+                                        <li class="ml_dg_list_item">
+                                            <a href="#">
+                                                7. ZONE 7
+                                            </a>
+                                        </li>
+                                        <li class="ml_dg_list_item">
+                                            <a href="#">
+                                                7. ZONE 7
+                                            </a>
+                                        </li>
+                                        <li class="ml_dg_list_item">
+                                            <a href="#">
+                                                7. ZONE 7
+                                            </a>
+                                        </li>
+                                        <li class="ml_dg_list_item">
+                                            <a href="#">
+                                                7. ZONE 7
+                                            </a>
+                                        </li>
+                                        <li class="ml_dg_list_item">
+                                            <a href="#">
+                                                7. ZONE 7
+                                            </a>
+                                        </li>
+                                        <li class="ml_dg_list_item">
+                                            <a href="#">
+                                                7. ZONE 7
+                                            </a>
+                                        </li>
+                                        <li class="ml_dg_list_item">
+                                            <a href="#">
+                                                7. ZONE 7
+                                            </a>
+                                        </li>
+                                        <li class="ml_dg_list_item">
+                                            <a href="#">
+                                                7. ZONE 7
+                                            </a>
+                                        </li>
+                                        <li class="ml_dg_list_item">
+                                            <a href="#">
+                                                7. ZONE 7
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="ml_content_container ml_content_container2">
+                                <div class="ml_image_wrap ml_dg_anchor2_wrap">
+                                    <img src="./assets/images/model-lights/dg1.png" alt="DG1">
+                                    <h3>DG2</h3>
+                                </div>
+                                <div class="ml_list_wrap ml_dg_antag2_wrap">
+                                    <ul class="ml_dg_list ml_dg2_list">
+                                        <li class="ml_dg_list_item">
+                                            <a href="#">
+                                                1. ZONE 1
+                                            </a>
+                                        </li>
+                                        <li class="ml_dg_list_item">
+                                            <a href="#">
+                                                2. ZONE 2
+                                            </a>
+                                        </li>
+                                        <li class="ml_dg_list_item">
+                                            <a href="#">
+                                                3. ZONE 3
+                                            </a>
+                                        </li>
+                                        <li class="ml_dg_list_item">
+                                            <a href="#">
+                                                4. ZONE 4
+                                            </a>
+                                        </li>
+                                        <li class="ml_dg_list_item">
+                                            <a href="#">
+                                                5. ZONE 5
+                                            </a>
+                                        </li>
+                                        <li class="ml_dg_list_item">
+                                            <a href="#">
+                                                6. ZONE 6
+                                            </a>
+                                        </li>
+                                        <li class="ml_dg_list_item">
+                                            <a href="#">
+                                                7. ZONE 7
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="ml_content_container ml_content_container3">
+                                <div class="ml_image_wrap ml_dg_anchor3_wrap">
+                                    <img src="./assets/images/model-lights/dg1.png" alt="DG1">
+                                    <h3>DG3</h3>
+                                </div>
+                                <div class="ml_list_wrap ml_dg_antag3_wrap">
+                                    <ul class="ml_dg_list ml_dg3_list">
+                                        <li class="ml_dg_list_item">
+                                            <a href="#">
+                                                1. ZONE 1
+                                            </a>
+                                        </li>
+                                        <li class="ml_dg_list_item">
+                                            <a href="#">
+                                                2. ZONE 2
+                                            </a>
+                                        </li>
+                                        <li class="ml_dg_list_item">
+                                            <a href="#">
+                                                3. ZONE 3
+                                            </a>
+                                        </li>
+                                        <li class="ml_dg_list_item">
+                                            <a href="#">
+                                                4. ZONE 4
+                                            </a>
+                                        </li>
+                                        <li class="ml_dg_list_item">
+                                            <a href="#">
+                                                5. ZONE 5
+                                            </a>
+                                        </li>
+                                        <li class="ml_dg_list_item">
+                                            <a href="#">
+                                                6. ZONE 6
+                                            </a>
+                                        </li>
+                                        <li class="ml_dg_list_item">
+                                            <a href="#">
+                                                7. ZONE 7
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--Start Video Walls Screen-->
+            <!--Start lights Screen-->
+            <!-- <section id="dg_lights_screen" class="dg_lights_screen">
+                <div class="container dg_lights_container">
+                    <div class="row dg_lights_row">
+                        <div class="col-4 dg_col_content">
+                            <div class="dg_lights_content_wrap dg_lights_morning">
+                                <a href="#">
+                                    <h3>MORNING</h3>
+                                    <h3>80%</h3>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-4 dg_col_content">
+                            <div class="dg_lights_content_wrap dg_lights_afternoon">
+                                <a href="#">
+                                    <h3>AFTERNOON</h3>
+                                    <h3>100%</h3>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-4 dg_col_content">
+                            <div class="dg_lights_content_wrap dg_lights_evening">
+                                <a href="#">
+                                    <h3>EVENING</h3>
+                                    <h3>40%</h3>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-4 dg_col_content">
+                            <div class="dg_lights_content_wrap dg_lights_entery">
+                                <a href="#">
+                                    <h3>ENTERY SCENE</h3>
+                                    <h3>0%</h3>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-4 dg_col_content">
+                            <div class="dg_lights_content_wrap dg_lights_exit">
+                                <a href="#">
+                                    <h3>EXIT SCENE</h3>
+                                    <h3>20%</h3>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section> -->
+            <!--End lights Screen-->
 
-        <!--Start lights Screen-->
-        <!-- <section id="dg_lights_screen" class="dg_lights_screen">
-            <div class="container dg_lights_container">
-                <div class="row dg_lights_row">
-                    <div class="col-4 dg_col_content">
-                        <div class="dg_lights_content_wrap dg_lights_morning">
-                            <a href="#">
-                                <h3>MORNING</h3>
-                                <h3>80%</h3>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-4 dg_col_content">
-                        <div class="dg_lights_content_wrap dg_lights_afternoon">
-                            <a href="#">
-                                <h3>AFTERNOON</h3>
-                                <h3>100%</h3>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-4 dg_col_content">
-                        <div class="dg_lights_content_wrap dg_lights_evening">
-                            <a href="#">
-                                <h3>EVENING</h3>
-                                <h3>40%</h3>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-4 dg_col_content">
-                        <div class="dg_lights_content_wrap dg_lights_entery">
-                            <a href="#">
-                                <h3>ENTERY SCENE</h3>
-                                <h3>0%</h3>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-4 dg_col_content">
-                        <div class="dg_lights_content_wrap dg_lights_exit">
-                            <a href="#">
-                                <h3>EXIT SCENE</h3>
-                                <h3>20%</h3>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section> -->
-        <!--End lights Screen-->
-
-        <!--Start lights Screen-->
-        <section id="dg_lights_screen" class="dg_lights_screen">
-            <div class="container dg_lights_container">
-                <div class="row dg_lights_main_row">
-                    <div class="col-6">
-                        <div class="row dg_lights_row">
-                            <div class="col-12 dg_lights_col">
-                                <div class="dg_lights_content_wrap dg_lights_20">
-                                    <a href="#">
-                                        <h3>LIGHTS 20%</h3>
-                                        <img src="./assets/images/icons/lights/20percent-lights.svg" alt="20percent-lights">
-                                    </a>
+            <!--Start lights Screen-->
+            <section id="dg_lights_screen" class="dg_lights_screen">
+                <div class="container dg_lights_container">
+                    <div class="row dg_lights_main_row">
+                        <div class="col-6">
+                            <div class="row dg_lights_row">
+                                <div class="col-12 dg_lights_col">
+                                    <div class="dg_lights_content_wrap dg_lights_20">
+                                        <a href="#">
+                                            <h3>LIGHTS 20%</h3>
+                                            <img src="./assets/images/icons/lights/20percent-lights.svg" alt="20percent-lights">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-12 dg_lights_col">
+                                    <div class="dg_lights_content_wrap dg_lights_40">
+                                        <a href="#">
+                                            <h3>LIGHTS 40%</h3>
+                                            <img src="./assets/images/icons/lights/40percent-lights.svg" alt="40percent-lights">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-12 dg_lights_col">
+                                    <div class="dg_lights_content_wrap dg_lights_40">
+                                        <a href="#">
+                                            <h3>NATURAL SOFT</h3>
+                                            <img src="./assets/images/icons/lights/natural-soft-lights.svg" alt="natural-soft-lights">
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-12 dg_lights_col">
-                                <div class="dg_lights_content_wrap dg_lights_40">
-                                    <a href="#">
-                                        <h3>LIGHTS 40%</h3>
-                                        <img src="./assets/images/icons/lights/40percent-lights.svg" alt="40percent-lights">
-                                    </a>
+                        </div>
+                        <div class="col-6">
+                            <div class="row dg_lights_row">
+                                <div class="col-12 dg_lights_col">
+                                    <div class="dg_lights_content_wrap dg_lights_60">
+                                        <a href="#">
+                                            <h3>LIGHTS 60%</h3>
+                                            <img src="./assets/images/icons/lights/60percent-lights.svg" alt="60percent-lights">
+                                        </a>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-12 dg_lights_col">
-                                <div class="dg_lights_content_wrap dg_lights_40">
-                                    <a href="#">
-                                        <h3>NATURAL SOFT</h3>
-                                        <img src="./assets/images/icons/lights/natural-soft-lights.svg" alt="natural-soft-lights">
-                                    </a>
+                                <div class="col-12 dg_lights_col">
+                                    <div class="dg_lights_content_wrap dg_lights_entery">
+                                        <a href="#">
+                                            <h3>LIGHTS 80%</h3>
+                                            <img src="./assets/images/icons/lights/80percent-lights.svg" alt="80percent-lights">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-12 dg_lights_col">
+                                    <div class="dg_lights_content_wrap dg_lights_entery">
+                                        <a href="#">
+                                            <h3>NATURAL BRIGHT</h3>
+                                            <img class="model_bright_lights" src="./assets/images/icons/lights/natural-bright-lights.svg" alt="natural-bright-lights">
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-6">
-                        <div class="row dg_lights_row">
-                            <div class="col-12 dg_lights_col">
-                                <div class="dg_lights_content_wrap dg_lights_60">
-                                    <a href="#">
-                                        <h3>LIGHTS 60%</h3>
-                                        <img src="./assets/images/icons/lights/60percent-lights.svg" alt="60percent-lights">
-                                    </a>
+                    <div class="row dg_lights_main_row dg_lights_main_row2">
+                        <div class="col-6">
+                            <div class="row dg_lights_row">
+                                <div class="col-12 dg_lights_col">
+                                    <div class="dg_lights_content_wrap dg_lights_60">
+                                        <a href="#">
+                                            <h3>MODEL BRIGHT</h3>
+                                            <img class="model_bright_lights" src="./assets/images/icons/lights/model-bright-lights.svg" alt="model-bright-lights">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-12 dg_lights_col">
+                                    <div class="dg_lights_content_wrap dg_lights_20">
+                                        <a href="#">
+                                            <h3>MODEL SOFT</h3>
+                                            <img src="./assets/images/icons/lights/model-soft-lights.svg" alt="model-soft-lights">
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-12 dg_lights_col">
-                                <div class="dg_lights_content_wrap dg_lights_entery">
-                                    <a href="#">
-                                        <h3>LIGHTS 80%</h3>
-                                        <img src="./assets/images/icons/lights/80percent-lights.svg" alt="80percent-lights">
-                                    </a>
+                        </div>
+                        <div class="col-6">
+                            <div class="row dg_lights_row">
+                                <div class="col-12 dg_lights_col">
+                                    <div class="dg_lights_content_wrap dg_lights_entery">
+                                        <a href="#">
+                                            <h3>ALL LIGHTS ON</h3>
+                                            <img src="./assets/images/icons/lights/all-lights-on.svg" alt="all-lights-on">
+                                        </a>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-12 dg_lights_col">
-                                <div class="dg_lights_content_wrap dg_lights_entery">
-                                    <a href="#">
-                                        <h3>NATURAL BRIGHT</h3>
-                                        <img class="model_bright_lights" src="./assets/images/icons/lights/natural-bright-lights.svg" alt="natural-bright-lights">
-                                    </a>
+                                <div class="col-12 dg_lights_col">
+                                    <div class="dg_lights_content_wrap all_no_lights1">
+                                        <a href="#">
+                                            <h3>ALL LIGHTS OFF</h3>
+                                            <img src="./assets/images/icons/lights/all-light-off.svg" alt="all-lights-off">
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="row dg_lights_main_row dg_lights_main_row2">
-                    <div class="col-6">
-                        <div class="row dg_lights_row">
-                            <div class="col-12 dg_lights_col">
-                                <div class="dg_lights_content_wrap dg_lights_60">
-                                    <a href="#">
-                                        <h3>MODEL BRIGHT</h3>
-                                        <img class="model_bright_lights" src="./assets/images/icons/lights/model-bright-lights.svg" alt="model-bright-lights">
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col-12 dg_lights_col">
-                                <div class="dg_lights_content_wrap dg_lights_20">
-                                    <a href="#">
-                                        <h3>MODEL SOFT</h3>
-                                        <img src="./assets/images/icons/lights/model-soft-lights.svg" alt="model-soft-lights">
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-6">
-                        <div class="row dg_lights_row">
-                            <div class="col-12 dg_lights_col">
-                                <div class="dg_lights_content_wrap dg_lights_entery">
-                                    <a href="#">
-                                        <h3>ALL LIGHTS ON</h3>
-                                        <img src="./assets/images/icons/lights/all-lights-on.svg" alt="all-lights-on">
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col-12 dg_lights_col">
-                                <div class="dg_lights_content_wrap all_no_lights1">
-                                    <a href="#">
-                                        <h3>ALL LIGHTS OFF</h3>
-                                        <img src="./assets/images/icons/lights/all-light-off.svg" alt="all-lights-off">
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!--End lights Screen-->
+            </section>
+            <!--End lights Screen-->
+        </div>
+        <!--End Diriyah Room Selection Screen-->
 
     </main>
-    <!--End Main Nav-->
+    <!--End Main English-->
 
+    <!--Start Main Arabic -->
     <main id="ar_version" class="home_ar">
         <!--Start Header Nav-->
         <header id="header">
@@ -1709,7 +2508,7 @@
         <!--End lights Screen-->
 
     </main>
-    <!--End Main Nav-->
+    <!--End Main Arabic -->
 
 
      <!--Start Footer ar Nav-->
