@@ -819,6 +819,20 @@ span.sm_video_start_timer {
   color: #003741;
 }
 
+.dg_ft_nav_item.active img.non_active_img, .dg_ft_nav_item img.active_img{
+  display: none;
+}
+.dg_ft_nav_item.active img.active_img{
+  display: block;
+  filter: none !important;
+}
+
+.dg_ft_nav_img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .sm_vc_list img {
   width: 36.5px;
   height: 36.5px;
