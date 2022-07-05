@@ -243,6 +243,11 @@ section.ml_lights_screen{
   display: none;
 } */
 
+.dg_sm_screen .sm_vc_list a{
+  opacity: 0.7;
+  pointer-events: none;
+}
+
 
 /*********************************************************************************************/
 

@@ -2,7 +2,8 @@ import '../bootstrap.min.css';
 import '../bootstrap.rtl.min.css';
 import '../mystyle.css';
 import '../css/rtl.css';
-import Videothumb from '../images/play-video-thumb.png';
+import video from '../videos/dgdA_UI_Intro-10secs.mp4';
+//import Videothumb from '../images/play-video-thumb.png';
 import Videoplay from '../images/video-controls/video-play-control-icon.svg';
 import Videopause from '../images/video-controls/video-pause-control-icon.svg';
 import Videostop from '../images/video-controls/video-stop-control-icon.svg';
@@ -20,7 +21,12 @@ function Modelshowar() {
                 <div className="row dg_sm_row">
                     <div className="dg_sm_video_wrap">
                         <div className="sm_video">
-                            <img src={Videothumb} alt="video thumb"/>
+                            {/* <img src={Videothumb} alt="video thumb"/> */}
+                            <video id="sm_main_video" width="100%" height="756" loop={true} controls={false} autoPlay="autoplay">
+                                <source src={video} type="video/mp4"/>
+                                <source src="movie.ogg" type="video/ogg"/>
+                                Your browser does not support the video tag.
+                            </video>
                         </div>
                         <div className="sm_video_track_wrap">
                             <div className="sm_video_track">
