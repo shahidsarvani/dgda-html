@@ -653,7 +653,8 @@ section.ml_lights_screen{
 }
 
 .start_show_icon{
-  margin: 0 auto 50px -145px !important;
+  /* margin: 0 auto 50px -145px !important; */
+  margin: 0 auto 50px 0px !important;
 }
 .screensaver_icon{
   margin: 0 auto 50px -50px !important;
@@ -733,7 +734,8 @@ section.ml_lights_screen{
 
 /*/////////////////////////////AFTER ROOM SELECTION SCREEN///////////////////////////////*/
 .dg_afrs_col1_h{
-  margin-left: -165px;
+  /* margin-left: -165px; */
+  margin-left: 0px;
 }
 .dg_afrs_col2_h{
   margin-left: -70px;
