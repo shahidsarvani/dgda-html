@@ -2879,6 +2879,11 @@ $(document).ready(function () {
   });
 
 
+
+  $('#wadisafar_room_link').click(function(){
+    $('section').removeClass('current_view');
+    $('.dg_afrs_screen.english').addClass('current_view');
+  });
   $('#basement_floors_icon1').click(function() {
     $('section').removeClass('current_view');
     $('.dg_bf_screen.english').addClass('current_view');
