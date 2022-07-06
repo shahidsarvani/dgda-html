@@ -5,6 +5,7 @@ import '../css/rtl.css';
 import Diriyahimg from '../images/room-diriyah.png';
 import Wadiesafarimg from '../images/room-wadi-safar.png';
 import move_left_ar from '../move-left-ar';
+import '../customjqjs';
 
 function Roomselectionar() {
   return (

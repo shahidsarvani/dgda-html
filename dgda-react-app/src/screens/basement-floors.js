@@ -3,6 +3,7 @@ import '../mystyle.css';
 import move_start_basementfloors_right from '../move-start-basementfloors-right';
 import bf_up_icon from '../images/icons/bf-up-icon.svg';
 import bf_down_icon from '../images/icons/bf-down-icon.svg';
+import '../customjqjs';
 
 function Basementfloors() {
   return (

@@ -9,6 +9,7 @@ import Fullvolicon from '../images/video-controls/video-full-volum-icon.svg';
 import Muteicon from '../images/video-controls/video-mute-icon.svg';
 //import Videothumb from '../images/play-video-thumb.png';
 import move_startshow_right from '../move-startshow-right';
+import '../customjqjs';
 
 function Modelshow() {
   return (

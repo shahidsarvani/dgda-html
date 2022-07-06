@@ -5,6 +5,7 @@ import DG2 from '../images/model-lights/dg1.png';
 import DG3 from '../images/model-lights/dg1.png';
 import move_start_modellights_right from '../move-start-modellights-right';
 import { useState, useEffect } from 'react';
+import '../customjqjs';
 
 function Modellights() {
 

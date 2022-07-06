@@ -10,6 +10,7 @@ import vwalls_icon from './images/icons/ftr-vwalls-icon.svg';
 import model_icon from './images/icons/ftr-model-icon.svg';
 import home_icon from './images/icons/ftr-home-icon.svg';
 import back_icon from './images/icons/backward-light-icon.svg';
+import './customjqjs';
 
 function Footer() {
   return (

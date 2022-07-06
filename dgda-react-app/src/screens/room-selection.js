@@ -3,7 +3,8 @@ import '../mystyle.css';
 import diriyahRoom from '../images/room-diriyah.png';
 import wadiSafRoom from '../images/room-wadi-safar.png';
 import move_left_en from '../move-left-en';
-import { useState, useEffect } from 'react'
+import { useState, useEffect } from 'react';
+import '../customjqjs';
 
 function Roomselection() {
     return (

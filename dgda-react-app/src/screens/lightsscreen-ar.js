@@ -11,7 +11,8 @@ import natural_bright from '../images/icons/lights/natural-bright-lights.svg';
 import model_bright from '../images/icons/lights/model-bright-lights.svg';
 import model_soft from '../images/icons/lights/model-soft-lights.svg';
 import all_lights_on from '../images/icons/lights/all-lights-on.svg';
-import all_lights_off from '../images/icons/lights/all-light-off.svg';             
+import all_lights_off from '../images/icons/lights/all-light-off.svg';
+import '../customjqjs';             
 
 function Lightsscreenar() {
   return (

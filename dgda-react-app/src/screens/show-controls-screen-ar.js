@@ -1,6 +1,7 @@
 import '../bootstrap.min.css';
 import '../mystyle.css';
 import move_backto_startshow from '../move-backto-startshow';
+import '../customjqjs';
 
 function Showcontrols() {
   return (

@@ -15,6 +15,7 @@ import model_icon from './images/icons/ftr-model-icon.svg';
 import home_nonactive_icon from './images/icons/ftr-home-icon.svg';
 import home_active_icon from './images/icons/home-selected-icon.svg';
 import back_icon from './images/icons/backward-light-icon.svg';
+import './customjqjs';
 
 function Footerar() {
   return (

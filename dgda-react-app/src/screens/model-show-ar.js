@@ -11,6 +11,7 @@ import Videolowvol from '../images/video-controls/video-low-volum-icon.svg';
 import Videohighvol from '../images/video-controls/video-full-volum-icon.svg';
 import Videomute from '../images/video-controls/video-mute-icon.svg';
 import move_startshow_right from '../move-startshow-right';
+import '../customjqjs';
 
 function Modelshowar() {
   return (

@@ -6,6 +6,7 @@ import move_start_basementfloors_left from '../move-start-basementfloors-left';
 import start_show_icon from '../images/icons/play-icon.svg';
 import model_districts from '../images/icons/model-zones.svg';
 import Basementfloors_icon from '../images/icons/basement-floors-updated.svg';
+import '../customjqjs';
 
 function Afterroomselection() {
   return (

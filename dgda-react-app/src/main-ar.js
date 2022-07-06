@@ -5,6 +5,7 @@ import Modellightsar from './screens/model-lights-screen-ar';
 import Basementfloorsar from './screens/basement-floors-ar';
 import Videowallsar from './screens/videowalls-ar';
 import Lightsscreenar from './screens/lightsscreen-ar';
+import './customjqjs';
 
 function Mainarabic() {
     return (
