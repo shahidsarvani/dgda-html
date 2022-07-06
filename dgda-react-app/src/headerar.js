@@ -2,12 +2,14 @@ import './bootstrap.min.css';
 import './mystyle.css';
 import ar_logo from './images/diriyah-ar-logo.svg';
 import eng_logo from './images/dgda_logo.svg';
+import diriyah_icon from './images/icons/diriyah-icon.svg';
+import wadi_icon from './images/icons/wadi-safar-icon.svg';
 //import move_left_en from './move-left-en';
 import move_main_right from './move-main-right';
 
 function Headerar() {
   return (
-    <div className="header-wrap">
+    <div className="header-arabic-wrap">
 
         {/* <header id="header">
             <div className="container diri_header_cont">
@@ -80,13 +82,13 @@ function Headerar() {
                                         <ul className="navbar-nav">
                                             <li className="nav-item nav-item-ar1">
                                                 <a className="nav-link nav-link-ar1 active" href="#">
-                                                    <img src="./assets/images/icons/diriyah-icon.svg" alt="diriyah"/>
+                                                    <img src={diriyah_icon} alt="diriyah"/>
                                                     <span>الدرعية</span>
                                                 </a>
                                             </li>
                                             <li className="nav-item nav-item-ar2">
                                                 <a className="nav-link nav-link-ar2" href="#">
-                                                    <img src="./assets/images/icons/wadi-safar-icon.svg" alt="wadi-safar"/>
+                                                    <img src={wadi_icon} alt="wadi-safar"/>
                                                     <span>وادي صفر</span>
                                                 </a>
                                             </li>

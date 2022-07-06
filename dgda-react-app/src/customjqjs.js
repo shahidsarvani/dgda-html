@@ -155,23 +155,30 @@ $("#diriyah_room_link").on(function () {
     e.preventDefault();
     $("#main_video_btn").prop( "disabled", true );
   });
-  $(".dg_ft_nav_link_en a").on(function (e) {
-    e.preventDefault();
-    $("html").attr("lang", "ar");
+
+
+  $(document).ready(function() {
+    $(".dg_ft_nav_link_en a").on(function (e) {
+      e.preventDefault();
+      $("html").attr("lang", "ar");
+    });
+    $(".lang-switcher a.lang_ar_item").on(function (e) {
+      e.preventDefault();
+      $("html").attr("lang", "ar");
+    });
+    $(".lang-switcher a.lang_en_item").on(function (e) {
+      e.preventDefault();
+      $("html").attr("lang", "en");
+    });
   });
+
+  
   $(".dg_ft_nav_link_ar a").on(function (e) {
     e.preventDefault();
     $("html").attr("lang", "en");
   });
 
-  $(".lang-switcher a.lang_ar_item").on(function (e) {
-    e.preventDefault();
-    $("html").attr("lang", "ar");
-  });
-  $(".lang-switcher a.lang_en_item").on(function (e) {
-    e.preventDefault();
-    $("html").attr("lang", "en");
-  });
+  
 
   $("#diriyah-room").on(function (e) {
     e.preventDefault();

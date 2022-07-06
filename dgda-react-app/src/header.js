@@ -7,8 +7,9 @@ import diriyah_icon from './images/icons/diriyah-icon.svg';
 import wadi_icon from './images/icons/wadi-safar-icon.svg';
 import move_main_left from './move-main-left';
 import './customjqjs';
+import './customfun';
 import React, { Component } from 'react';
-
+//import { gsap } from "gsap";
 
 class Header extends Component {
     constructor(props) {
@@ -19,8 +20,13 @@ class Header extends Component {
         }
     }
     setLang(lang) {
-        this.props.onSetLang(lang);
+        
+        document.documentElement.lang = (lang) ? lang : 'en';
+        move_main_left();
+        //this.props.onSetLang(lang);
+        
     }
+
     render() {
         return (
             <div className="header-wrap">
@@ -39,7 +45,7 @@ class Header extends Component {
                                         </div>
                                         <div className="lang-switcher">
                                             <div className="lang_items">
-                                                <a className="lang_ar_item" href="#" onClick={move_main_left}>عربي</a>
+                                                <a className="lang_ar_item" href="#" onClick={() => this.setLang('ar')}>عربي</a>
                                             </div>
                                         </div>
                                     </div>
