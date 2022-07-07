@@ -18,7 +18,9 @@ function Roomselectionar() {
                         <a href="#" onClick={move_left_ar}>
                             <div id="diriyah-room" className="dg_rs_wrap">
                                 <img src={Diriyahimg} alt="diriyah"/>
-                                <h3>الدرعية</h3>
+                                <h3 className="rs_ar_heading">الدرعية</h3>
+                                <h3>DIRIYAH</h3>
+                                {/* <h3>الدرعية</h3> */}
                             </div>
                         </a>
                     </div>
@@ -26,7 +28,9 @@ function Roomselectionar() {
                         <a href="#" onClick={move_left_ar}>
                             <div id="wadisafar-room" className="dg_rs_wrap">
                                 <img src={Wadiesafarimg} alt="diriyah"/>
-                                <h3>وادي صفر</h3>
+                                <h3 className="rs_ar_heading">وادي صفار</h3>
+                                <h3>WADI SAFAR</h3>
+                                {/* <h3>وادي صفر</h3> */}
                             </div>
                         </a>
                     </div>

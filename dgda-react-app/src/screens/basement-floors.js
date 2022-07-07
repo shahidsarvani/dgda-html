@@ -7,7 +7,7 @@ import '../customjqjs';
 
 function Basementfloors() {
   return (
-    <div className="after_room_selection_screen">
+    <div className="basementfloors_screen">
 
         <section id="dg_bf_screen" className="dg_bf_screen">
             <div className="container dg_bf_container">

@@ -13,13 +13,6 @@ function Basementfloorsar() {
 
         <section id="dg_bf_screen" className="dg_bf_screen">
             <div className="container dg_bf_container">
-                <div className="row dg_bfb_row">
-                    <div className="col-12 breadcrumbs_col">
-                        <a href="#" onClick={move_start_basementfloors_right}>
-                            <h3 className="breadcrumbs"> المواقف السفلية </h3>
-                        </a>
-                    </div>
-                </div>
                 <div className="row dg_bfc_row">
                     <div className="col-12 dg_bf_col">
                         <div className="dg_bf_list_wrap">

@@ -16,7 +16,7 @@ import '../customjqjs';
 
 function Lightsscreenar() {
   return (
-    <div className="room_selection_screen_ar">
+    <div className="lights_screen_wrap_ar">
 
         <section id="dg_lights_screen" className="dg_lights_screen">
         <div class="container dg_lights_container">

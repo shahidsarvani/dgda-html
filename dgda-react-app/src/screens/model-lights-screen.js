@@ -10,7 +10,7 @@ import '../customjqjs';
 function Modellights() {
 
     return (
-        <div className="after_room_selection_screen">
+        <div className="model_lights_screen">
 
             <section id="ml_lights_screen" className="ml_lights_screen">
                 <div className="container ml_lights_container">

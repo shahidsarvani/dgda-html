@@ -15,20 +15,20 @@ function move_left_en() {
     delay: 0,
     transform: 'translate(0%, 0%)'
   });
-  gsap.to(".home_ar .logo_diriyah", {
+  gsap.to(".header-arabic-wrap .logo_diriyah", {
     left: 'unset',
     right: '0',
     duration: 1,
     delay: 0,
     transform: 'translate(0%, 0%)'
   });
-  gsap.to(".home_ar .eng_logo", {
+  gsap.to(".header-arabic-wrap .eng_logo", {
     display: 'none',
     duration: 0,
     delay: 0,
     transform: 'translate(0%, 0%)'
   });
-  gsap.to(".home_ar .lang-switcher", {
+  gsap.to(".header-arabic-wrap .lang-switcher", {
     opacity: 1,
     display: 'block',
     visibility: 'visible',
@@ -41,6 +41,17 @@ function move_left_en() {
     duration: 1,
     delay: 1,
   })
+  gsap.fromTo(".header-arabic-wrap .header-menu-elements", {
+    opacity: 0,
+    x: -3000,
+    duration: 1,
+    visibility: 'hidden',
+  }, {
+    opacity: 1,
+    x: 0,
+    duration: 1,
+    visibility: 'visible',
+  });
   gsap.to(".dg_rs_screen", {
     opacity: 0,
     x: -3000,
@@ -70,12 +81,12 @@ function move_left_en() {
   });
 
   ///////////////////arabic animations///////////////////////
-  gsap.to(".home_ar .dg_rs_screen", {
+  gsap.to(".main_ar .dg_rs_screen", {
     opacity: 0,
     x: 3000,
     duration: 1
   });
-  gsap.fromTo(".home_ar .dg_afrs_screen", {
+  gsap.fromTo(".main_ar .dg_afrs_screen", {
     opacity: 0,
     x: -3000,
     duration: 1,
@@ -86,18 +97,8 @@ function move_left_en() {
     duration: 1,
     visibility: 'visible',
   });
-  gsap.fromTo(".home_ar .header-menu-elements", {
-    opacity: 0,
-    x: -3000,
-    duration: 1,
-    visibility: 'hidden',
-  }, {
-    opacity: 1,
-    x: 0,
-    duration: 1,
-    visibility: 'visible',
-  });
-  gsap.to(".home_ar .dg_rs_screen", {
+  
+  gsap.to(".main_ar .dg_rs_screen", {
     opacity: 0,
     x: 3000,
     duration: 1

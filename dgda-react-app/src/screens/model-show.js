@@ -13,7 +13,7 @@ import '../customjqjs';
 
 function Modelshow() {
   return (
-    <div className="room_selection_screen">
+    <div className="modelshow_screen">
 
         <section id="dg_sm_screen" className="dg_sm_screen">
             <div className="container dg_sm_screen_cont">

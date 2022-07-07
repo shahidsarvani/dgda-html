@@ -14,16 +14,11 @@ import fast_forward from '../images/video-controls/fast-forward.svg';
 
 function Videowallsar() {
   return (
-    <div className="video_walls_screen_ar">
+    <div className="video_walls_screen_wrap_ar">
 
         <section id="dg_vwalls_screen" className="dg_vwalls_screen">
             <div className="container dg_vwalls_container">
                 <div className="row dg_vwalls_row">
-                    <div className="col-12 dg_vwalls_col">
-                        <a href="#" onClick={move_vwalls_right}>
-                            <h3 className="breadcrumbs"> الشاشات الجدارية</h3>
-                        </a>
-                    </div>
                     <div className="dg_sm_video_wrap">
                         <div className="sm_video">
                             

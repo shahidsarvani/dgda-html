@@ -5,6 +5,7 @@ import Modellightsar from './screens/model-lights-screen-ar';
 import Basementfloorsar from './screens/basement-floors-ar';
 import Videowallsar from './screens/videowalls-ar';
 import Lightsscreenar from './screens/lightsscreen-ar';
+import Showcontrolsar from './screens/show-controls-screen-ar';
 import './customjqjs';
 
 function Mainarabic() {
@@ -13,6 +14,7 @@ function Mainarabic() {
         <Roomselectionar />
         <Afterroomselectionar />
         <Modelshowar />
+        <Showcontrolsar/>
         <Modellightsar />
         <Basementfloorsar />
         <Videowallsar />

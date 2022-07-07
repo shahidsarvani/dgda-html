@@ -60,3 +60,12 @@ html[lang="ar"], [lang="ar"] div, [lang="ar"] h1, [lang="ar"] h2, [lang="ar"] h3
 [lang="ar"] .sm_vc_list .sm_vc_fastrewind_item img, [lang="ar"] .sm_vc_list .sm_vc_fastforward_item img{
     transform: rotate(180deg);
 }
+[lang="ar"] .sm_video_timers{
+    text-align: right;
+}
+[lang="ar"] .dg_lights_main_row{
+    text-align: right;
+}
+[lang="ar"] .dg_lights_main_row.dg_lights_main_row2{
+    text-align: right !important;
+}

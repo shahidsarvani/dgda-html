@@ -60,6 +60,19 @@ function move_main_left() {
       right: 0,
       duration: 1,
     });
+    gsap.to("header-wrap .lang-switcher", {
+      opacity: 1,
+      visibility: 'visible',
+      duration: 1,
+      delay: 1,
+      display: 'block',
+    })
+    gsap.to("header-arabic-wrap .lang-switcher", {
+      opacity: 1,
+      visibility: 'visible',
+      duration: 1,
+      delay: 1,
+    })
     ///////////////////english animations///////////////////////
     gsap.fromTo(".main_en", {
       opacity: 1,
@@ -279,7 +292,7 @@ function move_main_left() {
       duration: 1,
       visibility: 'hidden',
     });
-    gsap.fromTo("#ar_version", {
+    gsap.fromTo(".main_ar", {
       opacity: 0,
       x: 3000,
       duration: 1,
