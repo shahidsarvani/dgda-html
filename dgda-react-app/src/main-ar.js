@@ -6,19 +6,23 @@ import Basementfloorsar from './screens/basement-floors-ar';
 import Videowallsar from './screens/videowalls-ar';
 import Lightsscreenar from './screens/lightsscreen-ar';
 import Showcontrolsar from './screens/show-controls-screen-ar';
+import Diriyahroomwrapar from './room-diriyah-screens-ar';
+import Wadisaferroomwrapar from './room-wadi-safar-screens-ar';
 import './customjqjs';
 
 function Mainarabic() {
     return (
       <main className="main_ar">
         <Roomselectionar />
-        <Afterroomselectionar />
+        <Diriyahroomwrapar/>
+        <Wadisaferroomwrapar />
+        {/* <Afterroomselectionar />
         <Modelshowar />
         <Showcontrolsar/>
         <Modellightsar />
         <Basementfloorsar />
         <Videowallsar />
-        <Lightsscreenar />
+        <Lightsscreenar /> */}
       </main>
     );
   }

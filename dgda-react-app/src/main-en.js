@@ -6,6 +6,8 @@ import Basementfloors from './screens/basement-floors';
 import Videowalls from './screens/videowalls';
 import Lightsscreen from './screens/lightsscreen';
 import Showcontrols from './screens/show-controls-screen';
+import Wadisaferroomwrap from './room-wadi-safar-screens';
+import Diriyahroomwrap from './room-diriyah-screens';
 import './customjqjs';
 import React, { Component } from 'react';
 
@@ -50,34 +52,18 @@ class Mainenglish extends Component {
     return (
       <main className="main_en">
         <Roomselection onSetRoomID={this.setRoom}/>
-        <Afterroomselection hasModal={this.state.hasmodal} />
+        <Diriyahroomwrap lang={this.state.lang}/>
+        <Wadisaferroomwrap lang={this.state.lang}/>
+        {/* <Afterroomselection hasModal={this.state.hasmodal} />
         <Modelshow roomId={this.state.roomid} lang={this.state.lang}/>
         <Showcontrols roomId={this.state.roomid} lang={this.state.lang}/>
         <Modellights roomId={this.state.roomid} lang={this.state.lang}/>
         <Basementfloors roomId={this.state.roomid} lang={this.state.lang}/>
         <Videowalls roomId={this.state.roomid} lang={this.state.lang}/>
-        <Lightsscreen roomId={this.state.roomid} lang={this.state.lang}/>
+        <Lightsscreen roomId={this.state.roomid} lang={this.state.lang}/> */}
       </main>
     );
   }
 }
-
-
-
-
-// function Mainenglish() {
-//     return (
-//       <main className="main_en">
-//         <Roomselection />
-//         <Afterroomselection />
-//         <Modelshow />
-//         <Showcontrols/>
-//         <Modellights />
-//         <Basementfloors />
-//         <Videowalls />
-//         <Lightsscreen />
-//       </main>
-//     );
-//   }
   
 export default Mainenglish;

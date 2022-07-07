@@ -1,6 +1,16 @@
 import { gsap } from "gsap";
 
 function move_left_en() {
+  gsap.to(".diriyah_room_page", {
+    opacity: 1,
+    display: 'block',
+    duration: 1,
+  });
+  gsap.to(".wadi_e_safar_room_page", {
+      opacity: 0,
+      display: 'none',
+      duration: 1,
+  });
   gsap.to(".logo_diriyah .ar_logo", {
     opacity: 0,
     display: 'none',

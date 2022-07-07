@@ -5,6 +5,7 @@ import '../css/rtl.css';
 import Diriyahimg from '../images/room-diriyah.png';
 import Wadiesafarimg from '../images/room-wadi-safar.png';
 import move_left_ar from '../move-left-ar';
+import move_wadi_left_ar from '../move-wadi-left-ar';
 import '../customjqjs';
 
 function Roomselectionar() {
@@ -25,7 +26,7 @@ function Roomselectionar() {
                         </a>
                     </div>
                     <div className="col-6 dg_rs_col">
-                        <a href="#" onClick={move_left_ar}>
+                        <a href="#" onClick={move_wadi_left_ar}>
                             <div id="wadisafar-room" className="dg_rs_wrap">
                                 <img src={Wadiesafarimg} alt="diriyah"/>
                                 <h3 className="rs_ar_heading">وادي صفار</h3>

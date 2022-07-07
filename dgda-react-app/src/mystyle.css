@@ -505,7 +505,7 @@ section.ml_lights_screen{
   align-items: center;
   list-style: none !important;
   padding: 0 !important;
-  margin: 0 auto 0 0 !important;
+  margin: 0 auto !important;
   max-width: 1500px;
   flex-direction: row;
   width: 100%;
@@ -683,6 +683,10 @@ section.ml_lights_screen{
   color: #C87E59;
 }
 
+.wadi_e_safar_room_page .dg_vwalls_screen .ml_lights_container{
+  padding-top: 100px;
+}
+
 .dg_rs_col {
   display: flex;
   justify-content: center;
@@ -691,6 +695,8 @@ section.ml_lights_screen{
 
 .dg_ft_nav_titles{
   width: 480px;
+  position: absolute;
+  left: 50px;
 }
 
 .dg_ft_navtitle_link{

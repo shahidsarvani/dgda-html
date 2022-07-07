@@ -3,7 +3,7 @@ class Translator {
       this.lang = this.isEmpty(lang) ? 'en' : lang;               // NOTE: size and brand are arguments
       this.en = {
         'HOME': 'MAIN PAGE',
-        'BACK': 'Back',
+        'BACK': 'BACK',
         'MODEL': 'MODEL',
         'LIGHTS': 'LIGHTS',
         'VIDEO_WALL': 'VIDEO WALLS'

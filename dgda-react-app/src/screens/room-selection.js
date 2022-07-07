@@ -3,6 +3,7 @@ import '../mystyle.css';
 import diriyahRoom from '../images/room-diriyah.png';
 import wadiSafRoom from '../images/room-wadi-safar.png';
 import move_left_en from '../move-left-en';
+import move_wadi_left_en from '../move-wadi-left-en';
 import { useState, useEffect } from 'react';
 import '../customjqjs';
 
@@ -24,7 +25,7 @@ function Roomselection() {
                             </a>
                         </div>
                         <div className="col-6 dg_rs_col">
-                            <a href="#" onClick={move_left_en}>
+                            <a href="#" onClick={move_wadi_left_en}>
                                 <div id="wadisafar-room" class="dg_rs_wrap">
                                     <img className="dg_rs_img" src={wadiSafRoom} alt="wadi-safar"/>
                                     <h3 className="rs_ar_heading">وادي صفار</h3>

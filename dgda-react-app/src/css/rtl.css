@@ -43,7 +43,11 @@ html[lang="ar"], [lang="ar"] div, [lang="ar"] h1, [lang="ar"] h2, [lang="ar"] h3
     padding-right: 40px;
 }
 [lang="ar"] .dg_ft_nav_list{
-    margin: 0 0 0 auto !important;
+    margin: 0 auto !important;
+}
+[lang="ar"] .dg_ft_nav_titles{
+    left: unset;
+    right: 50px;
 }
 [lang="ar"] .dg_ft_ar_back_item img, [lang="ar"] .dg_lights_screen img{
     transform: rotate(180deg);

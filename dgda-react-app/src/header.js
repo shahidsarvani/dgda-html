@@ -6,6 +6,7 @@ import logo_ar from './images/diriyah-ar-logo.svg';
 import diriyah_icon from './images/icons/diriyah-icon.svg';
 import wadi_icon from './images/icons/wadi-safar-icon.svg';
 import move_main_left from './move-main-left';
+import move_wadi_left_en from './move-wadi-left-en';
 import './customjqjs';
 import './customfun';
 import React, { Component } from 'react';
@@ -43,6 +44,7 @@ class Header extends Component {
                                                 <img src={logo} alt="logo" />
                                             </a>
                                         </div>
+
                                         <div className="lang-switcher">
                                             <div className="lang_items">
                                                 <a className="lang_ar_item" href="#" onClick={() => this.setLang('ar')}>عربي</a>
@@ -59,13 +61,13 @@ class Header extends Component {
                                             <div className="nav_cp_dp collapse navbar-collapse btn-10" id="collapsibleNavbar">
                                             <ul className="navbar-nav">
                                                     <li className="nav-item nav-item-en1">
-                                                        <a className="nav-link nav-link-en1 active" href="#">
+                                                        <a className="nav-link nav-link-en1 active" href="#" onClick={move_left_en}>
                                                             <img src={diriyah_icon} alt="diriyah"/>
                                                             <span>DIRIYAH</span>
                                                         </a>
                                                     </li>
                                                     <li className="nav-item nav-item-en2">
-                                                        <a className="nav-link nav-link-en2" href="#">
+                                                        <a className="nav-link nav-link-en2" href="#" onClick={move_wadi_left_en}>
                                                             <img src={wadi_icon} alt="wadi-safar"/>
                                                             <span>WADI SAFAR</span>
                                                         </a>
