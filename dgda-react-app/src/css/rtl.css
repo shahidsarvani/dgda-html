@@ -29,7 +29,7 @@ html[lang="ar"], [lang="ar"] div, [lang="ar"] h1, [lang="ar"] h2, [lang="ar"] h3
 }
 [lang="ar"] .ml_list_wrap.active{
     margin-left: unset !important;
-    margin-right: 0 !important;
+    margin-right: 350px !important;
 }
 [lang="ar"] .ml_list_wrap{
     margin-left: unset !important;
