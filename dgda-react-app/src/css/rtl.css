@@ -15,6 +15,9 @@ html[lang="ar"], [lang="ar"] div, [lang="ar"] h1, [lang="ar"] h2, [lang="ar"] h3
 [lang="ar"] body {
     direction:rtl;
 }
+[lang="ar"] .vwalls_list{
+    text-align: right !important;
+}
 [lang="ar"] .load_log_col .logo_diriyah{
     left: unset !important;
     right: 45%;

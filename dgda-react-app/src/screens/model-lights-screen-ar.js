@@ -2,10 +2,10 @@ import '../bootstrap.min.css';
 import '../bootstrap.rtl.min.css';
 import '../mystyle.css';
 import '../css/rtl.css';
-import DG1 from '../images/model-lights/dg1.png';
-import DG2 from '../images/model-lights/dg1.png';
-import DG3 from '../images/model-lights/dg1.png';
-import move_start_modellights_right from '../move-start-modellights-right';
+// import DG1 from '../images/model-lights/dg1.png';
+// import DG2 from '../images/model-lights/dg1.png';
+// import DG3 from '../images/model-lights/dg1.png';
+// import move_start_modellights_right from '../move-start-modellights-right';
 import '../customjqjs';
 
 function Modellightsar() {
@@ -15,7 +15,31 @@ function Modellightsar() {
         <section id="ml_lights_screen" className="ml_lights_screen">
             <div className="container ml_lights_container">
                 <div className="row ml_lights_row">
-                    <div className="col_12 ml_content_col">
+                    <div className='col-4 v_walls_col1'>
+                        <ul className='vwalls_list'>
+                            <li className='vwalls_list_item'><a className='active' href="#">حدود تاريخية</a></li>
+                            <li className='vwalls_list_item'><a href="#">المرحلة 1</a></li>
+                            <li className='vwalls_list_item'><a href="#">وادي حنيفة</a></li>
+                            <li className='vwalls_list_item'><a href="#">مرحلة الدرعية 2</a></li>
+                            <li className='vwalls_list_item'><a href="#">مرحلة الدرعية 3</a></li>
+                        </ul>
+                    </div>
+                    <div className='col-4 v_walls_col1'>
+                        <ul className='vwalls_list'>
+                            <li className='vwalls_list_item'><a href="#">بيع بالتجزئة</a></li>
+                            <li className='vwalls_list_item'><a href="#">ضيافة</a></li>
+                            <li className='vwalls_list_item'><a href="#">مكاتب</a></li>
+                            <li className='vwalls_list_item'><a href="#">سكني</a></li>
+                            <li className='vwalls_list_item'><a href="#">الثقافة والتعليم</a></li>
+                        </ul>
+                    </div>
+                    <div className='col-4 v_walls_col1'>
+                        <ul className='vwalls_list'>
+                            <li className='vwalls_list_item'><a href="#">إمكانية المشي والمساحات المفتوحة</a></li>
+                            <li className='vwalls_list_item'><a href="#">الاتصال والبنية التحتية</a></li>
+                        </ul>
+                    </div>
+                    {/* <div className="col_12 ml_content_col">
                         <div className="ml_content_container ml_content_container1 active">
                             <div className="ml_image_wrap ml_dg_anchor1_wrap active">
                                 <img src={DG1} alt="DG1"/>
@@ -211,7 +235,7 @@ function Modellightsar() {
                                 </ul>
                             </div>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </section>
