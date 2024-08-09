@@ -1,0 +1,295 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+button:focus{
+  outline: 0 !important;
+}
+
+
+@font-face {
+  font-family: 'graphik_arabicmedium';
+  src: url('../fonts/graphikarabic-medium-webfont.woff2') format('woff2'),
+       url('../fonts/graphikarabic-medium-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'graphik_arabicsemibold';
+  src: url('../fonts/graphikarabic-semibold-webfont.woff2') format('woff2'),
+       url('../fonts/graphikarabic-semibold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'kermes3regular';
+  src: url('../fonts/kermes3-regular-webfont.woff2') format('woff2'),
+       url('../fonts/kermes3-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'kermes3semibold';
+  src: url('../fonts/kermes3-semibold-webfont.woff2') format('woff2'),
+       url('../fonts/kermes3-semibold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+.main-slide-content {
+  position: absolute;
+  bottom: 140px;
+  right: 0;
+  left: 0;
+  text-align: center;
+}
+.main-slide-content h2 {
+  color: #fff;
+  font-size: 90px;
+  margin-bottom: 20px;
+  font-family: 'kermes3regular';
+}
+
+.main-slide-content p {
+  color: #fff;
+  font-size: 40px;
+  font-family: 'kermes3regular';
+}
+.screen-1 {
+  background: #5f0d2a;
+}
+
+.backto-content-table {
+  position: absolute;
+  height: 40px;
+  width: 150px;
+  top: 80px;
+  left: 160px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.backto-content-table div {
+  width: 150px;
+  height: 4px;
+  background-color: #fff;
+}
+
+.screen-1-content {
+  position: absolute;
+  max-width: 2250px;
+  width: 2250px;
+  left: 160px;
+  top: 500px;
+}
+.content-box a {
+  color: #fff !important;
+  text-decoration: none !important;
+}
+.content-box h2{
+  color: #fff;
+  font-size: 60px;
+  margin-bottom: 0px;
+  font-family: 'kermes3semibold';
+}
+.content-box p {
+  color: #e39b68;
+  font-size: 40px;
+  line-height: 50px;
+  margin-right: 120px;
+  margin-bottom: 0;
+  margin-top: 40px;
+  font-family: 'kermes3regular';
+}
+
+.screen-1-content .col {
+  border-right: 3px solid #e39b68;
+  margin-right: 60px;
+}
+.screen-1-content .col:last-child{
+  border-right: 0px;
+}
+
+
+/* Slider */
+.slick-slider {
+  position: relative;
+
+  display: block;
+
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  -webkit-touch-callout: none;
+  -khtml-user-select: none;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list {
+  position: relative;
+
+  display: block;
+  overflow: hidden;
+
+  margin: 0;
+  padding: 0;
+}
+.slick-list:focus {
+  outline: none;
+}
+.slick-list.dragging {
+  cursor: pointer;
+  cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.slick-track {
+  position: relative;
+  top: 0;
+  left: 0;
+
+  display: block;
+}
+.slick-track:before,
+.slick-track:after {
+  display: table;
+
+  content: "";
+}
+.slick-track:after {
+  clear: both;
+}
+.slick-loading .slick-track {
+  visibility: hidden;
+}
+
+.slick-slide {
+  display: none;
+  float: left;
+
+  height: 100%;
+  min-height: 1px;
+}
+[dir="rtl"] .slick-slide {
+  float: right;
+}
+.slick-slide img {
+  display: block;
+}
+.slick-slide.slick-loading img {
+  display: none;
+}
+.slick-slide.dragging img {
+  pointer-events: none;
+}
+.slick-initialized .slick-slide {
+  display: block;
+}
+.slick-loading .slick-slide {
+  visibility: hidden;
+}
+.slick-vertical .slick-slide {
+  display: block;
+
+  height: auto;
+
+  border: 1px solid transparent;
+}
+
+.slick-slide {
+  height:1824px;
+}
+
+.slider-item img {
+  height:1824px;
+}
+
+.slick-prev {
+  position: absolute;
+  top: 50%;
+  left: 4%;
+  background: transparent;
+  border: 0;
+  text-indent: -9999999px;
+  background-image: url('../images/back.svg');
+  background-repeat: no-repeat;
+  background-size: 80px;
+  width: 80px;
+  height: 80px;
+}
+
+.slick-next {
+  position: absolute;
+  top: 50%;
+  right: 4%;
+  background: transparent;
+  border: 0;
+  text-indent: -9999999px;
+  background-image: url('../images/back.svg');
+  background-repeat: no-repeat;
+  background-size: 80px;
+  width: 80px;
+  height: 80px;
+}
