@@ -273,7 +273,7 @@ button:focus{
   background: transparent;
   border: 0;
   text-indent: -9999999px;
-  background-image: url('../images/back.svg');
+  background-image: url('../images/left.svg');
   background-repeat: no-repeat;
   background-size: 80px;
   width: 80px;
@@ -287,7 +287,7 @@ button:focus{
   background: transparent;
   border: 0;
   text-indent: -9999999px;
-  background-image: url('../images/back.svg');
+  background-image: url('../images/right.svg');
   background-repeat: no-repeat;
   background-size: 80px;
   width: 80px;
