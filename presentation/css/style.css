@@ -101,7 +101,7 @@ button:focus{
   font-size: 40px;
   font-family: 'kermes3regular';
 }
-.screen-1 {
+.dark-bg {
   background: #5f0d2a;
 }
 
@@ -110,7 +110,7 @@ button:focus{
   height: 40px;
   width: 150px;
   top: 80px;
-  left: 160px;
+  left: 250px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -124,9 +124,9 @@ button:focus{
 
 .screen-1-content {
   position: absolute;
-  max-width: 2250px;
-  width: 2250px;
-  left: 160px;
+  max-width: 2550px;
+  width: 2550px;
+  left: 250px;
   top: 500px;
 }
 .content-box a {
@@ -156,6 +156,32 @@ button:focus{
 .screen-1-content .col:last-child{
   border-right: 0px;
 }
+
+.content-box ul li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 3px solid #e39b68;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+}
+.content-box ul {
+  margin-top: 100px;
+  margin-right: 60px;
+}
+.content-box ul li p {
+  margin: 0;
+  font-size: 34px;
+}
+.content-box ul li a {
+  color: #e39b68 !important;
+  font-size: 34px;
+  font-family: 'kermes3regular';
+  text-transform: uppercase;
+}
+
+
+
 
 
 /* Slider */
@@ -263,13 +289,16 @@ button:focus{
 }
 
 .slider-item img {
-  height:1824px;
+  height: 1920px;
+}
+.slider-item {
+  height: 1920px;
 }
 
 .slick-prev {
   position: absolute;
   top: 50%;
-  left: 4%;
+  left: 2%;
   background: transparent;
   border: 0;
   text-indent: -9999999px;
@@ -283,7 +312,7 @@ button:focus{
 .slick-next {
   position: absolute;
   top: 50%;
-  right: 4%;
+  right: 2%;
   background: transparent;
   border: 0;
   text-indent: -9999999px;
@@ -292,4 +321,35 @@ button:focus{
   background-size: 80px;
   width: 80px;
   height: 80px;
+}
+
+
+
+
+@media screen and (min-width: 3840px){
+  .slider-item img {
+      height: auto;
+      width: 100%;
+  }
+  .slider-item {
+      height: 2160px;
+  }
+  .screen-1-content {
+      max-width: 3200px;
+      width: 3200px;
+  }
+  .content-box h2 {
+      font-size: 80px;
+  }
+  .content-box p {
+      font-size: 50px;
+      line-height: 70px;
+      margin-top: 60px;
+  }
+  .content-box ul li a {
+      font-size: 45px;
+  }
+  .content-box ul li p {
+      font-size: 45px;
+  }
 }
