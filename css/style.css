@@ -186,7 +186,7 @@ button:focus {
   height: 40px;
   width: 150px;
   top: 80px;
-  left: 180px;
+  left: 120px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -200,9 +200,9 @@ button:focus {
 
 .screen-1-content {
   position: absolute;
-  max-width: 2350px;
-  width: 2350px;
-  left: 180px;
+  max-width: 2400px;
+  width: 2400px;
+  left: 130px;
   top: 500px;
 }
 .content-box a {
@@ -333,9 +333,9 @@ button:focus {
 [dir="rtl"] .slick-slide {
   float: right;
 }
-.slick-slide img {
+/* .slick-slide img {
   display: block;
-}
+} */
 .slick-slide.slick-loading img {
   display: none;
 }
@@ -360,17 +360,27 @@ button:focus {
   height: 1824px;
 }
 
-.slider-item img {
+/* .slider-item img {
   height: 1824px;
-}
+} */
 .slider-item {
   height: 1824px;
+}
+.main-logo img {
+  position: absolute;
+  width: 500px !important;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  filter: brightness(0) invert(1);
+  top: 100px;
+  height: auto !important;
 }
 
 .slick-prev {
   position: absolute;
   top: 50%;
-  left: 2%;
+  left: 30px;
   background: transparent;
   border: 0;
   text-indent: -9999999px;
@@ -384,7 +394,7 @@ button:focus {
 .slick-next {
   position: absolute;
   top: 50%;
-  right: 2%;
+  right: 30px;
   background: transparent;
   border: 0;
   text-indent: -9999999px;
@@ -394,6 +404,137 @@ button:focus {
   width: 80px;
   height: 80px;
 }
+
+/* .slider-item img {
+  height: 1840px;
+  width: 2736px;
+  object-fit: cover;
+} */
+.light-slide .backto-content-table div {
+  background-color: #C17250;
+}
+.btn-box {
+  position: absolute;
+  z-index: 9;
+  bottom: 100px;
+  right: 170px;
+}
+.btn-box a {
+  color: #fff;
+  background: #C17250;
+  padding: 10px 30px 5px 30px;
+  font-size: 34px;
+  text-transform: uppercase;
+  font-family: "graphik_arabicsemibold";
+}
+.btn-box a:hover {
+  text-decoration: none;
+  color: #5f0d2a;
+  background-color: #eed6c2;
+}
+
+.btn-box.ctm-dark a {
+  background-color: #55142D !important;
+}
+
+.btn-box.ctm-dark a:hover {
+  background-color: #C17250 !important;
+  color: #fff !important;
+}
+.side-bar {
+  position: absolute;
+  top: 370px;
+  left: 120px;
+}
+.side-bar ul li a {
+  color: #e3bb99;
+  font-size: 26px;
+  text-transform: uppercase;
+  font-family: "graphik_arabicsemibold";
+}
+.side-bar ul li {
+  border-bottom: 1px solid #d16e4a;
+  margin: 5px 0px;
+  padding: 5px 0;
+}
+.side-bar ul li img {
+  width: 25px;
+  margin-top: -12px;
+}
+.side-bar ul li.active img{
+  filter: brightness(0) invert(1);
+}
+.side-bar ul li.active {
+  padding-left: 0;
+  background-image: none;
+}
+.side-bar ul li.active a{
+  color: #fff;
+}
+.side-bar ul li:first-child {
+  border-top: 1px solid #e3bb99;
+}
+.side-bar.dark-sidebar ul li.active a {
+  color: #5f0d2a;
+}
+.side-bar.dark-sidebar ul li a {
+  color: #d16e4a;
+}
+.side-bar.dark-sidebar ul li.active img{
+  filter: inherit;
+}
+
+.btn-box.ctm-btns {
+  width: 1400px;
+}
+
+.btn-box.ctm-btns a {
+  width: 320px;
+  display: inline-block;
+  text-align: center;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+.ctm-btns a.active {
+  background: #fff;
+  color: #5f0d2a;
+}
+
+.btn-box.wadi-hanifah a {
+  width: 650px;
+}
+.btn-box.districts {
+  width: 1260px;
+  right: 0;
+}
+
+.btn-box.districts a {
+  background-color: #5f0d2a;
+  width: 600px;
+  font-size: 28px;
+}
+.btn-box.districts a.active {
+  background: #fff;
+}
+.btn-box.asset-classes {
+  right: 80px;
+}
+.btn-box.asset-classes a {
+  background-color: #5f0d2a;
+}
+.btn-box.asset-classes a.active {
+  background: #fff;
+}
+.btn-box.diriyah-2 a {
+  background: #d16e4a;
+}
+.why-diriyah ul li {
+  border-bottom: 1px solid #e3bb99;
+}
+
+
+
+
 
 .fade-in {
   animation: fadeIn 0.5s forwards;
@@ -462,19 +603,31 @@ button:focus {
     transform: translateY(0);
   }
 }
+.for-led{
+  display: none !important;
+}
+.for-tab{
+  display: block !important;
+}
 
 @media screen and (min-width: 3840px) {
-  .slider-item img {
+  .for-tab{
+    display: none !important;
+  }
+  .for-led{
+    display: block !important;
+  }
+  /* .slider-item img {
     height: auto;
     width: 100%;
-  }
+  } */
   .slider-item {
     height: 2160px;
   }
   .screen-1-content {
-    max-width: 3200px;
-    width: 3200px;
-    left: 250px;
+      max-width: 3200px;
+      width: 3200px;
+      left: 170px;
   }
   .content-box h2 {
     font-size: 80px;
@@ -491,6 +644,6 @@ button:focus {
     font-size: 45px;
   }
   .backto-content-table {
-    left: 250px;
+      left: 170px;
   }
 }
