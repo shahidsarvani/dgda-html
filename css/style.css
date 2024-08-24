@@ -611,6 +611,26 @@ button:focus {
 }
 
 @media screen and (min-width: 3840px) {
+  .btn-box.districts a {
+      width: 660px;
+      font-size: 32px;
+  }
+  .btn-box.districts {
+      width: 1370px;
+      right: 170px;
+  }
+
+  .side-bar ul li {
+      margin: 10px 0px;
+      padding: 10px 0;
+  }
+  .side-bar ul li a {
+      font-size: 30px;
+  }
+  .side-bar {
+      top: 340px;
+      left: 170px;
+  }
   .for-tab{
     display: none !important;
   }
