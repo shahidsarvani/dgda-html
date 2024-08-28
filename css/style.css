@@ -532,6 +532,52 @@ button:focus {
   border-bottom: 1px solid #e3bb99;
 }
 
+.modal-dialog {
+  max-width: 100% !important;
+  margin: 0 !important;
+}
+
+button.close {
+  position: absolute;
+  top: 40px;
+  right: 120px;
+  background: #fff;
+  z-index: 9999;
+  text-shadow: none !important;
+  opacity: 1;
+}
+
+.close span {
+  font-size: 100px;
+  opacity: 1 !important;
+  color: #f29763 !important;
+}
+
+.modal-content {
+  background: transparent !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+}
+
+.modal-body {
+  padding: 0 !important;
+}
+
+button.slick-disabled {
+  display: none !important;
+}
+
+button.popup-btn {
+  font-size: 60px;
+  border: 0;
+  background: #f29763;
+  color: #fff;
+  padding: 20px 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%)
+}
 
 
 
@@ -611,6 +657,9 @@ button:focus {
 }
 
 @media screen and (min-width: 3840px) {
+  button.close {
+      right: 120px;
+  }
   .btn-box.districts a {
       width: 660px;
       font-size: 32px;
