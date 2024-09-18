@@ -411,7 +411,7 @@ button:focus {
   object-fit: cover;
 } */
 .light-slide .backto-content-table div {
-  background-color: #C17250;
+  background-color: #c17250;
 }
 .btn-box {
   position: absolute;
@@ -421,7 +421,7 @@ button:focus {
 }
 .btn-box a {
   color: #fff;
-  background: #C17250;
+  background: #c17250;
   padding: 10px 30px 5px 30px;
   font-size: 34px;
   text-transform: uppercase;
@@ -434,11 +434,11 @@ button:focus {
 }
 
 .btn-box.ctm-dark a {
-  background-color: #55142D !important;
+  background-color: #55142d !important;
 }
 
 .btn-box.ctm-dark a:hover {
-  background-color: #C17250 !important;
+  background-color: #c17250 !important;
   color: #fff !important;
 }
 .side-bar {
@@ -461,14 +461,14 @@ button:focus {
   width: 25px;
   margin-top: -12px;
 }
-.side-bar ul li.active img{
+.side-bar ul li.active img {
   filter: brightness(0) invert(1);
 }
 .side-bar ul li.active {
   padding-left: 0;
   background-image: none;
 }
-.side-bar ul li.active a{
+.side-bar ul li.active a {
   color: #fff;
 }
 .side-bar ul li:first-child {
@@ -480,7 +480,7 @@ button:focus {
 .side-bar.dark-sidebar ul li a {
   color: #d16e4a;
 }
-.side-bar.dark-sidebar ul li.active img{
+.side-bar.dark-sidebar ul li.active img {
   filter: inherit;
 }
 
@@ -576,11 +576,8 @@ button.popup-btn {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%)
+  transform: translate(-50%, -50%);
 }
-
-
-
 
 .fade-in {
   animation: fadeIn 0.5s forwards;
@@ -649,41 +646,48 @@ button.popup-btn {
     transform: translateY(0);
   }
 }
-.for-led{
+.for-led {
   display: none !important;
 }
-.for-tab{
+.for-tab {
   display: block !important;
+}
+
+@media screen and (min-width: 2737px) {
+  .slick-prev,
+  .slick-next {
+    display: none !important; /* Hide buttons */
+  }
 }
 
 @media screen and (min-width: 3840px) {
   button.close {
-      right: 120px;
+    right: 120px;
   }
   .btn-box.districts a {
-      width: 660px;
-      font-size: 32px;
+    width: 660px;
+    font-size: 32px;
   }
   .btn-box.districts {
-      width: 1370px;
-      right: 170px;
+    width: 1370px;
+    right: 170px;
   }
 
   .side-bar ul li {
-      margin: 10px 0px;
-      padding: 10px 0;
+    margin: 10px 0px;
+    padding: 10px 0;
   }
   .side-bar ul li a {
-      font-size: 30px;
+    font-size: 30px;
   }
   .side-bar {
-      top: 340px;
-      left: 170px;
+    top: 340px;
+    left: 170px;
   }
-  .for-tab{
+  .for-tab {
     display: none !important;
   }
-  .for-led{
+  .for-led {
     display: block !important;
   }
   /* .slider-item img {
@@ -694,9 +698,9 @@ button.popup-btn {
     height: 2160px;
   }
   .screen-1-content {
-      max-width: 3200px;
-      width: 3200px;
-      left: 170px;
+    max-width: 3200px;
+    width: 3200px;
+    left: 170px;
   }
   .content-box h2 {
     font-size: 80px;
@@ -713,6 +717,6 @@ button.popup-btn {
     font-size: 45px;
   }
   .backto-content-table {
-      left: 170px;
+    left: 170px;
   }
 }
